@@ -1,0 +1,16 @@
+Initializing FrameHarbor target control
+TARGET pid=68684 name=Endfield api=
+API D3D11 presenting=1 supported=1 message=
+API OpenGLES presenting=0 supported=1 message=
+WINDOWS 1
+REQUESTED_ONE_FRAME
+PROGRESS 0.005760
+PROGRESS 0.198157
+PROGRESS 0.649622
+PROGRESS 0.661628
+PROGRESS 0.697674
+PROGRESS 0.804651
+PROGRESS 0.841860
+PROGRESS 0.868605
+PROGRESS 0.877907
+CAPTURE path=C:\Users\10330\Documents\Codex\2026-09-15\new-chat-2\outputs\EndfieldDX11\character_frame12732.rdc bytes=462708473 api=D3D11

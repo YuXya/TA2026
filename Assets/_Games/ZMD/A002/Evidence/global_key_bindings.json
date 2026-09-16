@@ -1,0 +1,2702 @@
+[
+  {
+    "eid": 990,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::21354",
+    "cbs": [],
+    "textures": []
+  },
+  {
+    "eid": 990,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::21355",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid990_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid990_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid990_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid990_Pixel_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "texture0",
+        "resource": "ResourceId::55653",
+        "format": "R32_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "texture1",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::55607",
+        "format": "R8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::55662",
+        "format": "R8G8_UNORM",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1001,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::21356",
+    "cbs": [],
+    "textures": []
+  },
+  {
+    "eid": 1001,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::21357",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1001_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1001_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1001_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1001_Pixel_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "texture0",
+        "resource": "ResourceId::55653",
+        "format": "R32_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "texture1",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::54042",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::55672",
+        "format": "R10G10B10A2_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::55666",
+        "format": "R10G10B10A2_UNORM",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1088,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::41624",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1088_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1088_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 248320,
+        "size": 65536,
+        "file": "eid1088_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2187776,
+        "size": 512,
+        "file": "eid1088_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1088,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::41625",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1088_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1088_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 248320,
+        "size": 65536,
+        "file": "eid1088_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1088_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1088_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1088_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2187776,
+        "size": 512,
+        "file": "eid1088_Pixel_b6.bin"
+      },
+      {
+        "slot": 7,
+        "resource": "ResourceId::54069",
+        "offset": 74496,
+        "size": 2560,
+        "file": "eid1088_Pixel_b7.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::55656",
+        "format": "R8G8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::22365",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::45781",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::337",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::56887",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::56897",
+        "format": "BC5_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 15,
+        "name": "texture15",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 16,
+        "name": "texture16",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1154,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::41644",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1154_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1154_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 249088,
+        "size": 65536,
+        "file": "eid1154_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2146304,
+        "size": 512,
+        "file": "eid1154_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1154,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::41645",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1154_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1154_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 249088,
+        "size": 65536,
+        "file": "eid1154_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1154_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1154_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1154_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2146304,
+        "size": 512,
+        "file": "eid1154_Pixel_b6.bin"
+      },
+      {
+        "slot": 7,
+        "resource": "ResourceId::54069",
+        "offset": 74496,
+        "size": 2560,
+        "file": "eid1154_Pixel_b7.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::55656",
+        "format": "R8G8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::22374",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::22377",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::326",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::314",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::337",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 15,
+        "name": "texture15",
+        "resource": "ResourceId::56856",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 16,
+        "name": "texture16",
+        "resource": "ResourceId::56886",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 17,
+        "name": "texture17",
+        "resource": "ResourceId::56826",
+        "format": "BC5_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 18,
+        "name": "texture18",
+        "resource": "ResourceId::56846",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 19,
+        "name": "texture19",
+        "resource": "ResourceId::29269",
+        "format": "BC6_UFLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 20,
+        "name": "texture20",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 21,
+        "name": "texture21",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1236,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::41622",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1236_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1236_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 250112,
+        "size": 65536,
+        "file": "eid1236_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2152448,
+        "size": 512,
+        "file": "eid1236_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1236,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::41623",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1236_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1236_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 250112,
+        "size": 65536,
+        "file": "eid1236_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1236_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1236_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1236_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2152448,
+        "size": 512,
+        "file": "eid1236_Pixel_b6.bin"
+      },
+      {
+        "slot": 7,
+        "resource": "ResourceId::54069",
+        "offset": 74496,
+        "size": 2560,
+        "file": "eid1236_Pixel_b7.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::55656",
+        "format": "R8G8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::22374",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::22377",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::326",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::314",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::337",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 15,
+        "name": "texture15",
+        "resource": "ResourceId::56860",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 16,
+        "name": "texture16",
+        "resource": "ResourceId::56875",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 17,
+        "name": "texture17",
+        "resource": "ResourceId::56836",
+        "format": "BC5_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 18,
+        "name": "texture18",
+        "resource": "ResourceId::29269",
+        "format": "BC6_UFLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 19,
+        "name": "texture19",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 20,
+        "name": "texture20",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1257,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::56158",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1257_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1257_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 250368,
+        "size": 65536,
+        "file": "eid1257_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2176512,
+        "size": 512,
+        "file": "eid1257_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1257,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::56161",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1257_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1257_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 250368,
+        "size": 65536,
+        "file": "eid1257_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1257_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1257_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1257_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2176512,
+        "size": 512,
+        "file": "eid1257_Pixel_b6.bin"
+      },
+      {
+        "slot": 7,
+        "resource": "ResourceId::54069",
+        "offset": 74496,
+        "size": 2560,
+        "file": "eid1257_Pixel_b7.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::55656",
+        "format": "R8G8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::28657",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::326",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::314",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::337",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::56856",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 15,
+        "name": "texture15",
+        "resource": "ResourceId::56886",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 16,
+        "name": "texture16",
+        "resource": "ResourceId::56826",
+        "format": "BC5_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 17,
+        "name": "texture17",
+        "resource": "ResourceId::29269",
+        "format": "BC6_UFLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 18,
+        "name": "texture18",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 19,
+        "name": "texture19",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1322,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::41656",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1322_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1322_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 251136,
+        "size": 65536,
+        "file": "eid1322_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2149376,
+        "size": 512,
+        "file": "eid1322_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1322,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::41657",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1322_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1322_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 251136,
+        "size": 65536,
+        "file": "eid1322_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1322_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1322_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1322_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2149376,
+        "size": 512,
+        "file": "eid1322_Pixel_b6.bin"
+      },
+      {
+        "slot": 7,
+        "resource": "ResourceId::54069",
+        "offset": 74496,
+        "size": 2560,
+        "file": "eid1322_Pixel_b7.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::55653",
+        "format": "R32_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::55656",
+        "format": "R8G8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::56405",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::55942",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::55951",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::337",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 15,
+        "name": "texture15",
+        "resource": "ResourceId::56633",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 16,
+        "name": "texture16",
+        "resource": "ResourceId::56815",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 17,
+        "name": "texture17",
+        "resource": "ResourceId::56393",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 18,
+        "name": "texture18",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 19,
+        "name": "texture19",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1390,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::41668",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1390_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1390_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 251392,
+        "size": 65536,
+        "file": "eid1390_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2188288,
+        "size": 512,
+        "file": "eid1390_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1390,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::41669",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1390_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1390_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 251392,
+        "size": 65536,
+        "file": "eid1390_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1390_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1390_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1390_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2188288,
+        "size": 512,
+        "file": "eid1390_Pixel_b6.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::55656",
+        "format": "R8G8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::22365",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::45781",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::55510",
+        "format": "R10G10B10A2_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::56887",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1531,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::41676",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1531_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1531_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 253184,
+        "size": 65536,
+        "file": "eid1531_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2149888,
+        "size": 512,
+        "file": "eid1531_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "texture1",
+        "resource": "ResourceId::56415",
+        "format": "BC7_UNORM",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1531,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::41677",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1531_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1531_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 253184,
+        "size": 65536,
+        "file": "eid1531_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1531_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1531_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1531_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2149888,
+        "size": 512,
+        "file": "eid1531_Pixel_b6.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::55653",
+        "format": "R32_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::55656",
+        "format": "R8G8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::55942",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::55510",
+        "format": "R10G10B10A2_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::56633",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::56426",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 15,
+        "name": "texture15",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1683,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::41696",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1683_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1683_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 242688,
+        "size": 65536,
+        "file": "eid1683_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2155520,
+        "size": 512,
+        "file": "eid1683_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1683,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::41697",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1683_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1683_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 242688,
+        "size": 65536,
+        "file": "eid1683_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1683_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1683_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1683_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2155520,
+        "size": 512,
+        "file": "eid1683_Pixel_b6.bin"
+      },
+      {
+        "slot": 7,
+        "resource": "ResourceId::54069",
+        "offset": 74496,
+        "size": 2560,
+        "file": "eid1683_Pixel_b7.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::54042",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::56405",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::55942",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 15,
+        "name": "texture15",
+        "resource": "ResourceId::55951",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 16,
+        "name": "texture16",
+        "resource": "ResourceId::337",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 17,
+        "name": "texture17",
+        "resource": "ResourceId::56633",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 18,
+        "name": "texture18",
+        "resource": "ResourceId::56815",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 19,
+        "name": "texture19",
+        "resource": "ResourceId::56393",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 20,
+        "name": "texture20",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 21,
+        "name": "texture21",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1706,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::41702",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1706_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1706_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 242944,
+        "size": 65536,
+        "file": "eid1706_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2156032,
+        "size": 512,
+        "file": "eid1706_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "texture1",
+        "resource": "ResourceId::56415",
+        "format": "BC7_UNORM",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1706,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::41703",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1706_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1706_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 242944,
+        "size": 65536,
+        "file": "eid1706_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1706_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1706_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1706_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2156032,
+        "size": 512,
+        "file": "eid1706_Pixel_b6.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::54042",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::55942",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::56633",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 15,
+        "name": "texture15",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1797,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::56166",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1797_Vertex_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1797_Vertex_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 243968,
+        "size": 65536,
+        "file": "eid1797_Vertex_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::44278",
+        "offset": 2160384,
+        "size": 512,
+        "file": "eid1797_Vertex_b3.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 1797,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::56167",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 69632,
+        "size": 1536,
+        "file": "eid1797_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid1797_Pixel_b1.bin"
+      },
+      {
+        "slot": 2,
+        "resource": "ResourceId::54069",
+        "offset": 243968,
+        "size": 65536,
+        "file": "eid1797_Pixel_b2.bin"
+      },
+      {
+        "slot": 3,
+        "resource": "ResourceId::54069",
+        "offset": 54784,
+        "size": 256,
+        "file": "eid1797_Pixel_b3.bin"
+      },
+      {
+        "slot": 4,
+        "resource": "ResourceId::54069",
+        "offset": 21760,
+        "size": 33024,
+        "file": "eid1797_Pixel_b4.bin"
+      },
+      {
+        "slot": 5,
+        "resource": "ResourceId::54069",
+        "offset": 132864,
+        "size": 11520,
+        "file": "eid1797_Pixel_b5.bin"
+      },
+      {
+        "slot": 6,
+        "resource": "ResourceId::44278",
+        "offset": 2160384,
+        "size": 512,
+        "file": "eid1797_Pixel_b6.bin"
+      },
+      {
+        "slot": 7,
+        "resource": "ResourceId::54069",
+        "offset": 74496,
+        "size": 2560,
+        "file": "eid1797_Pixel_b7.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "structuredbuffer0",
+        "resource": "ResourceId::55586",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "structuredbuffer1",
+        "resource": "ResourceId::126",
+        "format": "Undefined",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::68",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 3,
+        "name": "texture3",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 4,
+        "name": "texture4",
+        "resource": "ResourceId::54045",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 5,
+        "name": "texture5",
+        "resource": "ResourceId::54042",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 6,
+        "name": "texture6",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 7,
+        "name": "texture7",
+        "resource": "ResourceId::583",
+        "format": "R16_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 8,
+        "name": "texture8",
+        "resource": "ResourceId::32224",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 9,
+        "name": "texture9",
+        "resource": "ResourceId::32227",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 10,
+        "name": "texture10",
+        "resource": "ResourceId::32230",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 11,
+        "name": "texture11",
+        "resource": "ResourceId::32233",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 12,
+        "name": "texture12",
+        "resource": "ResourceId::32236",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 13,
+        "name": "texture13",
+        "resource": "ResourceId::32239",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 14,
+        "name": "texture14",
+        "resource": "ResourceId::22374",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 15,
+        "name": "texture15",
+        "resource": "ResourceId::37040",
+        "format": "R8G8B8A8_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 16,
+        "name": "texture16",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 17,
+        "name": "texture17",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 18,
+        "name": "texture18",
+        "resource": "ResourceId::45992",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 19,
+        "name": "texture19",
+        "resource": "ResourceId::326",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 20,
+        "name": "texture20",
+        "resource": "ResourceId::314",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 21,
+        "name": "texture21",
+        "resource": "ResourceId::337",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 22,
+        "name": "texture22",
+        "resource": "ResourceId::56693",
+        "format": "BC7_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 23,
+        "name": "texture23",
+        "resource": "ResourceId::56770",
+        "format": "BC7_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 24,
+        "name": "texture24",
+        "resource": "ResourceId::56635",
+        "format": "BC5_UNORM",
+        "mip": 0
+      },
+      {
+        "slot": 25,
+        "name": "texture25",
+        "resource": "ResourceId::29269",
+        "format": "BC6_UFLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 26,
+        "name": "texture26",
+        "resource": "ResourceId::66",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      },
+      {
+        "slot": 27,
+        "name": "texture27",
+        "resource": "ResourceId::72",
+        "format": "R8G8B8A8_SRGB",
+        "mip": 0
+      }
+    ]
+  },
+  {
+    "eid": 2167,
+    "stage": "ShaderStage.Vertex",
+    "shader": "ResourceId::55700",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 56576,
+        "size": 256,
+        "file": "eid2167_Vertex_b0.bin"
+      }
+    ],
+    "textures": []
+  },
+  {
+    "eid": 2167,
+    "stage": "ShaderStage.Pixel",
+    "shader": "ResourceId::55701",
+    "cbs": [
+      {
+        "slot": 0,
+        "resource": "ResourceId::54069",
+        "offset": 71168,
+        "size": 3328,
+        "file": "eid2167_Pixel_b0.bin"
+      },
+      {
+        "slot": 1,
+        "resource": "ResourceId::54069",
+        "offset": 294656,
+        "size": 512,
+        "file": "eid2167_Pixel_b1.bin"
+      }
+    ],
+    "textures": [
+      {
+        "slot": 0,
+        "name": "texture0",
+        "resource": "ResourceId::55507",
+        "format": "R16G16B16A16_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 1,
+        "name": "texture1",
+        "resource": "ResourceId::55530",
+        "format": "R11G11B10_FLOAT",
+        "mip": 0
+      },
+      {
+        "slot": 2,
+        "name": "texture2",
+        "resource": "ResourceId::38358",
+        "format": "R16G16B16A16_FLOAT",
+        "mip": 0
+      }
+    ]
+  }
+]

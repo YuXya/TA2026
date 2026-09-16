@@ -1,0 +1,674 @@
+[
+  {
+    "eid": 1088,
+    "slot": 0,
+    "file": "eid1088_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1088,
+    "slot": 1,
+    "file": "eid1088_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1088,
+    "slot": 2,
+    "file": "eid1088_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1088,
+    "slot": 3,
+    "file": "eid1088_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1088,
+    "slot": 4,
+    "file": "eid1088_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1088,
+    "slot": 5,
+    "file": "eid1088_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1088,
+    "slot": 6,
+    "file": "eid1088_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1088,
+    "slot": 7,
+    "file": "eid1088_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1110,
+    "slot": 0,
+    "file": "eid1110_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1110,
+    "slot": 1,
+    "file": "eid1110_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1110,
+    "slot": 2,
+    "file": "eid1110_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1110,
+    "slot": 3,
+    "file": "eid1110_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1110,
+    "slot": 4,
+    "file": "eid1110_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1110,
+    "slot": 5,
+    "file": "eid1110_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1110,
+    "slot": 6,
+    "file": "eid1110_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1110,
+    "slot": 7,
+    "file": "eid1110_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1132,
+    "slot": 0,
+    "file": "eid1132_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1132,
+    "slot": 1,
+    "file": "eid1132_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1132,
+    "slot": 2,
+    "file": "eid1132_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1132,
+    "slot": 3,
+    "file": "eid1132_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1132,
+    "slot": 4,
+    "file": "eid1132_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1132,
+    "slot": 5,
+    "file": "eid1132_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1132,
+    "slot": 6,
+    "file": "eid1132_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1132,
+    "slot": 7,
+    "file": "eid1132_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1154,
+    "slot": 0,
+    "file": "eid1154_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1154,
+    "slot": 1,
+    "file": "eid1154_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1154,
+    "slot": 2,
+    "file": "eid1154_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1154,
+    "slot": 3,
+    "file": "eid1154_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1154,
+    "slot": 4,
+    "file": "eid1154_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1154,
+    "slot": 5,
+    "file": "eid1154_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1154,
+    "slot": 6,
+    "file": "eid1154_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1154,
+    "slot": 7,
+    "file": "eid1154_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1173,
+    "slot": 0,
+    "file": "eid1173_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1173,
+    "slot": 1,
+    "file": "eid1173_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1173,
+    "slot": 2,
+    "file": "eid1173_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1173,
+    "slot": 3,
+    "file": "eid1173_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1173,
+    "slot": 4,
+    "file": "eid1173_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1173,
+    "slot": 5,
+    "file": "eid1173_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1173,
+    "slot": 6,
+    "file": "eid1173_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1173,
+    "slot": 7,
+    "file": "eid1173_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1195,
+    "slot": 0,
+    "file": "eid1195_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1195,
+    "slot": 1,
+    "file": "eid1195_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1195,
+    "slot": 2,
+    "file": "eid1195_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1195,
+    "slot": 3,
+    "file": "eid1195_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1195,
+    "slot": 4,
+    "file": "eid1195_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1195,
+    "slot": 5,
+    "file": "eid1195_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1195,
+    "slot": 6,
+    "file": "eid1195_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1195,
+    "slot": 7,
+    "file": "eid1195_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1214,
+    "slot": 0,
+    "file": "eid1214_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1214,
+    "slot": 1,
+    "file": "eid1214_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1214,
+    "slot": 2,
+    "file": "eid1214_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1214,
+    "slot": 3,
+    "file": "eid1214_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1214,
+    "slot": 4,
+    "file": "eid1214_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1214,
+    "slot": 5,
+    "file": "eid1214_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1214,
+    "slot": 6,
+    "file": "eid1214_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1214,
+    "slot": 7,
+    "file": "eid1214_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1236,
+    "slot": 0,
+    "file": "eid1236_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1236,
+    "slot": 1,
+    "file": "eid1236_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1236,
+    "slot": 2,
+    "file": "eid1236_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1236,
+    "slot": 3,
+    "file": "eid1236_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1236,
+    "slot": 4,
+    "file": "eid1236_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1236,
+    "slot": 5,
+    "file": "eid1236_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1236,
+    "slot": 6,
+    "file": "eid1236_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1236,
+    "slot": 7,
+    "file": "eid1236_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1257,
+    "slot": 0,
+    "file": "eid1257_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1257,
+    "slot": 1,
+    "file": "eid1257_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1257,
+    "slot": 2,
+    "file": "eid1257_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1257,
+    "slot": 3,
+    "file": "eid1257_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1257,
+    "slot": 4,
+    "file": "eid1257_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1257,
+    "slot": 5,
+    "file": "eid1257_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1257,
+    "slot": 6,
+    "file": "eid1257_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1257,
+    "slot": 7,
+    "file": "eid1257_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1278,
+    "slot": 0,
+    "file": "eid1278_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1278,
+    "slot": 1,
+    "file": "eid1278_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1278,
+    "slot": 2,
+    "file": "eid1278_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1278,
+    "slot": 3,
+    "file": "eid1278_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1278,
+    "slot": 4,
+    "file": "eid1278_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1278,
+    "slot": 5,
+    "file": "eid1278_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1278,
+    "slot": 6,
+    "file": "eid1278_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1278,
+    "slot": 7,
+    "file": "eid1278_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1300,
+    "slot": 0,
+    "file": "eid1300_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1300,
+    "slot": 1,
+    "file": "eid1300_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1300,
+    "slot": 2,
+    "file": "eid1300_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1300,
+    "slot": 3,
+    "file": "eid1300_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1300,
+    "slot": 4,
+    "file": "eid1300_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1300,
+    "slot": 5,
+    "file": "eid1300_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1300,
+    "slot": 6,
+    "file": "eid1300_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1300,
+    "slot": 7,
+    "file": "eid1300_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1322,
+    "slot": 0,
+    "file": "eid1322_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1322,
+    "slot": 1,
+    "file": "eid1322_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1322,
+    "slot": 2,
+    "file": "eid1322_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1322,
+    "slot": 3,
+    "file": "eid1322_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1322,
+    "slot": 4,
+    "file": "eid1322_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1322,
+    "slot": 5,
+    "file": "eid1322_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1322,
+    "slot": 6,
+    "file": "eid1322_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1322,
+    "slot": 7,
+    "file": "eid1322_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1683,
+    "slot": 0,
+    "file": "eid1683_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1683,
+    "slot": 1,
+    "file": "eid1683_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1683,
+    "slot": 2,
+    "file": "eid1683_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1683,
+    "slot": 3,
+    "file": "eid1683_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1683,
+    "slot": 4,
+    "file": "eid1683_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1683,
+    "slot": 5,
+    "file": "eid1683_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1683,
+    "slot": 6,
+    "file": "eid1683_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1683,
+    "slot": 7,
+    "file": "eid1683_b7.bin",
+    "size": 2560
+  },
+  {
+    "eid": 1797,
+    "slot": 0,
+    "file": "eid1797_b0.bin",
+    "size": 1536
+  },
+  {
+    "eid": 1797,
+    "slot": 1,
+    "file": "eid1797_b1.bin",
+    "size": 3328
+  },
+  {
+    "eid": 1797,
+    "slot": 2,
+    "file": "eid1797_b2.bin",
+    "size": 65536
+  },
+  {
+    "eid": 1797,
+    "slot": 3,
+    "file": "eid1797_b3.bin",
+    "size": 256
+  },
+  {
+    "eid": 1797,
+    "slot": 4,
+    "file": "eid1797_b4.bin",
+    "size": 33024
+  },
+  {
+    "eid": 1797,
+    "slot": 5,
+    "file": "eid1797_b5.bin",
+    "size": 11520
+  },
+  {
+    "eid": 1797,
+    "slot": 6,
+    "file": "eid1797_b6.bin",
+    "size": 512
+  },
+  {
+    "eid": 1797,
+    "slot": 7,
+    "file": "eid1797_b7.bin",
+    "size": 2560
+  }
+]

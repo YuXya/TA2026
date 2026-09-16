@@ -1,0 +1,2 @@
+Launching 'D:\Hypergryph Launcher\games\Arknights Endfield\Endfield.exe' with params: -force-d3d11
+Launched as ID 38920

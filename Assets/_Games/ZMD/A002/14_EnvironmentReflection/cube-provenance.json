@@ -1,0 +1,392 @@
+{
+  "resource": "ResourceId::29269",
+  "format": "BC6_UFLOAT",
+  "faces": 6,
+  "mips": 8,
+  "subresources": [
+    {
+      "face": 0,
+      "mip": 0,
+      "file": "cube_f0_m0.bc6h",
+      "size": 128,
+      "bytes": 16384,
+      "sha256": "081ff4b37b4f6e31fa50af162673269dd9ded98ac945c246c9c63d73387e88e7"
+    },
+    {
+      "face": 0,
+      "mip": 1,
+      "file": "cube_f0_m1.bc6h",
+      "size": 64,
+      "bytes": 4096,
+      "sha256": "5b0e3bfa2124853102a3450113b76fa888f63f655a4ccaa58bd1900a366a395c"
+    },
+    {
+      "face": 0,
+      "mip": 2,
+      "file": "cube_f0_m2.bc6h",
+      "size": 32,
+      "bytes": 1024,
+      "sha256": "30eece518d26587b1a3bf3cc2e6da374f2a13707ccda8f3d83a14b1c33b1685f"
+    },
+    {
+      "face": 0,
+      "mip": 3,
+      "file": "cube_f0_m3.bc6h",
+      "size": 16,
+      "bytes": 256,
+      "sha256": "13c3eb584387ac9b52bd307f78624f35c32186fd0541e6c983a5cf27fe467305"
+    },
+    {
+      "face": 0,
+      "mip": 4,
+      "file": "cube_f0_m4.bc6h",
+      "size": 8,
+      "bytes": 64,
+      "sha256": "b1781b784704d684026b0458fada04d8e54c2931ac949fb90bad7a4eff844eeb"
+    },
+    {
+      "face": 0,
+      "mip": 5,
+      "file": "cube_f0_m5.bc6h",
+      "size": 4,
+      "bytes": 16,
+      "sha256": "d5c817b35bd35fc5191c34d18d97624bb71616b5b946fe1f08327a322b7b808e"
+    },
+    {
+      "face": 0,
+      "mip": 6,
+      "file": "cube_f0_m6.bc6h",
+      "size": 2,
+      "bytes": 16,
+      "sha256": "042745bf0272177c82820921d51a0cc6ec0f0c095f5bc285f187b5c46b18b467"
+    },
+    {
+      "face": 0,
+      "mip": 7,
+      "file": "cube_f0_m7.bc6h",
+      "size": 1,
+      "bytes": 16,
+      "sha256": "7d93ad610c7ff3e958a27fa16fc1da5e31be0063d80787083f2e5da27e11553b"
+    },
+    {
+      "face": 1,
+      "mip": 0,
+      "file": "cube_f1_m0.bc6h",
+      "size": 128,
+      "bytes": 16384,
+      "sha256": "c9cd94e74e5ff0d77476ab7ade309eac75f18e83f753e506524cd70fb0f4615f"
+    },
+    {
+      "face": 1,
+      "mip": 1,
+      "file": "cube_f1_m1.bc6h",
+      "size": 64,
+      "bytes": 4096,
+      "sha256": "ae83ff504e9622b38cb53bb6d72f4ade2ceb58922b95739955485565456ddbdd"
+    },
+    {
+      "face": 1,
+      "mip": 2,
+      "file": "cube_f1_m2.bc6h",
+      "size": 32,
+      "bytes": 1024,
+      "sha256": "ec375585d4fb529932dbc57888545b34ef834b4b95f278121ae91852d2a4822b"
+    },
+    {
+      "face": 1,
+      "mip": 3,
+      "file": "cube_f1_m3.bc6h",
+      "size": 16,
+      "bytes": 256,
+      "sha256": "b2fc9dcc4043cdbfe2c36a84a66111b904de31ab7447e852fae912db18731945"
+    },
+    {
+      "face": 1,
+      "mip": 4,
+      "file": "cube_f1_m4.bc6h",
+      "size": 8,
+      "bytes": 64,
+      "sha256": "a544e3db6bb0bfec1d86f8671feebd841b27b982cf4673f6ba2ab8add1c475c3"
+    },
+    {
+      "face": 1,
+      "mip": 5,
+      "file": "cube_f1_m5.bc6h",
+      "size": 4,
+      "bytes": 16,
+      "sha256": "a703f4246c06548416ca0a41f480f1e7d993281fa5e21417b05f9c41fefc5862"
+    },
+    {
+      "face": 1,
+      "mip": 6,
+      "file": "cube_f1_m6.bc6h",
+      "size": 2,
+      "bytes": 16,
+      "sha256": "3d984bf23d2e0ff3179b57230000fa0e1faa7f69291ece003f791a774f3200e1"
+    },
+    {
+      "face": 1,
+      "mip": 7,
+      "file": "cube_f1_m7.bc6h",
+      "size": 1,
+      "bytes": 16,
+      "sha256": "251f378583dff5cbd0a5bad58409a2c8105bc1b4b8edf2c7f9645ff9cfb55fa5"
+    },
+    {
+      "face": 2,
+      "mip": 0,
+      "file": "cube_f2_m0.bc6h",
+      "size": 128,
+      "bytes": 16384,
+      "sha256": "4c51456862e75e2d0e2edb1c745af0b9d504476e4deeaa3c3b267ef4877d590d"
+    },
+    {
+      "face": 2,
+      "mip": 1,
+      "file": "cube_f2_m1.bc6h",
+      "size": 64,
+      "bytes": 4096,
+      "sha256": "43e389b673094718e3bda5cdb2ae2305b25b08f4df3f21f976ec636a11a1a4a5"
+    },
+    {
+      "face": 2,
+      "mip": 2,
+      "file": "cube_f2_m2.bc6h",
+      "size": 32,
+      "bytes": 1024,
+      "sha256": "63d76a40f182bd202d35781cca49037368b1359a2048ade17e07cde1a4903b5e"
+    },
+    {
+      "face": 2,
+      "mip": 3,
+      "file": "cube_f2_m3.bc6h",
+      "size": 16,
+      "bytes": 256,
+      "sha256": "d66918349bd98696e724e2eb8ccd364736bb3a773d2dfa1b984b3974da47e8dc"
+    },
+    {
+      "face": 2,
+      "mip": 4,
+      "file": "cube_f2_m4.bc6h",
+      "size": 8,
+      "bytes": 64,
+      "sha256": "0e4741638b584ec5f975932a0e50348f783e36115ff33878406077fa0df8615e"
+    },
+    {
+      "face": 2,
+      "mip": 5,
+      "file": "cube_f2_m5.bc6h",
+      "size": 4,
+      "bytes": 16,
+      "sha256": "07f318025675c8ee40bf3849afca21e61acb50505624efe1e948aa666f97ef81"
+    },
+    {
+      "face": 2,
+      "mip": 6,
+      "file": "cube_f2_m6.bc6h",
+      "size": 2,
+      "bytes": 16,
+      "sha256": "e137498575e43606aca11a4d89d4f0934658c7cdb17ed528edd1066cb1594c2f"
+    },
+    {
+      "face": 2,
+      "mip": 7,
+      "file": "cube_f2_m7.bc6h",
+      "size": 1,
+      "bytes": 16,
+      "sha256": "fcf67c5d9610c3c424fa551ac3bc0b0a55e5b7ceec8023946ca7da3c2dfa00c1"
+    },
+    {
+      "face": 3,
+      "mip": 0,
+      "file": "cube_f3_m0.bc6h",
+      "size": 128,
+      "bytes": 16384,
+      "sha256": "53a85bbf1940e0e34c508e436630fb4ebc5578f5ce4bd12f2dadd0a5ae6829bc"
+    },
+    {
+      "face": 3,
+      "mip": 1,
+      "file": "cube_f3_m1.bc6h",
+      "size": 64,
+      "bytes": 4096,
+      "sha256": "4ed2225b97dfc90462aa2c04cb41fc06efad4f88b14d132874dfa74379a45099"
+    },
+    {
+      "face": 3,
+      "mip": 2,
+      "file": "cube_f3_m2.bc6h",
+      "size": 32,
+      "bytes": 1024,
+      "sha256": "0f6ae63b7de8ad3bcfdda06b58197149126b5720cccee6154c9ac70fb167ac20"
+    },
+    {
+      "face": 3,
+      "mip": 3,
+      "file": "cube_f3_m3.bc6h",
+      "size": 16,
+      "bytes": 256,
+      "sha256": "1334e045ac2fe221b810e9bff6c7e98a8de0ce713719db534b5099fe51e9b7a1"
+    },
+    {
+      "face": 3,
+      "mip": 4,
+      "file": "cube_f3_m4.bc6h",
+      "size": 8,
+      "bytes": 64,
+      "sha256": "13b08e6494fd0a4aa4da2865a655b0020e1654ae8e6145ca3168a4409b23e15b"
+    },
+    {
+      "face": 3,
+      "mip": 5,
+      "file": "cube_f3_m5.bc6h",
+      "size": 4,
+      "bytes": 16,
+      "sha256": "4d3f312b377d4c73b7222d5b72edbe8b0035a7ed91b4b7bb7750fd67839d210e"
+    },
+    {
+      "face": 3,
+      "mip": 6,
+      "file": "cube_f3_m6.bc6h",
+      "size": 2,
+      "bytes": 16,
+      "sha256": "e01f4b5a47299d51bd32eec45b7172f6a1749a8c091972c58bba41839c74d535"
+    },
+    {
+      "face": 3,
+      "mip": 7,
+      "file": "cube_f3_m7.bc6h",
+      "size": 1,
+      "bytes": 16,
+      "sha256": "4c3918d9d6ee127f3c14a81d14bd7251c989cba069c995c0dd46e551aab7c688"
+    },
+    {
+      "face": 4,
+      "mip": 0,
+      "file": "cube_f4_m0.bc6h",
+      "size": 128,
+      "bytes": 16384,
+      "sha256": "0570321b697194695226977af7787855cb888acb68136aa965d27d5fec23822a"
+    },
+    {
+      "face": 4,
+      "mip": 1,
+      "file": "cube_f4_m1.bc6h",
+      "size": 64,
+      "bytes": 4096,
+      "sha256": "659864dc4c5e4e758442cb8ce96341f5be2de66d8610900ef6019e2d3e5b3903"
+    },
+    {
+      "face": 4,
+      "mip": 2,
+      "file": "cube_f4_m2.bc6h",
+      "size": 32,
+      "bytes": 1024,
+      "sha256": "3ea92f0755bddab8222ac83bb7bac1612b9a4fc63fe5932e52d84bbe8c0fa9b4"
+    },
+    {
+      "face": 4,
+      "mip": 3,
+      "file": "cube_f4_m3.bc6h",
+      "size": 16,
+      "bytes": 256,
+      "sha256": "21e61d2ced7b459ace1a026c87a8beb1c822e928a5c643dea931c90754792adf"
+    },
+    {
+      "face": 4,
+      "mip": 4,
+      "file": "cube_f4_m4.bc6h",
+      "size": 8,
+      "bytes": 64,
+      "sha256": "29d92c70450d3bb8639c36644d1f52b49e07a4a174ee9faf3fbe99cfc7c3dce5"
+    },
+    {
+      "face": 4,
+      "mip": 5,
+      "file": "cube_f4_m5.bc6h",
+      "size": 4,
+      "bytes": 16,
+      "sha256": "68c5b0f769ffb794b5eeab438a0be17a81626ccaedd4f3e3272b1a52e26d23ab"
+    },
+    {
+      "face": 4,
+      "mip": 6,
+      "file": "cube_f4_m6.bc6h",
+      "size": 2,
+      "bytes": 16,
+      "sha256": "c9f4b6c20f971ebc01ef59b33fb7158b1dd951bceb51bc87ae42c50d280d6dee"
+    },
+    {
+      "face": 4,
+      "mip": 7,
+      "file": "cube_f4_m7.bc6h",
+      "size": 1,
+      "bytes": 16,
+      "sha256": "19dde584fc5dbf77ffd6f4befe7bc21c5c9e0f4e61aa90ba0c32c5405fc091bd"
+    },
+    {
+      "face": 5,
+      "mip": 0,
+      "file": "cube_f5_m0.bc6h",
+      "size": 128,
+      "bytes": 16384,
+      "sha256": "4c23b9c8585ec46322dc0309d00a5b557bcd4af17d54ccc82c03f315bdbc2a23"
+    },
+    {
+      "face": 5,
+      "mip": 1,
+      "file": "cube_f5_m1.bc6h",
+      "size": 64,
+      "bytes": 4096,
+      "sha256": "711fb3a86e2bc40b74b20f89055890c9557bec0da4cbdfe6feffc868b06c7817"
+    },
+    {
+      "face": 5,
+      "mip": 2,
+      "file": "cube_f5_m2.bc6h",
+      "size": 32,
+      "bytes": 1024,
+      "sha256": "6a99d9f7118407f20eba129766478d3970eae1d39dd8e8894895161bd4dcf94d"
+    },
+    {
+      "face": 5,
+      "mip": 3,
+      "file": "cube_f5_m3.bc6h",
+      "size": 16,
+      "bytes": 256,
+      "sha256": "042f37b1255663b526e7b04f06dea8c99da4a1bc5f2fde6e2548784371e1e6a2"
+    },
+    {
+      "face": 5,
+      "mip": 4,
+      "file": "cube_f5_m4.bc6h",
+      "size": 8,
+      "bytes": 64,
+      "sha256": "bc14001969c3e6c0fd2fabc0ae686c0bd75d2ad406f818b98411ac66b6acf46b"
+    },
+    {
+      "face": 5,
+      "mip": 5,
+      "file": "cube_f5_m5.bc6h",
+      "size": 4,
+      "bytes": 16,
+      "sha256": "0f5e03b49b960002b1988837012534118c94db28ba67d09b86992204ed0e1a2a"
+    },
+    {
+      "face": 5,
+      "mip": 6,
+      "file": "cube_f5_m6.bc6h",
+      "size": 2,
+      "bytes": 16,
+      "sha256": "5b1626ba1e2408cb727196a00b984f8f710d5348b0bf44feb9a028987d5047f0"
+    },
+    {
+      "face": 5,
+      "mip": 7,
+      "file": "cube_f5_m7.bc6h",
+      "size": 1,
+      "bytes": 16,
+      "sha256": "a88cc9de34176458a8c16f5d91de6ab18b1ebe3786f060fb2575f782bf882273"
+    }
+  ]
+}
