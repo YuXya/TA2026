@@ -1,0 +1,466 @@
+// Stage: Vertex  Blob: 120  ParamBlob: 41  Language: hlsl
+// Keywords: HG_COMPOSE_VOLUMETRIC HG_ENABLE_MV SRP_INSTANCING_ON
+// Generated names (not authored, no CPU-side property matches them):  <Buffer>_Stripped_<byteOffset> = unnamed member at that offset;
+
+struct anon_UnityPerDrawArray
+{
+    column_major float4x4 Stripped_0;
+    float4 Stripped_64;
+    float4 Stripped_80;
+    column_major float4x4 Stripped_96;
+    float4 Stripped_160;
+    float4 Stripped_176;
+    float4 Stripped_192;
+    float4 Stripped_208;
+    float4 Stripped_224;
+    float4 Stripped_240;
+};
+
+static float4 _119 = 0.0f.xxxx;
+
+cbuffer type_PerPassConstants : register(b13, space0)
+{
+    float _PerPassConstants_Stripped_0 : packoffset(c0);
+    float _PerPassConstants_Stripped_4 : packoffset(c0.y);
+    float _PerPassConstants_Stripped_8 : packoffset(c0.z);
+    float _PerPassConstants_Stripped_12 : packoffset(c0.w);
+    float _PerPassConstants_DisableAnimateVert : packoffset(c1);
+    float _PerPassConstants_Stripped_20 : packoffset(c1.y);
+    float _PerPassConstants_Stripped_24 : packoffset(c1.z);
+    float _PerPassConstants_Stripped_28 : packoffset(c1.w);
+};
+
+cbuffer type_TransformVariables : register(b12, space0)
+{
+    column_major float4x4 _TransformVariables_ViewMatrix : packoffset(c0);
+    column_major float4x4 _TransformVariables_Stripped_64 : packoffset(c4);
+    column_major float4x4 _TransformVariables_Stripped_128 : packoffset(c8);
+    column_major float4x4 _TransformVariables_Stripped_192 : packoffset(c12);
+    column_major float4x4 _TransformVariables_Stripped_256 : packoffset(c16);
+    column_major float4x4 _TransformVariables_Stripped_320 : packoffset(c20);
+    column_major float4x4 _TransformVariables_InvViewProjMatrix : packoffset(c24);
+    column_major float4x4 _TransformVariables_Stripped_448 : packoffset(c28);
+    column_major float4x4 _TransformVariables_NonJitteredViewNoTransProjMatrix : packoffset(c32);
+    column_major float4x4 _TransformVariables_Stripped_576 : packoffset(c36);
+    column_major float4x4 _TransformVariables_Stripped_640 : packoffset(c40);
+    float4 _TransformVariables_WorldSpaceCameraPos_Internal : packoffset(c44);
+    column_major float4x4 _TransformVariables_Stripped_720 : packoffset(c45);
+    column_major float4x4 _TransformVariables_Stripped_784 : packoffset(c49);
+    column_major float4x4 _TransformVariables_Stripped_848 : packoffset(c53);
+    column_major float4x4 _TransformVariables_PrevNonJitteredViewNoTransProjMatrix : packoffset(c57);
+    column_major float4x4 _TransformVariables_Stripped_976 : packoffset(c61);
+    column_major float4x4 _TransformVariables_Stripped_1040 : packoffset(c65);
+    column_major float4x4 _TransformVariables_Stripped_1104 : packoffset(c69);
+    column_major float4x4 _TransformVariables_Stripped_1168 : packoffset(c73);
+    column_major float4x4 _TransformVariables_Stripped_1232 : packoffset(c77);
+    float4 _TransformVariables_PrevCamPosRWS_Internal : packoffset(c81);
+};
+
+cbuffer type_ShaderVariablesGlobal : register(b16, space0)
+{
+    float4 _ScreenSize : packoffset(c0);
+    float4 ShaderVariablesGlobal_Stripped_16 : packoffset(c1);
+    float4 _ZBufferParams : packoffset(c2);
+    float4 ShaderVariablesGlobal_Stripped_48 : packoffset(c3);
+    float4 _unity_OrthoParams : packoffset(c4);
+    float4 ShaderVariablesGlobal_Stripped_80 : packoffset(c5);
+    float4 ShaderVariablesGlobal_Stripped_96[6] : packoffset(c6);
+    float4 ShaderVariablesGlobal_Stripped_192[6] : packoffset(c12);
+    float4 ShaderVariablesGlobal_Stripped_288 : packoffset(c18);
+    float4 _TaaJitterStrength : packoffset(c19);
+    float4 ShaderVariablesGlobal_Stripped_320 : packoffset(c20);
+    float4 ShaderVariablesGlobal_Stripped_336 : packoffset(c21);
+    float4 ShaderVariablesGlobal_Stripped_352 : packoffset(c22);
+    float4 ShaderVariablesGlobal_Stripped_368 : packoffset(c23);
+    float4 ShaderVariablesGlobal_Stripped_384 : packoffset(c24);
+    float4 ShaderVariablesGlobal_Stripped_400 : packoffset(c25);
+    float _GlobalMipBias : packoffset(c26);
+    float ShaderVariablesGlobal_Stripped_420 : packoffset(c26.y);
+    float ShaderVariablesGlobal_Stripped_424 : packoffset(c26.z);
+    uint ShaderVariablesGlobal_Stripped_428 : packoffset(c26.w);
+    float4 _ExposureWithMiscParams : packoffset(c27);
+    int4 ShaderVariablesGlobal_Stripped_448 : packoffset(c28);
+    float4 ShaderVariablesGlobal_Stripped_464 : packoffset(c29);
+    float4 ShaderVariablesGlobal_Stripped_480 : packoffset(c30);
+    float4 ShaderVariablesGlobal_Stripped_496 : packoffset(c31);
+    float4 ShaderVariablesGlobal_Stripped_512 : packoffset(c32);
+    float4 ShaderVariablesGlobal_Stripped_528 : packoffset(c33);
+    float4 ShaderVariablesGlobal_Stripped_544 : packoffset(c34);
+    float4 ShaderVariablesGlobal_Stripped_560 : packoffset(c35);
+    float4 ShaderVariablesGlobal_Stripped_576 : packoffset(c36);
+    float4 ShaderVariablesGlobal_Stripped_592 : packoffset(c37);
+    float4 ShaderVariablesGlobal_Stripped_608 : packoffset(c38);
+    float4 ShaderVariablesGlobal_Stripped_624[4] : packoffset(c39);
+    float4 ShaderVariablesGlobal_Stripped_688[4] : packoffset(c43);
+    float4 ShaderVariablesGlobal_Stripped_752[4] : packoffset(c47);
+    float4 ShaderVariablesGlobal_Stripped_816[4] : packoffset(c51);
+    float4 ShaderVariablesGlobal_Stripped_880 : packoffset(c55);
+    float4 ShaderVariablesGlobal_Stripped_896 : packoffset(c56);
+    float4 ShaderVariablesGlobal_Stripped_912[4] : packoffset(c57);
+    float4 ShaderVariablesGlobal_Stripped_976[4] : packoffset(c61);
+    float4 ShaderVariablesGlobal_Stripped_1040[4] : packoffset(c65);
+    float4 ShaderVariablesGlobal_Stripped_1104 : packoffset(c69);
+    float4 ShaderVariablesGlobal_Stripped_1120 : packoffset(c70);
+    float4 ShaderVariablesGlobal_Stripped_1136 : packoffset(c71);
+    float4 ShaderVariablesGlobal_Stripped_1152 : packoffset(c72);
+    float4 ShaderVariablesGlobal_Stripped_1168 : packoffset(c73);
+    float4 ShaderVariablesGlobal_Stripped_1184 : packoffset(c74);
+    float4 ShaderVariablesGlobal_Stripped_1200 : packoffset(c75);
+    float4 ShaderVariablesGlobal_Stripped_1216 : packoffset(c76);
+    float4 ShaderVariablesGlobal_Stripped_1232 : packoffset(c77);
+    float4 ShaderVariablesGlobal_Stripped_1248 : packoffset(c78);
+    float4 ShaderVariablesGlobal_Stripped_1264 : packoffset(c79);
+    float4 ShaderVariablesGlobal_Stripped_1280 : packoffset(c80);
+    float4 ShaderVariablesGlobal_Stripped_1296 : packoffset(c81);
+    float4 ShaderVariablesGlobal_Stripped_1312 : packoffset(c82);
+    float4 ShaderVariablesGlobal_Stripped_1328 : packoffset(c83);
+    float4 ShaderVariablesGlobal_Stripped_1344 : packoffset(c84);
+    float4 ShaderVariablesGlobal_Stripped_1360 : packoffset(c85);
+    float4 ShaderVariablesGlobal_Stripped_1376 : packoffset(c86);
+    float4 ShaderVariablesGlobal_Stripped_1392 : packoffset(c87);
+    float4 ShaderVariablesGlobal_Stripped_1408 : packoffset(c88);
+    float4 ShaderVariablesGlobal_Stripped_1424 : packoffset(c89);
+    float4 ShaderVariablesGlobal_Stripped_1440 : packoffset(c90);
+    float4 ShaderVariablesGlobal_Stripped_1456 : packoffset(c91);
+    float4 ShaderVariablesGlobal_Stripped_1472 : packoffset(c92);
+    float4 ShaderVariablesGlobal_Stripped_1488 : packoffset(c93);
+    float4 ShaderVariablesGlobal_Stripped_1504 : packoffset(c94);
+    float4 ShaderVariablesGlobal_Stripped_1520 : packoffset(c95);
+    float4 ShaderVariablesGlobal_Stripped_1536 : packoffset(c96);
+    float4 ShaderVariablesGlobal_Stripped_1552 : packoffset(c97);
+    float4 ShaderVariablesGlobal_Stripped_1568 : packoffset(c98);
+    float4 ShaderVariablesGlobal_Stripped_1584 : packoffset(c99);
+    float4 ShaderVariablesGlobal_Stripped_1600 : packoffset(c100);
+    float4 ShaderVariablesGlobal_Stripped_1616 : packoffset(c101);
+    float4 ShaderVariablesGlobal_Stripped_1632 : packoffset(c102);
+    float4 _VFXParams0 : packoffset(c103);
+    float4 ShaderVariablesGlobal_Stripped_1664 : packoffset(c104);
+    float4 ShaderVariablesGlobal_Stripped_1680 : packoffset(c105);
+    float4 ShaderVariablesGlobal_Stripped_1696 : packoffset(c106);
+    float4 ShaderVariablesGlobal_Stripped_1712 : packoffset(c107);
+    float4 ShaderVariablesGlobal_Stripped_1728 : packoffset(c108);
+    float4 ShaderVariablesGlobal_Stripped_1744 : packoffset(c109);
+    float4 ShaderVariablesGlobal_Stripped_1760 : packoffset(c110);
+    float4 ShaderVariablesGlobal_Stripped_1776 : packoffset(c111);
+    float4 ShaderVariablesGlobal_Stripped_1792 : packoffset(c112);
+    float4 ShaderVariablesGlobal_Stripped_1808 : packoffset(c113);
+    float4 ShaderVariablesGlobal_Stripped_1824 : packoffset(c114);
+    float4 ShaderVariablesGlobal_Stripped_1840 : packoffset(c115);
+    float4 ShaderVariablesGlobal_Stripped_1856 : packoffset(c116);
+    float4 ShaderVariablesGlobal_Stripped_1872 : packoffset(c117);
+    float4 ShaderVariablesGlobal_Stripped_1888 : packoffset(c118);
+    float4 ShaderVariablesGlobal_Stripped_1904 : packoffset(c119);
+    float4 ShaderVariablesGlobal_Stripped_1920 : packoffset(c120);
+    float4 ShaderVariablesGlobal_Stripped_1936 : packoffset(c121);
+    float4 ShaderVariablesGlobal_Stripped_1952 : packoffset(c122);
+    float4 ShaderVariablesGlobal_Stripped_1968 : packoffset(c123);
+    float4 ShaderVariablesGlobal_Stripped_1984 : packoffset(c124);
+    float4 ShaderVariablesGlobal_Stripped_2000 : packoffset(c125);
+    float4 ShaderVariablesGlobal_Stripped_2016 : packoffset(c126);
+    float4 ShaderVariablesGlobal_Stripped_2032[2] : packoffset(c127);
+    float4 ShaderVariablesGlobal_Stripped_2064[2] : packoffset(c129);
+    float ShaderVariablesGlobal_Stripped_2096 : packoffset(c131);
+    float ShaderVariablesGlobal_Stripped_2100 : packoffset(c131.y);
+    float ShaderVariablesGlobal_Stripped_2104 : packoffset(c131.z);
+    float ShaderVariablesGlobal_Stripped_2108 : packoffset(c131.w);
+    float4 ShaderVariablesGlobal_Stripped_2112 : packoffset(c132);
+    float4 ShaderVariablesGlobal_Stripped_2128 : packoffset(c133);
+    float4 ShaderVariablesGlobal_Stripped_2144 : packoffset(c134);
+    float4 ShaderVariablesGlobal_Stripped_2160 : packoffset(c135);
+    float4 ShaderVariablesGlobal_Stripped_2176 : packoffset(c136);
+    float4 ShaderVariablesGlobal_Stripped_2192 : packoffset(c137);
+    float4 ShaderVariablesGlobal_Stripped_2208 : packoffset(c138);
+    float4 ShaderVariablesGlobal_Stripped_2224 : packoffset(c139);
+    float4 ShaderVariablesGlobal_Stripped_2240 : packoffset(c140);
+    float4 ShaderVariablesGlobal_Stripped_2256 : packoffset(c141);
+    float4 ShaderVariablesGlobal_Stripped_2272 : packoffset(c142);
+    float4 ShaderVariablesGlobal_Stripped_2288 : packoffset(c143);
+    float4 ShaderVariablesGlobal_Stripped_2304 : packoffset(c144);
+    float4 ShaderVariablesGlobal_Stripped_2320 : packoffset(c145);
+    float4 ShaderVariablesGlobal_Stripped_2336 : packoffset(c146);
+    float4 ShaderVariablesGlobal_Stripped_2352 : packoffset(c147);
+    float4 ShaderVariablesGlobal_Stripped_2368 : packoffset(c148);
+    float4 ShaderVariablesGlobal_Stripped_2384 : packoffset(c149);
+    float4 ShaderVariablesGlobal_Stripped_2400 : packoffset(c150);
+    float4 ShaderVariablesGlobal_Stripped_2416 : packoffset(c151);
+    float4 ShaderVariablesGlobal_Stripped_2432 : packoffset(c152);
+    float4 ShaderVariablesGlobal_Stripped_2448 : packoffset(c153);
+    float4 ShaderVariablesGlobal_Stripped_2464 : packoffset(c154);
+    float4 ShaderVariablesGlobal_Stripped_2480 : packoffset(c155);
+    float4 ShaderVariablesGlobal_Stripped_2496 : packoffset(c156);
+    float4 ShaderVariablesGlobal_Stripped_2512 : packoffset(c157);
+    float4 ShaderVariablesGlobal_Stripped_2528 : packoffset(c158);
+    float4 ShaderVariablesGlobal_Stripped_2544 : packoffset(c159);
+    float4 ShaderVariablesGlobal_Stripped_2560 : packoffset(c160);
+    float4 ShaderVariablesGlobal_Stripped_2576 : packoffset(c161);
+    column_major float4x4 ShaderVariablesGlobal_Stripped_2592 : packoffset(c162);
+    float4 ShaderVariablesGlobal_Stripped_2656 : packoffset(c166);
+    float4 _VolumetricComposeParams : packoffset(c167);
+    float4 ShaderVariablesGlobal_Stripped_2688[32] : packoffset(c168);
+};
+
+cbuffer type_UnityInstancing_SRP_UnityPerDraw : register(b0, space2)
+{
+    anon_UnityPerDrawArray _SRP_UnityPerDraw_UnityPerDrawArray[256] : packoffset(c0);
+};
+
+cbuffer type_UnityPerMaterial : register(b0, space1)
+{
+    float UnityPerMaterial_Stripped_0 : packoffset(c0);
+    float UnityPerMaterial_Stripped_4 : packoffset(c0.y);
+    float UnityPerMaterial_Stripped_8 : packoffset(c0.z);
+    float UnityPerMaterial_Stripped_12 : packoffset(c0.w);
+    float UnityPerMaterial_Stripped_16 : packoffset(c1);
+    float _BaseColorMapWeight : packoffset(c1.y);
+    float UnityPerMaterial_Stripped_24 : packoffset(c1.z);
+    float _IgnorePostExposure : packoffset(c1.w);
+    float _CutoffFlip : packoffset(c2);
+    float _PreviewVertexOffset : packoffset(c2.y);
+    float _UseColorMapAlpha : packoffset(c2.z);
+    float UnityPerMaterial_Stripped_44 : packoffset(c2.w);
+    float4 _BaseColor : packoffset(c3);
+    float4 _IllicitColor : packoffset(c4);
+    float _VertCameraOffset : packoffset(c5);
+    float _HoverVertCameraOffset : packoffset(c5.y);
+    float _RotateAngle : packoffset(c5.z);
+    float UnityPerMaterial_Stripped_92 : packoffset(c5.w);
+    float _UVSpeed : packoffset(c6);
+    float _StripeWidth : packoffset(c6.y);
+    float _StripeFeather : packoffset(c6.z);
+    float _StripeScale : packoffset(c6.w);
+    float _StripeAlpha : packoffset(c7);
+    float _DistanceScalePow : packoffset(c7.y);
+    float _BlendTexSpace : packoffset(c7.z);
+    float _BlendTexWidth : packoffset(c7.w);
+    float _BlendTexSpeed : packoffset(c8);
+    float UnityPerMaterial_Stripped_132 : packoffset(c8.y);
+    float UnityPerMaterial_Stripped_136 : packoffset(c8.z);
+    float UnityPerMaterial_Stripped_140 : packoffset(c8.w);
+    float4 _BlendColor : packoffset(c9);
+};
+
+ByteAddressBuffer _VertexSkinMatrices : register(t18, space0);
+cbuffer type_FACTORY_TEMP_USAGE : register(b0, space3)
+{
+    float _TEMP_USAGE_FactoryColorType : packoffset(c0);
+    float FACTORY_TEMP_USAGE_Stripped_4 : packoffset(c0.y);
+    float FACTORY_TEMP_USAGE_Stripped_8 : packoffset(c0.z);
+    float FACTORY_TEMP_USAGE_Stripped_12 : packoffset(c0.w);
+    float _TEMP_USAGE_CutOffPosY : packoffset(c1);
+    float FACTORY_TEMP_USAGE_Stripped_20 : packoffset(c1.y);
+    float FACTORY_TEMP_USAGE_Stripped_24 : packoffset(c1.z);
+    float4 FACTORY_TEMP_USAGE_Stripped_32 : packoffset(c2);
+    float FACTORY_TEMP_USAGE_Stripped_48 : packoffset(c3);
+    float FACTORY_TEMP_USAGE_Stripped_52 : packoffset(c3.y);
+    float FACTORY_TEMP_USAGE_Stripped_56 : packoffset(c3.z);
+    float _TEMP_USAGE_EnableCutOff : packoffset(c3.w);
+    float FACTORY_TEMP_USAGE_Stripped_64 : packoffset(c4);
+    float FACTORY_TEMP_USAGE_Stripped_68 : packoffset(c4.y);
+    float FACTORY_TEMP_USAGE_Stripped_72 : packoffset(c4.z);
+    float FACTORY_TEMP_USAGE_Stripped_76 : packoffset(c4.w);
+    float _TEMP_USAGE_IndicatorData : packoffset(c5);
+};
+
+
+static float4 gl_Position;
+static int gl_InstanceIndex;
+static float3 _3;
+static float3 _4;
+static float4 _5;
+static float2 _6;
+static float4 _7;
+static float4 _8;
+static uint4 _9;
+static float2 _12;
+static float3 _15;
+static float3 _16;
+static uint _18;
+
+struct SPIRV_Cross_Input
+{
+    float3 _3 : POSITION0;
+    float3 _4 : NORMAL0;
+    float4 _5 : TANGENT0;
+    float2 _6 : COLOR0;
+    float4 _7 : TEXCOORD0;
+    float4 _8 : TEXCOORD1;
+    uint4 _9 : TEXCOORD2;
+    uint gl_InstanceIndex : SV_InstanceID;
+};
+
+struct SPIRV_Cross_Output
+{
+    float2 _12 : TEXCOORD0;
+    float3 _15 : TEXCOORD3;
+    float3 _16 : TEXCOORD4;
+    nointerpolation uint _18 : TEXCOORD6;
+    precise float4 gl_Position : SV_Position;
+};
+
+void vert_main()
+{
+    uint _130 = asuint(_TEMP_USAGE_IndicatorData);
+    float4 _149 = float4(_3, 1.0f);
+    float3 _161 = (normalize(_TransformVariables_WorldSpaceCameraPos_Internal.xyz - mul(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0, _149).xyz) * (((((_130 >> 8u) & 1u) != 0u) ? _HoverVertCameraOffset : _VertCameraOffset) * step(1.5f, float((_130 >> 4u) & 3u)))) * (1.0f - _PerPassConstants_DisableAnimateVert);
+    uint _164 = asuint(_4.x);
+    bool _166 = (_164 & 1073741824u) > 0u;
+    float4 _239 = 0.0f.xxxx;
+    float3 _240 = 0.0f.xxx;
+    if (_166)
+    {
+        float _172 = float((_164 << 22u) >> 22u);
+        float _175 = float((_164 << 12u) >> 22u);
+        float _178 = float((_164 << 2u) >> 22u);
+        float3 _192 = float3((_172 >= 512.0f) ? (_172 - 1024.0f) : _172, (_175 >= 512.0f) ? (_175 - 1024.0f) : _175, 0.0f) * 0.001956947147846221923828125f;
+        float _198 = (1.0f - abs(_192.x)) - abs(_192.y);
+        float3 _199 = _192;
+        _199.z = _198;
+        bool2 _201 = (_198 < 0.0f).xx;
+        float2 _209 = (1.0f.xx - abs(_199.yx)) * ((step(0.0f.xx, _199.xy) * 2.0f) - 1.0f.xx);
+        float2 _210 = float2(_201.x ? _209.x : _199.xy.x, _201.y ? _209.y : _199.xy.y);
+        float3 _212 = normalize(float3(_210.x, _210.y, _199.z));
+        float _213 = ((_178 >= 512.0f) ? (_178 - 1024.0f) : _178) * 0.001956947147846221923828125f;
+        float3 _216 = _212.yzx - _212.zxy;
+        float3 _220 = normalize(_216 - dot(_216, _212).xxx);
+        float _225 = (_213 < 0.0f) ? (-1.0f) : 1.0f;
+        float _228 = 1.0f - ((_213 * _225) * 2.0f);
+        float3 _234 = mul(normalize(float2(_228, _225 * (1.0f - abs(_228)))), float2x3(_220, normalize(cross(_212, _220))));
+        float4 _235 = float4(_234.x, _234.y, _234.z, _119.w);
+        _235.w = (float((_164 >> 31u) & 1u) * 2.0f) - 1.0f;
+        _239 = _235;
+        _240 = _212;
+    }
+    else
+    {
+        _239 = 0.0f.xxxx;
+        _240 = _4;
+    }
+    bool4 _241 = _166.xxxx;
+    float4 _242 = float4(_241.x ? _239.x : _5.x, _241.y ? _239.y : _5.y, _241.z ? _239.z : _5.z, _241.w ? _239.w : _5.w);
+    float4 _430 = 0.0f.xxxx;
+    float3 _431 = 0.0f.xxx;
+    float3 _432 = 0.0f.xxx;
+    float3 _433 = 0.0f.xxx;
+    do
+    {
+        uint _248 = asuint(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_64.w);
+        uint _249 = _248 & 4294967247u;
+        if (((_248 & 32u) == 0u) || (_249 == 0u))
+        {
+            _430 = _242;
+            _431 = _3;
+            _432 = _7.xyz;
+            _433 = _240;
+            break;
+        }
+        uint4 _265 = _9 * uint4(3u, 3u, 3u, 3u);
+        uint4 _266 = (asuint(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_80.x) + 3u).xxxx + _265;
+        uint4 _268 = (asuint(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_80.y) + 3u).xxxx + _265;
+        uint _269 = _266.x;
+        uint _272 = _269 + 1u;
+        uint _275 = _269 + 2u;
+        uint _278 = _268.x;
+        uint _281 = _278 + 1u;
+        uint _284 = _278 + 2u;
+        float4 _330 = 0.0f.xxxx;
+        float4 _331 = 0.0f.xxxx;
+        float4 _332 = 0.0f.xxxx;
+        float4 _333 = 0.0f.xxxx;
+        float4 _334 = 0.0f.xxxx;
+        float4 _335 = 0.0f.xxxx;
+        if (_249 >= 2u)
+        {
+            uint _293 = _266.y;
+            uint _313 = _268.y;
+            _330 = (_VertexSkinMatrices.Load<float4>(_284 * 16 + 0) * _8.x) + (_VertexSkinMatrices.Load<float4>((_313 + 2u) * 16 + 0) * _8.y);
+            _331 = (_VertexSkinMatrices.Load<float4>(_281 * 16 + 0) * _8.x) + (_VertexSkinMatrices.Load<float4>((_313 + 1u) * 16 + 0) * _8.y);
+            _332 = (_VertexSkinMatrices.Load<float4>(_278 * 16 + 0) * _8.x) + (_VertexSkinMatrices.Load<float4>(_313 * 16 + 0) * _8.y);
+            _333 = (_VertexSkinMatrices.Load<float4>(_275 * 16 + 0) * _8.x) + (_VertexSkinMatrices.Load<float4>((_293 + 2u) * 16 + 0) * _8.y);
+            _334 = (_VertexSkinMatrices.Load<float4>(_272 * 16 + 0) * _8.x) + (_VertexSkinMatrices.Load<float4>((_293 + 1u) * 16 + 0) * _8.y);
+            _335 = (_VertexSkinMatrices.Load<float4>(_269 * 16 + 0) * _8.x) + (_VertexSkinMatrices.Load<float4>(_293 * 16 + 0) * _8.y);
+        }
+        else
+        {
+            _330 = _VertexSkinMatrices.Load<float4>(_284 * 16 + 0);
+            _331 = _VertexSkinMatrices.Load<float4>(_281 * 16 + 0);
+            _332 = _VertexSkinMatrices.Load<float4>(_278 * 16 + 0);
+            _333 = _VertexSkinMatrices.Load<float4>(_275 * 16 + 0);
+            _334 = _VertexSkinMatrices.Load<float4>(_272 * 16 + 0);
+            _335 = _VertexSkinMatrices.Load<float4>(_269 * 16 + 0);
+        }
+        float4 _403 = 0.0f.xxxx;
+        float4 _404 = 0.0f.xxxx;
+        float4 _405 = 0.0f.xxxx;
+        float4 _406 = 0.0f.xxxx;
+        float4 _407 = 0.0f.xxxx;
+        float4 _408 = 0.0f.xxxx;
+        if (_249 >= 4u)
+        {
+            uint _339 = _266.z;
+            uint _345 = _266.w;
+            uint _373 = _268.z;
+            uint _377 = _268.w;
+            _403 = _330 + ((_VertexSkinMatrices.Load<float4>((_373 + 2u) * 16 + 0) * _8.z) + (_VertexSkinMatrices.Load<float4>((_377 + 2u) * 16 + 0) * _8.w));
+            _404 = _331 + ((_VertexSkinMatrices.Load<float4>((_373 + 1u) * 16 + 0) * _8.z) + (_VertexSkinMatrices.Load<float4>((_377 + 1u) * 16 + 0) * _8.w));
+            _405 = _332 + ((_VertexSkinMatrices.Load<float4>(_373 * 16 + 0) * _8.z) + (_VertexSkinMatrices.Load<float4>(_377 * 16 + 0) * _8.w));
+            _406 = _333 + ((_VertexSkinMatrices.Load<float4>((_339 + 2u) * 16 + 0) * _8.z) + (_VertexSkinMatrices.Load<float4>((_345 + 2u) * 16 + 0) * _8.w));
+            _407 = _334 + ((_VertexSkinMatrices.Load<float4>((_339 + 1u) * 16 + 0) * _8.z) + (_VertexSkinMatrices.Load<float4>((_345 + 1u) * 16 + 0) * _8.w));
+            _408 = _335 + ((_VertexSkinMatrices.Load<float4>(_339 * 16 + 0) * _8.z) + (_VertexSkinMatrices.Load<float4>(_345 * 16 + 0) * _8.w));
+        }
+        else
+        {
+            _403 = _330;
+            _404 = _331;
+            _405 = _332;
+            _406 = _333;
+            _407 = _334;
+            _408 = _335;
+        }
+        float3 _424 = _242.xyz;
+        float3 _428 = float3(dot(_408.xyz, _424), dot(_407.xyz, _424), dot(_406.xyz, _424));
+        _430 = float4(_428.x, _428.y, _428.z, _242.w);
+        _431 = float3(dot(_408, _149), dot(_407, _149), dot(_406, _149));
+        _432 = float3(dot(_405, _149), dot(_404, _149), dot(_403, _149));
+        _433 = float3(dot(_408.xyz, _240), dot(_407.xyz, _240), dot(_406.xyz, _240));
+        break;
+    } while(false);
+    float3 _437 = _431 + (_433 * _PreviewVertexOffset);
+    float3x3 _444 = float3x3(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[0].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[1].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[2].xyz);
+    float3 _452 = (mul(_444, _437) + (float3(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[0].w, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[1].w, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[2].w) - _TransformVariables_WorldSpaceCameraPos_Internal.xyz)) + _161;
+    float3 _461 = mul(_444, float3(1.0f / dot(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[0].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[0].xyz), 1.0f / dot(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[1].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[1].xyz), 1.0f / dot(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[2].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[2].xyz)) * _433);
+    float3 _467 = mul(_444, _430.xyz);
+    float4 _488 = mul(_TransformVariables_NonJitteredViewNoTransProjMatrix, float4(_452, 1.0f));
+    float2 _496 = _488.xy - ((_TaaJitterStrength.zw * float2(2.0f, -2.0f)) * _488.w);
+    float4 _497 = float4(_496.x, _496.y, _488.z, _488.w);
+    bool3 _502 = (_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_160.x < 1.0f).xxx;
+    bool4 _508 = (_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_160.y < 1.0f).xxxx;
+    float4 _517 = float4(_452 + (_TransformVariables_WorldSpaceCameraPos_Internal.xyz - _TransformVariables_PrevCamPosRWS_Internal.xyz), 1.0f);
+    float3 _534 = (mul(float3x3(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[0].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[1].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[2].xyz), float3(_502.x ? _437.x : _432.xyz.x, _502.y ? _437.y : _432.xyz.y, _502.z ? _437.z : _432.xyz.z)) + (float3(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[0].w, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[1].w, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[2].w) - _TransformVariables_PrevCamPosRWS_Internal.xyz)) + _161;
+    float4 _538 = float4(_534, 1.0f);
+    _497.y = -_496.y;
+    gl_Position = _497;
+    _12 = _6;
+    _15 = _488.xyw;
+    _16 = mul(_TransformVariables_PrevNonJitteredViewNoTransProjMatrix, float4(_508.x ? _517.x : _538.x, _508.y ? _517.y : _538.y, _508.z ? _517.z : _538.z, _508.w ? _517.w : _538.w)).xyw;
+    _18 = uint(gl_InstanceIndex);
+}
+
+SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+{
+    gl_InstanceIndex = int(stage_input.gl_InstanceIndex);
+    _3 = stage_input._3;
+    _4 = stage_input._4;
+    _5 = stage_input._5;
+    _6 = stage_input._6;
+    _7 = stage_input._7;
+    _8 = stage_input._8;
+    _9 = stage_input._9;
+    vert_main();
+    SPIRV_Cross_Output stage_output;
+    stage_output.gl_Position = gl_Position;
+    stage_output._12 = _12;
+    stage_output._15 = _15;
+    stage_output._16 = _16;
+    stage_output._18 = _18;
+    return stage_output;
+}

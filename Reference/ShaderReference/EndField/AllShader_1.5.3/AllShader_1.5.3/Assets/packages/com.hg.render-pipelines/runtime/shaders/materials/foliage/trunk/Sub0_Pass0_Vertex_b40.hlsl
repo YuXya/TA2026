@@ -1,0 +1,1223 @@
+// Stage: Vertex  Blob: 40  ParamBlob: 7  Language: hlsl
+// Keywords: HG_ENABLE_MV _FOLIAGE_TRUNK _TERRAIN_BLEND _TWO_BASEMAP
+// Generated names (not authored, no CPU-side property matches them):  <Buffer>_Stripped_<byteOffset> = unnamed member at that offset;
+
+static float4 _146 = 0.0f.xxxx;
+static float4 _147 = 0.0f.xxxx;
+
+cbuffer type_PerPassConstants : register(b14, space0)
+{
+    float _PerPassConstants_Stripped_0 : packoffset(c0);
+    float _PerPassConstants_Stripped_4 : packoffset(c0.y);
+    float _PerPassConstants_Stripped_8 : packoffset(c0.z);
+    float _PerPassConstants_Stripped_12 : packoffset(c0.w);
+    float _PerPassConstants_DisableAnimateVert : packoffset(c1);
+    float _PerPassConstants_Stripped_20 : packoffset(c1.y);
+    float _PerPassConstants_EnableVerticalOcclusionDepthBias : packoffset(c1.z);
+    float _PerPassConstants_Stripped_28 : packoffset(c1.w);
+};
+
+cbuffer type_TransformVariables : register(b13, space0)
+{
+    column_major float4x4 _TransformVariables_ViewMatrix : packoffset(c0);
+    column_major float4x4 _TransformVariables_InvViewMatrix : packoffset(c4);
+    column_major float4x4 _TransformVariables_Stripped_128 : packoffset(c8);
+    column_major float4x4 _TransformVariables_Stripped_192 : packoffset(c12);
+    column_major float4x4 _TransformVariables_Stripped_256 : packoffset(c16);
+    column_major float4x4 _TransformVariables_ViewNoTransProjMatrix : packoffset(c20);
+    column_major float4x4 _TransformVariables_InvViewProjMatrix : packoffset(c24);
+    column_major float4x4 _TransformVariables_Stripped_448 : packoffset(c28);
+    column_major float4x4 _TransformVariables_NonJitteredViewNoTransProjMatrix : packoffset(c32);
+    column_major float4x4 _TransformVariables_Stripped_576 : packoffset(c36);
+    column_major float4x4 _TransformVariables_Stripped_640 : packoffset(c40);
+    float4 _TransformVariables_WorldSpaceCameraPos_Internal : packoffset(c44);
+    column_major float4x4 _TransformVariables_Stripped_720 : packoffset(c45);
+    column_major float4x4 _TransformVariables_Stripped_784 : packoffset(c49);
+    column_major float4x4 _TransformVariables_Stripped_848 : packoffset(c53);
+    column_major float4x4 _TransformVariables_PrevNonJitteredViewNoTransProjMatrix : packoffset(c57);
+    column_major float4x4 _TransformVariables_Stripped_976 : packoffset(c61);
+    column_major float4x4 _TransformVariables_Stripped_1040 : packoffset(c65);
+    column_major float4x4 _TransformVariables_Stripped_1104 : packoffset(c69);
+    column_major float4x4 _TransformVariables_Stripped_1168 : packoffset(c73);
+    column_major float4x4 _TransformVariables_Stripped_1232 : packoffset(c77);
+    float4 _TransformVariables_PrevCamPosRWS_Internal : packoffset(c81);
+};
+
+cbuffer type_ShaderVariablesGlobal : register(b16, space0)
+{
+    float4 _ScreenSize : packoffset(c0);
+    float4 ShaderVariablesGlobal_Stripped_16 : packoffset(c1);
+    float4 _ZBufferParams : packoffset(c2);
+    float4 _ProjectionParams : packoffset(c3);
+    float4 _unity_OrthoParams : packoffset(c4);
+    float4 ShaderVariablesGlobal_Stripped_80 : packoffset(c5);
+    float4 ShaderVariablesGlobal_Stripped_96[6] : packoffset(c6);
+    float4 ShaderVariablesGlobal_Stripped_192[6] : packoffset(c12);
+    float4 ShaderVariablesGlobal_Stripped_288 : packoffset(c18);
+    float4 _TaaJitterStrength : packoffset(c19);
+    float4 ShaderVariablesGlobal_Stripped_320 : packoffset(c20);
+    float4 ShaderVariablesGlobal_Stripped_336 : packoffset(c21);
+    float4 ShaderVariablesGlobal_Stripped_352 : packoffset(c22);
+    float4 ShaderVariablesGlobal_Stripped_368 : packoffset(c23);
+    float4 ShaderVariablesGlobal_Stripped_384 : packoffset(c24);
+    float4 ShaderVariablesGlobal_Stripped_400 : packoffset(c25);
+    float _GlobalMipBias : packoffset(c26);
+    float ShaderVariablesGlobal_Stripped_420 : packoffset(c26.y);
+    float ShaderVariablesGlobal_Stripped_424 : packoffset(c26.z);
+    uint ShaderVariablesGlobal_Stripped_428 : packoffset(c26.w);
+    float4 ShaderVariablesGlobal_Stripped_432 : packoffset(c27);
+    int4 ShaderVariablesGlobal_Stripped_448 : packoffset(c28);
+    float4 _EnvironmentGlobalParams0 : packoffset(c29);
+    float4 _GraphicsFeaturesGlobalParam0 : packoffset(c30);
+    float4 _GraphicsFeaturesGlobalParam1 : packoffset(c31);
+    float4 _WindGlobalParams0 : packoffset(c32);
+    float4 ShaderVariablesGlobal_Stripped_528 : packoffset(c33);
+    float4 ShaderVariablesGlobal_Stripped_544 : packoffset(c34);
+    float4 ShaderVariablesGlobal_Stripped_560 : packoffset(c35);
+    float4 ShaderVariablesGlobal_Stripped_576 : packoffset(c36);
+    float4 ShaderVariablesGlobal_Stripped_592 : packoffset(c37);
+    float4 ShaderVariablesGlobal_Stripped_608 : packoffset(c38);
+    float4 _WindMotorParams0[4] : packoffset(c39);
+    float4 _WindMotorParams1[4] : packoffset(c43);
+    float4 _WindMotorParams2[4] : packoffset(c47);
+    float4 _WindMotorParams3[4] : packoffset(c51);
+    float4 _WindMotorCount : packoffset(c55);
+    float4 _LastWindGlobalParams0 : packoffset(c56);
+    float4 _LastWindMotorParams0[4] : packoffset(c57);
+    float4 _LastWindMotorParams1[4] : packoffset(c61);
+    float4 _LastWindMotorParams3[4] : packoffset(c65);
+    float4 ShaderVariablesGlobal_Stripped_1104 : packoffset(c69);
+    float4 ShaderVariablesGlobal_Stripped_1120 : packoffset(c70);
+    float4 _AtmosphereFogParams0 : packoffset(c71);
+    float4 _AtmosphereFogParams1 : packoffset(c72);
+    float4 _AtmosphereFogParams2 : packoffset(c73);
+    float4 _AtmosphereFogParams3 : packoffset(c74);
+    float4 _AtmosphereFogParams4 : packoffset(c75);
+    float4 _AtmosphereFogParams5 : packoffset(c76);
+    float4 _ExponentialFogParams0 : packoffset(c77);
+    float4 _ExponentialFogParams1 : packoffset(c78);
+    float4 _ExponentialFogParams2 : packoffset(c79);
+    float4 _ExponentialFogParams3 : packoffset(c80);
+    float4 _ExponentialFogParams4 : packoffset(c81);
+    float4 _ExponentialFogParams5 : packoffset(c82);
+    float4 ShaderVariablesGlobal_Stripped_1328 : packoffset(c83);
+    float4 ShaderVariablesGlobal_Stripped_1344 : packoffset(c84);
+    float4 ShaderVariablesGlobal_Stripped_1360 : packoffset(c85);
+    float4 ShaderVariablesGlobal_Stripped_1376 : packoffset(c86);
+    float4 ShaderVariablesGlobal_Stripped_1392 : packoffset(c87);
+    float4 ShaderVariablesGlobal_Stripped_1408 : packoffset(c88);
+    float4 ShaderVariablesGlobal_Stripped_1424 : packoffset(c89);
+    float4 ShaderVariablesGlobal_Stripped_1440 : packoffset(c90);
+    float4 ShaderVariablesGlobal_Stripped_1456 : packoffset(c91);
+    float4 ShaderVariablesGlobal_Stripped_1472 : packoffset(c92);
+    float4 _CloudShadowParams0 : packoffset(c93);
+    float4 _CloudShadowParams1 : packoffset(c94);
+    float4 _CloudShadowParams2 : packoffset(c95);
+    float4 _CloudShadowParams3 : packoffset(c96);
+    float4 ShaderVariablesGlobal_Stripped_1552 : packoffset(c97);
+    float4 ShaderVariablesGlobal_Stripped_1568 : packoffset(c98);
+    float4 ShaderVariablesGlobal_Stripped_1584 : packoffset(c99);
+    float4 ShaderVariablesGlobal_Stripped_1600 : packoffset(c100);
+    float4 ShaderVariablesGlobal_Stripped_1616 : packoffset(c101);
+    float4 ShaderVariablesGlobal_Stripped_1632 : packoffset(c102);
+    float4 _VFXParams0 : packoffset(c103);
+    float4 ShaderVariablesGlobal_Stripped_1664 : packoffset(c104);
+    float4 ShaderVariablesGlobal_Stripped_1680 : packoffset(c105);
+    float4 ShaderVariablesGlobal_Stripped_1696 : packoffset(c106);
+    float4 ShaderVariablesGlobal_Stripped_1712 : packoffset(c107);
+    float4 ShaderVariablesGlobal_Stripped_1728 : packoffset(c108);
+    float4 ShaderVariablesGlobal_Stripped_1744 : packoffset(c109);
+    float4 ShaderVariablesGlobal_Stripped_1760 : packoffset(c110);
+    float4 ShaderVariablesGlobal_Stripped_1776 : packoffset(c111);
+    float4 ShaderVariablesGlobal_Stripped_1792 : packoffset(c112);
+    float4 ShaderVariablesGlobal_Stripped_1808 : packoffset(c113);
+    float4 ShaderVariablesGlobal_Stripped_1824 : packoffset(c114);
+    float4 ShaderVariablesGlobal_Stripped_1840 : packoffset(c115);
+    float4 ShaderVariablesGlobal_Stripped_1856 : packoffset(c116);
+    float4 ShaderVariablesGlobal_Stripped_1872 : packoffset(c117);
+    float4 ShaderVariablesGlobal_Stripped_1888 : packoffset(c118);
+    float4 ShaderVariablesGlobal_Stripped_1904 : packoffset(c119);
+    float4 ShaderVariablesGlobal_Stripped_1920 : packoffset(c120);
+    float4 ShaderVariablesGlobal_Stripped_1936 : packoffset(c121);
+    float4 ShaderVariablesGlobal_Stripped_1952 : packoffset(c122);
+    float4 ShaderVariablesGlobal_Stripped_1968 : packoffset(c123);
+    float4 ShaderVariablesGlobal_Stripped_1984 : packoffset(c124);
+    float4 ShaderVariablesGlobal_Stripped_2000 : packoffset(c125);
+    float4 ShaderVariablesGlobal_Stripped_2016 : packoffset(c126);
+    float4 ShaderVariablesGlobal_Stripped_2032[2] : packoffset(c127);
+    float4 ShaderVariablesGlobal_Stripped_2064[2] : packoffset(c129);
+    float ShaderVariablesGlobal_Stripped_2096 : packoffset(c131);
+    float ShaderVariablesGlobal_Stripped_2100 : packoffset(c131.y);
+    float ShaderVariablesGlobal_Stripped_2104 : packoffset(c131.z);
+    float ShaderVariablesGlobal_Stripped_2108 : packoffset(c131.w);
+    float4 _IVParam0 : packoffset(c132);
+    float4 _IVParam1 : packoffset(c133);
+    float4 _IVParam2 : packoffset(c134);
+    float4 _IVDefaultSHAr : packoffset(c135);
+    float4 _IVDefaultSHAg : packoffset(c136);
+    float4 _IVDefaultSHAb : packoffset(c137);
+    float4 ShaderVariablesGlobal_Stripped_2208 : packoffset(c138);
+    float4 ShaderVariablesGlobal_Stripped_2224 : packoffset(c139);
+    float4 ShaderVariablesGlobal_Stripped_2240 : packoffset(c140);
+    float4 ShaderVariablesGlobal_Stripped_2256 : packoffset(c141);
+    float4 ShaderVariablesGlobal_Stripped_2272 : packoffset(c142);
+    float4 ShaderVariablesGlobal_Stripped_2288 : packoffset(c143);
+    float4 ShaderVariablesGlobal_Stripped_2304 : packoffset(c144);
+    float4 ShaderVariablesGlobal_Stripped_2320 : packoffset(c145);
+    float4 ShaderVariablesGlobal_Stripped_2336 : packoffset(c146);
+    float4 ShaderVariablesGlobal_Stripped_2352 : packoffset(c147);
+    float4 ShaderVariablesGlobal_Stripped_2368 : packoffset(c148);
+    float4 ShaderVariablesGlobal_Stripped_2384 : packoffset(c149);
+    float4 ShaderVariablesGlobal_Stripped_2400 : packoffset(c150);
+    float4 ShaderVariablesGlobal_Stripped_2416 : packoffset(c151);
+    float4 ShaderVariablesGlobal_Stripped_2432 : packoffset(c152);
+    float4 ShaderVariablesGlobal_Stripped_2448 : packoffset(c153);
+    float4 ShaderVariablesGlobal_Stripped_2464 : packoffset(c154);
+    float4 ShaderVariablesGlobal_Stripped_2480 : packoffset(c155);
+    float4 ShaderVariablesGlobal_Stripped_2496 : packoffset(c156);
+    float4 ShaderVariablesGlobal_Stripped_2512 : packoffset(c157);
+    float4 ShaderVariablesGlobal_Stripped_2528 : packoffset(c158);
+    float4 ShaderVariablesGlobal_Stripped_2544 : packoffset(c159);
+    float4 ShaderVariablesGlobal_Stripped_2560 : packoffset(c160);
+    float4 ShaderVariablesGlobal_Stripped_2576 : packoffset(c161);
+    column_major float4x4 ShaderVariablesGlobal_Stripped_2592 : packoffset(c162);
+    float4 ShaderVariablesGlobal_Stripped_2656 : packoffset(c166);
+    float4 ShaderVariablesGlobal_Stripped_2672 : packoffset(c167);
+    float4 ShaderVariablesGlobal_Stripped_2688[32] : packoffset(c168);
+};
+
+cbuffer type_UnityPerDraw : register(b0, space2)
+{
+    column_major float4x4 _unity_ObjectToWorld : packoffset(c0);
+    float4 _unity_LODFade : packoffset(c4);
+    float4 _unity_WorldTransformParams : packoffset(c5);
+    column_major float4x4 _unity_MatrixPreviousM : packoffset(c6);
+    float4 _unity_MotionVectorsParamsInternal : packoffset(c10);
+    float4 UnityPerDraw_Stripped_176 : packoffset(c11);
+    float4 UnityPerDraw_Stripped_192 : packoffset(c12);
+    float4 UnityPerDraw_Stripped_208 : packoffset(c13);
+    float4 UnityPerDraw_Stripped_224 : packoffset(c14);
+    float4 UnityPerDraw_Stripped_240 : packoffset(c15);
+};
+
+cbuffer type_UnityPerMaterial : register(b0, space1)
+{
+    float _NormalScale : packoffset(c0);
+    float _Specular : packoffset(c0.y);
+    float _RoughnessMin : packoffset(c0.z);
+    float _RoughnessMax : packoffset(c0.w);
+    float _OcclusionStrength : packoffset(c1);
+    float UnityPerMaterial_Stripped_20 : packoffset(c1.y);
+    float UnityPerMaterial_Stripped_24 : packoffset(c1.z);
+    float _TwoSidedNormal : packoffset(c1.w);
+    float UnityPerMaterial_Stripped_32 : packoffset(c2);
+    float UnityPerMaterial_Stripped_36 : packoffset(c2.y);
+    float UnityPerMaterial_Stripped_40 : packoffset(c2.z);
+    float _BaseUVSet : packoffset(c2.w);
+    float _BasePbrMapUVSet : packoffset(c3);
+    float _TAAUNormalBiasReverse : packoffset(c3.y);
+    float UnityPerMaterial_Stripped_56 : packoffset(c3.z);
+    float _BaseTextureMapCount : packoffset(c3.w);
+    float _BaseColorTintCover : packoffset(c4);
+    float _Metallic : packoffset(c4.y);
+    float _BaseColorBrighterScale : packoffset(c4.z);
+    float _PorosityFactorX : packoffset(c4.w);
+    float _PorosityFactorY : packoffset(c5);
+    float _PorosityFactorZ : packoffset(c5.y);
+    float UnityPerMaterial_Stripped_88 : packoffset(c5.z);
+    float UnityPerMaterial_Stripped_92 : packoffset(c5.w);
+    float UnityPerMaterial_Stripped_96 : packoffset(c6);
+    float _DisableVerticalOcclusion : packoffset(c6.y);
+    float _VerticalOcclusionDepthBias : packoffset(c6.z);
+    float UnityPerMaterial_Stripped_108 : packoffset(c6.w);
+    float _AntiFlicker : packoffset(c7);
+    float _DisableVerticalFlow : packoffset(c7.y);
+    float UnityPerMaterial_Stripped_120 : packoffset(c7.z);
+    float UnityPerMaterial_Stripped_124 : packoffset(c7.w);
+    float4 _BaseColor : packoffset(c8);
+    float4 UnityPerMaterial_Stripped_144 : packoffset(c9);
+    float4 UnityPerMaterial_Stripped_160 : packoffset(c10);
+    float4 _BaseColorMap_ST : packoffset(c11);
+    float4 _NormalMap_ST : packoffset(c12);
+    float4 UnityPerMaterial_Stripped_208 : packoffset(c13);
+    float4 UnityPerMaterial_Stripped_224 : packoffset(c14);
+    float4 UnityPerMaterial_Stripped_240 : packoffset(c15);
+    float4 _BaseColorMap_TexelSize : packoffset(c16);
+    float4 _NormalMap_TexelSize : packoffset(c17);
+    float4 _MROMap_TexelSize : packoffset(c18);
+    float4 UnityPerMaterial_Stripped_304 : packoffset(c19);
+    float4 UnityPerMaterial_Stripped_320 : packoffset(c20);
+    float4 UnityPerMaterial_Stripped_336 : packoffset(c21);
+    float _AnimateVertexHasPivot : packoffset(c22);
+    float _SwitchBranchWindMode : packoffset(c22.y);
+    float UnityPerMaterial_Stripped_360 : packoffset(c22.z);
+    float UnityPerMaterial_Stripped_364 : packoffset(c22.w);
+    float _AnimateVertexTrunkIntensity : packoffset(c23);
+    float _AnimateVertexTrunkFrequency : packoffset(c23.y);
+    float _AnimateVertexTrunkThreshold : packoffset(c23.z);
+    float _AnimateVertexTrunkLeanFactor : packoffset(c23.w);
+    float _AnimateVertexBranchIntensity : packoffset(c24);
+    float _AnimateVertexBranchFrequency : packoffset(c24.y);
+    float _AnimateVertexBranchStiffness : packoffset(c24.z);
+    float _AnimateVertexBranchLeanFactor : packoffset(c24.w);
+    float _AnimateVertexBranchDensity : packoffset(c25);
+    float _TrunkVertexAoStrength : packoffset(c25.y);
+    float _EnableTrunkRamp : packoffset(c25.z);
+    float _TrunkRampIntensity : packoffset(c25.w);
+    float _TrunkRampRange : packoffset(c26);
+    float _TrunkRampTransitionRange : packoffset(c26.y);
+    float _BranchWindUseLengthFactor : packoffset(c26.z);
+    float UnityPerMaterial_Stripped_428 : packoffset(c26.w);
+    float4 _TrunkRampColor : packoffset(c27);
+    float _TerrainBlendFactor : packoffset(c28);
+    float _TerrainBlendNormalFactor : packoffset(c28.y);
+    float _TerrainBlendFallOff : packoffset(c28.z);
+    float UnityPerMaterial_Stripped_460 : packoffset(c28.w);
+    float _TerrainWetBaseColorFactor : packoffset(c29);
+    float _TerrainWetRoughnessFactor : packoffset(c29.y);
+    float _TerrainWetBlendFactor : packoffset(c29.z);
+    float _TerrainWetBlendFallOff : packoffset(c29.w);
+    float _WetBlendIgnoreDepth : packoffset(c30);
+    float UnityPerMaterial_Stripped_484 : packoffset(c30.y);
+    float UnityPerMaterial_Stripped_488 : packoffset(c30.z);
+    float UnityPerMaterial_Stripped_492 : packoffset(c30.w);
+};
+
+SamplerState sampler_LinearClamp : register(s9, space0);
+Texture2D<float4> _WindGlobalNoiseTex : register(t0, space0);
+
+static float4 gl_Position;
+static float3 _3;
+static float3 _4;
+static float4 _5;
+static float4 _6;
+static float2 _7;
+static float2 _8;
+static float2 _9;
+static float2 _11;
+static float2 _12;
+static float3 _13;
+static float4 _14;
+static float4 _15;
+static float3 _16;
+static float3 _17;
+
+struct SPIRV_Cross_Input
+{
+    float3 _3 : POSITION0;
+    float3 _4 : NORMAL0;
+    float4 _5 : TANGENT0;
+    float4 _6 : COLOR0;
+    float2 _7 : TEXCOORD0;
+    float2 _8 : TEXCOORD1;
+    float2 _9 : TEXCOORD2;
+};
+
+struct SPIRV_Cross_Output
+{
+    float2 _11 : TEXCOORD0;
+    float2 _12 : TEXCOORD1;
+    float3 _13 : TEXCOORD2;
+    float4 _14 : TEXCOORD3;
+    float4 _15 : TEXCOORD4;
+    float3 _16 : TEXCOORD5;
+    float3 _17 : TEXCOORD6;
+    precise float4 gl_Position : SV_Position;
+};
+
+void vert_main()
+{
+    float3 _162 = mul(_unity_ObjectToWorld, float4(_3, 1.0f)).xyz;
+    float4 _163 = mul(_unity_ObjectToWorld, float4(0.0f, 0.0f, 0.0f, 1.0f));
+    float3 _164 = _163.xyz;
+    float3 _176 = float3(_8, _9.x) * _AnimateVertexHasPivot;
+    float3 _182 = mul(_unity_ObjectToWorld, float4(_176, 1.0f)).xyz;
+    float _193 = length(float3(_unity_ObjectToWorld[0].x, _unity_ObjectToWorld[1].x, _unity_ObjectToWorld[2].x));
+    float2 _255 = float2(_WindMotorParams2[0].y, -_WindMotorParams2[0].x);
+    float2 _269 = float2(_WindMotorParams2[1].y, -_WindMotorParams2[1].x);
+    float2 _283 = float2(_WindMotorParams2[2].y, -_WindMotorParams2[2].x);
+    float2 _297 = float2(_WindMotorParams2[3].y, -_WindMotorParams2[3].x);
+    bool _304 = _WindMotorCount.x > 0.0f;
+    float _416 = 0.0f;
+    float3 _417 = 0.0f.xxx;
+    float _418 = 0.0f;
+    [branch]
+    if (_304)
+    {
+        float _413 = 0.0f;
+        float3 _414 = 0.0f.xxx;
+        float _415 = 0.0f;
+        [branch]
+        if (_WindMotorParams3[0].x != 0.0f)
+        {
+            float _410 = 0.0f;
+            float3 _411 = 0.0f.xxx;
+            float _412 = 0.0f;
+            do
+            {
+                float2 _352 = _163.xz - _WindMotorParams0[0].xz;
+                float _353 = dot(_352, _WindMotorParams2[0].xy);
+                float _354 = dot(_352, _255);
+                float _361 = abs(_163.y - _WindMotorParams0[0].y);
+                if (_WindMotorParams2[0].w != 0.0f)
+                {
+                    if (((abs(_353) > _WindMotorParams1[0].x) || (abs(_354) > _WindMotorParams1[0].y)) || (_361 > _WindMotorParams0[0].w))
+                    {
+                        _410 = 0.0f;
+                        _411 = 0.0f.xxx;
+                        _412 = 0.0f;
+                        break;
+                    }
+                }
+                else
+                {
+                    if ((((_353 > _WindMotorParams1[0].x) || (_353 < 0.0f)) || (abs(_354) > _WindMotorParams1[0].y)) || (_361 > _WindMotorParams0[0].w))
+                    {
+                        _410 = 0.0f;
+                        _411 = 0.0f.xxx;
+                        _412 = 0.0f;
+                        break;
+                    }
+                }
+                float _387 = clamp(abs(_353) / _WindMotorParams1[0].x, 0.0f, 1.0f);
+                float _397 = _387 / _WindMotorParams1[0].w;
+                float2 _406 = (_WindMotorParams2[0].xy * float((_353 > 0.0f) ? 1 : (-1))) * (((-2.0f) * _WindMotorParams2[0].z) + 1.0f);
+                _410 = _WindMotorParams3[0].y;
+                _411 = float3(_406.x, 0.0f, _406.y);
+                _412 = (_WindMotorParams1[0].z * clamp(_397 * _397, 0.0f, 1.0f)) * min(clamp(2.0f - (2.0f * _387), 0.0f, 1.0f), clamp(2.0f - (2.0f * clamp(abs(_354) / _WindMotorParams1[0].y, 0.0f, 1.0f)), 0.0f, 1.0f));
+                break;
+            } while(false);
+            _413 = _410;
+            _414 = _411;
+            _415 = _412;
+        }
+        else
+        {
+            float _345 = 0.0f;
+            float3 _346 = 0.0f.xxx;
+            float _347 = 0.0f;
+            do
+            {
+                if (length(_164 - _WindMotorParams0[0].xyz) > _WindMotorParams1[0].x)
+                {
+                    _345 = 0.0f;
+                    _346 = 0.0f.xxx;
+                    _347 = 0.0f;
+                    break;
+                }
+                float2 _322 = _163.xz - _WindMotorParams0[0].xz;
+                float _323 = length(_322);
+                float _326 = _323 / _WindMotorParams1[0].w;
+                float _331 = clamp(_323 / _WindMotorParams1[0].x, 0.0f, 1.0f);
+                float2 _341 = (_322 / _323.xx) * (((-2.0f) * _WindMotorParams2[0].z) + 1.0f);
+                _345 = _WindMotorParams3[0].y;
+                _346 = float3(_341.x, 0.0f, _341.y);
+                _347 = ((_WindMotorParams1[0].z * clamp(_326 * _326, 0.0f, 1.0f)) * (1.0f - (_331 * _331))) * step(_WindMotorParams1[0].y, dot(_322, _WindMotorParams2[0].xy) / _323);
+                break;
+            } while(false);
+            _413 = _345;
+            _414 = _346;
+            _415 = _347;
+        }
+        _416 = _413;
+        _417 = _414;
+        _418 = _415;
+    }
+    else
+    {
+        _416 = 0.0f;
+        _417 = 0.0f.xxx;
+        _418 = 0.0f;
+    }
+    bool _419 = _WindMotorCount.x > 1.0f;
+    float _537 = 0.0f;
+    float3 _538 = 0.0f.xxx;
+    float _539 = 0.0f;
+    [branch]
+    if (_419)
+    {
+        float _534 = 0.0f;
+        float3 _535 = 0.0f.xxx;
+        float _536 = 0.0f;
+        [branch]
+        if (_WindMotorParams3[1].x != 0.0f)
+        {
+            float _531 = 0.0f;
+            float3 _532 = 0.0f.xxx;
+            float _533 = 0.0f;
+            do
+            {
+                float2 _470 = _163.xz - _WindMotorParams0[1].xz;
+                float _471 = dot(_470, _WindMotorParams2[1].xy);
+                float _472 = dot(_470, _269);
+                float _479 = abs(_163.y - _WindMotorParams0[1].y);
+                if (_WindMotorParams2[1].w != 0.0f)
+                {
+                    if (((abs(_471) > _WindMotorParams1[1].x) || (abs(_472) > _WindMotorParams1[1].y)) || (_479 > _WindMotorParams0[1].w))
+                    {
+                        _531 = _416;
+                        _532 = _417;
+                        _533 = _418;
+                        break;
+                    }
+                }
+                else
+                {
+                    if ((((_471 > _WindMotorParams1[1].x) || (_471 < 0.0f)) || (abs(_472) > _WindMotorParams1[1].y)) || (_479 > _WindMotorParams0[1].w))
+                    {
+                        _531 = _416;
+                        _532 = _417;
+                        _533 = _418;
+                        break;
+                    }
+                }
+                float _505 = clamp(abs(_471) / _WindMotorParams1[1].x, 0.0f, 1.0f);
+                float _515 = _505 / _WindMotorParams1[1].w;
+                float2 _524 = (_WindMotorParams2[1].xy * float((_471 > 0.0f) ? 1 : (-1))) * (((-2.0f) * _WindMotorParams2[1].z) + 1.0f);
+                _531 = _416 + _WindMotorParams3[1].y;
+                _532 = _417 + float3(_524.x, 0.0f, _524.y);
+                _533 = _418 + ((_WindMotorParams1[1].z * clamp(_515 * _515, 0.0f, 1.0f)) * min(clamp(2.0f - (2.0f * _505), 0.0f, 1.0f), clamp(2.0f - (2.0f * clamp(abs(_472) / _WindMotorParams1[1].y, 0.0f, 1.0f)), 0.0f, 1.0f)));
+                break;
+            } while(false);
+            _534 = _531;
+            _535 = _532;
+            _536 = _533;
+        }
+        else
+        {
+            float _463 = 0.0f;
+            float3 _464 = 0.0f.xxx;
+            float _465 = 0.0f;
+            do
+            {
+                if (length(_164 - _WindMotorParams0[1].xyz) > _WindMotorParams1[1].x)
+                {
+                    _463 = _416;
+                    _464 = _417;
+                    _465 = _418;
+                    break;
+                }
+                float2 _437 = _163.xz - _WindMotorParams0[1].xz;
+                float _438 = length(_437);
+                float _441 = _438 / _WindMotorParams1[1].w;
+                float _446 = clamp(_438 / _WindMotorParams1[1].x, 0.0f, 1.0f);
+                float2 _456 = (_437 / _438.xx) * (((-2.0f) * _WindMotorParams2[1].z) + 1.0f);
+                _463 = _416 + _WindMotorParams3[1].y;
+                _464 = _417 + float3(_456.x, 0.0f, _456.y);
+                _465 = _418 + (((_WindMotorParams1[1].z * clamp(_441 * _441, 0.0f, 1.0f)) * (1.0f - (_446 * _446))) * step(_WindMotorParams1[1].y, dot(_437, _WindMotorParams2[1].xy) / _438));
+                break;
+            } while(false);
+            _534 = _463;
+            _535 = _464;
+            _536 = _465;
+        }
+        _537 = _534;
+        _538 = _535;
+        _539 = _536;
+    }
+    else
+    {
+        _537 = _416;
+        _538 = _417;
+        _539 = _418;
+    }
+    bool _540 = _WindMotorCount.x > 2.0f;
+    float _658 = 0.0f;
+    float3 _659 = 0.0f.xxx;
+    float _660 = 0.0f;
+    [branch]
+    if (_540)
+    {
+        float _655 = 0.0f;
+        float3 _656 = 0.0f.xxx;
+        float _657 = 0.0f;
+        [branch]
+        if (_WindMotorParams3[2].x != 0.0f)
+        {
+            float _652 = 0.0f;
+            float3 _653 = 0.0f.xxx;
+            float _654 = 0.0f;
+            do
+            {
+                float2 _591 = _163.xz - _WindMotorParams0[2].xz;
+                float _592 = dot(_591, _WindMotorParams2[2].xy);
+                float _593 = dot(_591, _283);
+                float _600 = abs(_163.y - _WindMotorParams0[2].y);
+                if (_WindMotorParams2[2].w != 0.0f)
+                {
+                    if (((abs(_592) > _WindMotorParams1[2].x) || (abs(_593) > _WindMotorParams1[2].y)) || (_600 > _WindMotorParams0[2].w))
+                    {
+                        _652 = _537;
+                        _653 = _538;
+                        _654 = _539;
+                        break;
+                    }
+                }
+                else
+                {
+                    if ((((_592 > _WindMotorParams1[2].x) || (_592 < 0.0f)) || (abs(_593) > _WindMotorParams1[2].y)) || (_600 > _WindMotorParams0[2].w))
+                    {
+                        _652 = _537;
+                        _653 = _538;
+                        _654 = _539;
+                        break;
+                    }
+                }
+                float _626 = clamp(abs(_592) / _WindMotorParams1[2].x, 0.0f, 1.0f);
+                float _636 = _626 / _WindMotorParams1[2].w;
+                float2 _645 = (_WindMotorParams2[2].xy * float((_592 > 0.0f) ? 1 : (-1))) * (((-2.0f) * _WindMotorParams2[2].z) + 1.0f);
+                _652 = _537 + _WindMotorParams3[2].y;
+                _653 = _538 + float3(_645.x, 0.0f, _645.y);
+                _654 = _539 + ((_WindMotorParams1[2].z * clamp(_636 * _636, 0.0f, 1.0f)) * min(clamp(2.0f - (2.0f * _626), 0.0f, 1.0f), clamp(2.0f - (2.0f * clamp(abs(_593) / _WindMotorParams1[2].y, 0.0f, 1.0f)), 0.0f, 1.0f)));
+                break;
+            } while(false);
+            _655 = _652;
+            _656 = _653;
+            _657 = _654;
+        }
+        else
+        {
+            float _584 = 0.0f;
+            float3 _585 = 0.0f.xxx;
+            float _586 = 0.0f;
+            do
+            {
+                if (length(_164 - _WindMotorParams0[2].xyz) > _WindMotorParams1[2].x)
+                {
+                    _584 = _537;
+                    _585 = _538;
+                    _586 = _539;
+                    break;
+                }
+                float2 _558 = _163.xz - _WindMotorParams0[2].xz;
+                float _559 = length(_558);
+                float _562 = _559 / _WindMotorParams1[2].w;
+                float _567 = clamp(_559 / _WindMotorParams1[2].x, 0.0f, 1.0f);
+                float2 _577 = (_558 / _559.xx) * (((-2.0f) * _WindMotorParams2[2].z) + 1.0f);
+                _584 = _537 + _WindMotorParams3[2].y;
+                _585 = _538 + float3(_577.x, 0.0f, _577.y);
+                _586 = _539 + (((_WindMotorParams1[2].z * clamp(_562 * _562, 0.0f, 1.0f)) * (1.0f - (_567 * _567))) * step(_WindMotorParams1[2].y, dot(_558, _WindMotorParams2[2].xy) / _559));
+                break;
+            } while(false);
+            _655 = _584;
+            _656 = _585;
+            _657 = _586;
+        }
+        _658 = _655;
+        _659 = _656;
+        _660 = _657;
+    }
+    else
+    {
+        _658 = _537;
+        _659 = _538;
+        _660 = _539;
+    }
+    bool _661 = _WindMotorCount.x > 3.0f;
+    float _779 = 0.0f;
+    float3 _780 = 0.0f.xxx;
+    float _781 = 0.0f;
+    [branch]
+    if (_661)
+    {
+        float _776 = 0.0f;
+        float3 _777 = 0.0f.xxx;
+        float _778 = 0.0f;
+        [branch]
+        if (_WindMotorParams3[3].x != 0.0f)
+        {
+            float _773 = 0.0f;
+            float3 _774 = 0.0f.xxx;
+            float _775 = 0.0f;
+            do
+            {
+                float2 _712 = _163.xz - _WindMotorParams0[3].xz;
+                float _713 = dot(_712, _WindMotorParams2[3].xy);
+                float _714 = dot(_712, _297);
+                float _721 = abs(_163.y - _WindMotorParams0[3].y);
+                if (_WindMotorParams2[3].w != 0.0f)
+                {
+                    if (((abs(_713) > _WindMotorParams1[3].x) || (abs(_714) > _WindMotorParams1[3].y)) || (_721 > _WindMotorParams0[3].w))
+                    {
+                        _773 = _658;
+                        _774 = _659;
+                        _775 = _660;
+                        break;
+                    }
+                }
+                else
+                {
+                    if ((((_713 > _WindMotorParams1[3].x) || (_713 < 0.0f)) || (abs(_714) > _WindMotorParams1[3].y)) || (_721 > _WindMotorParams0[3].w))
+                    {
+                        _773 = _658;
+                        _774 = _659;
+                        _775 = _660;
+                        break;
+                    }
+                }
+                float _747 = clamp(abs(_713) / _WindMotorParams1[3].x, 0.0f, 1.0f);
+                float _757 = _747 / _WindMotorParams1[3].w;
+                float2 _766 = (_WindMotorParams2[3].xy * float((_713 > 0.0f) ? 1 : (-1))) * (((-2.0f) * _WindMotorParams2[3].z) + 1.0f);
+                _773 = _658 + _WindMotorParams3[3].y;
+                _774 = _659 + float3(_766.x, 0.0f, _766.y);
+                _775 = _660 + ((_WindMotorParams1[3].z * clamp(_757 * _757, 0.0f, 1.0f)) * min(clamp(2.0f - (2.0f * _747), 0.0f, 1.0f), clamp(2.0f - (2.0f * clamp(abs(_714) / _WindMotorParams1[3].y, 0.0f, 1.0f)), 0.0f, 1.0f)));
+                break;
+            } while(false);
+            _776 = _773;
+            _777 = _774;
+            _778 = _775;
+        }
+        else
+        {
+            float _705 = 0.0f;
+            float3 _706 = 0.0f.xxx;
+            float _707 = 0.0f;
+            do
+            {
+                if (length(_164 - _WindMotorParams0[3].xyz) > _WindMotorParams1[3].x)
+                {
+                    _705 = _658;
+                    _706 = _659;
+                    _707 = _660;
+                    break;
+                }
+                float2 _679 = _163.xz - _WindMotorParams0[3].xz;
+                float _680 = length(_679);
+                float _683 = _680 / _WindMotorParams1[3].w;
+                float _688 = clamp(_680 / _WindMotorParams1[3].x, 0.0f, 1.0f);
+                float2 _698 = (_679 / _680.xx) * (((-2.0f) * _WindMotorParams2[3].z) + 1.0f);
+                _705 = _658 + _WindMotorParams3[3].y;
+                _706 = _659 + float3(_698.x, 0.0f, _698.y);
+                _707 = _660 + (((_WindMotorParams1[3].z * clamp(_683 * _683, 0.0f, 1.0f)) * (1.0f - (_688 * _688))) * step(_WindMotorParams1[3].y, dot(_679, _WindMotorParams2[3].xy) / _680));
+                break;
+            } while(false);
+            _776 = _705;
+            _777 = _706;
+            _778 = _707;
+        }
+        _779 = _776;
+        _780 = _777;
+        _781 = _778;
+    }
+    else
+    {
+        _779 = _658;
+        _780 = _659;
+        _781 = _660;
+    }
+    float _783 = max(_781, _WindGlobalParams0.x);
+    float3 _788 = normalize(lerp(float3(_WindGlobalParams0.z, 0.0f, _WindGlobalParams0.w), _780, (_781 / ((_781 + _WindGlobalParams0.x) + 0.00999999977648258209228515625f)).xxx));
+    float _790 = clamp(_783 * 0.20000000298023223876953125f, 0.0f, 1.0f);
+    float _791 = _790 * _790;
+    float _792 = 1.0f - _790;
+    float _795 = 1.0f - ((_792 * _792) * _792);
+    float _800 = (dot(_164, float3(0.07999999821186065673828125f, -0.02999999932944774627685546875f, 0.07999999821186065673828125f)) - ((_SwitchBranchWindMode > 0.0f) ? _9.y : 0.0f)) * 6.283185482025146484375f;
+    float _801 = ((_WindGlobalParams0.y + _779) * _AnimateVertexTrunkFrequency) + _800;
+    float _814 = clamp(_6.w - _AnimateVertexTrunkThreshold, 0.0f, 1.0f);
+    float _815 = _814 * _814;
+    float3 _821 = _162 - _164;
+    float _822 = radians(((((((0.5f * sin(_801)) + (0.25f * cos(0.5f * _801))) * _795) + (_AnimateVertexTrunkLeanFactor * _791)) * _783) * _AnimateVertexTrunkIntensity) * _815);
+    float _823 = sin(_822);
+    float _824 = cos(_822);
+    float _825 = 1.0f - _824;
+    float3 _826 = normalize(float3(_788.z, 0.0f, -_788.x));
+    float _827 = _826.x;
+    float _828 = _825 * _827;
+    float _831 = _826.y;
+    float _832 = _828 * _831;
+    float _833 = _826.z;
+    float _834 = _833 * _823;
+    float _836 = _825 * _833;
+    float _837 = _836 * _827;
+    float _838 = _831 * _823;
+    float _841 = _825 * _831;
+    float _844 = _841 * _833;
+    float _845 = _827 * _823;
+    float3 _856 = mul(float3x3(float3((_828 * _827) + _824, _832 - _834, _837 + _838), float3(_832 + _834, (_841 * _831) + _824, _844 - _845), float3(_837 - _838, _844 + _845, (_836 * _833) + _824)), _821) - _821;
+    bool _858 = any(bool3(_176.x != 0.0f.xxx.x, _176.y != 0.0f.xxx.y, _176.z != 0.0f.xxx.z));
+    float3 _909 = 0.0f.xxx;
+    if (_858)
+    {
+        float3 _864 = lerp(_3, _176, _AnimateVertexBranchStiffness.xxx) + (_164 * 0.00999999977648258209228515625f);
+        float3 _898 = (_162 + (_788 * ((((0.5f * _193) * (_6.z * lerp(_6.z, 0.5f * length(_176 - _3), _BranchWindUseLengthFactor))) * _AnimateVertexBranchIntensity) * ((dot(sin(float4(1.0f, 0.5f, 0.25f, 0.125f) * ((_WindGlobalNoiseTex.SampleLevel(sampler_LinearClamp, (_864.xz * (_AnimateVertexBranchDensity * _AnimateVertexBranchDensity)) + (_864.yy * (_SwitchBranchWindMode * 0.0199999995529651641845703125f)), 0.0f).y * 25.1327419281005859375f) + (_WindGlobalParams0.y * _AnimateVertexBranchFrequency))), lerp(float4(0.5f, 0.25f, 0.125f, 0.0625f), 0.25f.xxxx, _SwitchBranchWindMode.xxxx)) * _795) + (_791 * _AnimateVertexBranchLeanFactor))))) - _182;
+        _909 = _856 + ((_182 + ((_898 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_898, _898)))) * length(_162 - _182))) - _162);
+    }
+    else
+    {
+        _909 = _856;
+    }
+    float _1075 = 0.0f;
+    float3 _1076 = 0.0f.xxx;
+    float _1077 = 0.0f;
+    [branch]
+    if (_304)
+    {
+        float _1072 = 0.0f;
+        float3 _1073 = 0.0f.xxx;
+        float _1074 = 0.0f;
+        [branch]
+        if (_WindMotorParams3[0].x != 0.0f)
+        {
+            float _1069 = 0.0f;
+            float3 _1070 = 0.0f.xxx;
+            float _1071 = 0.0f;
+            do
+            {
+                float2 _1011 = _163.xz - _LastWindMotorParams0[0].xz;
+                float _1012 = dot(_1011, _WindMotorParams2[0].xy);
+                float _1013 = dot(_1011, _255);
+                float _1020 = abs(_163.y - _LastWindMotorParams0[0].y);
+                if (_WindMotorParams2[0].w != 0.0f)
+                {
+                    if (((abs(_1012) > _LastWindMotorParams1[0].x) || (abs(_1013) > _LastWindMotorParams1[0].y)) || (_1020 > _LastWindMotorParams0[0].w))
+                    {
+                        _1069 = 0.0f;
+                        _1070 = 0.0f.xxx;
+                        _1071 = 0.0f;
+                        break;
+                    }
+                }
+                else
+                {
+                    if ((((_1012 > _LastWindMotorParams1[0].x) || (_1012 < 0.0f)) || (abs(_1013) > _LastWindMotorParams1[0].y)) || (_1020 > _LastWindMotorParams0[0].w))
+                    {
+                        _1069 = 0.0f;
+                        _1070 = 0.0f.xxx;
+                        _1071 = 0.0f;
+                        break;
+                    }
+                }
+                float _1046 = clamp(abs(_1012) / _LastWindMotorParams1[0].x, 0.0f, 1.0f);
+                float _1056 = _1046 / _LastWindMotorParams1[0].w;
+                float2 _1065 = (_WindMotorParams2[0].xy * float((_1012 > 0.0f) ? 1 : (-1))) * (((-2.0f) * _WindMotorParams2[0].z) + 1.0f);
+                _1069 = _LastWindMotorParams3[0].y;
+                _1070 = float3(_1065.x, 0.0f, _1065.y);
+                _1071 = (_LastWindMotorParams1[0].z * clamp(_1056 * _1056, 0.0f, 1.0f)) * min(clamp(2.0f - (2.0f * _1046), 0.0f, 1.0f), clamp(2.0f - (2.0f * clamp(abs(_1013) / _LastWindMotorParams1[0].y, 0.0f, 1.0f)), 0.0f, 1.0f));
+                break;
+            } while(false);
+            _1072 = _1069;
+            _1073 = _1070;
+            _1074 = _1071;
+        }
+        else
+        {
+            float _1004 = 0.0f;
+            float3 _1005 = 0.0f.xxx;
+            float _1006 = 0.0f;
+            do
+            {
+                if (length(_164 - _LastWindMotorParams0[0].xyz) > _LastWindMotorParams1[0].x)
+                {
+                    _1004 = 0.0f;
+                    _1005 = 0.0f.xxx;
+                    _1006 = 0.0f;
+                    break;
+                }
+                float2 _981 = _163.xz - _LastWindMotorParams0[0].xz;
+                float _982 = length(_981);
+                float _985 = _982 / _LastWindMotorParams1[0].w;
+                float _990 = clamp(_982 / _LastWindMotorParams1[0].x, 0.0f, 1.0f);
+                float2 _1000 = (_981 / _982.xx) * (((-2.0f) * _WindMotorParams2[0].z) + 1.0f);
+                _1004 = _LastWindMotorParams3[0].y;
+                _1005 = float3(_1000.x, 0.0f, _1000.y);
+                _1006 = ((_LastWindMotorParams1[0].z * clamp(_985 * _985, 0.0f, 1.0f)) * (1.0f - (_990 * _990))) * step(_LastWindMotorParams1[0].y, dot(_981, _WindMotorParams2[0].xy) / _982);
+                break;
+            } while(false);
+            _1072 = _1004;
+            _1073 = _1005;
+            _1074 = _1006;
+        }
+        _1075 = _1072;
+        _1076 = _1073;
+        _1077 = _1074;
+    }
+    else
+    {
+        _1075 = 0.0f;
+        _1076 = 0.0f.xxx;
+        _1077 = 0.0f;
+    }
+    float _1195 = 0.0f;
+    float3 _1196 = 0.0f.xxx;
+    float _1197 = 0.0f;
+    [branch]
+    if (_419)
+    {
+        float _1192 = 0.0f;
+        float3 _1193 = 0.0f.xxx;
+        float _1194 = 0.0f;
+        [branch]
+        if (_WindMotorParams3[1].x != 0.0f)
+        {
+            float _1189 = 0.0f;
+            float3 _1190 = 0.0f.xxx;
+            float _1191 = 0.0f;
+            do
+            {
+                float2 _1128 = _163.xz - _LastWindMotorParams0[1].xz;
+                float _1129 = dot(_1128, _WindMotorParams2[1].xy);
+                float _1130 = dot(_1128, _269);
+                float _1137 = abs(_163.y - _LastWindMotorParams0[1].y);
+                if (_WindMotorParams2[1].w != 0.0f)
+                {
+                    if (((abs(_1129) > _LastWindMotorParams1[1].x) || (abs(_1130) > _LastWindMotorParams1[1].y)) || (_1137 > _LastWindMotorParams0[1].w))
+                    {
+                        _1189 = _1075;
+                        _1190 = _1076;
+                        _1191 = _1077;
+                        break;
+                    }
+                }
+                else
+                {
+                    if ((((_1129 > _LastWindMotorParams1[1].x) || (_1129 < 0.0f)) || (abs(_1130) > _LastWindMotorParams1[1].y)) || (_1137 > _LastWindMotorParams0[1].w))
+                    {
+                        _1189 = _1075;
+                        _1190 = _1076;
+                        _1191 = _1077;
+                        break;
+                    }
+                }
+                float _1163 = clamp(abs(_1129) / _LastWindMotorParams1[1].x, 0.0f, 1.0f);
+                float _1173 = _1163 / _LastWindMotorParams1[1].w;
+                float2 _1182 = (_WindMotorParams2[1].xy * float((_1129 > 0.0f) ? 1 : (-1))) * (((-2.0f) * _WindMotorParams2[1].z) + 1.0f);
+                _1189 = _1075 + _LastWindMotorParams3[1].y;
+                _1190 = _1076 + float3(_1182.x, 0.0f, _1182.y);
+                _1191 = _1077 + ((_LastWindMotorParams1[1].z * clamp(_1173 * _1173, 0.0f, 1.0f)) * min(clamp(2.0f - (2.0f * _1163), 0.0f, 1.0f), clamp(2.0f - (2.0f * clamp(abs(_1130) / _LastWindMotorParams1[1].y, 0.0f, 1.0f)), 0.0f, 1.0f)));
+                break;
+            } while(false);
+            _1192 = _1189;
+            _1193 = _1190;
+            _1194 = _1191;
+        }
+        else
+        {
+            float _1121 = 0.0f;
+            float3 _1122 = 0.0f.xxx;
+            float _1123 = 0.0f;
+            do
+            {
+                if (length(_164 - _LastWindMotorParams0[1].xyz) > _LastWindMotorParams1[1].x)
+                {
+                    _1121 = _1075;
+                    _1122 = _1076;
+                    _1123 = _1077;
+                    break;
+                }
+                float2 _1095 = _163.xz - _LastWindMotorParams0[1].xz;
+                float _1096 = length(_1095);
+                float _1099 = _1096 / _LastWindMotorParams1[1].w;
+                float _1104 = clamp(_1096 / _LastWindMotorParams1[1].x, 0.0f, 1.0f);
+                float2 _1114 = (_1095 / _1096.xx) * (((-2.0f) * _WindMotorParams2[1].z) + 1.0f);
+                _1121 = _1075 + _LastWindMotorParams3[1].y;
+                _1122 = _1076 + float3(_1114.x, 0.0f, _1114.y);
+                _1123 = _1077 + (((_LastWindMotorParams1[1].z * clamp(_1099 * _1099, 0.0f, 1.0f)) * (1.0f - (_1104 * _1104))) * step(_LastWindMotorParams1[1].y, dot(_1095, _WindMotorParams2[1].xy) / _1096));
+                break;
+            } while(false);
+            _1192 = _1121;
+            _1193 = _1122;
+            _1194 = _1123;
+        }
+        _1195 = _1192;
+        _1196 = _1193;
+        _1197 = _1194;
+    }
+    else
+    {
+        _1195 = _1075;
+        _1196 = _1076;
+        _1197 = _1077;
+    }
+    float _1315 = 0.0f;
+    float3 _1316 = 0.0f.xxx;
+    float _1317 = 0.0f;
+    [branch]
+    if (_540)
+    {
+        float _1312 = 0.0f;
+        float3 _1313 = 0.0f.xxx;
+        float _1314 = 0.0f;
+        [branch]
+        if (_WindMotorParams3[2].x != 0.0f)
+        {
+            float _1309 = 0.0f;
+            float3 _1310 = 0.0f.xxx;
+            float _1311 = 0.0f;
+            do
+            {
+                float2 _1248 = _163.xz - _LastWindMotorParams0[2].xz;
+                float _1249 = dot(_1248, _WindMotorParams2[2].xy);
+                float _1250 = dot(_1248, _283);
+                float _1257 = abs(_163.y - _LastWindMotorParams0[2].y);
+                if (_WindMotorParams2[2].w != 0.0f)
+                {
+                    if (((abs(_1249) > _LastWindMotorParams1[2].x) || (abs(_1250) > _LastWindMotorParams1[2].y)) || (_1257 > _LastWindMotorParams0[2].w))
+                    {
+                        _1309 = _1195;
+                        _1310 = _1196;
+                        _1311 = _1197;
+                        break;
+                    }
+                }
+                else
+                {
+                    if ((((_1249 > _LastWindMotorParams1[2].x) || (_1249 < 0.0f)) || (abs(_1250) > _LastWindMotorParams1[2].y)) || (_1257 > _LastWindMotorParams0[2].w))
+                    {
+                        _1309 = _1195;
+                        _1310 = _1196;
+                        _1311 = _1197;
+                        break;
+                    }
+                }
+                float _1283 = clamp(abs(_1249) / _LastWindMotorParams1[2].x, 0.0f, 1.0f);
+                float _1293 = _1283 / _LastWindMotorParams1[2].w;
+                float2 _1302 = (_WindMotorParams2[2].xy * float((_1249 > 0.0f) ? 1 : (-1))) * (((-2.0f) * _WindMotorParams2[2].z) + 1.0f);
+                _1309 = _1195 + _LastWindMotorParams3[2].y;
+                _1310 = _1196 + float3(_1302.x, 0.0f, _1302.y);
+                _1311 = _1197 + ((_LastWindMotorParams1[2].z * clamp(_1293 * _1293, 0.0f, 1.0f)) * min(clamp(2.0f - (2.0f * _1283), 0.0f, 1.0f), clamp(2.0f - (2.0f * clamp(abs(_1250) / _LastWindMotorParams1[2].y, 0.0f, 1.0f)), 0.0f, 1.0f)));
+                break;
+            } while(false);
+            _1312 = _1309;
+            _1313 = _1310;
+            _1314 = _1311;
+        }
+        else
+        {
+            float _1241 = 0.0f;
+            float3 _1242 = 0.0f.xxx;
+            float _1243 = 0.0f;
+            do
+            {
+                if (length(_164 - _LastWindMotorParams0[2].xyz) > _LastWindMotorParams1[2].x)
+                {
+                    _1241 = _1195;
+                    _1242 = _1196;
+                    _1243 = _1197;
+                    break;
+                }
+                float2 _1215 = _163.xz - _LastWindMotorParams0[2].xz;
+                float _1216 = length(_1215);
+                float _1219 = _1216 / _LastWindMotorParams1[2].w;
+                float _1224 = clamp(_1216 / _LastWindMotorParams1[2].x, 0.0f, 1.0f);
+                float2 _1234 = (_1215 / _1216.xx) * (((-2.0f) * _WindMotorParams2[2].z) + 1.0f);
+                _1241 = _1195 + _LastWindMotorParams3[2].y;
+                _1242 = _1196 + float3(_1234.x, 0.0f, _1234.y);
+                _1243 = _1197 + (((_LastWindMotorParams1[2].z * clamp(_1219 * _1219, 0.0f, 1.0f)) * (1.0f - (_1224 * _1224))) * step(_LastWindMotorParams1[2].y, dot(_1215, _WindMotorParams2[2].xy) / _1216));
+                break;
+            } while(false);
+            _1312 = _1241;
+            _1313 = _1242;
+            _1314 = _1243;
+        }
+        _1315 = _1312;
+        _1316 = _1313;
+        _1317 = _1314;
+    }
+    else
+    {
+        _1315 = _1195;
+        _1316 = _1196;
+        _1317 = _1197;
+    }
+    float _1435 = 0.0f;
+    float3 _1436 = 0.0f.xxx;
+    float _1437 = 0.0f;
+    [branch]
+    if (_661)
+    {
+        float _1432 = 0.0f;
+        float3 _1433 = 0.0f.xxx;
+        float _1434 = 0.0f;
+        [branch]
+        if (_WindMotorParams3[3].x != 0.0f)
+        {
+            float _1429 = 0.0f;
+            float3 _1430 = 0.0f.xxx;
+            float _1431 = 0.0f;
+            do
+            {
+                float2 _1368 = _163.xz - _LastWindMotorParams0[3].xz;
+                float _1369 = dot(_1368, _WindMotorParams2[3].xy);
+                float _1370 = dot(_1368, _297);
+                float _1377 = abs(_163.y - _LastWindMotorParams0[3].y);
+                if (_WindMotorParams2[3].w != 0.0f)
+                {
+                    if (((abs(_1369) > _LastWindMotorParams1[3].x) || (abs(_1370) > _LastWindMotorParams1[3].y)) || (_1377 > _LastWindMotorParams0[3].w))
+                    {
+                        _1429 = _1315;
+                        _1430 = _1316;
+                        _1431 = _1317;
+                        break;
+                    }
+                }
+                else
+                {
+                    if ((((_1369 > _LastWindMotorParams1[3].x) || (_1369 < 0.0f)) || (abs(_1370) > _LastWindMotorParams1[3].y)) || (_1377 > _LastWindMotorParams0[3].w))
+                    {
+                        _1429 = _1315;
+                        _1430 = _1316;
+                        _1431 = _1317;
+                        break;
+                    }
+                }
+                float _1403 = clamp(abs(_1369) / _LastWindMotorParams1[3].x, 0.0f, 1.0f);
+                float _1413 = _1403 / _LastWindMotorParams1[3].w;
+                float2 _1422 = (_WindMotorParams2[3].xy * float((_1369 > 0.0f) ? 1 : (-1))) * (((-2.0f) * _WindMotorParams2[3].z) + 1.0f);
+                _1429 = _1315 + _LastWindMotorParams3[3].y;
+                _1430 = _1316 + float3(_1422.x, 0.0f, _1422.y);
+                _1431 = _1317 + ((_LastWindMotorParams1[3].z * clamp(_1413 * _1413, 0.0f, 1.0f)) * min(clamp(2.0f - (2.0f * _1403), 0.0f, 1.0f), clamp(2.0f - (2.0f * clamp(abs(_1370) / _LastWindMotorParams1[3].y, 0.0f, 1.0f)), 0.0f, 1.0f)));
+                break;
+            } while(false);
+            _1432 = _1429;
+            _1433 = _1430;
+            _1434 = _1431;
+        }
+        else
+        {
+            float _1361 = 0.0f;
+            float3 _1362 = 0.0f.xxx;
+            float _1363 = 0.0f;
+            do
+            {
+                if (length(_164 - _LastWindMotorParams0[3].xyz) > _LastWindMotorParams1[3].x)
+                {
+                    _1361 = _1315;
+                    _1362 = _1316;
+                    _1363 = _1317;
+                    break;
+                }
+                float2 _1335 = _163.xz - _LastWindMotorParams0[3].xz;
+                float _1336 = length(_1335);
+                float _1339 = _1336 / _LastWindMotorParams1[3].w;
+                float _1344 = clamp(_1336 / _LastWindMotorParams1[3].x, 0.0f, 1.0f);
+                float2 _1354 = (_1335 / _1336.xx) * (((-2.0f) * _WindMotorParams2[3].z) + 1.0f);
+                _1361 = _1315 + _LastWindMotorParams3[3].y;
+                _1362 = _1316 + float3(_1354.x, 0.0f, _1354.y);
+                _1363 = _1317 + (((_LastWindMotorParams1[3].z * clamp(_1339 * _1339, 0.0f, 1.0f)) * (1.0f - (_1344 * _1344))) * step(_LastWindMotorParams1[3].y, dot(_1335, _WindMotorParams2[3].xy) / _1336));
+                break;
+            } while(false);
+            _1432 = _1361;
+            _1433 = _1362;
+            _1434 = _1363;
+        }
+        _1435 = _1432;
+        _1436 = _1433;
+        _1437 = _1434;
+    }
+    else
+    {
+        _1435 = _1315;
+        _1436 = _1316;
+        _1437 = _1317;
+    }
+    float _1439 = max(_1437, _LastWindGlobalParams0.x);
+    float3 _1444 = normalize(lerp(float3(_LastWindGlobalParams0.z, 0.0f, _LastWindGlobalParams0.w), _1436, (_1437 / ((_1437 + _LastWindGlobalParams0.x) + 0.00999999977648258209228515625f)).xxx));
+    float _1446 = clamp(_1439 * 0.20000000298023223876953125f, 0.0f, 1.0f);
+    float _1447 = _1446 * _1446;
+    float _1448 = 1.0f - _1446;
+    float _1451 = 1.0f - ((_1448 * _1448) * _1448);
+    float _1454 = ((_LastWindGlobalParams0.y + _1435) * _AnimateVertexTrunkFrequency) + _800;
+    float _1471 = radians(((((((0.5f * sin(_1454)) + (0.25f * cos(0.5f * _1454))) * _1451) + (_AnimateVertexTrunkLeanFactor * _1447)) * _1439) * _AnimateVertexTrunkIntensity) * _815);
+    float _1472 = sin(_1471);
+    float _1473 = cos(_1471);
+    float _1474 = 1.0f - _1473;
+    float3 _1475 = normalize(float3(_1444.z, 0.0f, -_1444.x));
+    float _1476 = _1475.x;
+    float _1477 = _1474 * _1476;
+    float _1480 = _1475.y;
+    float _1481 = _1477 * _1480;
+    float _1482 = _1475.z;
+    float _1483 = _1482 * _1472;
+    float _1485 = _1474 * _1482;
+    float _1486 = _1485 * _1476;
+    float _1487 = _1480 * _1472;
+    float _1490 = _1474 * _1480;
+    float _1493 = _1490 * _1482;
+    float _1494 = _1476 * _1472;
+    float3 _1505 = mul(float3x3(float3((_1477 * _1476) + _1473, _1481 - _1483, _1486 + _1487), float3(_1481 + _1483, (_1490 * _1480) + _1473, _1493 - _1494), float3(_1486 - _1487, _1493 + _1494, (_1485 * _1482) + _1473)), _821) - _821;
+    float3 _1556 = 0.0f.xxx;
+    if (_858)
+    {
+        float3 _1511 = lerp(_3, _176, _AnimateVertexBranchStiffness.xxx) + (_164 * 0.00999999977648258209228515625f);
+        float3 _1545 = (_162 + (_1444 * ((((0.5f * _193) * (_6.z * lerp(_6.z, 0.5f * length(_176 - _3), _BranchWindUseLengthFactor))) * _AnimateVertexBranchIntensity) * ((dot(sin(float4(1.0f, 0.5f, 0.25f, 0.125f) * ((_WindGlobalNoiseTex.SampleLevel(sampler_LinearClamp, (_1511.xz * (_AnimateVertexBranchDensity * _AnimateVertexBranchDensity)) + (_1511.yy * (_SwitchBranchWindMode * 0.0199999995529651641845703125f)), 0.0f).y * 25.1327419281005859375f) + (_LastWindGlobalParams0.y * _AnimateVertexBranchFrequency))), lerp(float4(0.5f, 0.25f, 0.125f, 0.0625f), 0.25f.xxxx, _SwitchBranchWindMode.xxxx)) * _1451) + (_1447 * _AnimateVertexBranchLeanFactor))))) - _182;
+        _1556 = _1505 + ((_182 + ((_1545 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_1545, _1545)))) * length(_162 - _182))) - _162);
+    }
+    else
+    {
+        _1556 = _1505;
+    }
+    float _1559 = 1.0f - _PerPassConstants_DisableAnimateVert;
+    uint _1564 = asuint(_4.x);
+    bool _1566 = (_1564 & 1073741824u) > 0u;
+    float4 _1639 = 0.0f.xxxx;
+    float3 _1640 = 0.0f.xxx;
+    if (_1566)
+    {
+        float _1572 = float((_1564 << 22u) >> 22u);
+        float _1575 = float((_1564 << 12u) >> 22u);
+        float _1578 = float((_1564 << 2u) >> 22u);
+        float3 _1592 = float3((_1572 >= 512.0f) ? (_1572 - 1024.0f) : _1572, (_1575 >= 512.0f) ? (_1575 - 1024.0f) : _1575, 0.0f) * 0.001956947147846221923828125f;
+        float _1598 = (1.0f - abs(_1592.x)) - abs(_1592.y);
+        float3 _1599 = _1592;
+        _1599.z = _1598;
+        bool2 _1601 = (_1598 < 0.0f).xx;
+        float2 _1609 = (1.0f.xx - abs(_1599.yx)) * ((step(0.0f.xx, _1599.xy) * 2.0f) - 1.0f.xx);
+        float2 _1610 = float2(_1601.x ? _1609.x : _1599.xy.x, _1601.y ? _1609.y : _1599.xy.y);
+        float3 _1612 = normalize(float3(_1610.x, _1610.y, _1599.z));
+        float _1613 = ((_1578 >= 512.0f) ? (_1578 - 1024.0f) : _1578) * 0.001956947147846221923828125f;
+        float3 _1616 = _1612.yzx - _1612.zxy;
+        float3 _1620 = normalize(_1616 - dot(_1616, _1612).xxx);
+        float _1625 = (_1613 < 0.0f) ? (-1.0f) : 1.0f;
+        float _1628 = 1.0f - ((_1613 * _1625) * 2.0f);
+        float3 _1634 = mul(normalize(float2(_1628, _1625 * (1.0f - abs(_1628)))), float2x3(_1620, normalize(cross(_1612, _1620))));
+        float4 _1635 = float4(_1634.x, _1634.y, _1634.z, _147.w);
+        _1635.w = (float((_1564 >> 31u) & 1u) * 2.0f) - 1.0f;
+        _1639 = _1635;
+        _1640 = _1612;
+    }
+    else
+    {
+        _1639 = 0.0f.xxxx;
+        _1640 = _4;
+    }
+    bool4 _1641 = _1566.xxxx;
+    float4 _1642 = float4(_1641.x ? _1639.x : _5.x, _1641.y ? _1639.y : _5.y, _1641.z ? _1639.z : _5.z, _1641.w ? _1639.w : _5.w);
+    float3x3 _1649 = float3x3(_unity_ObjectToWorld[0].xyz, _unity_ObjectToWorld[1].xyz, _unity_ObjectToWorld[2].xyz);
+    float3 _1669 = mul(_1649, float3(1.0f / dot(_unity_ObjectToWorld[0].xyz, _unity_ObjectToWorld[0].xyz), 1.0f / dot(_unity_ObjectToWorld[1].xyz, _unity_ObjectToWorld[1].xyz), 1.0f / dot(_unity_ObjectToWorld[2].xyz, _unity_ObjectToWorld[2].xyz)) * _1640);
+    float3 _1675 = mul(_1649, _1642.xyz);
+    float4 _1696 = mul(_TransformVariables_NonJitteredViewNoTransProjMatrix, float4((mul(_1649, _3) + (float3(_unity_ObjectToWorld[0].w, _unity_ObjectToWorld[1].w, _unity_ObjectToWorld[2].w) - _TransformVariables_WorldSpaceCameraPos_Internal.xyz)) + (_909 * _1559), 1.0f));
+    float2 _1704 = _1696.xy - ((_TaaJitterStrength.zw * float2(2.0f, -2.0f)) * _1696.w);
+    float4 _1705 = float4(_1704.x, _1704.y, _1696.z, _1696.w);
+    float4 _1731 = float4((mul(float3x3(_unity_MatrixPreviousM[0].xyz, _unity_MatrixPreviousM[1].xyz, _unity_MatrixPreviousM[2].xyz), _3.xyz) + (float3(_unity_MatrixPreviousM[0].w, _unity_MatrixPreviousM[1].w, _unity_MatrixPreviousM[2].w) - _TransformVariables_PrevCamPosRWS_Internal.xyz)) + (_1556 * _1559), 1.0f);
+    _1705.y = -_1704.y;
+    gl_Position = _1705;
+    _11 = _7;
+    _12 = _8;
+    _13 = _1669 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_1669, _1669)));
+    _14 = float4(_1675 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_1675, _1675))), _1642.w * ((_unity_WorldTransformParams.w >= 0.0f) ? 1.0f : (-1.0f)));
+    _15 = _6;
+    _16 = _1696.xyw;
+    _17 = mul(_TransformVariables_PrevNonJitteredViewNoTransProjMatrix, float4(_1731.x, _1731.y, _1731.z, _1731.w)).xyw;
+}
+
+SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+{
+    _3 = stage_input._3;
+    _4 = stage_input._4;
+    _5 = stage_input._5;
+    _6 = stage_input._6;
+    _7 = stage_input._7;
+    _8 = stage_input._8;
+    _9 = stage_input._9;
+    vert_main();
+    SPIRV_Cross_Output stage_output;
+    stage_output.gl_Position = gl_Position;
+    stage_output._11 = _11;
+    stage_output._12 = _12;
+    stage_output._13 = _13;
+    stage_output._14 = _14;
+    stage_output._15 = _15;
+    stage_output._16 = _16;
+    stage_output._17 = _17;
+    return stage_output;
+}

@@ -17,6 +17,18 @@
 
 详细源码文档已嵌入有关代码，不需要先重新扫描全部导出文件。遇到新变体、证据矛盾或运行结果不符时，再针对相应部分补查。
 
+## 源码已迁入当前项目
+
+当前参考目录：`D:/TA/Unity/New2026/TA2026/Reference/ShaderReference`。
+
+- [源码目录说明与别名对照](<../../../Reference/ShaderReference/README.md>)：列出压缩包、解压目录、角色 Shader 入口和附录。
+- 本轮分析的原始档案：[AllShader_1.5.3.7z](<../../../Reference/ShaderReference/EndField/AllShader_1.5.3.7z>)。目录中其他版本保留作历史参考，不自动切换分析版本。
+- 完整解压内容在 [AllShader_1.5.3/AllShader_1.5.3](<../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3>)；两层同名目录是当前实际结构，文档链接已按此定位。
+- 11 份被引用的代表源码已与原分析副本逐一核对 SHA256，一致；源码文档的原始片段和行号仍有效。
+- 文档引用的分析附录及教学 LUT 已集中在 [EndField/Analysis](<../../../Reference/ShaderReference/EndField/Analysis>)。源码和这些附录不再依赖 `D:/AI/PoJie` 下的旧资料路径。
+
+参考代码位于项目根目录的 `Reference` 下，不参与 `Assets` 的资源导入。新写的可运行学习 Shader 仍放在 `Assets`。旧 ToonURP 与旧 Demo/ZMD 的项目路径只作为历史对照保留。
+
 ## 当前工程与进度
 
 | 项目 | 已核对的状态 |
@@ -55,6 +67,7 @@
 ```text
 我在 D:\TA\Unity\New2026\TA2026 学习终末地角色 Shader，角色是提弗洛斯。
 请先读 D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\README.md，
+源码已迁入 D:\TA\Unity\New2026\TA2026\Reference\ShaderReference，请一并读该目录的 README.md。
 再按其中顺序阅读三份 Docs。里面保存了上一轮聊天结论、原始源码片段和 A002 抓帧绑定。
 我的目标是从 Unlit 无光照开始，一点点理解并还原原版表现。具体教学方式我接下来会说。
 请继承已经核对的分析，只在证据不足或实际结果有矛盾时针对性补查。

@@ -8,9 +8,15 @@
 
 证据有三层：①1.5.3 导出片元可直接证明的运算；②根据这些运算写出的易读解释/教学例子；③A002 当前抓帧的绑定与常量。第③层与第①层未完成版本及变体一一对齐，不能把两者合并成“已经知道本帧完整执行过程”。
 
-来源为 [FractalMiner](https://github.com/ShiyumeMeguri/FractalMiner) 中的 `AllShader_1.5.3.7z`。HGRenderPipeline 的 CPU 设置、运行时场景资源和完整工程依赖不包含在这些片元里。此前已扫描 CharacterNPR 家族 1614 个导出片元，Ramp 采样归类见 [sampling-inventory.json](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/sampling-inventory.json>)。
+来源为 [FractalMiner](https://github.com/ShiyumeMeguri/FractalMiner) 中的 `AllShader_1.5.3.7z`。HGRenderPipeline 的 CPU 设置、运行时场景资源和完整工程依赖不包含在这些片元里。此前已扫描 CharacterNPR 家族 1614 个导出片元，Ramp 采样归类见 [sampling-inventory.json](<../../../../Reference/ShaderReference/EndField/Analysis/ramp-audit/sampling-inventory.json>)。
 
 重要更正：本次重新核对文件头，**b468 的关键词是 `_DIFF_RAMP_ON _SPEC_RAMP_ON`，没有 `_NORMALMAP`、`_METALLICSPECGLOSSMAP` 或 `_SHADOW_LUT_TEX`**。不要因讨论围绕“普通身体”就把所有功能都加在这一个代表变体上。普通材质的纹理法线/P 图参考其他相应变体；LUT 片段来自 b560。b390 含 `_REALISTIC_LIGHTING`，只取它证明 P 图解码等对应代码，不能以其全部环境路径代替 b468。
+
+### 当前项目内的源码位置
+
+原始压缩包为 [AllShader_1.5.3.7z](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3.7z>)；完整解压根目录为 [AllShader_1.5.3/AllShader_1.5.3](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3>)。角色家族位于 [materials/characternpr](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr>)。两个连续的 `characternpr` 目录分别是家族与通用身体片元目录，不要少拼一层，也不要用其他 Shader 中同编号的 blob 替代。
+
+下表的 `body-ramp-b468.hlsl` 等名称是之前分析时取的别名；链接现已直接指向本项目解压目录中的原始 `Sub0_Pass0_Fragment_b*.hlsl`。11 份代表文件的 SHA256 均与旧副本一致，17 段内嵌原码及行号无需改变。[完整别名对照与目录说明](<../../../../Reference/ShaderReference/README.md>)列出具体位置。
 
 ### 源文件定位和校验
 
@@ -18,17 +24,17 @@
 
 | 文件 | 原文件头关键词 | SHA256 |
 | --- | --- | --- |
-| [body-ramp-b468.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _SPEC_RAMP_ON` | `18289891963a8f55856124a488f7d94f35a48f86ab79b124937d9313094f8159` |
-| [Sub0_Pass0_Fragment_b560.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/fragments/Sub0_Pass0_Fragment_b560.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _NORMALMAP _SHADOW_LUT_TEX` | `1635d72460d325b6675af70041434138444ad684d1f7f79eb6cd6d27f9be53a1` |
-| [Sub0_Pass0_Fragment_b390.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/fragments/Sub0_Pass0_Fragment_b390.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _METALLICSPECGLOSSMAP _NORMALMAP _REALISTIC_LIGHTING` | `338fec26e4baed58e9fbad449b0d8c26dde6939bc9e1ab24c9c703bcf0f56709` |
-| [Sub0_Pass0_Fragment_b371.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/fragments/Sub0_Pass0_Fragment_b371.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _NORMALMAP` | `b724d50df97027346aa686786c57e4f5ca5bd1e9096cc3f799ba0e66bd3cafee` |
-| [body-diff-b449.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-diff-b449.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON` | `a44e8a85a795899a2bf7859b907289060a26543453dfee10143d2e996d6598f1` |
-| [body-anisotropic-b1013.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-anisotropic-b1013.hlsl>) | `DITHER HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ANISOTROPY_SPECULAR_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SHADOW_LUT_TEX _SPEC_RAMP_ON` | `d8d2f89b7a6a34271fe1c7e3f4b88b9b817f6f5f80809439bc947b0401c2dd8a` |
-| [body-clearcoat-b1021.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-clearcoat-b1021.hlsl>) | `DITHER HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _CLEARCOAT _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SHADOW_LUT_TEX _SPEC_RAMP_ON` | `32af22735fd6b409f9c84e4440de74e50aec50685415d39865526ab93589567f` |
-| [body-stockings-b400.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-stockings-b400.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _METALLICSPECGLOSSMAP _NORMALMAP _SILK_STOCKINGS _SPEC_RAMP_ON` | `b505be7571e300f5c7c55651c67c6c46e48422d786493a6668b296429a6350bd` |
-| [hair-ramp-b96.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/hair-ramp-b96.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON` | `4b08c3c7249b2997f8c76d5cb92b5187f041233e3dabcc382b2574a63d9706cf` |
-| [skin-ramp-b96.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/skin-ramp-b96.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON` | `13c5b2cce3f1142466212604748e64ae7a3f5ecef662d36114f37e79ce52b904` |
-| [eye-ramp-b25.hlsl](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/eye-ramp-b25.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON` | `3d27bde9ccffa5bbbcaf1e38515cbdac281fe79d5ad25a5ec4e534f97a334366` |
+| [body-ramp-b468.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _SPEC_RAMP_ON` | `18289891963a8f55856124a488f7d94f35a48f86ab79b124937d9313094f8159` |
+| [Sub0_Pass0_Fragment_b560.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b560.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _NORMALMAP _SHADOW_LUT_TEX` | `1635d72460d325b6675af70041434138444ad684d1f7f79eb6cd6d27f9be53a1` |
+| [Sub0_Pass0_Fragment_b390.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b390.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _METALLICSPECGLOSSMAP _NORMALMAP _REALISTIC_LIGHTING` | `338fec26e4baed58e9fbad449b0d8c26dde6939bc9e1ab24c9c703bcf0f56709` |
+| [Sub0_Pass0_Fragment_b371.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b371.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _NORMALMAP` | `b724d50df97027346aa686786c57e4f5ca5bd1e9096cc3f799ba0e66bd3cafee` |
+| [body-diff-b449.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b449.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON` | `a44e8a85a795899a2bf7859b907289060a26543453dfee10143d2e996d6598f1` |
+| [body-anisotropic-b1013.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b1013.hlsl>) | `DITHER HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ANISOTROPY_SPECULAR_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SHADOW_LUT_TEX _SPEC_RAMP_ON` | `d8d2f89b7a6a34271fe1c7e3f4b88b9b817f6f5f80809439bc947b0401c2dd8a` |
+| [body-clearcoat-b1021.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b1021.hlsl>) | `DITHER HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _CLEARCOAT _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SHADOW_LUT_TEX _SPEC_RAMP_ON` | `32af22735fd6b409f9c84e4440de74e50aec50685415d39865526ab93589567f` |
+| [body-stockings-b400.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b400.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _METALLICSPECGLOSSMAP _NORMALMAP _SILK_STOCKINGS _SPEC_RAMP_ON` | `b505be7571e300f5c7c55651c67c6c46e48422d786493a6668b296429a6350bd` |
+| [hair-ramp-b96.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_hair/Sub0_Pass0_Fragment_b96.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON` | `4b08c3c7249b2997f8c76d5cb92b5187f041233e3dabcc382b2574a63d9706cf` |
+| [skin-ramp-b96.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_skin/Sub0_Pass0_Fragment_b96.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON` | `13c5b2cce3f1142466212604748e64ae7a3f5ecef662d36114f37e79ce52b904` |
+| [eye-ramp-b25.hlsl](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_eye/Sub0_Pass0_Fragment_b25.hlsl>) | `HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON` | `3d27bde9ccffa5bbbcaf1e38515cbdac281fe79d5ad25a5ec4e534f97a334366` |
 
 
 ### b468 常用变量字典
@@ -63,7 +69,7 @@
 
 b468 基础底色为 `BaseMap.rgb*BaseColor.rgb`，初始粗糙度为 `1-Smoothness`；不启用 LUT 时暗部底色先乘 `_ShadowColorBrightness`，再以灰度到颜色的 lerp 控制饱和度。
 
-原始导出片段：[body-ramp-b468.hlsl，L407–L419](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:407>)。
+原始导出片段：[body-ramp-b468.hlsl，L407–L419](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:407>)。
 
 ```hlsl
     float4 _467 = _BaseMap.SampleBias(sampler_LinearClamp, _3, _GlobalMipBias);
@@ -95,7 +101,7 @@ diffuseBase = baseColor * (0.96 * (1.0 - metallic));
 
 原始初始解码与后续 F0 构造如下；中间还有天气/材质分支，所以这不是完整最终输入处理。
 
-原始导出片段：[Sub0_Pass0_Fragment_b390.hlsl，L409–L417](<D:/AI/PoJie/analysis/endfield-1.5.3/fragments/Sub0_Pass0_Fragment_b390.hlsl:409>)。
+原始导出片段：[Sub0_Pass0_Fragment_b390.hlsl，L409–L417](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b390.hlsl:409>)。
 
 ```hlsl
     float4 _464 = _BaseMap.SampleBias(sampler_LinearClamp, _3, _GlobalMipBias);
@@ -109,7 +115,7 @@ diffuseBase = baseColor * (0.96 * (1.0 - metallic));
     float3 _491 = lerp(dot(_487, float3(0.21267290413379669189453125f, 0.715152204036712646484375f, 0.072175003588199615478515625f)).xxx, _487, _ShadowColorSaturation.xxx);
 ```
 
-原始导出片段：[Sub0_Pass0_Fragment_b390.hlsl，L849–L855](<D:/AI/PoJie/analysis/endfield-1.5.3/fragments/Sub0_Pass0_Fragment_b390.hlsl:849>)。
+原始导出片段：[Sub0_Pass0_Fragment_b390.hlsl，L849–L855](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b390.hlsl:849>)。
 
 ```hlsl
         _1920 = _474;
@@ -124,7 +130,7 @@ diffuseBase = baseColor * (0.96 * (1.0 - metallic));
 
 b468 的对应金属度与 Specular 来自标量参数：
 
-原始导出片段：[body-ramp-b468.hlsl，L863–L868](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:863>)。
+原始导出片段：[body-ramp-b468.hlsl，L863–L868](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:863>)。
 
 ```hlsl
     float _1923 = 0.959999978542327880859375f - (_1921 * 0.959999978542327880859375f);
@@ -142,7 +148,7 @@ b468 的对应金属度与 Specular 来自标量参数：
 
 透视相机 `V=normalize(cameraPosition-positionWS)`，正交模式改用相机轴。C 则是逆 View 的指定轴；具体矩阵布局和符号照原码解释，不直接当成 Unity 物体 forward。
 
-原始导出片段：[body-ramp-b468.hlsl，L388–L391](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:388>)。
+原始导出片段：[body-ramp-b468.hlsl，L388–L391](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:388>)。
 
 ```hlsl
     float3 _434 = lerp(-_4, float3(_TransformVariables_ViewMatrix[2u].x, _TransformVariables_ViewMatrix[2u].y, _TransformVariables_ViewMatrix[2u].z), _unity_OrthoParams.w.xxx);
@@ -154,7 +160,7 @@ b468 的对应金属度与 Specular 来自标量参数：
 
 C 的构造已在上一节原码 L419；主光方向/颜色及阴影输入如下：
 
-原始导出片段：[body-ramp-b468.hlsl，L875–L883](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:875>)。
+原始导出片段：[body-ramp-b468.hlsl，L875–L883](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:875>)。
 
 ```hlsl
     float3 _1973 = lerp(-_LightDataBuffer_DirectionalLightDirection.xyz, _CharacterParams11.xyz, _CharacterParams1.w.xxx);
@@ -203,7 +209,7 @@ float3 rampMultiplier = lerp(1, rampLight.rgb, colorSpan);
 
 这里的非线性输入、摄像机俯仰、自定义参数与用户旧 sigmoid 不是一套响应。用 `halfLambert` 代替输入可以作为学习简化，但不能宣称原码等价。
 
-原始导出片段：[body-ramp-b468.hlsl，L884–L909](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:884>)。
+原始导出片段：[body-ramp-b468.hlsl，L884–L909](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:884>)。
 
 ```hlsl
     float _2009 = dot(_1917, _1973);
@@ -257,7 +263,7 @@ float3 compensated = afterTint * gain;
 
 ### 4.1 分支条件与增益
 
-原始导出片段：[body-ramp-b468.hlsl，L427–L433](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:427>)。
+原始导出片段：[body-ramp-b468.hlsl，L427–L433](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:427>)。
 
 ```hlsl
     float _566 = lerp(_EnvironmentGlobalParams0.x, 1.0f, _CharacterParams12.w) * _ExposureWithMiscParams.x;
@@ -276,7 +282,7 @@ float3 compensated = afterTint * gain;
 
 体积查询、多层混合及 default SH 在 L433–555，下面从最终 SH 系数开始：
 
-原始导出片段：[body-ramp-b468.hlsl，L553–L590](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:553>)。
+原始导出片段：[body-ramp-b468.hlsl，L553–L590](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:553>)。
 
 ```hlsl
         float4 _921 = _899 + float4(_IVDefaultSHAr.x * _901, (_IVDefaultSHAr.y * _901) + ((_IVDefaultSHAr.w * _900) * 0.5f), _IVDefaultSHAr.z * _901, (_IVDefaultSHAr.w * _901) + ((_IVDefaultSHAr.y * _900) * 0.375f));
@@ -388,7 +394,7 @@ float DV = clamp(D*Vis - 6.103515625e-5, 0, 20);
 
 高光位置、形状与幅度由多个量共同决定：H 移动法线匹配方向；r 改宽窄；Ns 改表面变化；Ramp/F0/Vis/全局强度继续影响结果。主光高光结尾并不是用户旧 Shader 的 `NoL*shadow` 门控，不可只换 H 后就宣称完成移植。
 
-原始导出片段：[body-ramp-b468.hlsl，L910–L922](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:910>)。
+原始导出片段：[body-ramp-b468.hlsl，L910–L922](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:910>)。
 
 ```hlsl
     float3 _2142 = float3(_521.x, lerp(0.5f, _1973.y, _2008), _521.z);
@@ -439,7 +445,7 @@ mainResult = lighting*mixedBase*alphaPremultiplyFactor
 
 原码以 NoV 与粗糙度的拟合计算两项（可读作 scale / bias），组成 `envF0*scale+bias`，并以 `Ess=scale+bias` 进行一项能量补偿。不是简单写个常量 Fresnel 乘 Cubemap。
 
-原始导出片段：[body-ramp-b468.hlsl，L930–L940](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:930>)。
+原始导出片段：[body-ramp-b468.hlsl，L930–L940](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:930>)。
 
 ```hlsl
     float _2314 = lerp(_1918, _1785, _1784);
@@ -455,7 +461,7 @@ mainResult = lighting*mixedBase*alphaPremultiplyFactor
     float3 _2343 = -_438;
 ```
 
-原始导出片段：[body-ramp-b468.hlsl，L949–L949](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:949>)。
+原始导出片段：[body-ramp-b468.hlsl，L949–L949](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:949>)。
 
 ```hlsl
     _2388 = _2361 + (((_CharMaxCubemap.SampleLevel(sampler_LinearRepeat, reflect(_2343, _1783), (1.2000000476837158203125f * log2(max(_2314, 0.001000000047497451305389404296875f))) + 5.0f).xyz * ((_2336 + ((_2190 * ((1.0f - _2337) / _2337)) * _2336)) * 1.0f)) * ((clamp(_1063, 0.5f, 1.5f) * _CharacterParams0.w) * _2134)) * _1062);
@@ -478,7 +484,7 @@ reflection = Cubemap(reflect(-V,Ns),mip) * compensatedBRDF
 
 代表身体路径会按局部灯重新算 `normalize(Llocal+V)` 与分布，但复用主光阶段 `_2188`（已经乘了 Specular Ramp 的 specColor），没有在下面片段重新采样 Ramp：
 
-原始导出片段：[body-ramp-b468.hlsl，L1287–L1301](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-ramp-b468.hlsl:1287>)。
+原始导出片段：[body-ramp-b468.hlsl，L1287–L1301](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b468.hlsl:1287>)。
 
 ```hlsl
                             if (_2538 != 3u)
@@ -505,7 +511,7 @@ reflection = Cubemap(reflect(-V,Ns),mip) * compensatedBRDF
 
 本节来自 **b560 的 `_SHADOW_LUT_TEX` 变体**，不是 b468 的一段隐藏代码。输入是已乘 BaseColor 的底色，先从线性转到 sRGB 编码坐标，再查 32³ 颜色表。A002 原始 LUT 格式为 BC7_SRGB，纹理采样得到的 RGB 需要按对应色彩空间解释；不要额外重复进行输出 sRGB 解码。
 
-原始导出片段：[Sub0_Pass0_Fragment_b560.hlsl，L409–L422](<D:/AI/PoJie/analysis/endfield-1.5.3/fragments/Sub0_Pass0_Fragment_b560.hlsl:409>)。
+原始导出片段：[Sub0_Pass0_Fragment_b560.hlsl，L409–L422](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b560.hlsl:409>)。
 
 ```hlsl
     float4 _481 = _BaseMap.SampleBias(sampler_LinearClamp, _3, _GlobalMipBias);
@@ -544,7 +550,7 @@ float3 shadowBase = lerp(a,b,frac(z));
 
 如果想自己生成，用每个格点 `(r,g,b)/31` 作为输入，运行自定义配色函数并存输出，按同一布局写回即可。这只能说明一种制作方法，不能证明游戏团队实际使用的编辑器、调色流程或场景切换机制。
 
-已有教学脚本：[generate_demo_luts.py](<D:/AI/PoJie/analysis/endfield-1.5.3/generate_demo_luts.py>)；教学图：[恒等 LUT](<D:/AI/PoJie/analysis/endfield-1.5.3/demo-luts/identity-srgb-32.png>)、[示意暗部 LUT](<D:/AI/PoJie/analysis/endfield-1.5.3/demo-luts/example-shadow-srgb-32.png>)。**均非游戏原图。** 现在 A002 已有三张实际抓帧 LUT，使用时按材质事件选择，不能把教学图替换进去却称作原版。
+已有教学脚本：[generate_demo_luts.py](<../../../../Reference/ShaderReference/EndField/Analysis/generate_demo_luts.py>)；教学图：[恒等 LUT](<../../../../Reference/ShaderReference/EndField/Analysis/demo-luts/identity-srgb-32.png>)、[示意暗部 LUT](<../../../../Reference/ShaderReference/EndField/Analysis/demo-luts/example-shadow-srgb-32.png>)。**均非游戏原图。** 现在 A002 已有三张实际抓帧 LUT，使用时按材质事件选择，不能把教学图替换进去却称作原版。
 
 ## 9. Ramp 全部用途的审计范围
 
@@ -565,7 +571,7 @@ float3 shadowBase = lerp(a,b,frac(z));
 
 清漆额外采样原行：
 
-原始导出片段：[body-clearcoat-b1021.hlsl，L965–L965](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/body-clearcoat-b1021.hlsl:965>)。
+原始导出片段：[body-clearcoat-b1021.hlsl，L965–L965](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b1021.hlsl:965>)。
 
 ```hlsl
         float3 _2314 = _1183 * _SpecRampMap.SampleLevel(sampler_LinearRepeat, float2(_2306 * _2306, 0.5f), 0.0f).xyz;
@@ -573,13 +579,13 @@ float3 shadowBase = lerp(a,b,frac(z));
 
 头发主光与局部灯的两处独立采样原行：
 
-原始导出片段：[hair-ramp-b96.hlsl，L1040–L1040](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/hair-ramp-b96.hlsl:1040>)。
+原始导出片段：[hair-ramp-b96.hlsl，L1040–L1040](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_hair/Sub0_Pass0_Fragment_b96.hlsl:1040>)。
 
 ```hlsl
     float3 _2325 = (_2312 * _SpecRampMap.SampleLevel(sampler_LinearMirror, float2(_2312.x, float(_2304 > 0.0f) * _2315), 0.0f).xyz) * _580;
 ```
 
-原始导出片段：[hair-ramp-b96.hlsl，L1380–L1380](<D:/AI/PoJie/analysis/endfield-1.5.3/ramp-audit/hair-ramp-b96.hlsl:1380>)。
+原始导出片段：[hair-ramp-b96.hlsl，L1380–L1380](<../../../../Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_hair/Sub0_Pass0_Fragment_b96.hlsl:1380>)。
 
 ```hlsl
                                 _3398 = (((((((_3379 * _SpecRampMap.SampleLevel(sampler_LinearMirror, float2(_3379.x, float(_3371 > 0.0f) * _2315), 0.0f).xyz) * _580) * _2076) * _AnisotropyIntensity) * 5.0f) * _1946) * 1.0f) * _LightDataBuffer_PunctualLightData[_2639].z;

@@ -1,0 +1,495 @@
+// Stage: Fragment  Blob: 442  ParamBlob: 26  Language: hlsl
+// Keywords: DRAW_PLANET_RING HG_ENABLE_MV HG_SKYBOX_NEBULA HG_SKYBOX_STAR
+// Generated names (not authored, no CPU-side property matches them):  <Buffer>_Stripped_<byteOffset> = unnamed member at that offset;
+
+static uint _217 = 0u;
+
+cbuffer type_TransformVariables : register(b0, space3)
+{
+    column_major float4x4 _TransformVariables_ViewMatrix : packoffset(c0);
+    column_major float4x4 _TransformVariables_Stripped_64 : packoffset(c4);
+    column_major float4x4 _TransformVariables_Stripped_128 : packoffset(c8);
+    column_major float4x4 _TransformVariables_Stripped_192 : packoffset(c12);
+    column_major float4x4 _TransformVariables_Stripped_256 : packoffset(c16);
+    column_major float4x4 _TransformVariables_Stripped_320 : packoffset(c20);
+    column_major float4x4 _TransformVariables_Stripped_384 : packoffset(c24);
+    column_major float4x4 _TransformVariables_Stripped_448 : packoffset(c28);
+    column_major float4x4 _TransformVariables_NonJitteredViewNoTransProjMatrix : packoffset(c32);
+    column_major float4x4 _TransformVariables_Stripped_576 : packoffset(c36);
+    column_major float4x4 _TransformVariables_Stripped_640 : packoffset(c40);
+    float4 _TransformVariables_WorldSpaceCameraPos_Internal : packoffset(c44);
+    column_major float4x4 _TransformVariables_Stripped_720 : packoffset(c45);
+    column_major float4x4 _TransformVariables_Stripped_784 : packoffset(c49);
+    column_major float4x4 _TransformVariables_Stripped_848 : packoffset(c53);
+    column_major float4x4 _TransformVariables_PrevNonJitteredViewNoTransProjMatrix : packoffset(c57);
+    column_major float4x4 _TransformVariables_Stripped_976 : packoffset(c61);
+    column_major float4x4 _TransformVariables_Stripped_1040 : packoffset(c65);
+    column_major float4x4 _TransformVariables_Stripped_1104 : packoffset(c69);
+    column_major float4x4 _TransformVariables_Stripped_1168 : packoffset(c73);
+    column_major float4x4 _TransformVariables_Stripped_1232 : packoffset(c77);
+    float4 _TransformVariables_PrevCamPosRWS_Internal : packoffset(c81);
+};
+
+cbuffer type_ShaderVariablesGlobal : register(b1, space3)
+{
+    float4 ShaderVariablesGlobal_Stripped_0 : packoffset(c0);
+    float4 ShaderVariablesGlobal_Stripped_16 : packoffset(c1);
+    float4 ShaderVariablesGlobal_Stripped_32 : packoffset(c2);
+    float4 ShaderVariablesGlobal_Stripped_48 : packoffset(c3);
+    float4 ShaderVariablesGlobal_Stripped_64 : packoffset(c4);
+    float4 ShaderVariablesGlobal_Stripped_80 : packoffset(c5);
+    float4 ShaderVariablesGlobal_Stripped_96[6] : packoffset(c6);
+    float4 ShaderVariablesGlobal_Stripped_192[6] : packoffset(c12);
+    float4 ShaderVariablesGlobal_Stripped_288 : packoffset(c18);
+    float4 _TaaJitterStrength : packoffset(c19);
+    float4 _Time : packoffset(c20);
+    float4 ShaderVariablesGlobal_Stripped_336 : packoffset(c21);
+    float4 ShaderVariablesGlobal_Stripped_352 : packoffset(c22);
+    float4 ShaderVariablesGlobal_Stripped_368 : packoffset(c23);
+    float4 ShaderVariablesGlobal_Stripped_384 : packoffset(c24);
+    float4 ShaderVariablesGlobal_Stripped_400 : packoffset(c25);
+    float _GlobalMipBias : packoffset(c26);
+    float ShaderVariablesGlobal_Stripped_420 : packoffset(c26.y);
+    float ShaderVariablesGlobal_Stripped_424 : packoffset(c26.z);
+    uint _FrameCount : packoffset(c26.w);
+    float4 ShaderVariablesGlobal_Stripped_432 : packoffset(c27);
+    int4 ShaderVariablesGlobal_Stripped_448 : packoffset(c28);
+    float4 ShaderVariablesGlobal_Stripped_464 : packoffset(c29);
+    float4 ShaderVariablesGlobal_Stripped_480 : packoffset(c30);
+    float4 ShaderVariablesGlobal_Stripped_496 : packoffset(c31);
+    float4 ShaderVariablesGlobal_Stripped_512 : packoffset(c32);
+    float4 ShaderVariablesGlobal_Stripped_528 : packoffset(c33);
+    float4 ShaderVariablesGlobal_Stripped_544 : packoffset(c34);
+    float4 ShaderVariablesGlobal_Stripped_560 : packoffset(c35);
+    float4 ShaderVariablesGlobal_Stripped_576 : packoffset(c36);
+    float4 ShaderVariablesGlobal_Stripped_592 : packoffset(c37);
+    float4 ShaderVariablesGlobal_Stripped_608 : packoffset(c38);
+    float4 ShaderVariablesGlobal_Stripped_624[4] : packoffset(c39);
+    float4 ShaderVariablesGlobal_Stripped_688[4] : packoffset(c43);
+    float4 ShaderVariablesGlobal_Stripped_752[4] : packoffset(c47);
+    float4 ShaderVariablesGlobal_Stripped_816[4] : packoffset(c51);
+    float4 ShaderVariablesGlobal_Stripped_880 : packoffset(c55);
+    float4 ShaderVariablesGlobal_Stripped_896 : packoffset(c56);
+    float4 ShaderVariablesGlobal_Stripped_912[4] : packoffset(c57);
+    float4 ShaderVariablesGlobal_Stripped_976[4] : packoffset(c61);
+    float4 ShaderVariablesGlobal_Stripped_1040[4] : packoffset(c65);
+    float4 ShaderVariablesGlobal_Stripped_1104 : packoffset(c69);
+    float4 ShaderVariablesGlobal_Stripped_1120 : packoffset(c70);
+    float4 _AtmosphereFogParams0 : packoffset(c71);
+    float4 _AtmosphereFogParams1 : packoffset(c72);
+    float4 _AtmosphereFogParams2 : packoffset(c73);
+    float4 _AtmosphereFogParams3 : packoffset(c74);
+    float4 _AtmosphereFogParams4 : packoffset(c75);
+    float4 _AtmosphereFogParams5 : packoffset(c76);
+    float4 _ExponentialFogParams0 : packoffset(c77);
+    float4 _ExponentialFogParams1 : packoffset(c78);
+    float4 _ExponentialFogParams2 : packoffset(c79);
+    float4 _ExponentialFogParams3 : packoffset(c80);
+    float4 _ExponentialFogParams4 : packoffset(c81);
+    float4 _ExponentialFogParams5 : packoffset(c82);
+    float4 _VolumetricFogParams0 : packoffset(c83);
+    float4 _VolumetricFogParams1 : packoffset(c84);
+    float4 _VolumetricFogParams2 : packoffset(c85);
+    float4 _VolumetricFogParams3 : packoffset(c86);
+    float4 _VolumetricFogParams4 : packoffset(c87);
+    float4 ShaderVariablesGlobal_Stripped_1408 : packoffset(c88);
+    float4 ShaderVariablesGlobal_Stripped_1424 : packoffset(c89);
+    float4 ShaderVariablesGlobal_Stripped_1440 : packoffset(c90);
+    float4 ShaderVariablesGlobal_Stripped_1456 : packoffset(c91);
+    float4 ShaderVariablesGlobal_Stripped_1472 : packoffset(c92);
+    float4 ShaderVariablesGlobal_Stripped_1488 : packoffset(c93);
+    float4 ShaderVariablesGlobal_Stripped_1504 : packoffset(c94);
+    float4 ShaderVariablesGlobal_Stripped_1520 : packoffset(c95);
+    float4 ShaderVariablesGlobal_Stripped_1536 : packoffset(c96);
+    float4 ShaderVariablesGlobal_Stripped_1552 : packoffset(c97);
+    float4 ShaderVariablesGlobal_Stripped_1568 : packoffset(c98);
+    float4 ShaderVariablesGlobal_Stripped_1584 : packoffset(c99);
+    float4 ShaderVariablesGlobal_Stripped_1600 : packoffset(c100);
+    float4 ShaderVariablesGlobal_Stripped_1616 : packoffset(c101);
+    float4 ShaderVariablesGlobal_Stripped_1632 : packoffset(c102);
+    float4 ShaderVariablesGlobal_Stripped_1648 : packoffset(c103);
+    float4 _VFXParams1 : packoffset(c104);
+    float4 ShaderVariablesGlobal_Stripped_1680 : packoffset(c105);
+    float4 ShaderVariablesGlobal_Stripped_1696 : packoffset(c106);
+    float4 ShaderVariablesGlobal_Stripped_1712 : packoffset(c107);
+    float4 ShaderVariablesGlobal_Stripped_1728 : packoffset(c108);
+    float4 ShaderVariablesGlobal_Stripped_1744 : packoffset(c109);
+    float4 ShaderVariablesGlobal_Stripped_1760 : packoffset(c110);
+    float4 ShaderVariablesGlobal_Stripped_1776 : packoffset(c111);
+    float4 ShaderVariablesGlobal_Stripped_1792 : packoffset(c112);
+    float4 ShaderVariablesGlobal_Stripped_1808 : packoffset(c113);
+    float4 ShaderVariablesGlobal_Stripped_1824 : packoffset(c114);
+    float4 ShaderVariablesGlobal_Stripped_1840 : packoffset(c115);
+    float4 ShaderVariablesGlobal_Stripped_1856 : packoffset(c116);
+    float4 ShaderVariablesGlobal_Stripped_1872 : packoffset(c117);
+    float4 ShaderVariablesGlobal_Stripped_1888 : packoffset(c118);
+    float4 ShaderVariablesGlobal_Stripped_1904 : packoffset(c119);
+    float4 ShaderVariablesGlobal_Stripped_1920 : packoffset(c120);
+    float4 ShaderVariablesGlobal_Stripped_1936 : packoffset(c121);
+    float4 ShaderVariablesGlobal_Stripped_1952 : packoffset(c122);
+    float4 ShaderVariablesGlobal_Stripped_1968 : packoffset(c123);
+    float4 ShaderVariablesGlobal_Stripped_1984 : packoffset(c124);
+    float4 ShaderVariablesGlobal_Stripped_2000 : packoffset(c125);
+    float4 ShaderVariablesGlobal_Stripped_2016 : packoffset(c126);
+    float4 ShaderVariablesGlobal_Stripped_2032[2] : packoffset(c127);
+    float4 ShaderVariablesGlobal_Stripped_2064[2] : packoffset(c129);
+    float ShaderVariablesGlobal_Stripped_2096 : packoffset(c131);
+    float ShaderVariablesGlobal_Stripped_2100 : packoffset(c131.y);
+    float ShaderVariablesGlobal_Stripped_2104 : packoffset(c131.z);
+    float ShaderVariablesGlobal_Stripped_2108 : packoffset(c131.w);
+    float4 ShaderVariablesGlobal_Stripped_2112 : packoffset(c132);
+    float4 ShaderVariablesGlobal_Stripped_2128 : packoffset(c133);
+    float4 ShaderVariablesGlobal_Stripped_2144 : packoffset(c134);
+    float4 ShaderVariablesGlobal_Stripped_2160 : packoffset(c135);
+    float4 ShaderVariablesGlobal_Stripped_2176 : packoffset(c136);
+    float4 ShaderVariablesGlobal_Stripped_2192 : packoffset(c137);
+    float4 ShaderVariablesGlobal_Stripped_2208 : packoffset(c138);
+    float4 ShaderVariablesGlobal_Stripped_2224 : packoffset(c139);
+    float4 ShaderVariablesGlobal_Stripped_2240 : packoffset(c140);
+    float4 ShaderVariablesGlobal_Stripped_2256 : packoffset(c141);
+    float4 ShaderVariablesGlobal_Stripped_2272 : packoffset(c142);
+    float4 ShaderVariablesGlobal_Stripped_2288 : packoffset(c143);
+    float4 ShaderVariablesGlobal_Stripped_2304 : packoffset(c144);
+    float4 ShaderVariablesGlobal_Stripped_2320 : packoffset(c145);
+    float4 ShaderVariablesGlobal_Stripped_2336 : packoffset(c146);
+    float4 ShaderVariablesGlobal_Stripped_2352 : packoffset(c147);
+    float4 ShaderVariablesGlobal_Stripped_2368 : packoffset(c148);
+    float4 ShaderVariablesGlobal_Stripped_2384 : packoffset(c149);
+    float4 ShaderVariablesGlobal_Stripped_2400 : packoffset(c150);
+    float4 ShaderVariablesGlobal_Stripped_2416 : packoffset(c151);
+    float4 ShaderVariablesGlobal_Stripped_2432 : packoffset(c152);
+    float4 ShaderVariablesGlobal_Stripped_2448 : packoffset(c153);
+    float4 ShaderVariablesGlobal_Stripped_2464 : packoffset(c154);
+    float4 ShaderVariablesGlobal_Stripped_2480 : packoffset(c155);
+    float4 ShaderVariablesGlobal_Stripped_2496 : packoffset(c156);
+    float4 ShaderVariablesGlobal_Stripped_2512 : packoffset(c157);
+    float4 ShaderVariablesGlobal_Stripped_2528 : packoffset(c158);
+    float4 ShaderVariablesGlobal_Stripped_2544 : packoffset(c159);
+    float4 ShaderVariablesGlobal_Stripped_2560 : packoffset(c160);
+    float4 ShaderVariablesGlobal_Stripped_2576 : packoffset(c161);
+    column_major float4x4 ShaderVariablesGlobal_Stripped_2592 : packoffset(c162);
+    float4 ShaderVariablesGlobal_Stripped_2656 : packoffset(c166);
+    float4 ShaderVariablesGlobal_Stripped_2672 : packoffset(c167);
+    float4 ShaderVariablesGlobal_Stripped_2688[32] : packoffset(c168);
+};
+
+cbuffer type_UnityPerMaterial : register(b0, space1)
+{
+    float _PlanetInView : packoffset(c0);
+    float _TalosInView : packoffset(c0.y);
+    float _RingShadowSoftness0 : packoffset(c0.z);
+    float UnityPerMaterial_Stripped_12 : packoffset(c0.w);
+    float _StarNdlSharp0 : packoffset(c1);
+    float _StarNdlSharp1 : packoffset(c1.y);
+    float _StarBackFaceAlpha0 : packoffset(c1.z);
+    float _StarBackFaceAlpha1 : packoffset(c1.w);
+    float _PlanetBlendMode0 : packoffset(c2);
+    float _PlanetBlendMode1 : packoffset(c2.y);
+    float UnityPerMaterial_Stripped_40 : packoffset(c2.z);
+    float UnityPerMaterial_Stripped_44 : packoffset(c2.w);
+    float4 UnityPerMaterial_Stripped_48 : packoffset(c3);
+    float4 UnityPerMaterial_Stripped_64 : packoffset(c4);
+    float4 _PlanetColor0 : packoffset(c5);
+    float4 _PlanetColor1 : packoffset(c6);
+    float4 _RingColorAlpha0 : packoffset(c7);
+    float4 UnityPerMaterial_Stripped_128 : packoffset(c8);
+    float4 _PlanetEmissive0 : packoffset(c9);
+    float4 _PlanetEmissive1 : packoffset(c10);
+    float4 UnityPerMaterial_Stripped_176 : packoffset(c11);
+    float4 UnityPerMaterial_Stripped_192 : packoffset(c12);
+    float4 _PlanetCenterPos0 : packoffset(c13);
+    float4 _PlanetCenterPos1 : packoffset(c14);
+    float4 _PlanetCenterViewDir0 : packoffset(c15);
+    float4 _PlanetCenterViewDir1 : packoffset(c16);
+    float4 _IncidentLightDir0 : packoffset(c17);
+    float4 _IncidentLightDir1 : packoffset(c18);
+    float4 _PlanetParams0 : packoffset(c19);
+    float4 _PlanetParams1 : packoffset(c20);
+    float4 _PlanetUpWs0 : packoffset(c21);
+    float4 _PlanetUpWs1 : packoffset(c22);
+    float4 _PlanetForwardWs0 : packoffset(c23);
+    float4 _PlanetForwardWs1 : packoffset(c24);
+    float4 _PlanetRightWs0 : packoffset(c25);
+    float4 _PlanetRightWs1 : packoffset(c26);
+    float4 _PlanetAtmosphereParams10 : packoffset(c27);
+    float4 _PlanetAtmosphereParams20 : packoffset(c28);
+    float4 _PlanetAtmosphereParams30 : packoffset(c29);
+    float4 _PlanetAtmosphereParams11 : packoffset(c30);
+    float4 _PlanetAtmosphereParams21 : packoffset(c31);
+    float4 _PlanetAtmosphereParams31 : packoffset(c32);
+    float4 _RingParams : packoffset(c33);
+    float4 _RingColor : packoffset(c34);
+    float4 _RingUpWithBelow : packoffset(c35);
+    float4 _RingFoward : packoffset(c36);
+    float4 _RingRight : packoffset(c37);
+    float4 _CloudOpacities : packoffset(c38);
+    float4 _CloudTint : packoffset(c39);
+    float4 _CloudParam : packoffset(c40);
+    float4 _CloudFlowParam : packoffset(c41);
+    float4 _SunDiscParam0 : packoffset(c42);
+    float4 _SunDiscParam1 : packoffset(c43);
+    float4 _SunDiscParam2 : packoffset(c44);
+    float4 _SkyBoxStarParam0 : packoffset(c45);
+    float4 _SkyBoxStarParam1 : packoffset(c46);
+    float4 _SkyBoxStarParam2 : packoffset(c47);
+    float4 _SkyBoxStarParam3 : packoffset(c48);
+    float4 _SkyBoxStarParam4 : packoffset(c49);
+    float4 _SkyBoxStarParam5 : packoffset(c50);
+    float4 _SkyBoxStarParam6 : packoffset(c51);
+};
+
+SamplerState sampler_PointMirror : register(s8, space3);
+SamplerState sampler_PointRepeat : register(s7, space3);
+Texture3D<float4> _IntegratedLightScattering : register(t17, space3);
+Texture2D<float4> _SkyViewLut : register(t11, space3);
+Texture2D<float4> _SkyboxStarDensityMap : register(t9, space3);
+Texture2D<float4> _SkyboxNebulaTexture : register(t10, space3);
+Texture2D<float4> _PlanetBaseMap0 : register(t16, space3);
+SamplerState sampler_PointClamp_PlanetBaseMap0 : register(s6, space3);
+Texture2D<float4> _PlanetBaseMap1 : register(t15, space3);
+SamplerState sampler_LinearMirrorOnce_PlanetBaseMap1 : register(s5, space3);
+Texture2D<float4> _PlanetEmiMap0 : register(t14, space3);
+SamplerState sampler_LinearMirror_PlanetEmiMap0 : register(s4, space3);
+Texture2D<float4> _PlanetEmiMap1 : register(t13, space3);
+SamplerState sampler_LinearRepeat_PlanetEmiMap1 : register(s3, space3);
+Texture2D<float4> _PlanetRingTex0 : register(t12, space3);
+SamplerState sampler_LinearClamp : register(s2, space3);
+
+static float4 gl_FragCoord;
+static float3 _4;
+static float3 _5;
+static float3 _6;
+static float4 _7;
+static float4 _8;
+
+struct SPIRV_Cross_Input
+{
+    float3 _4 : TEXCOORD0;
+    float3 _5 : TEXCOORD2;
+    float3 _6 : TEXCOORD3;
+    float4 gl_FragCoord : SV_Position;
+};
+
+struct SPIRV_Cross_Output
+{
+    float4 _7 : SV_Target0;
+    float4 _8 : SV_Target1;
+};
+
+void frag_main()
+{
+    float _221 = 1.0f / gl_FragCoord.w;
+    uint2 _226 = uint2(gl_FragCoord.xy);
+    float3 _230 = _4 - _TransformVariables_WorldSpaceCameraPos_Internal.xyz;
+    float _231 = dot(_230, _230);
+    float _233 = rsqrt(max(_231, 9.9999999392252902907785028219223e-09f));
+    float3 _234 = _230 * _233;
+    float _235 = _231 * _233;
+    float3 _239 = _234 * (1.0f / dot(abs(_234), 1.0f.xxx));
+    float _240 = _239.x;
+    float _241 = _239.z;
+    float _252 = _234.y;
+    float4 _256 = _SkyViewLut.SampleLevel(sampler_PointMirror, float2((_240 + _241) + 1.0f, (_240 - _241) + 1.0f) * 0.5f, 0.0f) * clamp(1.0f + (_252 * 10.0f), 0.0f, 1.0f);
+    float4 _489 = 0.0f.xxxx;
+    float _490 = 0.0f;
+    float _491 = 0.0f;
+    [branch]
+    if (_PlanetInView > 0.75f)
+    {
+        float3 _297 = normalize(_230);
+        float _298 = dot(_297, _PlanetCenterViewDir0.xyz);
+        float _303 = ((_PlanetParams0.x * _PlanetParams0.x) - 1.0f) + (_298 * _298);
+        float3 _316 = (((_297 * (_298 - sqrt(max(0.0f, _303)))) - _PlanetCenterViewDir0.xyz) / _PlanetParams0.x.xxx).xyz;
+        float _318 = float(max(_303 * clamp(dot(_297, normalize(_PlanetCenterViewDir0.xyz)), 0.0f, 1.0f), 0.0f) > 0.0f);
+        float3 _327 = ((_297 * (abs(dot(_PlanetUpWs0.xyz, _PlanetCenterViewDir0.xyz)) / abs(dot(_PlanetUpWs0.xyz, _297)))) - _PlanetCenterViewDir0.xyz).xyz;
+        float _332 = length(_327);
+        float3 _334 = _327 / _332.xxx;
+        float _339 = ((_332 * float(abs(dot(_PlanetUpWs0.xyz, _327)) < 0.001000000047497451305389404296875f)) * _PlanetParams0.z) + _PlanetParams0.w;
+        float _347 = dot(_316, _PlanetUpWs0.xyz);
+        float _348 = -_347;
+        float3 _356 = normalize(_316 - (_PlanetUpWs0.xyz * _347));
+        float _365 = float(int(sign(dot(_356, _PlanetRightWs0.xyz))));
+        float2 _370 = float2(clamp(-_365, 0.0f, 1.0f) + (_365 * (acos(dot(_356, _PlanetForwardWs0.xyz)) * 0.15915493667125701904296875f)), ((((-0.22222222387790679931640625f) * (_348 * _348)) + (-0.27777779102325439453125f)) * _348) + 0.500000059604644775390625f);
+        float4 _374 = _PlanetBaseMap0.SampleBias(sampler_PointClamp_PlanetBaseMap0, _370, _GlobalMipBias);
+        float _389 = _374.w;
+        float4 _394 = float4((_374.xyz * clamp((clamp(dot(_IncidentLightDir0.xyz, _316), 0.0f, 1.0f) * _StarNdlSharp0) + _StarBackFaceAlpha0, 0.0f, 1.0f)) + (_PlanetEmiMap0.SampleBias(sampler_LinearMirror_PlanetEmiMap0, _370, _GlobalMipBias).xyz * _PlanetEmissive0.xyz), _389) * _318;
+        float _404 = clamp(float(int(sign(clamp(1.0f - _339, 0.0f, 1.0f) * _339))), 0.0f, 1.0f) * lerp(1.0f, clamp(float(int(sign(-dot(_297, _334)))), 0.0f, 1.0f), _318);
+        float _411 = float(int(sign(dot(_334, _PlanetRightWs0.xyz))));
+        float _426 = clamp(-dot(_IncidentLightDir0.xyz, _334), 0.0f, 1.0f);
+        float4 _440 = (_PlanetRingTex0.SampleBias(sampler_LinearClamp, float2(clamp(-_411, 0.0f, 1.0f) + (_411 * (acos(dot(_334, _PlanetForwardWs0.xyz)) * 0.15915493667125701904296875f)), _339), _GlobalMipBias) * _RingColorAlpha0) * ((1.0f - clamp(max((((_PlanetParams0.x - (_332 * sqrt(1.0f - (_426 * _426)))) * _PlanetParams0.y) / _RingShadowSoftness0) + 1.0f, 0.0f), 0.0f, 1.0f)) * clamp(abs(dot(_IncidentLightDir0.xyz, _PlanetUpWs0.xyz)) + 0.4000000059604644775390625f, 0.0f, 1.0f));
+        float3 _444 = (_440.xyz * _440.w) * _404;
+        float3 _446 = (_394.xyz * _389).xyz + _444;
+        float4 _447 = float4(_446.x, _446.y, _446.z, _394.w);
+        _447.w = _394.w + ((_440.w * _404) * (1.0f - _318));
+        float4 _459 = (_447 * _PlanetColor0) * lerp(1.0f, clamp(_297.y, 0.0f, 1.0f), _PlanetAtmosphereParams30.w);
+        float3 _460 = _459.xyz;
+        float _473 = _459.w;
+        float3 _487 = (_256.xyz * (1.0f - (_473 * (1.0f - (step(0.5f, _PlanetBlendMode0) * step(_PlanetBlendMode0, 1.5f)))))) + ((lerp(dot(_460, float3(0.21267290413379669189453125f, 0.715152204036712646484375f, 0.072175003588199615478515625f)).xxx, _460, _VFXParams1.w.xxx) * _VFXParams1.xyz).xyz * (1.0f - ((1.0f - _473) * step(_PlanetBlendMode0, 0.5f))));
+        _489 = float4(_487.x, _487.y, _487.z, _256.w);
+        _490 = length(_444);
+        _491 = max(0.0f, _318);
+    }
+    else
+    {
+        _489 = _256;
+        _490 = 0.0f;
+        _491 = 0.0f;
+    }
+    float4 _623 = 0.0f.xxxx;
+    float _624 = 0.0f;
+    [branch]
+    if (_TalosInView > 0.75f)
+    {
+        float3 _526 = normalize(_230);
+        float _527 = dot(_526, _PlanetCenterViewDir1.xyz);
+        float _532 = ((_PlanetParams1.x * _PlanetParams1.x) - 1.0f) + (_527 * _527);
+        float3 _545 = (((_526 * (_527 - sqrt(max(0.0f, _532)))) - _PlanetCenterViewDir1.xyz) / _PlanetParams1.x.xxx).xyz;
+        float _547 = float(max(_532 * clamp(dot(_526, normalize(_PlanetCenterViewDir1.xyz)), 0.0f, 1.0f), 0.0f) > 0.0f);
+        float _549 = dot(_545, _PlanetUpWs1.xyz);
+        float _550 = -_549;
+        float3 _558 = normalize(_545 - (_PlanetUpWs1.xyz * _549));
+        float _567 = float(int(sign(dot(_558, _PlanetRightWs1.xyz))));
+        float2 _572 = float2(clamp(-_567, 0.0f, 1.0f) + (_567 * (acos(dot(_558, _PlanetForwardWs1.xyz)) * 0.15915493667125701904296875f)), ((((-0.22222222387790679931640625f) * (_550 * _550)) + (-0.27777779102325439453125f)) * _550) + 0.500000059604644775390625f);
+        float4 _576 = _PlanetBaseMap1.SampleBias(sampler_LinearMirrorOnce_PlanetBaseMap1, _572, _GlobalMipBias);
+        float _591 = _576.w;
+        float4 _596 = float4((_576.xyz * clamp((clamp(dot(_IncidentLightDir1.xyz, _545), 0.0f, 1.0f) * _StarNdlSharp1) + _StarBackFaceAlpha1, 0.0f, 1.0f)) + (_PlanetEmiMap1.SampleBias(sampler_LinearRepeat_PlanetEmiMap1, _572, _GlobalMipBias).xyz * _PlanetEmissive1.xyz), _591) * _547;
+        float3 _598 = _596.xyz * _591;
+        float4 _604 = (float4(_598.x, _598.y, _598.z, _596.w) * _PlanetColor1) * lerp(1.0f, clamp(_526.y, 0.0f, 1.0f), _PlanetAtmosphereParams31.w);
+        float _607 = _604.w;
+        float3 _621 = (_489.xyz * (1.0f - (_607 * (1.0f - (step(0.5f, _PlanetBlendMode1) * step(_PlanetBlendMode1, 1.5f)))))) + (_604.xyz * (1.0f - ((1.0f - _607) * step(_PlanetBlendMode1, 0.5f))));
+        _623 = float4(_621.x, _621.y, _621.z, _489.w);
+        _624 = max(_491, _547);
+    }
+    else
+    {
+        _623 = _489;
+        _624 = _491;
+    }
+    float _628 = _SkyBoxStarParam4.z * 0.0174532942473888397216796875f;
+    float _629 = sin(_628);
+    float _630 = cos(_628);
+    float2 _635 = _234.xz;
+    float2 _636 = mul(float2x2(float2(_630, -_629), float2(_629, _630)), _635);
+    float _637 = _636.x;
+    float _638 = _636.y;
+    float _639 = _637 / _638;
+    float _640 = abs(_639);
+    bool _641 = _640 < 1.0f;
+    float _643 = _641 ? _640 : (1.0f / _640);
+    float _644 = _643 * _643;
+    float _649 = (1.0f + (((-0.3018949925899505615234375f) + (0.087292902171611785888671875f * _644)) * _644)) * _643;
+    float _651 = _641 ? _649 : (1.57079637050628662109375f - _649);
+    float _661 = abs(_252);
+    float _668 = ((((0.04688780009746551513671875f * _661) + (-0.203471004962921142578125f)) * _661) + 1.57079601287841796875f) * sqrt(1.0f - _661);
+    float _672 = 1.57079637050628662109375f - ((_252 >= 0.0f) ? _668 : (3.1415927410125732421875f - _668));
+    float2 _675 = (float2(((_639 < 0.0f) ? (-_651) : _651) + (((_637 >= 0.0f) ? 3.141592502593994140625f : (-3.141592502593994140625f)) * float(_638 < 0.0f)), _672) * float2(0.159099996089935302734375f, 0.3183000087738037109375f)) + 0.5f.xx;
+    _675.y = _675.y;
+    float4 _683 = _SkyboxNebulaTexture.SampleBias(sampler_PointRepeat, _675, _GlobalMipBias);
+    float3 _684 = _683.xyz;
+    float _696 = _SkyBoxStarParam3.w * 0.0174532942473888397216796875f;
+    float _697 = sin(_696);
+    float _698 = cos(_696);
+    float2 _703 = mul(float2x2(float2(_698, -_697), float2(_697, _698)), _635);
+    float _704 = _703.x;
+    float _705 = _703.y;
+    float _708 = _704 / _705;
+    float _709 = abs(_708);
+    bool _710 = _709 < 1.0f;
+    float _712 = _710 ? _709 : (1.0f / _709);
+    float _713 = _712 * _712;
+    float _718 = (1.0f + (((-0.3018949925899505615234375f) + (0.087292902171611785888671875f * _713)) * _713)) * _712;
+    float _720 = _710 ? _718 : (1.57079637050628662109375f - _718);
+    float2 _732 = (float2(((_708 < 0.0f) ? (-_720) : _720) + (((_704 >= 0.0f) ? 3.141592502593994140625f : (-3.141592502593994140625f)) * float(_705 < 0.0f)), _672) * float2(0.159099996089935302734375f, 0.3183000087738037109375f)) + 0.5f.xx;
+    _732.y = _732.y;
+    float3 _759 = normalize(float3(_704, _705, _252).xzy) * (200.0f * _SkyBoxStarParam0.z);
+    float3 _760 = floor(_759);
+    float3 _762 = frac(_759) - 0.5f.xxx;
+    float3 _768 = frac((_760 + (_SkyBoxStarParam6.y * 0.61803400516510009765625f).xxx) * 0.103100001811981201171875f);
+    float3 _773 = _768 + dot(_768, _768.yzx + 33.3300018310546875f.xxx).xxx;
+    float _779 = frac((_773.x + _773.y) * _773.z);
+    float _781 = clamp(_SkyBoxStarParam1.w, 0.0f, 1.0f);
+    float _783 = max(lerp(0.0f, 0.00999999977648258209228515625f, _781), 9.9999997473787516355514526367188e-06f);
+    float3 _796 = frac(float3(_779 + (_SkyBoxStarParam4.x * 0.61803400516510009765625f), _SkyBoxStarParam4.x + 1.7000000476837158203125f, (_779 * 3.13000011444091796875f) + 0.10999999940395355224609375f) * 0.103100001811981201171875f);
+    float3 _801 = _796 + dot(_796, _796.yzx + 33.3300018310546875f.xxx).xxx;
+    float _810 = lerp(_SkyBoxStarParam3.x, _SkyBoxStarParam3.y, frac((_801.x + _801.y) * _801.z));
+    float _811 = -dot(_762, _762);
+    float _818 = lerp(exp2(_811 * _810), exp2(_811 * (_810 * 0.23999999463558197021484375f)), lerp(0.119999997317790985107421875f, 0.680000007152557373046875f, _781));
+    float3 _833 = frac(((_760 + float3(1.2999999523162841796875f, 7.099999904632568359375f, 13.69999980926513671875f)) + (_SkyBoxStarParam6.x * 0.071000002324581146240234375f).xxx) * 0.103100001811981201171875f);
+    float3 _838 = _833 + dot(_833, _833.yzx + 33.3300018310546875f.xxx).xxx;
+    float _844 = frac((_838.x + _838.y) * _838.z);
+    float3 _851 = frac(((_760.yzx + float3(5.900000095367431640625f, 2.599999904632568359375f, 11.3999996185302734375f)) + (_SkyBoxStarParam6.x * 0.19300000369548797607421875f).xxx) * 0.103100001811981201171875f);
+    float3 _856 = _851 + dot(_851, _851.yzx + 33.3300018310546875f.xxx).xxx;
+    float _862 = frac((_856.x + _856.y) * _856.z);
+    float _867 = _Time.x * _SkyBoxStarParam0.w;
+    float _879 = 1.0f - abs((frac(((_867 * 37.0f) * lerp(0.550000011920928955078125f, 1.85000002384185791015625f, _844)) + _862) * 2.0f) - 1.0f);
+    float _887 = 1.0f - abs((frac(((_867 * 61.0f) * lerp(0.3499999940395355224609375f, 1.25f, _862)) + _844) * 2.0f) - 1.0f);
+    float3 _910 = frac(float3(_779 + (_SkyBoxStarParam6.x * 0.75487768650054931640625f), _SkyBoxStarParam6.x + 9.19999980926513671875f, (_779 * 5.269999980926513671875f) + 0.37000000476837158203125f) * 0.103100001811981201171875f);
+    float3 _915 = _910 + dot(_910, _910.yzx + 33.3300018310546875f.xxx).xxx;
+    float3 _937 = (((lerp(_SkyBoxStarParam1.xyz, _SkyBoxStarParam2.xyz, frac((_915.x + _915.y) * _915.z).xxx) * (((((smoothstep(_SkyBoxStarParam0.x - _783, _SkyBoxStarParam0.x + _783, _779) * lerp(_818 * _818, sqrt(clamp(_818, 0.0f, 1.0f)), _781)) * (1.0f + (step(0.999499976634979248046875f, _779) * 3.0f))) * clamp((((_879 * _879) * (3.0f - (2.0f * _879))) * 0.62000000476837158203125f) + (((_887 * _887) * (3.0f - (2.0f * _887))) * 0.37999999523162841796875f), 0.0f, 1.0f)) * 2.5f) * _SkyBoxStarParam0.y)) * frac((_779 * 4.39400005340576171875f) + _SkyBoxStarParam4.x)) * clamp(_SkyboxStarDensityMap.SampleBias(sampler_PointRepeat, _732, _GlobalMipBias).x - _SkyBoxStarParam2.w, 0.0f, 1.0f)) * ((1.0f - _624) * clamp(1.0f - (_490 * _SkyBoxStarParam5.w), 0.0f, 1.0f));
+    float3 _946 = ((_623.xyz + ((_684 * _SkyBoxStarParam5.xyz) * 2.0f)).xyz + (_937 * clamp(1.0f - (length(_684) * _SkyBoxStarParam4.w), 0.0f, 1.0f))).xyz;
+    float _974 = _4.y * _AtmosphereFogParams3.w;
+    float _979 = max(0.00999999977648258209228515625f, _974 + _AtmosphereFogParams4.w);
+    float3 _993 = exp(_AtmosphereFogParams2.xyz * ((-max(0.0f, (_235 * _AtmosphereFogParams1.w) - _AtmosphereFogParams0.w)) * (((1.0f - exp(-_979)) / _979) * exp(_974 + _AtmosphereFogParams5.w))));
+    float _996 = dot(_234, _AtmosphereFogParams1.xyz);
+    float _1002 = _AtmosphereFogParams2.w * _AtmosphereFogParams2.w;
+    float _1006 = (1.0f + _1002) - ((2.0f * _AtmosphereFogParams2.w) * _996);
+    float3 _1335 = 0.0f.xxx;
+    float _1336 = 0.0f;
+    if (_VolumetricFogParams0.z > 0.0f)
+    {
+        uint3 _1161 = (uint3(int3(int(_226.x), int(_226.y), int(_FrameCount & 7u))) * uint3(1664525u, 1664525u, 1664525u)) + uint3(1013904223u, 1013904223u, 1013904223u);
+        uint _1162 = _1161.y;
+        uint _1163 = _1161.z;
+        uint _1166 = _1161.x + (_1162 * _1163);
+        uint _1168 = _1162 + (_1163 * _1166);
+        uint _1170 = _1163 + (_1166 * _1168);
+        uint _1172 = _1166 + (_1168 * _1170);
+        float _1199 = dot(_234, -_TransformVariables_ViewMatrix[2].xyz);
+        float _1207 = (_VolumetricFogParams0.w * ((_1199 > 5.9604644775390625e-08f) ? (1.0f / _1199) : 0.0f)) * (1.0f / _235);
+        float _1208 = _230.y;
+        float _1209 = _1207 * _1208;
+        float _1211 = _TransformVariables_WorldSpaceCameraPos_Internal.y + _1209;
+        float _1212 = _1208 - _1209;
+        float _1214 = (1.0f - _1207) * _235;
+        float _1228 = max(-127.0f, _ExponentialFogParams0.z * _1212);
+        float _1252 = max(-127.0f, _ExponentialFogParams3.x * _1212);
+        float _1263 = ((_ExponentialFogParams0.y * exp2(-max(-127.0f, _ExponentialFogParams0.z * (_1211 - _ExponentialFogParams0.x)))) * ((abs(_1228) > 5.9604644775390625e-08f) ? ((1.0f - exp2(-_1228)) / _1228) : (0.693147182464599609375f - (0.2402265071868896484375f * _1228)))) + ((_ExponentialFogParams3.y * exp2(-max(-127.0f, _ExponentialFogParams3.x * (_1211 - _ExponentialFogParams3.z)))) * ((abs(_1252) > 5.9604644775390625e-08f) ? ((1.0f - exp2(-_1252)) / _1252) : (0.693147182464599609375f - (0.2402265071868896484375f * _1252))));
+        float _1285 = clamp((_235 * _ExponentialFogParams1.w) + _ExponentialFogParams1.z, 0.0f, 1.0f);
+        float _1288 = clamp((max(clamp(exp2(-(_1263 * _1214)), 0.0f, 1.0f), _ExponentialFogParams2.w) + clamp((_235 * _ExponentialFogParams1.y) + _ExponentialFogParams1.x, 0.0f, 1.0f)) + _1285, 0.0f, 1.0f);
+        float4 _1329 = lerp(float4(0.0f, 0.0f, 0.0f, 1.0f), _IntegratedLightScattering.SampleLevel(sampler_PointMirror, float3((float2(_226) + ((((float3(uint3(_1172, _1168 + (_1170 * _1172), _217) >> uint3(16u, 16u, 16u)) * 1.525902189314365386962890625e-05f.xxx) * 2.0f) - 1.0f.xxx) * _VolumetricFogParams4.w).xy) * _VolumetricFogParams2.xy, (log2((_221 * _VolumetricFogParams1.x) + _VolumetricFogParams1.y) * _VolumetricFogParams1.z) / _VolumetricFogParams0.z), 0.0f), clamp((_221 - _VolumetricFogParams3.z) * 1000000.0f, 0.0f, 1.0f).xxxx);
+        _1335 = _1329.xyz + (((_ExponentialFogParams2.xyz * (1.0f - _1288)) + (((_ExponentialFogParams5.xyz * pow(clamp(dot(-_234, _ExponentialFogParams4.xyz), 0.0f, 1.0f), _ExponentialFogParams5.w)) * (1.0f - clamp(exp2(-(_1263 * max(_1214 - _ExponentialFogParams4.w, 0.0f))), 0.0f, 1.0f))) * (1.0f - _1285))) * _1329.w);
+        _1336 = _1329.w * _1288;
+    }
+    else
+    {
+        float _1034 = _230.y;
+        float _1048 = max(-127.0f, _ExponentialFogParams0.z * _1034);
+        float _1072 = max(-127.0f, _ExponentialFogParams3.x * _1034);
+        float _1083 = ((_ExponentialFogParams0.y * exp2(-max(-127.0f, _ExponentialFogParams0.z * (_TransformVariables_WorldSpaceCameraPos_Internal.y - _ExponentialFogParams0.x)))) * ((abs(_1048) > 5.9604644775390625e-08f) ? ((1.0f - exp2(-_1048)) / _1048) : (0.693147182464599609375f - (0.2402265071868896484375f * _1048)))) + ((_ExponentialFogParams3.y * exp2(-max(-127.0f, _ExponentialFogParams3.x * (_TransformVariables_WorldSpaceCameraPos_Internal.y - _ExponentialFogParams3.z)))) * ((abs(_1072) > 5.9604644775390625e-08f) ? ((1.0f - exp2(-_1072)) / _1072) : (0.693147182464599609375f - (0.2402265071868896484375f * _1072))));
+        float _1105 = clamp((_235 * _ExponentialFogParams1.w) + _ExponentialFogParams1.z, 0.0f, 1.0f);
+        float _1108 = clamp((max(clamp(exp2(-(_1083 * _235)), 0.0f, 1.0f), _ExponentialFogParams2.w) + clamp((_235 * _ExponentialFogParams1.y) + _ExponentialFogParams1.x, 0.0f, 1.0f)) + _1105, 0.0f, 1.0f);
+        _1335 = (_ExponentialFogParams2.xyz * (1.0f - _1108)) + (((_ExponentialFogParams5.xyz * pow(clamp(dot(-_234, _ExponentialFogParams4.xyz), 0.0f, 1.0f), _ExponentialFogParams5.w)) * (1.0f - clamp(exp2(-(_1083 * max(_235 - _ExponentialFogParams4.w, 0.0f))), 0.0f, 1.0f))) * (1.0f - _1105));
+        _1336 = _1108;
+    }
+    float3 _1341 = ((lerp(dot(_946, float3(0.21267290413379669189453125f, 0.715152204036712646484375f, 0.072175003588199615478515625f)).xxx, _946, _VFXParams1.w.xxx) * _VFXParams1.xyz).xyz * (_993 * _1336)) + ((((clamp(((_AtmosphereFogParams3.xyz * (0.0596831031143665313720703125f * (1.0f + (_996 * _996)))) + _AtmosphereFogParams5.xyz) + (_AtmosphereFogParams4.xyz * ((1.0f - _1002) / max((12.56637096405029296875f * _1006) * sqrt(_1006), 0.001000000047497451305389404296875f))), 0.0f.xxx, 1.0f.xxx) * 255.0f) * (1.0f.xxx - _993)) * _1336) + _1335);
+    float4 _1342 = float4(_1341.x, _1341.y, _1341.z, _623.w);
+    _1342.w = 1.0f;
+    float2 _1356 = (_5.xy / max(_5.z, 9.9999999392252902907785028219223e-09f).xx) - (_6.xy / max(_6.z, 9.9999999392252902907785028219223e-09f).xx);
+    _1356.y = -_1356.y;
+    _7 = _1342;
+    _8 = float4(((sqrt(sqrt(abs(_1356 * 0.5f))) * float2(int2(sign(_1356)))) * 0.5f) + 0.5f.xx, 0.0f, 0.0f);
+}
+
+SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+{
+    gl_FragCoord = stage_input.gl_FragCoord;
+    gl_FragCoord.w = 1.0 / gl_FragCoord.w;
+    _4 = stage_input._4;
+    _5 = stage_input._5;
+    _6 = stage_input._6;
+    frag_main();
+    SPIRV_Cross_Output stage_output;
+    stage_output._7 = _7;
+    stage_output._8 = _8;
+    return stage_output;
+}

@@ -1,0 +1,460 @@
+// Stage: Fragment  Blob: 670  ParamBlob: 238  Language: hlsl
+// Keywords: BLOOM LENS_DISTORTION PERFORM_SHARPEN RADIAL_BLUR_CHROMATIC_ABERRATION USER_LUT VIGNETTE_MASK
+// Generated names (not authored, no CPU-side property matches them):  <Buffer>_Stripped_<byteOffset> = unnamed member at that offset;
+
+cbuffer type_ShaderVariablesGlobal : register(b10, space3)
+{
+    float4 _ScreenSize : packoffset(c0);
+    float4 ShaderVariablesGlobal_Stripped_16 : packoffset(c1);
+    float4 ShaderVariablesGlobal_Stripped_32 : packoffset(c2);
+    float4 ShaderVariablesGlobal_Stripped_48 : packoffset(c3);
+    float4 ShaderVariablesGlobal_Stripped_64 : packoffset(c4);
+    float4 _ScreenParams : packoffset(c5);
+    float4 ShaderVariablesGlobal_Stripped_96[6] : packoffset(c6);
+    float4 ShaderVariablesGlobal_Stripped_192[6] : packoffset(c12);
+    float4 ShaderVariablesGlobal_Stripped_288 : packoffset(c18);
+    float4 ShaderVariablesGlobal_Stripped_304 : packoffset(c19);
+    float4 ShaderVariablesGlobal_Stripped_320 : packoffset(c20);
+    float4 ShaderVariablesGlobal_Stripped_336 : packoffset(c21);
+    float4 ShaderVariablesGlobal_Stripped_352 : packoffset(c22);
+    float4 ShaderVariablesGlobal_Stripped_368 : packoffset(c23);
+    float4 ShaderVariablesGlobal_Stripped_384 : packoffset(c24);
+    float4 ShaderVariablesGlobal_Stripped_400 : packoffset(c25);
+    float ShaderVariablesGlobal_Stripped_416 : packoffset(c26);
+    float ShaderVariablesGlobal_Stripped_420 : packoffset(c26.y);
+    float ShaderVariablesGlobal_Stripped_424 : packoffset(c26.z);
+    uint ShaderVariablesGlobal_Stripped_428 : packoffset(c26.w);
+    float4 _ExposureWithMiscParams : packoffset(c27);
+    int4 ShaderVariablesGlobal_Stripped_448 : packoffset(c28);
+    float4 ShaderVariablesGlobal_Stripped_464 : packoffset(c29);
+    float4 ShaderVariablesGlobal_Stripped_480 : packoffset(c30);
+    float4 ShaderVariablesGlobal_Stripped_496 : packoffset(c31);
+    float4 ShaderVariablesGlobal_Stripped_512 : packoffset(c32);
+    float4 ShaderVariablesGlobal_Stripped_528 : packoffset(c33);
+    float4 ShaderVariablesGlobal_Stripped_544 : packoffset(c34);
+    float4 ShaderVariablesGlobal_Stripped_560 : packoffset(c35);
+    float4 ShaderVariablesGlobal_Stripped_576 : packoffset(c36);
+    float4 ShaderVariablesGlobal_Stripped_592 : packoffset(c37);
+    float4 ShaderVariablesGlobal_Stripped_608 : packoffset(c38);
+    float4 ShaderVariablesGlobal_Stripped_624[4] : packoffset(c39);
+    float4 ShaderVariablesGlobal_Stripped_688[4] : packoffset(c43);
+    float4 ShaderVariablesGlobal_Stripped_752[4] : packoffset(c47);
+    float4 ShaderVariablesGlobal_Stripped_816[4] : packoffset(c51);
+    float4 ShaderVariablesGlobal_Stripped_880 : packoffset(c55);
+    float4 ShaderVariablesGlobal_Stripped_896 : packoffset(c56);
+    float4 ShaderVariablesGlobal_Stripped_912[4] : packoffset(c57);
+    float4 ShaderVariablesGlobal_Stripped_976[4] : packoffset(c61);
+    float4 ShaderVariablesGlobal_Stripped_1040[4] : packoffset(c65);
+    float4 ShaderVariablesGlobal_Stripped_1104 : packoffset(c69);
+    float4 ShaderVariablesGlobal_Stripped_1120 : packoffset(c70);
+    float4 ShaderVariablesGlobal_Stripped_1136 : packoffset(c71);
+    float4 ShaderVariablesGlobal_Stripped_1152 : packoffset(c72);
+    float4 ShaderVariablesGlobal_Stripped_1168 : packoffset(c73);
+    float4 ShaderVariablesGlobal_Stripped_1184 : packoffset(c74);
+    float4 ShaderVariablesGlobal_Stripped_1200 : packoffset(c75);
+    float4 ShaderVariablesGlobal_Stripped_1216 : packoffset(c76);
+    float4 ShaderVariablesGlobal_Stripped_1232 : packoffset(c77);
+    float4 ShaderVariablesGlobal_Stripped_1248 : packoffset(c78);
+    float4 ShaderVariablesGlobal_Stripped_1264 : packoffset(c79);
+    float4 ShaderVariablesGlobal_Stripped_1280 : packoffset(c80);
+    float4 ShaderVariablesGlobal_Stripped_1296 : packoffset(c81);
+    float4 ShaderVariablesGlobal_Stripped_1312 : packoffset(c82);
+    float4 ShaderVariablesGlobal_Stripped_1328 : packoffset(c83);
+    float4 ShaderVariablesGlobal_Stripped_1344 : packoffset(c84);
+    float4 ShaderVariablesGlobal_Stripped_1360 : packoffset(c85);
+    float4 ShaderVariablesGlobal_Stripped_1376 : packoffset(c86);
+    float4 ShaderVariablesGlobal_Stripped_1392 : packoffset(c87);
+    float4 ShaderVariablesGlobal_Stripped_1408 : packoffset(c88);
+    float4 ShaderVariablesGlobal_Stripped_1424 : packoffset(c89);
+    float4 ShaderVariablesGlobal_Stripped_1440 : packoffset(c90);
+    float4 ShaderVariablesGlobal_Stripped_1456 : packoffset(c91);
+    float4 ShaderVariablesGlobal_Stripped_1472 : packoffset(c92);
+    float4 ShaderVariablesGlobal_Stripped_1488 : packoffset(c93);
+    float4 ShaderVariablesGlobal_Stripped_1504 : packoffset(c94);
+    float4 ShaderVariablesGlobal_Stripped_1520 : packoffset(c95);
+    float4 ShaderVariablesGlobal_Stripped_1536 : packoffset(c96);
+    float4 ShaderVariablesGlobal_Stripped_1552 : packoffset(c97);
+    float4 ShaderVariablesGlobal_Stripped_1568 : packoffset(c98);
+    float4 ShaderVariablesGlobal_Stripped_1584 : packoffset(c99);
+    float4 ShaderVariablesGlobal_Stripped_1600 : packoffset(c100);
+    float4 ShaderVariablesGlobal_Stripped_1616 : packoffset(c101);
+    float4 ShaderVariablesGlobal_Stripped_1632 : packoffset(c102);
+    float4 ShaderVariablesGlobal_Stripped_1648 : packoffset(c103);
+    float4 ShaderVariablesGlobal_Stripped_1664 : packoffset(c104);
+    float4 ShaderVariablesGlobal_Stripped_1680 : packoffset(c105);
+    float4 ShaderVariablesGlobal_Stripped_1696 : packoffset(c106);
+    float4 ShaderVariablesGlobal_Stripped_1712 : packoffset(c107);
+    float4 ShaderVariablesGlobal_Stripped_1728 : packoffset(c108);
+    float4 ShaderVariablesGlobal_Stripped_1744 : packoffset(c109);
+    float4 ShaderVariablesGlobal_Stripped_1760 : packoffset(c110);
+    float4 ShaderVariablesGlobal_Stripped_1776 : packoffset(c111);
+    float4 ShaderVariablesGlobal_Stripped_1792 : packoffset(c112);
+    float4 ShaderVariablesGlobal_Stripped_1808 : packoffset(c113);
+    float4 ShaderVariablesGlobal_Stripped_1824 : packoffset(c114);
+    float4 ShaderVariablesGlobal_Stripped_1840 : packoffset(c115);
+    float4 ShaderVariablesGlobal_Stripped_1856 : packoffset(c116);
+    float4 ShaderVariablesGlobal_Stripped_1872 : packoffset(c117);
+    float4 ShaderVariablesGlobal_Stripped_1888 : packoffset(c118);
+    float4 ShaderVariablesGlobal_Stripped_1904 : packoffset(c119);
+    float4 ShaderVariablesGlobal_Stripped_1920 : packoffset(c120);
+    float4 ShaderVariablesGlobal_Stripped_1936 : packoffset(c121);
+    float4 ShaderVariablesGlobal_Stripped_1952 : packoffset(c122);
+    float4 ShaderVariablesGlobal_Stripped_1968 : packoffset(c123);
+    float4 ShaderVariablesGlobal_Stripped_1984 : packoffset(c124);
+    float4 ShaderVariablesGlobal_Stripped_2000 : packoffset(c125);
+    float4 ShaderVariablesGlobal_Stripped_2016 : packoffset(c126);
+    float4 ShaderVariablesGlobal_Stripped_2032[2] : packoffset(c127);
+    float4 ShaderVariablesGlobal_Stripped_2064[2] : packoffset(c129);
+    float ShaderVariablesGlobal_Stripped_2096 : packoffset(c131);
+    float ShaderVariablesGlobal_Stripped_2100 : packoffset(c131.y);
+    float ShaderVariablesGlobal_Stripped_2104 : packoffset(c131.z);
+    float ShaderVariablesGlobal_Stripped_2108 : packoffset(c131.w);
+    float4 ShaderVariablesGlobal_Stripped_2112 : packoffset(c132);
+    float4 ShaderVariablesGlobal_Stripped_2128 : packoffset(c133);
+    float4 ShaderVariablesGlobal_Stripped_2144 : packoffset(c134);
+    float4 ShaderVariablesGlobal_Stripped_2160 : packoffset(c135);
+    float4 ShaderVariablesGlobal_Stripped_2176 : packoffset(c136);
+    float4 ShaderVariablesGlobal_Stripped_2192 : packoffset(c137);
+    float4 ShaderVariablesGlobal_Stripped_2208 : packoffset(c138);
+    float4 ShaderVariablesGlobal_Stripped_2224 : packoffset(c139);
+    float4 ShaderVariablesGlobal_Stripped_2240 : packoffset(c140);
+    float4 ShaderVariablesGlobal_Stripped_2256 : packoffset(c141);
+    float4 ShaderVariablesGlobal_Stripped_2272 : packoffset(c142);
+    float4 ShaderVariablesGlobal_Stripped_2288 : packoffset(c143);
+    float4 ShaderVariablesGlobal_Stripped_2304 : packoffset(c144);
+    float4 ShaderVariablesGlobal_Stripped_2320 : packoffset(c145);
+    float4 ShaderVariablesGlobal_Stripped_2336 : packoffset(c146);
+    float4 ShaderVariablesGlobal_Stripped_2352 : packoffset(c147);
+    float4 ShaderVariablesGlobal_Stripped_2368 : packoffset(c148);
+    float4 ShaderVariablesGlobal_Stripped_2384 : packoffset(c149);
+    float4 ShaderVariablesGlobal_Stripped_2400 : packoffset(c150);
+    float4 ShaderVariablesGlobal_Stripped_2416 : packoffset(c151);
+    float4 ShaderVariablesGlobal_Stripped_2432 : packoffset(c152);
+    float4 ShaderVariablesGlobal_Stripped_2448 : packoffset(c153);
+    float4 ShaderVariablesGlobal_Stripped_2464 : packoffset(c154);
+    float4 ShaderVariablesGlobal_Stripped_2480 : packoffset(c155);
+    float4 ShaderVariablesGlobal_Stripped_2496 : packoffset(c156);
+    float4 ShaderVariablesGlobal_Stripped_2512 : packoffset(c157);
+    float4 ShaderVariablesGlobal_Stripped_2528 : packoffset(c158);
+    float4 ShaderVariablesGlobal_Stripped_2544 : packoffset(c159);
+    float4 ShaderVariablesGlobal_Stripped_2560 : packoffset(c160);
+    float4 ShaderVariablesGlobal_Stripped_2576 : packoffset(c161);
+    column_major float4x4 ShaderVariablesGlobal_Stripped_2592 : packoffset(c162);
+    float4 ShaderVariablesGlobal_Stripped_2656 : packoffset(c166);
+    float4 ShaderVariablesGlobal_Stripped_2672 : packoffset(c167);
+    float4 ShaderVariablesGlobal_Stripped_2688[32] : packoffset(c168);
+};
+
+cbuffer type_cb0 : register(b9, space3)
+{
+    float4 _RadialBlurParams : packoffset(c0);
+    float4 _VignetteParams1 : packoffset(c1);
+    float4 _VignetteParams2 : packoffset(c2);
+    float4 _DirtyLensParams1 : packoffset(c3);
+    float4 _VignetteColor : packoffset(c4);
+    float4 _DistortionParams1 : packoffset(c5);
+    float4 _DistortionParams2 : packoffset(c6);
+    float4 _Lut_Params : packoffset(c7);
+    float4 _UserLut_Params : packoffset(c8);
+    float4 _BloomParams : packoffset(c9);
+    float4 _BloomThreshold : packoffset(c10);
+    float4 _BloomTint : packoffset(c11);
+    float4 _BloomDirtScaleOffset : packoffset(c12);
+    float4 cb0_Stripped_208 : packoffset(c13);
+    float4 cb0_Stripped_224 : packoffset(c14);
+    float4 cb0_Stripped_240 : packoffset(c15);
+    float4 _BWFlashThreshold : packoffset(c16);
+    float4 cb0_Stripped_272 : packoffset(c17);
+    float4 cb0_Stripped_288 : packoffset(c18);
+    float4 cb0_Stripped_304 : packoffset(c19);
+    float4 _BWFlashParams4 : packoffset(c20);
+    float4 _BWFlashColor : packoffset(c21);
+    float4 _BWBackGroundColor : packoffset(c22);
+    float4 _FisheyeEffectParams1 : packoffset(c23);
+    float4 _SharpenStrengthAndPadding : packoffset(c24);
+    float4 _RadialBlurParams2 : packoffset(c25);
+};
+
+Texture2D<float4> _InputTexture : register(t7, space3);
+Texture2D<float4> _BloomTexture : register(t8, space3);
+Texture2D<float4> _LogLut2D : register(t6, space3);
+Texture2D<float4> _UserLut : register(t5, space3);
+SamplerState sampler_LinearRepeat_UserLut : register(s2, space3);
+Texture2D<float4> _VignetteMask : register(t4, space3);
+SamplerState sampler_LinearClamp_VignetteMask : register(s1, space3);
+SamplerState sampler_LinearMirror : register(s3, space3);
+
+static float2 _3;
+static float4 _4;
+
+struct SPIRV_Cross_Input
+{
+    float2 _3 : TEXCOORD0;
+};
+
+struct SPIRV_Cross_Output
+{
+    float4 _4 : SV_Target0;
+};
+
+void frag_main()
+{
+    float2 _125 = (_3 - 0.5f.xx) * _DistortionParams2.z;
+    float2 _126 = _125 + 0.5f.xx;
+    float2 _132 = _DistortionParams1.zw * (_125 - _DistortionParams1.xy);
+    float _133 = length(_132);
+    bool _136 = _DistortionParams2.w > 0.0f;
+    float2 _164 = 0.0f.xx;
+    [branch]
+    if (_136)
+    {
+        _164 = _126 + (_132 * ((tan(_133 * _DistortionParams2.x) * (1.0f / (_133 * _DistortionParams2.y))) - 1.0f));
+    }
+    else
+    {
+        _164 = _126 + (_132 * ((((1.0f / _133) * _DistortionParams2.x) * atan(_133 * _DistortionParams2.y)) - 1.0f));
+    }
+    float2 _168 = _3 - _RadialBlurParams.xy;
+    float _170 = sqrt(dot(_168, _168));
+    float _172 = 1.0f / max(0.00999999977648258209228515625f, _170);
+    float2 _178 = _168 * pow(_170 * _170, _RadialBlurParams.w * 0.5f);
+    float2 _208 = 0.0f.xx;
+    [branch]
+    if (_136)
+    {
+        _208 = _126 + (_132 * ((tan(_133 * _DistortionParams2.x) * (1.0f / (_133 * _DistortionParams2.y))) - 1.0f));
+    }
+    else
+    {
+        _208 = _126 + (_132 * ((((1.0f / _133) * _DistortionParams2.x) * atan(_133 * _DistortionParams2.y)) - 1.0f));
+    }
+    float4 _210 = _InputTexture.SampleLevel(sampler_LinearMirror, _208, 0.0f);
+    float3 _213 = _210.xyz * float3(1.0f, 0.0f, 0.0f);
+    float3 _690 = 0.0f.xxx;
+    [branch]
+    if (_RadialBlurParams2.x > 3.0f)
+    {
+        bool2 _227 = ((_RadialBlurParams2.w != 0.0f) || (_RadialBlurParams2.z != 0.0f)).xx;
+        float2 _228 = _178 * _172;
+        float2 _229 = float2(_227.x ? _228.x : _178.x, _227.y ? _228.y : _178.y);
+        float _234 = _RadialBlurParams.z + _RadialBlurParams2.y;
+        float2 _240 = ((_3 - (_229 * _234)) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _241 = _240 + 0.5f.xx;
+        float2 _243 = _DistortionParams1.zw * (_240 - _DistortionParams1.xy);
+        float _244 = length(_243);
+        float2 _272 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _272 = _241 + (_243 * ((tan(_244 * _DistortionParams2.x) * (1.0f / (_244 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _272 = _241 + (_243 * ((((1.0f / _244) * _DistortionParams2.x) * atan(_244 * _DistortionParams2.y)) - 1.0f));
+        }
+        float2 _284 = ((_3 - (_229 * (2.0f * _234))) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _285 = _284 + 0.5f.xx;
+        float2 _287 = _DistortionParams1.zw * (_284 - _DistortionParams1.xy);
+        float _288 = length(_287);
+        float2 _316 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _316 = _285 + (_287 * ((tan(_288 * _DistortionParams2.x) * (1.0f / (_288 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _316 = _285 + (_287 * ((((1.0f / _288) * _DistortionParams2.x) * atan(_288 * _DistortionParams2.y)) - 1.0f));
+        }
+        float2 _327 = ((_3 - (_229 * _RadialBlurParams2.y)) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _328 = _327 + 0.5f.xx;
+        float2 _330 = _DistortionParams1.zw * (_327 - _DistortionParams1.xy);
+        float _331 = length(_330);
+        float2 _359 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _359 = _328 + (_330 * ((tan(_331 * _DistortionParams2.x) * (1.0f / (_331 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _359 = _328 + (_330 * ((((1.0f / _331) * _DistortionParams2.x) * atan(_331 * _DistortionParams2.y)) - 1.0f));
+        }
+        float _365 = 2.0f * _RadialBlurParams2.y;
+        float2 _372 = ((_3 - (_229 * (_RadialBlurParams.z + _365))) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _373 = _372 + 0.5f.xx;
+        float2 _375 = _DistortionParams1.zw * (_372 - _DistortionParams1.xy);
+        float _376 = length(_375);
+        float2 _404 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _404 = _373 + (_375 * ((tan(_376 * _DistortionParams2.x) * (1.0f / (_376 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _404 = _373 + (_375 * ((((1.0f / _376) * _DistortionParams2.x) * atan(_376 * _DistortionParams2.y)) - 1.0f));
+        }
+        float _410 = 2.0f * _RadialBlurParams.z;
+        float _411 = 3.0f * _RadialBlurParams2.y;
+        float2 _418 = ((_3 - (_229 * (_410 + _411))) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _419 = _418 + 0.5f.xx;
+        float2 _421 = _DistortionParams1.zw * (_418 - _DistortionParams1.xy);
+        float _422 = length(_421);
+        float2 _450 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _450 = _419 + (_421 * ((tan(_422 * _DistortionParams2.x) * (1.0f / (_422 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _450 = _419 + (_421 * ((((1.0f / _422) * _DistortionParams2.x) * atan(_422 * _DistortionParams2.y)) - 1.0f));
+        }
+        float2 _461 = ((_3 - (_229 * _365)) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _462 = _461 + 0.5f.xx;
+        float2 _464 = _DistortionParams1.zw * (_461 - _DistortionParams1.xy);
+        float _465 = length(_464);
+        float2 _493 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _493 = _462 + (_464 * ((tan(_465 * _DistortionParams2.x) * (1.0f / (_465 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _493 = _462 + (_464 * ((((1.0f / _465) * _DistortionParams2.x) * atan(_465 * _DistortionParams2.y)) - 1.0f));
+        }
+        float2 _505 = ((_3 - (_229 * (_RadialBlurParams.z + _411))) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _506 = _505 + 0.5f.xx;
+        float2 _508 = _DistortionParams1.zw * (_505 - _DistortionParams1.xy);
+        float _509 = length(_508);
+        float2 _537 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _537 = _506 + (_508 * ((tan(_509 * _DistortionParams2.x) * (1.0f / (_509 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _537 = _506 + (_508 * ((((1.0f / _509) * _DistortionParams2.x) * atan(_509 * _DistortionParams2.y)) - 1.0f));
+        }
+        float2 _550 = ((_3 - (_229 * (_410 + (4.0f * _RadialBlurParams2.y)))) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _551 = _550 + 0.5f.xx;
+        float2 _553 = _DistortionParams1.zw * (_550 - _DistortionParams1.xy);
+        float _554 = length(_553);
+        float2 _582 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _582 = _551 + (_553 * ((tan(_554 * _DistortionParams2.x) * (1.0f / (_554 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _582 = _551 + (_553 * ((((1.0f / _554) * _DistortionParams2.x) * atan(_554 * _DistortionParams2.y)) - 1.0f));
+        }
+        _690 = ((((((((_213 + (_InputTexture.SampleLevel(sampler_LinearMirror, _272, 0.0f).xyz * float3(1.0f, 0.0f, 0.0f))) + (_InputTexture.SampleLevel(sampler_LinearMirror, _316, 0.0f).xyz * float3(1.0f, 0.0f, 0.0f))) + (_InputTexture.SampleLevel(sampler_LinearMirror, _359, 0.0f).xyz * float3(0.0f, 1.0f, 0.0f))) + (_InputTexture.SampleLevel(sampler_LinearMirror, _404, 0.0f).xyz * float3(0.0f, 1.0f, 0.0f))) + (_InputTexture.SampleLevel(sampler_LinearMirror, _450, 0.0f).xyz * float3(0.0f, 1.0f, 0.0f))) + (_InputTexture.SampleLevel(sampler_LinearMirror, _493, 0.0f).xyz * float3(0.0f, 0.0f, 1.0f))) + (_InputTexture.SampleLevel(sampler_LinearMirror, _537, 0.0f).xyz * float3(0.0f, 0.0f, 1.0f))) + (_InputTexture.SampleLevel(sampler_LinearMirror, _582, 0.0f).xyz * float3(0.0f, 0.0f, 1.0f))) * 0.3333334028720855712890625f;
+    }
+    else
+    {
+        bool2 _592 = (_RadialBlurParams2.w != 0.0f).xx;
+        float2 _593 = _178 * _172;
+        float2 _594 = float2(_592.x ? _593.x : _178.x, _592.y ? _593.y : _178.y);
+        float2 _606 = ((_3 - (_594 * (_RadialBlurParams.z + (2.0f * _RadialBlurParams2.y)))) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _607 = _606 + 0.5f.xx;
+        float2 _609 = _DistortionParams1.zw * (_606 - _DistortionParams1.xy);
+        float _610 = length(_609);
+        float2 _638 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _638 = _607 + (_609 * ((tan(_610 * _DistortionParams2.x) * (1.0f / (_610 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _638 = _607 + (_609 * ((((1.0f / _610) * _DistortionParams2.x) * atan(_610 * _DistortionParams2.y)) - 1.0f));
+        }
+        float2 _652 = ((_3 - (_594 * ((2.0f * _RadialBlurParams.z) + (3.0f * _RadialBlurParams2.y)))) - 0.5f.xx) * _DistortionParams2.z;
+        float2 _653 = _652 + 0.5f.xx;
+        float2 _655 = _DistortionParams1.zw * (_652 - _DistortionParams1.xy);
+        float _656 = length(_655);
+        float2 _684 = 0.0f.xx;
+        [branch]
+        if (_136)
+        {
+            _684 = _653 + (_655 * ((tan(_656 * _DistortionParams2.x) * (1.0f / (_656 * _DistortionParams2.y))) - 1.0f));
+        }
+        else
+        {
+            _684 = _653 + (_655 * ((((1.0f / _656) * _DistortionParams2.x) * atan(_656 * _DistortionParams2.y)) - 1.0f));
+        }
+        _690 = (_213 + (_InputTexture.SampleLevel(sampler_LinearMirror, _638, 0.0f).xyz * float3(0.0f, 1.0f, 0.0f))) + (_InputTexture.SampleLevel(sampler_LinearMirror, _684, 0.0f).xyz * float3(0.0f, 0.0f, 1.0f));
+    }
+    float3 _696 = float3(_ScreenSize.z, _ScreenSize.w, 0.0f);
+    float2 _699 = _696.zy;
+    float4 _702 = _InputTexture.SampleLevel(sampler_LinearMirror, _3 + _699, 0.0f);
+    float2 _705 = _696.xz;
+    float4 _708 = _InputTexture.SampleLevel(sampler_LinearMirror, _3 - _705, 0.0f);
+    float4 _713 = _InputTexture.SampleLevel(sampler_LinearMirror, _3 + _705, 0.0f);
+    float4 _718 = _InputTexture.SampleLevel(sampler_LinearMirror, _3 - _699, 0.0f);
+    float _721 = _702.x;
+    float _722 = _702.y;
+    float _723 = _702.z;
+    float _724 = _708.x;
+    float _725 = _708.y;
+    float _726 = _708.z;
+    float _730 = _713.x;
+    float _731 = _713.y;
+    float _732 = _713.z;
+    float _733 = _718.x;
+    float _734 = _718.y;
+    float _735 = _718.z;
+    float _739 = (_723 * 0.5f) + ((_721 * 0.5f) + _722);
+    float _743 = (_726 * 0.5f) + ((_724 * 0.5f) + _725);
+    float _747 = (_690.z * 0.5f) + ((_690.x * 0.5f) + _690.y);
+    float _751 = (_732 * 0.5f) + ((_730 * 0.5f) + _731);
+    float _755 = (_735 * 0.5f) + ((_733 * 0.5f) + _734);
+    float _778 = min(min(_721, min(_724, _730)), _733);
+    float _781 = min(min(_722, min(_725, _731)), _734);
+    float _784 = min(min(_723, min(_726, _732)), _735);
+    float _787 = max(max(_721, max(_724, _730)), _733);
+    float _790 = max(max(_722, max(_725, _731)), _734);
+    float _793 = max(max(_723, max(_726, _732)), _735);
+    float _826 = (max(-0.1875f, min(max(max(-(_778 * (0.25f / _787)), (1.0f - _787) * (1.0f / ((4.0f * _778) + (-4.0f)))), max(max(-(_781 * (0.25f / _790)), (1.0f - _790) * (1.0f / ((4.0f * _781) + (-4.0f)))), max(-(_784 * (0.25f / _793)), (1.0f - _793) * (1.0f / ((4.0f * _784) + (-4.0f)))))), 0.0f)) * _SharpenStrengthAndPadding.x) * (((-0.5f) * clamp(abs((0.25f * (((_739 + _743) + _751) + _755)) - _747) * (1.0f / (max(max(_739, max(_743, _747)), max(_751, _755)) - min(min(_739, min(_743, _747)), min(_751, _755)))), 0.0f, 1.0f)) + 1.0f);
+    float _829 = 1.0f / ((4.0f * _826) + 1.0f);
+    float3 _851 = float3(((_826 * (((_721 + _724) + _733) + _730)) + _690.x) * _829, ((_826 * (((_722 + _725) + _734) + _731)) + _690.y) * _829, ((_826 * (((_723 + _726) + _735) + _732)) + _690.z) * _829) * _ExposureWithMiscParams.x;
+    float3 _856 = _BloomTexture.SampleLevel(sampler_LinearMirror, _164, 0.0f).xyz;
+    float3 _860 = _856 * (1.0f - _BloomParams.z);
+    bool3 _861 = bool3(_860.x > 0.300000011920928955078125f.xxx.x, _860.y > 0.300000011920928955078125f.xxx.y, _860.z > 0.300000011920928955078125f.xxx.z);
+    float3 _864 = (pow(_856, 0.3300000131130218505859375f.xxx) * 1.49380004405975341796875f) - 0.699999988079071044921875f.xxx;
+    float _874 = max(max(_851.x, _851.y), _851.z);
+    float _878 = clamp(_874 - _BloomThreshold.y, 0.0f, _BloomThreshold.z);
+    float4 _901 = _VignetteMask.SampleLevel(sampler_LinearClamp_VignetteMask, _164, 0.0f);
+    float _902 = _901.w;
+    float3 _929 = clamp(((log2(max((((lerp(_851, (_851 - ((_851 * (max((_BloomThreshold.w * _878) * _878, _874 - _BloomThreshold.x) / max(_874, 9.9999997473787516355514526367188e-05f))) * _BloomParams.z)) + (float3(_861.x ? _864.x : _856.x, _861.y ? _864.y : _856.y, _861.z ? _864.z : _856.z) * _BloomTint.xyz), _BloomParams.x.xxx) * lerp(1.0f.xxx, lerp(_VignetteColor.xyz, 1.0f.xxx, (_902 * ((_902 * ((_902 * 0.305306017398834228515625f) + 0.6821711063385009765625f)) + 0.01252287812530994415283203125f)).xxx), _VignetteColor.w.xxx)) * _Lut_Params.w) * 5.555555820465087890625f) + 0.04799599945545196533203125f.xxx, 0.0f.xxx)) * 0.3010300099849700927734375f) * 0.24416099488735198974609375f) + 0.3860360085964202880859375f.xxx, 0.0f.xxx, 1.0f.xxx);
+    float _935 = _929.z * _Lut_Params.z;
+    float _936 = floor(_935);
+    float2 _942 = ((_929.xy * _Lut_Params.z) * _Lut_Params.xy) + (_Lut_Params.xy * 0.5f);
+    float3 _943 = float3(_942.x, _942.y, _929.z);
+    _943.x = _942.x + (_936 * _Lut_Params.y);
+    float3 _960 = lerp(_LogLut2D.SampleLevel(sampler_LinearMirror, _943.xy, 0.0f).xyz, _LogLut2D.SampleLevel(sampler_LinearMirror, _943.xy + float2(_Lut_Params.y, 0.0f), 0.0f).xyz, (_935 - _936).xxx);
+    float3 _961 = _960 * 12.9200000762939453125f;
+    float3 _965 = (pow(abs(_960), 0.4166666567325592041015625f.xxx) * 1.05499994754791259765625f) - 0.054999999701976776123046875f.xxx;
+    bool3 _966 = bool3(_960.x <= 0.003130800090730190277099609375f.xxx.x, _960.y <= 0.003130800090730190277099609375f.xxx.y, _960.z <= 0.003130800090730190277099609375f.xxx.z);
+    float3 _968 = clamp(float3(_966.x ? _961.x : _965.x, _966.y ? _961.y : _965.y, _966.z ? _961.z : _965.z), 0.0f.xxx, 1.0f.xxx);
+    float _975 = _968.z * _UserLut_Params.z;
+    float _976 = floor(_975);
+    float2 _982 = ((_968.xy * _UserLut_Params.z) * _UserLut_Params.xy) + (_UserLut_Params.xy * 0.5f);
+    float3 _983 = float3(_982.x, _982.y, _968.z);
+    _983.x = _982.x + (_976 * _UserLut_Params.y);
+    _4 = float4(lerp(_968, lerp(_UserLut.SampleLevel(sampler_LinearRepeat_UserLut, _983.xy, 0.0f).xyz, _UserLut.SampleLevel(sampler_LinearRepeat_UserLut, _983.xy + float2(_UserLut_Params.y, 0.0f), 0.0f).xyz, (_975 - _976).xxx), _UserLut_Params.w.xxx) + (((frac(dot(float2(171.0f, 231.0f), _3 * _ScreenSize.xy).xxx * float3(0.00970873795449733734130859375f, 0.0140845067799091339111328125f, 0.010309278033673763275146484375f)) - 0.5f.xxx) * 0.0039215688593685626983642578125f.xxx) * 0.3499999940395355224609375f), min(_210.w, 1.0f));
+}
+
+SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+{
+    _3 = stage_input._3;
+    frag_main();
+    SPIRV_Cross_Output stage_output;
+    stage_output._4 = _4;
+    return stage_output;
+}

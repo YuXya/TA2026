@@ -1,0 +1,704 @@
+// Stage: Fragment  Blob: 36  ParamBlob: 16  Language: hlsl
+// Keywords: DITHER FACTORY_ECS_ON HG_ENABLE_MV SRP_INSTANCING_ON
+// Generated names (not authored, no CPU-side property matches them):  <Buffer>_Stripped_<byteOffset> = unnamed member at that offset;
+
+struct anon_UnityPerDrawArray
+{
+    column_major float4x4 Stripped_0;
+    float4 Stripped_64;
+    float4 Stripped_80;
+    column_major float4x4 Stripped_96;
+    float4 Stripped_160;
+    float4 Stripped_176;
+    float4 Stripped_192;
+    float4 Stripped_208;
+    float4 Stripped_224;
+    float4 Stripped_240;
+};
+
+struct anon_ReflectionProbeGlobalDatas
+{
+    float4 Stripped_0;
+    float4 Stripped_16;
+    float4 Stripped_32;
+    float4 Stripped_48;
+    float4 Stripped_64;
+    float4 Stripped_80;
+    float4 Stripped_96;
+    float4 Stripped_112;
+};
+
+static float4 _240 = 0.0f.xxxx;
+static uint _241 = 0u;
+
+cbuffer type_TransformVariables : register(b12, space0)
+{
+    column_major float4x4 _TransformVariables_ViewMatrix : packoffset(c0);
+    column_major float4x4 _TransformVariables_InvViewMatrix : packoffset(c4);
+    column_major float4x4 _TransformVariables_Stripped_128 : packoffset(c8);
+    column_major float4x4 _TransformVariables_Stripped_192 : packoffset(c12);
+    column_major float4x4 _TransformVariables_Stripped_256 : packoffset(c16);
+    column_major float4x4 _TransformVariables_Stripped_320 : packoffset(c20);
+    column_major float4x4 _TransformVariables_InvViewProjMatrix : packoffset(c24);
+    column_major float4x4 _TransformVariables_Stripped_448 : packoffset(c28);
+    column_major float4x4 _TransformVariables_NonJitteredViewNoTransProjMatrix : packoffset(c32);
+    column_major float4x4 _TransformVariables_Stripped_576 : packoffset(c36);
+    column_major float4x4 _TransformVariables_Stripped_640 : packoffset(c40);
+    float4 _TransformVariables_WorldSpaceCameraPos_Internal : packoffset(c44);
+    column_major float4x4 _TransformVariables_Stripped_720 : packoffset(c45);
+    column_major float4x4 _TransformVariables_Stripped_784 : packoffset(c49);
+    column_major float4x4 _TransformVariables_Stripped_848 : packoffset(c53);
+    column_major float4x4 _TransformVariables_PrevNonJitteredViewNoTransProjMatrix : packoffset(c57);
+    column_major float4x4 _TransformVariables_Stripped_976 : packoffset(c61);
+    column_major float4x4 _TransformVariables_Stripped_1040 : packoffset(c65);
+    column_major float4x4 _TransformVariables_Stripped_1104 : packoffset(c69);
+    column_major float4x4 _TransformVariables_Stripped_1168 : packoffset(c73);
+    column_major float4x4 _TransformVariables_Stripped_1232 : packoffset(c77);
+    float4 _TransformVariables_PrevCamPosRWS_Internal : packoffset(c81);
+};
+
+cbuffer type_ShaderVariablesGlobal : register(b16, space0)
+{
+    float4 _ScreenSize : packoffset(c0);
+    float4 ShaderVariablesGlobal_Stripped_16 : packoffset(c1);
+    float4 ShaderVariablesGlobal_Stripped_32 : packoffset(c2);
+    float4 ShaderVariablesGlobal_Stripped_48 : packoffset(c3);
+    float4 _unity_OrthoParams : packoffset(c4);
+    float4 ShaderVariablesGlobal_Stripped_80 : packoffset(c5);
+    float4 ShaderVariablesGlobal_Stripped_96[6] : packoffset(c6);
+    float4 ShaderVariablesGlobal_Stripped_192[6] : packoffset(c12);
+    float4 ShaderVariablesGlobal_Stripped_288 : packoffset(c18);
+    float4 _TaaJitterStrength : packoffset(c19);
+    float4 _Time : packoffset(c20);
+    float4 ShaderVariablesGlobal_Stripped_336 : packoffset(c21);
+    float4 ShaderVariablesGlobal_Stripped_352 : packoffset(c22);
+    float4 ShaderVariablesGlobal_Stripped_368 : packoffset(c23);
+    float4 ShaderVariablesGlobal_Stripped_384 : packoffset(c24);
+    float4 ShaderVariablesGlobal_Stripped_400 : packoffset(c25);
+    float _GlobalMipBias : packoffset(c26);
+    float ShaderVariablesGlobal_Stripped_420 : packoffset(c26.y);
+    float ShaderVariablesGlobal_Stripped_424 : packoffset(c26.z);
+    uint _FrameCount : packoffset(c26.w);
+    float4 ShaderVariablesGlobal_Stripped_432 : packoffset(c27);
+    int4 _BinningBufferOffsets : packoffset(c28);
+    float4 _EnvironmentGlobalParams0 : packoffset(c29);
+    float4 _GraphicsFeaturesGlobalParam0 : packoffset(c30);
+    float4 _GraphicsFeaturesGlobalParam1 : packoffset(c31);
+    float4 ShaderVariablesGlobal_Stripped_512 : packoffset(c32);
+    float4 ShaderVariablesGlobal_Stripped_528 : packoffset(c33);
+    float4 ShaderVariablesGlobal_Stripped_544 : packoffset(c34);
+    float4 ShaderVariablesGlobal_Stripped_560 : packoffset(c35);
+    float4 ShaderVariablesGlobal_Stripped_576 : packoffset(c36);
+    float4 ShaderVariablesGlobal_Stripped_592 : packoffset(c37);
+    float4 ShaderVariablesGlobal_Stripped_608 : packoffset(c38);
+    float4 ShaderVariablesGlobal_Stripped_624[4] : packoffset(c39);
+    float4 ShaderVariablesGlobal_Stripped_688[4] : packoffset(c43);
+    float4 ShaderVariablesGlobal_Stripped_752[4] : packoffset(c47);
+    float4 ShaderVariablesGlobal_Stripped_816[4] : packoffset(c51);
+    float4 ShaderVariablesGlobal_Stripped_880 : packoffset(c55);
+    float4 ShaderVariablesGlobal_Stripped_896 : packoffset(c56);
+    float4 ShaderVariablesGlobal_Stripped_912[4] : packoffset(c57);
+    float4 ShaderVariablesGlobal_Stripped_976[4] : packoffset(c61);
+    float4 ShaderVariablesGlobal_Stripped_1040[4] : packoffset(c65);
+    float4 ShaderVariablesGlobal_Stripped_1104 : packoffset(c69);
+    float4 ShaderVariablesGlobal_Stripped_1120 : packoffset(c70);
+    float4 _AtmosphereFogParams0 : packoffset(c71);
+    float4 _AtmosphereFogParams1 : packoffset(c72);
+    float4 _AtmosphereFogParams2 : packoffset(c73);
+    float4 _AtmosphereFogParams3 : packoffset(c74);
+    float4 _AtmosphereFogParams4 : packoffset(c75);
+    float4 _AtmosphereFogParams5 : packoffset(c76);
+    float4 _ExponentialFogParams0 : packoffset(c77);
+    float4 _ExponentialFogParams1 : packoffset(c78);
+    float4 _ExponentialFogParams2 : packoffset(c79);
+    float4 _ExponentialFogParams3 : packoffset(c80);
+    float4 _ExponentialFogParams4 : packoffset(c81);
+    float4 _ExponentialFogParams5 : packoffset(c82);
+    float4 _VolumetricFogParams0 : packoffset(c83);
+    float4 _VolumetricFogParams1 : packoffset(c84);
+    float4 _VolumetricFogParams2 : packoffset(c85);
+    float4 _VolumetricFogParams3 : packoffset(c86);
+    float4 _VolumetricFogParams4 : packoffset(c87);
+    float4 ShaderVariablesGlobal_Stripped_1408 : packoffset(c88);
+    float4 ShaderVariablesGlobal_Stripped_1424 : packoffset(c89);
+    float4 ShaderVariablesGlobal_Stripped_1440 : packoffset(c90);
+    float4 ShaderVariablesGlobal_Stripped_1456 : packoffset(c91);
+    float4 ShaderVariablesGlobal_Stripped_1472 : packoffset(c92);
+    float4 ShaderVariablesGlobal_Stripped_1488 : packoffset(c93);
+    float4 ShaderVariablesGlobal_Stripped_1504 : packoffset(c94);
+    float4 ShaderVariablesGlobal_Stripped_1520 : packoffset(c95);
+    float4 ShaderVariablesGlobal_Stripped_1536 : packoffset(c96);
+    float4 ShaderVariablesGlobal_Stripped_1552 : packoffset(c97);
+    float4 ShaderVariablesGlobal_Stripped_1568 : packoffset(c98);
+    float4 ShaderVariablesGlobal_Stripped_1584 : packoffset(c99);
+    float4 ShaderVariablesGlobal_Stripped_1600 : packoffset(c100);
+    float4 ShaderVariablesGlobal_Stripped_1616 : packoffset(c101);
+    float4 ShaderVariablesGlobal_Stripped_1632 : packoffset(c102);
+    float4 ShaderVariablesGlobal_Stripped_1648 : packoffset(c103);
+    float4 _VFXParams1 : packoffset(c104);
+    float4 ShaderVariablesGlobal_Stripped_1680 : packoffset(c105);
+    float4 ShaderVariablesGlobal_Stripped_1696 : packoffset(c106);
+    float4 ShaderVariablesGlobal_Stripped_1712 : packoffset(c107);
+    float4 ShaderVariablesGlobal_Stripped_1728 : packoffset(c108);
+    float4 ShaderVariablesGlobal_Stripped_1744 : packoffset(c109);
+    float4 ShaderVariablesGlobal_Stripped_1760 : packoffset(c110);
+    float4 ShaderVariablesGlobal_Stripped_1776 : packoffset(c111);
+    float4 ShaderVariablesGlobal_Stripped_1792 : packoffset(c112);
+    float4 ShaderVariablesGlobal_Stripped_1808 : packoffset(c113);
+    float4 ShaderVariablesGlobal_Stripped_1824 : packoffset(c114);
+    float4 ShaderVariablesGlobal_Stripped_1840 : packoffset(c115);
+    float4 ShaderVariablesGlobal_Stripped_1856 : packoffset(c116);
+    float4 ShaderVariablesGlobal_Stripped_1872 : packoffset(c117);
+    float4 ShaderVariablesGlobal_Stripped_1888 : packoffset(c118);
+    float4 ShaderVariablesGlobal_Stripped_1904 : packoffset(c119);
+    float4 ShaderVariablesGlobal_Stripped_1920 : packoffset(c120);
+    float4 ShaderVariablesGlobal_Stripped_1936 : packoffset(c121);
+    float4 ShaderVariablesGlobal_Stripped_1952 : packoffset(c122);
+    float4 ShaderVariablesGlobal_Stripped_1968 : packoffset(c123);
+    float4 ShaderVariablesGlobal_Stripped_1984 : packoffset(c124);
+    float4 ShaderVariablesGlobal_Stripped_2000 : packoffset(c125);
+    float4 ShaderVariablesGlobal_Stripped_2016 : packoffset(c126);
+    float4 ShaderVariablesGlobal_Stripped_2032[2] : packoffset(c127);
+    float4 ShaderVariablesGlobal_Stripped_2064[2] : packoffset(c129);
+    float ShaderVariablesGlobal_Stripped_2096 : packoffset(c131);
+    float ShaderVariablesGlobal_Stripped_2100 : packoffset(c131.y);
+    float ShaderVariablesGlobal_Stripped_2104 : packoffset(c131.z);
+    float ShaderVariablesGlobal_Stripped_2108 : packoffset(c131.w);
+    float4 _IVParam0 : packoffset(c132);
+    float4 _IVParam1 : packoffset(c133);
+    float4 _IVParam2 : packoffset(c134);
+    float4 _IVDefaultSHAr : packoffset(c135);
+    float4 _IVDefaultSHAg : packoffset(c136);
+    float4 _IVDefaultSHAb : packoffset(c137);
+    float4 ShaderVariablesGlobal_Stripped_2208 : packoffset(c138);
+    float4 ShaderVariablesGlobal_Stripped_2224 : packoffset(c139);
+    float4 ShaderVariablesGlobal_Stripped_2240 : packoffset(c140);
+    float4 ShaderVariablesGlobal_Stripped_2256 : packoffset(c141);
+    float4 ShaderVariablesGlobal_Stripped_2272 : packoffset(c142);
+    float4 ShaderVariablesGlobal_Stripped_2288 : packoffset(c143);
+    float4 ShaderVariablesGlobal_Stripped_2304 : packoffset(c144);
+    float4 ShaderVariablesGlobal_Stripped_2320 : packoffset(c145);
+    float4 ShaderVariablesGlobal_Stripped_2336 : packoffset(c146);
+    float4 ShaderVariablesGlobal_Stripped_2352 : packoffset(c147);
+    float4 ShaderVariablesGlobal_Stripped_2368 : packoffset(c148);
+    float4 ShaderVariablesGlobal_Stripped_2384 : packoffset(c149);
+    float4 ShaderVariablesGlobal_Stripped_2400 : packoffset(c150);
+    float4 ShaderVariablesGlobal_Stripped_2416 : packoffset(c151);
+    float4 ShaderVariablesGlobal_Stripped_2432 : packoffset(c152);
+    float4 ShaderVariablesGlobal_Stripped_2448 : packoffset(c153);
+    float4 ShaderVariablesGlobal_Stripped_2464 : packoffset(c154);
+    float4 ShaderVariablesGlobal_Stripped_2480 : packoffset(c155);
+    float4 ShaderVariablesGlobal_Stripped_2496 : packoffset(c156);
+    float4 ShaderVariablesGlobal_Stripped_2512 : packoffset(c157);
+    float4 ShaderVariablesGlobal_Stripped_2528 : packoffset(c158);
+    float4 ShaderVariablesGlobal_Stripped_2544 : packoffset(c159);
+    float4 ShaderVariablesGlobal_Stripped_2560 : packoffset(c160);
+    float4 ShaderVariablesGlobal_Stripped_2576 : packoffset(c161);
+    column_major float4x4 ShaderVariablesGlobal_Stripped_2592 : packoffset(c162);
+    float4 ShaderVariablesGlobal_Stripped_2656 : packoffset(c166);
+    float4 ShaderVariablesGlobal_Stripped_2672 : packoffset(c167);
+    float4 ShaderVariablesGlobal_Stripped_2688[32] : packoffset(c168);
+};
+
+cbuffer type_UnityInstancing_SRP_UnityPerDraw : register(b0, space2)
+{
+    anon_UnityPerDrawArray _SRP_UnityPerDraw_UnityPerDrawArray[256] : packoffset(c0);
+};
+
+ByteAddressBuffer _GlobalBinningBuffer : register(t37, space0);
+cbuffer type_UnityPerMaterial : register(b2, space1)
+{
+    float UnityPerMaterial_Stripped_0 : packoffset(c0);
+    float _Specular : packoffset(c0.y);
+    float _Roughness : packoffset(c0.z);
+    float UnityPerMaterial_Stripped_12 : packoffset(c0.w);
+    float UnityPerMaterial_Stripped_16 : packoffset(c1);
+    float UnityPerMaterial_Stripped_20 : packoffset(c1.y);
+    float _UseCustomRefractTex : packoffset(c1.z);
+    float _RefractTexIntensity : packoffset(c1.w);
+    float _RefractRatio : packoffset(c2);
+    float _Thickness : packoffset(c2.y);
+    float UnityPerMaterial_Stripped_40 : packoffset(c2.z);
+    float _DitherColorStrength : packoffset(c2.w);
+    float UnityPerMaterial_Stripped_48 : packoffset(c3);
+    float UnityPerMaterial_Stripped_52 : packoffset(c3.y);
+    float UnityPerMaterial_Stripped_56 : packoffset(c3.z);
+    float UnityPerMaterial_Stripped_60 : packoffset(c3.w);
+    float UnityPerMaterial_Stripped_64 : packoffset(c4);
+    float UnityPerMaterial_Stripped_68 : packoffset(c4.y);
+    float UnityPerMaterial_Stripped_72 : packoffset(c4.z);
+    float UnityPerMaterial_Stripped_76 : packoffset(c4.w);
+    float UnityPerMaterial_Stripped_80 : packoffset(c5);
+    float UnityPerMaterial_Stripped_84 : packoffset(c5.y);
+    float UnityPerMaterial_Stripped_88 : packoffset(c5.z);
+    float UnityPerMaterial_Stripped_92 : packoffset(c5.w);
+    float UnityPerMaterial_Stripped_96 : packoffset(c6);
+    float _DistanceScalePow : packoffset(c6.y);
+    float _UVSpeed : packoffset(c6.z);
+    float _RotateAngle : packoffset(c6.w);
+    float _StripeWidth : packoffset(c7);
+    float _StripeFeather : packoffset(c7.y);
+    float _StripeScale : packoffset(c7.z);
+    float _StripeAlpha : packoffset(c7.w);
+    float UnityPerMaterial_Stripped_128 : packoffset(c8);
+    float UnityPerMaterial_Stripped_132 : packoffset(c8.y);
+    float _OutlineToBuildIntensity : packoffset(c8.z);
+    float _EnableNoiseGradient : packoffset(c8.w);
+    float _NoiseGradientPow : packoffset(c9);
+    float UnityPerMaterial_Stripped_148 : packoffset(c9.y);
+    float UnityPerMaterial_Stripped_152 : packoffset(c9.z);
+    float UnityPerMaterial_Stripped_156 : packoffset(c9.w);
+    float UnityPerMaterial_Stripped_160 : packoffset(c10);
+    float UnityPerMaterial_Stripped_164 : packoffset(c10.y);
+    float UnityPerMaterial_Stripped_168 : packoffset(c10.z);
+    float UnityPerMaterial_Stripped_172 : packoffset(c10.w);
+    float UnityPerMaterial_Stripped_176 : packoffset(c11);
+    float UnityPerMaterial_Stripped_180 : packoffset(c11.y);
+    float UnityPerMaterial_Stripped_184 : packoffset(c11.z);
+    float UnityPerMaterial_Stripped_188 : packoffset(c11.w);
+    float UnityPerMaterial_Stripped_192 : packoffset(c12);
+    float UnityPerMaterial_Stripped_196 : packoffset(c12.y);
+    float UnityPerMaterial_Stripped_200 : packoffset(c12.z);
+    float UnityPerMaterial_Stripped_204 : packoffset(c12.w);
+    float4 UnityPerMaterial_Stripped_208 : packoffset(c13);
+    float4 UnityPerMaterial_Stripped_224 : packoffset(c14);
+    float4 UnityPerMaterial_Stripped_240 : packoffset(c15);
+    float4 _StripeColor : packoffset(c16);
+    float4 UnityPerMaterial_Stripped_272 : packoffset(c17);
+    float4 _PreSelectColor : packoffset(c18);
+    float4 _BPToBuildColor : packoffset(c19);
+    float4 _RefractTex_ST : packoffset(c20);
+    float4 UnityPerMaterial_Stripped_336 : packoffset(c21);
+};
+
+cbuffer type_ReflectionProbeGlobalData : register(b17, space0)
+{
+    float4 _ReflectionProbeGlobalParam0 : packoffset(c0);
+    float4 _ReflectionProbeGlobalParam1 : packoffset(c1);
+    float4 _ReflectionProbeGlobalParam2 : packoffset(c2);
+    float4 _ReflectionProbeGlobalParam3 : packoffset(c3);
+    anon_ReflectionProbeGlobalDatas _ReflectionProbeGlobalDatas[32] : packoffset(c4);
+};
+
+SamplerState sampler_LinearMirror : register(s6, space0);
+SamplerState sampler_LinearRepeat : register(s4, space0);
+SamplerState sampler_LinearClamp : register(s1, space0);
+Texture2DArray<float4> _ReflectionProbeOctTextureArray : register(t22, space0);
+Texture2D<float4> _RefractTex : register(t1, space1);
+SamplerState sampler_PointClamp_RefractTex : register(s0, space1);
+Texture2D<float4> _SceneColorTexture : register(t21, space0);
+SamplerState sampler_LinearMirrorOnce : register(s20, space0);
+Texture3D<float4> _IrradianceVolumeClipmapTextureALod0 : register(t31, space0);
+Texture3D<float4> _IrradianceVolumeClipmapTextureBLod0 : register(t28, space0);
+Texture3D<float4> _IrradianceVolumeClipmapTextureALod1 : register(t30, space0);
+Texture3D<float4> _IrradianceVolumeClipmapTextureBLod1 : register(t27, space0);
+Texture3D<float4> _IrradianceVolumeClipmapTextureALod3 : register(t29, space0);
+Texture3D<float4> _IrradianceVolumeClipmapTextureBLod3 : register(t26, space0);
+Texture3D<float4> _IntegratedLightScattering : register(t32, space0);
+
+static float4 gl_FragCoord;
+static float4 _4;
+static float3 _5;
+static float3 _6;
+static float3 _7;
+static uint _8;
+static float4 _9;
+static float4 _10;
+
+struct SPIRV_Cross_Input
+{
+    float4 _4 : TEXCOORD0;
+    float3 _5 : TEXCOORD2;
+    float3 _6 : TEXCOORD4;
+    float3 _7 : TEXCOORD5;
+    nointerpolation uint _8 : TEXCOORD6;
+    float4 gl_FragCoord : SV_Position;
+};
+
+struct SPIRV_Cross_Output
+{
+    float4 _9 : SV_Target0;
+    float4 _10 : SV_Target1;
+};
+
+uint spvPackHalf2x16(float2 value)
+{
+    uint2 Packed = f32tof16(value);
+    return Packed.x | (Packed.y << 16);
+}
+
+float2 spvUnpackHalf2x16(uint value)
+{
+    return f16tof32(uint2(value & 0xffff, value >> 16));
+}
+
+void frag_main()
+{
+    float2 _258 = gl_FragCoord.xy * _ScreenSize.zw;
+    uint2 _259 = uint2(gl_FragCoord.xy);
+    float2 _261 = (_258 * 2.0f) - 1.0f.xx;
+    float _262 = _261.x;
+    float _263 = _261.y;
+    float4 _264 = float4(_262, _263, gl_FragCoord.z, 1.0f);
+    _264.y = -_263;
+    float4 _267 = mul(_TransformVariables_InvViewProjMatrix, _264);
+    float3 _271 = _267.xyz / _267.w.xxx;
+    float4 _275 = float4(_271, 1.0f);
+    float _278 = abs(mul(_TransformVariables_ViewMatrix, _275).z);
+    float3 _294 = 0.0f.xxx;
+    do
+    {
+        if (_unity_OrthoParams.w == 0.0f)
+        {
+            _294 = _TransformVariables_WorldSpaceCameraPos_Internal.xyz - _271;
+            break;
+        }
+        else
+        {
+            _294 = _TransformVariables_ViewMatrix[2].xyz;
+            break;
+        }
+        break; // unreachable workaround
+    } while(false);
+    float _295 = dot(_294, _294);
+    float _297 = rsqrt(max(_295, 9.9999999392252902907785028219223e-09f));
+    float3 _298 = _294 * _297;
+    float _299 = _295 * _297;
+    float _310 = 1.0f - max(_SRP_UnityPerDraw_UnityPerDrawArray[_8].Stripped_64.y, _SRP_UnityPerDraw_UnityPerDrawArray[_8].Stripped_64.z);
+    float _316 = abs(frac(52.98291778564453125f * frac(dot(gl_FragCoord.xy + 0.100000001490116119384765625f.xx, float2(0.067110560834407806396484375f, 0.005837149918079376220703125f)))));
+    if ((_310 - ((_310 >= 0.0f) ? _316 : (-_316))) < 0.0f)
+    {
+        discard;
+    }
+    float2 _335 = (_6.xy / max(_6.z, 9.9999999392252902907785028219223e-09f).xx) - (_7.xy / max(_7.z, 9.9999999392252902907785028219223e-09f).xx);
+    _335.y = -_335.y;
+    float _369 = dot(_5, _298);
+    float3 _370 = -_298;
+    float3 _387 = _271 - _TransformVariables_WorldSpaceCameraPos_Internal.xyz;
+    float _388 = length(_387);
+    float _393 = min(1.0f - abs(_262), 1.0f - abs(_263));
+    float4 _416 = _RefractTex.SampleBias(sampler_PointClamp_RefractTex, (_4.xy * _RefractTex_ST.xy) + _RefractTex_ST.zw, _GlobalMipBias);
+    float4 _427 = _SceneColorTexture.SampleBias(sampler_LinearMirrorOnce, _258 + lerp((mul(float3x3(_TransformVariables_ViewMatrix[0].xyz, _TransformVariables_ViewMatrix[1].xyz, _TransformVariables_ViewMatrix[2].xyz), refract(_370, _5, _RefractRatio) * (_Thickness / max(gl_FragCoord.z * _369, 0.5f))).xy * lerp(1.0f - clamp((0.10000002384185791015625f - _393) * 10.0f, 0.0f, 1.0f), 1.0f - clamp((0.199999988079071044921875f - _393) * 5.0f, 0.0f, 1.0f), 1.0f - clamp((_388 - 0.75f) * 4.0f, 0.0f, 1.0f))).xy, ((_416 * 2.0f) - 1.0f.xxxx).xy * _RefractTexIntensity, _UseCustomRefractTex.xx).xy, _GlobalMipBias);
+    float4 _436 = (float4(-1.0f, -0.0274999998509883880615234375f, -0.572000026702880859375f, 0.02199999988079071044921875f) * _Roughness) + float4(1.0f, 0.0425000004470348358154296875f, 1.03999996185302734375f, -0.039999999105930328369140625f);
+    float _437 = _436.x;
+    float2 _447 = (float2(-1.03999996185302734375f, 1.03999996185302734375f) * ((min(_437 * _437, exp2((-9.27999973297119140625f) * max(0.0f, _369))) * _437) + _436.y)) + _436.zw;
+    float3 _457 = _271 + (_5 * 0.25f);
+    float3 _467 = mul(float3x3(_TransformVariables_InvViewMatrix[0].xyz, _TransformVariables_InvViewMatrix[1].xyz, _TransformVariables_InvViewMatrix[2].xyz), float3(0.0f, 0.0f, 1.0f));
+    float3 _476 = _457 - (_IVParam0.xyz + (_467 * (-_IVParam2.w)));
+    float _490 = max(clamp((max(abs(_476.x), abs(_476.z)) - 464.0f) * 0.03125f, 0.0f, 1.0f), clamp((abs(_476.y) - 208.0f) * 0.03125f, 0.0f, 1.0f));
+    float4 _792 = 0.0f.xxxx;
+    float4 _793 = 0.0f.xxxx;
+    float4 _794 = 0.0f.xxxx;
+    float _795 = 0.0f;
+    float _796 = 0.0f;
+    if ((_IVParam0.w != 0.0f) && (_490 < 1.0f))
+    {
+        float3 _503 = _457 - (_IVParam0.xyz + (_467 * (-_IVParam2.y)));
+        float _517 = max(clamp((max(abs(_503.x), abs(_503.z)) - 29.0f) * 0.5f, 0.0f, 1.0f), clamp((abs(_503.y) - 13.0f) * 0.5f, 0.0f, 1.0f));
+        float _593 = 0.0f;
+        float4 _594 = 0.0f.xxxx;
+        float4 _595 = 0.0f.xxxx;
+        float4 _596 = 0.0f.xxxx;
+        if (_517 < 1.0f)
+        {
+            float3 _526 = ((_457 * 2.0f) + 0.5f.xxx) * _IVParam1.xyz;
+            float3 _528 = _526 - floor(_526);
+            float4 _532 = _IrradianceVolumeClipmapTextureALod0.SampleLevel(sampler_LinearRepeat, _528, 0.0f);
+            float _533 = 1.0f - _517;
+            float _537 = _IVParam1.y * 0.5f;
+            float _542 = _528.x;
+            float _543 = clamp(_528.y, _537, 1.0f - _537) * 0.3333333432674407958984375f;
+            float _544 = _528.z;
+            float4 _547 = _IrradianceVolumeClipmapTextureBLod0.SampleLevel(sampler_LinearMirror, float3(_542, _543, _544), 0.0f);
+            float _563 = _532.x;
+            float _573 = _532.y;
+            float _583 = _532.z;
+            _593 = _490 + (_547.w * _533);
+            _594 = float4(((_IrradianceVolumeClipmapTextureBLod0.SampleLevel(sampler_LinearMirror, float3(_542, _543 + 0.666666686534881591796875f, _544), 0.0f).xyz * 4.0f) - 2.0f.xxx) * _583, _583) * _533;
+            _595 = float4(((_IrradianceVolumeClipmapTextureBLod0.SampleLevel(sampler_LinearMirror, float3(_542, _543 + 0.3333333432674407958984375f, _544), 0.0f).xyz * 4.0f) - 2.0f.xxx) * _573, _573) * _533;
+            _596 = float4(((_547.xyz * 4.0f) - 2.0f.xxx) * _563, _563) * _533;
+        }
+        else
+        {
+            _593 = _490;
+            _594 = 0.0f.xxxx;
+            _595 = 0.0f.xxxx;
+            _596 = 0.0f.xxxx;
+        }
+        float3 _602 = _457 - (_IVParam0.xyz + (_467 * (-_IVParam2.z)));
+        float _616 = max(clamp((max(abs(_602.x), abs(_602.z)) - 116.0f) * 0.125f, 0.0f, 1.0f), clamp((abs(_602.y) - 52.0f) * 0.125f, 0.0f, 1.0f));
+        float _696 = 0.0f;
+        float4 _697 = 0.0f.xxxx;
+        float4 _698 = 0.0f.xxxx;
+        float4 _699 = 0.0f.xxxx;
+        if (_616 < 1.0f)
+        {
+            float3 _625 = ((_457 * 0.5f) + 0.5f.xxx) * _IVParam1.xyz;
+            float3 _627 = _625 - floor(_625);
+            float4 _631 = _IrradianceVolumeClipmapTextureALod1.SampleLevel(sampler_LinearRepeat, _627, 0.0f);
+            float _633 = _517 * (1.0f - _616);
+            float _637 = _IVParam1.y * 0.5f;
+            float _642 = _627.x;
+            float _643 = clamp(_627.y, _637, 1.0f - _637) * 0.3333333432674407958984375f;
+            float _644 = _627.z;
+            float4 _647 = _IrradianceVolumeClipmapTextureBLod1.SampleLevel(sampler_LinearMirror, float3(_642, _643, _644), 0.0f);
+            float _663 = _631.x;
+            float _674 = _631.y;
+            float _685 = _631.z;
+            _696 = _593 + (_647.w * _633);
+            _697 = _594 + (float4(((_IrradianceVolumeClipmapTextureBLod1.SampleLevel(sampler_LinearMirror, float3(_642, _643 + 0.666666686534881591796875f, _644), 0.0f).xyz * 4.0f) - 2.0f.xxx) * _685, _685) * _633);
+            _698 = _595 + (float4(((_IrradianceVolumeClipmapTextureBLod1.SampleLevel(sampler_LinearMirror, float3(_642, _643 + 0.3333333432674407958984375f, _644), 0.0f).xyz * 4.0f) - 2.0f.xxx) * _674, _674) * _633);
+            _699 = _596 + (float4(((_647.xyz * 4.0f) - 2.0f.xxx) * _663, _663) * _633);
+        }
+        else
+        {
+            _696 = _593;
+            _697 = _594;
+            _698 = _595;
+            _699 = _596;
+        }
+        float4 _782 = 0.0f.xxxx;
+        float4 _783 = 0.0f.xxxx;
+        float4 _784 = 0.0f.xxxx;
+        float _785 = 0.0f;
+        if (_616 > 0.0f)
+        {
+            float3 _708 = ((_457 * 0.125f) + 0.5f.xxx) * _IVParam1.xyz;
+            float3 _711 = _IVParam1.xyz * 0.5f;
+            float3 _713 = clamp(_708 - floor(_708), _711, 1.0f.xxx - _711);
+            float4 _717 = _IrradianceVolumeClipmapTextureALod3.SampleLevel(sampler_LinearRepeat, _713, 0.0f);
+            float _719 = _616 * (1.0f - _490);
+            float _723 = _IVParam1.y * 0.5f;
+            float _728 = _713.x;
+            float _729 = clamp(_713.y, _723, 1.0f - _723) * 0.3333333432674407958984375f;
+            float _730 = _713.z;
+            float4 _733 = _IrradianceVolumeClipmapTextureBLod3.SampleLevel(sampler_LinearMirror, float3(_728, _729, _730), 0.0f);
+            float _749 = _717.x;
+            float _760 = _717.y;
+            float _771 = _717.z;
+            _782 = _697 + (float4(((_IrradianceVolumeClipmapTextureBLod3.SampleLevel(sampler_LinearMirror, float3(_728, _729 + 0.666666686534881591796875f, _730), 0.0f).xyz * 4.0f) - 2.0f.xxx) * _771, _771) * _719);
+            _783 = _698 + (float4(((_IrradianceVolumeClipmapTextureBLod3.SampleLevel(sampler_LinearMirror, float3(_728, _729 + 0.3333333432674407958984375f, _730), 0.0f).xyz * 4.0f) - 2.0f.xxx) * _760, _760) * _719);
+            _784 = _699 + (float4(((_733.xyz * 4.0f) - 2.0f.xxx) * _749, _749) * _719);
+            _785 = _696 + (_733.w * _719);
+        }
+        else
+        {
+            _782 = _697;
+            _783 = _698;
+            _784 = _699;
+            _785 = _696;
+        }
+        float _788 = clamp((_785 * 2.0f) - 1.0f, 0.0f, 1.0f);
+        _792 = _782;
+        _793 = _783;
+        _794 = _784;
+        _795 = _788 - _490;
+        _796 = (_788 + _490) * 0.5f;
+    }
+    else
+    {
+        _792 = 0.0f.xxxx;
+        _793 = 0.0f.xxxx;
+        _794 = 0.0f.xxxx;
+        _795 = 0.0f;
+        _796 = 1.0f;
+    }
+    float4 _816 = _794 + float4(_IVDefaultSHAr.x * _796, (_IVDefaultSHAr.y * _796) + ((_IVDefaultSHAr.w * _795) * 0.5f), _IVDefaultSHAr.z * _796, (_IVDefaultSHAr.w * _796) + ((_IVDefaultSHAr.y * _795) * 0.375f));
+    float4 _836 = _793 + float4(_IVDefaultSHAg.x * _796, (_IVDefaultSHAg.y * _796) + ((_IVDefaultSHAg.w * _795) * 0.5f), _IVDefaultSHAg.z * _796, (_IVDefaultSHAg.w * _796) + ((_IVDefaultSHAg.y * _795) * 0.375f));
+    float4 _856 = _792 + float4(_IVDefaultSHAb.x * _796, (_IVDefaultSHAb.y * _796) + ((_IVDefaultSHAb.w * _795) * 0.5f), _IVDefaultSHAb.z * _796, (_IVDefaultSHAb.w * _796) + ((_IVDefaultSHAb.y * _795) * 0.375f));
+    float3 _875 = reflect(_370, _5);
+    float _883 = (_GraphicsFeaturesGlobalParam1.x - 1.0f) - (1.0f - (1.2000000476837158203125f * log2(max(_Roughness, 0.001000000047497451305389404296875f))));
+    float2 _884 = float2(_259);
+    float2 _888 = floor(_884 * _ReflectionProbeGlobalParam0.w);
+    float _905 = floor(_278 - _ReflectionProbeGlobalParam2.y);
+    float _909 = clamp(_905, 0.0f, _ReflectionProbeGlobalParam1.x - 1.0f);
+    uint _919 = (_905 <= _909) ? (_GlobalBinningBuffer.Load<uint>(uint(_BinningBufferOffsets.z + int(_888.x + (_888.y * _ReflectionProbeGlobalParam0.x))) * 4 + 0) & _GlobalBinningBuffer.Load<uint>(uint(_BinningBufferOffsets.w + int(_909)) * 4 + 0)) : 0u;
+    float _924 = dot(float4(max(0.0f, dot(_816.xyz, _5) + _816.w), max(0.0f, dot(_836.xyz, _5) + _836.w), max(0.0f, dot(_856.xyz, _5) + _856.w), 1.0f).xyz * _EnvironmentGlobalParams0.x, float3(0.21267290413379669189453125f, 0.715152204036712646484375f, 0.072175003588199615478515625f));
+    float3 _926 = 0.0f.xxx;
+    float _929 = 0.0f;
+    uint _931 = 0u;
+    _926 = 0.0f.xxx;
+    _929 = 1.0f;
+    _931 = _919;
+    uint _932 = 0u;
+    float3 _927 = 0.0f.xxx;
+    float _930 = 0.0f;
+    bool _934 = false;
+    [loop]
+    for (;;)
+    {
+        _934 = _929 > 0.00999999977648258209228515625f;
+        if ((_931 != 0u) && _934)
+        {
+            uint _938 = firstbitlow(_931);
+            _932 = _931 ^ (1u << (_938 & 31u));
+            float3 _958 = float3(dot(_ReflectionProbeGlobalDatas[_938].Stripped_32, _275), dot(_ReflectionProbeGlobalDatas[_938].Stripped_48, _275), dot(_ReflectionProbeGlobalDatas[_938].Stripped_64, _275));
+            float3 _959 = abs(_958);
+            if (all(bool3(_959.x <= _ReflectionProbeGlobalDatas[_938].Stripped_16.xyz.x, _959.y <= _ReflectionProbeGlobalDatas[_938].Stripped_16.xyz.y, _959.z <= _ReflectionProbeGlobalDatas[_938].Stripped_16.xyz.z)))
+            {
+                float3 _968 = _ReflectionProbeGlobalDatas[_938].Stripped_16.xyz * 0.100000001490116119384765625f;
+                float3 _970 = _959 * 0.100000001490116119384765625f;
+                float3 _971 = _970 * _970;
+                float3 _974 = (_ReflectionProbeGlobalDatas[_938].Stripped_16.xyz - _959) * _ReflectionProbeGlobalDatas[_938].Stripped_80.xyz;
+                float3 _1022 = 0.0f.xxx;
+                [branch]
+                if (_ReflectionProbeGlobalDatas[_938].Stripped_96.x == 1.0f)
+                {
+                    float3 _1007 = float3(dot(_ReflectionProbeGlobalDatas[_938].Stripped_32.xyz, _875), dot(_ReflectionProbeGlobalDatas[_938].Stripped_48.xyz, _875), dot(_ReflectionProbeGlobalDatas[_938].Stripped_64.xyz, _875));
+                    float3 _1009 = (_ReflectionProbeGlobalDatas[_938].Stripped_16.xyz - _958) / _1007;
+                    float3 _1012 = ((-_ReflectionProbeGlobalDatas[_938].Stripped_16.xyz) - _958) / _1007;
+                    bool3 _1013 = bool3(_1007.x > 0.0f.xxx.x, _1007.y > 0.0f.xxx.y, _1007.z > 0.0f.xxx.z);
+                    float3 _1014 = float3(_1013.x ? _1009.x : _1012.x, _1013.y ? _1009.y : _1012.y, _1013.z ? _1009.z : _1012.z);
+                    _1022 = _958 + (_1007 * min(min(_1014.x, _1014.y), _1014.z));
+                }
+                else
+                {
+                    _1022 = _875;
+                }
+                float3 _1023 = normalize(_1022);
+                float3 _1026 = float3(int3(sign(_1023)));
+                float3 _1029 = _1023 / dot(_1023, _1026).xxx;
+                float3 _1043 = 0.0f.xxx;
+                if (_1029.z < 0.0f)
+                {
+                    float3 _1034 = abs(_1029);
+                    float2 _1041 = _1026.xy * float2(1.0f - _1034.y, 1.0f - _1034.x);
+                    _1043 = float3(_1041.x, _1041.y, _1029.z);
+                }
+                else
+                {
+                    _1043 = _1029;
+                }
+                float _1068 = max(9.9999997473787516355514526367188e-05f, max(0.0f, dot(_ReflectionProbeGlobalDatas[_938].Stripped_0, float4(_5, 1.0f))));
+                float _1081 = clamp((min(_974.x, min(_974.y, _974.z)) * _ReflectionProbeGlobalDatas[_938].Stripped_96.y) + ((((((_968 * _968).x - ((_971.x + _971.y) + _971.z)) * _ReflectionProbeGlobalDatas[_938].Stripped_80.x) * _ReflectionProbeGlobalDatas[_938].Stripped_80.x) * (1.0f - _ReflectionProbeGlobalDatas[_938].Stripped_96.y)) * 100.0f), 0.0f, 1.0f) * _ReflectionProbeGlobalDatas[_938].Stripped_96.w;
+                _927 = _926 + ((((_ReflectionProbeOctTextureArray.SampleLevel(sampler_LinearClamp, float3((((_1043.xy * 0.5f) + 0.5f.xx) * _ReflectionProbeGlobalParam1.w) + _ReflectionProbeGlobalParam2.w.xx, _ReflectionProbeGlobalDatas[_938].Stripped_16.w), _883).xyz * _ReflectionProbeGlobalDatas[_938].Stripped_80.w) * ((((((clamp(abs(_924 / _1068), 0.0f, 1.0f) * 2.0f) + _924) / (2.0f + _1068)) - 1.0f) * _GraphicsFeaturesGlobalParam0.w) + 1.0f)) * _1081) * _929);
+                _930 = _929 * (1.0f - _1081);
+            }
+            else
+            {
+                _927 = _926;
+                _930 = _929;
+            }
+            _926 = _927;
+            _929 = _930;
+            _931 = _932;
+            continue;
+        }
+        else
+        {
+            break;
+        }
+    }
+    float3 _1150 = 0.0f.xxx;
+    if (_934)
+    {
+        float3 _1089 = normalize(_875);
+        float3 _1092 = float3(int3(sign(_1089)));
+        float3 _1095 = _1089 / dot(_1089, _1092).xxx;
+        float3 _1109 = 0.0f.xxx;
+        if (_1095.z < 0.0f)
+        {
+            float3 _1100 = abs(_1095);
+            float2 _1107 = _1092.xy * float2(1.0f - _1100.y, 1.0f - _1100.x);
+            _1109 = float3(_1107.x, _1107.y, _1095.z);
+        }
+        else
+        {
+            _1109 = _1095;
+        }
+        float _1136 = max(9.9999997473787516355514526367188e-05f, max(0.0f, dot(_ReflectionProbeGlobalParam3, float4(_5, 1.0f))));
+        _1150 = _926 + ((_ReflectionProbeOctTextureArray.SampleLevel(sampler_LinearClamp, float3((((_1109.xy * 0.5f) + 0.5f.xx) * _ReflectionProbeGlobalParam1.w) + _ReflectionProbeGlobalParam2.w.xx, 0.0f), _883).xyz * ((((((clamp(abs(_924 / _1136), 0.0f, 1.0f) * 2.0f) + _924) / (2.0f + _1136)) - 1.0f) * _GraphicsFeaturesGlobalParam0.w) + 1.0f)) * _929);
+    }
+    else
+    {
+        _1150 = _926;
+    }
+    float _1182 = frac(sin(dot(_4.xy, float2(12.98980045318603515625f, 78.233001708984375f))) * 43758.546875f);
+    uint _1185 = asuint(_SRP_UnityPerDraw_UnityPerDrawArray[_8].Stripped_240.y);
+    bool3 _1198 = (((_1185 >> 16u) & 1u) != 0u).xxx;
+    float3 _1199 = 1.0f.xxx * ((lerp(0.0f, 1.0f, _SRP_UnityPerDraw_UnityPerDrawArray[_8].Stripped_192.y) != 0.0f) ? 0.5f : 1.0f);
+    uint _1214 = asuint(_SRP_UnityPerDraw_UnityPerDrawArray[_8].Stripped_224.y);
+    bool3 _1217 = ((_1214 & 1u) != 0u).xxx;
+    bool3 _1224 = (((_1214 >> 3u) & 1u) != 0u).xxx;
+    float3 _1231 = float3(_1224.x ? _BPToBuildColor.xyz.x : _PreSelectColor.xyz.x, _1224.y ? _BPToBuildColor.xyz.y : _PreSelectColor.xyz.y, _1224.z ? _BPToBuildColor.xyz.z : _PreSelectColor.xyz.z);
+    bool3 _1236 = (((_1214 >> 1u) & 1u) != 0u).xxx;
+    float _1260 = _RotateAngle * 0.01745329238474369049072265625f;
+    float _1261 = sin(_1260);
+    float _1262 = cos(_1260);
+    float2x2 _1267 = float2x2(float2(_1262, -_1261), float2(_1261, _1262)) * 0.5f;
+    float2x2 _1273 = float2x2(_1267[0] + 0.5f.xx, _1267[1] + 0.5f.xx) * 2.0f;
+    float3 _1292 = float3(_1217.x ? _StripeColor.xyz.x : _1231.x, _1217.y ? _StripeColor.xyz.y : _1231.y, _1217.z ? _StripeColor.xyz.z : _1231.z) * (clamp((sin((mul(((float3(_258, 1.0f) * 2.0f) - 1.0f.xxx).xy, float2x2(_1273[0] - 1.0f.xx, _1273[1] - 1.0f.xx)).y * (_StripeScale * pow(max(_388, 0.100000001490116119384765625f), _DistanceScalePow))) + (_UVSpeed * _Time.y)) - _StripeWidth) / max(_StripeFeather, 0.00999999977648258209228515625f), 0.0f, 1.0f) * _StripeAlpha);
+    float3 _1294 = (((((((_1150 * _GraphicsFeaturesGlobalParam0.z) * _EnvironmentGlobalParams0.y) * (((0.07999999821186065673828125f * _Specular).xxx * _447.x) + (clamp(_Specular * 4.0f, 0.0f, 1.0f) * _447.y).xxx)) * 1.0f) + clamp((_427.xyz * _SRP_UnityPerDraw_UnityPerDrawArray[_8].Stripped_208.xyz).xyz, 0.0f.xxx, 1.0f.xxx)).xyz + (float3(_1198.x ? _1199.x : float3(1.0f, 0.0f, 0.0f).x, _1198.y ? _1199.y : float3(1.0f, 0.0f, 0.0f).y, _1198.z ? _1199.z : float3(1.0f, 0.0f, 0.0f).z) * (_1182 * clamp(spvUnpackHalf2x16(_1185 & 65535u).x, 0.0f, 1.0f)))).xyz + ((_1182 * clamp(pow(abs((((_4.y + float(int(_SRP_UnityPerDraw_UnityPerDrawArray[_8].Stripped_176.z))) / max(max(_SRP_UnityPerDraw_UnityPerDrawArray[_8].Stripped_176.w, 9.9999997473787516355514526367188e-05f), 0.001000000047497451305389404296875f)) * 2.0f) - 1.0f), _NoiseGradientPow), 0.0f, 1.0f)) * _EnableNoiseGradient).xxx).xyz;
+    float3 _1298 = lerp(_SRP_UnityPerDraw_UnityPerDrawArray[_8].Stripped_208.xyz * _DitherColorStrength, (_1294 + float3(_1236.x ? _1292.x : 0.0f.xxx.x, _1236.y ? _1292.y : 0.0f.xxx.y, _1236.z ? _1292.z : 0.0f.xxx.z)).xyz, _310.xxx);
+    float4 _1299 = float4(_1298.x, _1298.y, _1298.z, _240.w);
+    _1299.w = 1.0f;
+    float _1316 = _271.y * _AtmosphereFogParams3.w;
+    float _1321 = max(0.00999999977648258209228515625f, _1316 + _AtmosphereFogParams4.w);
+    float3 _1335 = exp(_AtmosphereFogParams2.xyz * ((-max(0.0f, (_299 * _AtmosphereFogParams1.w) - _AtmosphereFogParams0.w)) * (((1.0f - exp(-_1321)) / _1321) * exp(_1316 + _AtmosphereFogParams5.w))));
+    float _1338 = dot(_370, _AtmosphereFogParams1.xyz);
+    float _1344 = _AtmosphereFogParams2.w * _AtmosphereFogParams2.w;
+    float _1348 = (1.0f + _1344) - ((2.0f * _AtmosphereFogParams2.w) * _1338);
+    float3 _1670 = 0.0f.xxx;
+    float _1671 = 0.0f;
+    if (_VolumetricFogParams0.z > 0.0f)
+    {
+        uint3 _1502 = (uint3(int3(int(_259.x), int(_259.y), int(_FrameCount & 7u))) * uint3(1664525u, 1664525u, 1664525u)) + uint3(1013904223u, 1013904223u, 1013904223u);
+        uint _1503 = _1502.y;
+        uint _1504 = _1502.z;
+        uint _1507 = _1502.x + (_1503 * _1504);
+        uint _1509 = _1503 + (_1504 * _1507);
+        uint _1511 = _1504 + (_1507 * _1509);
+        uint _1513 = _1507 + (_1509 * _1511);
+        float _1535 = dot(_370, -_TransformVariables_ViewMatrix[2].xyz);
+        float _1543 = (_VolumetricFogParams0.w * ((_1535 > 5.9604644775390625e-08f) ? (1.0f / _1535) : 0.0f)) * (1.0f / _299);
+        float _1544 = _387.y;
+        float _1545 = _1543 * _1544;
+        float _1547 = _TransformVariables_WorldSpaceCameraPos_Internal.y + _1545;
+        float _1548 = _1544 - _1545;
+        float _1550 = (1.0f - _1543) * _299;
+        float _1564 = max(-127.0f, _ExponentialFogParams0.z * _1548);
+        float _1588 = max(-127.0f, _ExponentialFogParams3.x * _1548);
+        float _1599 = ((_ExponentialFogParams0.y * exp2(-max(-127.0f, _ExponentialFogParams0.z * (_1547 - _ExponentialFogParams0.x)))) * ((abs(_1564) > 5.9604644775390625e-08f) ? ((1.0f - exp2(-_1564)) / _1564) : (0.693147182464599609375f - (0.2402265071868896484375f * _1564)))) + ((_ExponentialFogParams3.y * exp2(-max(-127.0f, _ExponentialFogParams3.x * (_1547 - _ExponentialFogParams3.z)))) * ((abs(_1588) > 5.9604644775390625e-08f) ? ((1.0f - exp2(-_1588)) / _1588) : (0.693147182464599609375f - (0.2402265071868896484375f * _1588))));
+        float _1621 = clamp((_299 * _ExponentialFogParams1.w) + _ExponentialFogParams1.z, 0.0f, 1.0f);
+        float _1624 = clamp((max(clamp(exp2(-(_1599 * _1550)), 0.0f, 1.0f), _ExponentialFogParams2.w) + clamp((_299 * _ExponentialFogParams1.y) + _ExponentialFogParams1.x, 0.0f, 1.0f)) + _1621, 0.0f, 1.0f);
+        float4 _1664 = lerp(float4(0.0f, 0.0f, 0.0f, 1.0f), _IntegratedLightScattering.SampleLevel(sampler_LinearMirror, float3((_884 + ((((float3(uint3(_1513, _1509 + (_1511 * _1513), _241) >> uint3(16u, 16u, 16u)) * 1.525902189314365386962890625e-05f.xxx) * 2.0f) - 1.0f.xxx) * _VolumetricFogParams4.w).xy) * _VolumetricFogParams2.xy, (log2((_278 * _VolumetricFogParams1.x) + _VolumetricFogParams1.y) * _VolumetricFogParams1.z) / _VolumetricFogParams0.z), 0.0f), clamp((_278 - _VolumetricFogParams3.z) * 1000000.0f, 0.0f, 1.0f).xxxx);
+        float _1666 = _1664.w;
+        _1670 = _1664.xyz + (((_ExponentialFogParams2.xyz * (1.0f - _1624)) + (((_ExponentialFogParams5.xyz * pow(clamp(dot(_298, _ExponentialFogParams4.xyz), 0.0f, 1.0f), _ExponentialFogParams5.w)) * (1.0f - clamp(exp2(-(_1599 * max(_1550 - _ExponentialFogParams4.w, 0.0f))), 0.0f, 1.0f))) * (1.0f - _1621))) * _1666);
+        _1671 = _1666 * _1624;
+    }
+    else
+    {
+        float _1376 = _387.y;
+        float _1390 = max(-127.0f, _ExponentialFogParams0.z * _1376);
+        float _1414 = max(-127.0f, _ExponentialFogParams3.x * _1376);
+        float _1425 = ((_ExponentialFogParams0.y * exp2(-max(-127.0f, _ExponentialFogParams0.z * (_TransformVariables_WorldSpaceCameraPos_Internal.y - _ExponentialFogParams0.x)))) * ((abs(_1390) > 5.9604644775390625e-08f) ? ((1.0f - exp2(-_1390)) / _1390) : (0.693147182464599609375f - (0.2402265071868896484375f * _1390)))) + ((_ExponentialFogParams3.y * exp2(-max(-127.0f, _ExponentialFogParams3.x * (_TransformVariables_WorldSpaceCameraPos_Internal.y - _ExponentialFogParams3.z)))) * ((abs(_1414) > 5.9604644775390625e-08f) ? ((1.0f - exp2(-_1414)) / _1414) : (0.693147182464599609375f - (0.2402265071868896484375f * _1414))));
+        float _1447 = clamp((_299 * _ExponentialFogParams1.w) + _ExponentialFogParams1.z, 0.0f, 1.0f);
+        float _1450 = clamp((max(clamp(exp2(-(_1425 * _299)), 0.0f, 1.0f), _ExponentialFogParams2.w) + clamp((_299 * _ExponentialFogParams1.y) + _ExponentialFogParams1.x, 0.0f, 1.0f)) + _1447, 0.0f, 1.0f);
+        _1670 = (_ExponentialFogParams2.xyz * (1.0f - _1450)) + (((_ExponentialFogParams5.xyz * pow(clamp(dot(_298, _ExponentialFogParams4.xyz), 0.0f, 1.0f), _ExponentialFogParams5.w)) * (1.0f - clamp(exp2(-(_1425 * max(_299 - _ExponentialFogParams4.w, 0.0f))), 0.0f, 1.0f))) * (1.0f - _1447));
+        _1671 = _1450;
+    }
+    float3 _1677 = ((_1299.xyz * (_1335 * _1671)) + ((((clamp(((_AtmosphereFogParams3.xyz * (0.0596831031143665313720703125f * (1.0f + (_1338 * _1338)))) + _AtmosphereFogParams5.xyz) + (_AtmosphereFogParams4.xyz * ((1.0f - _1344) / max((12.56637096405029296875f * _1348) * sqrt(_1348), 0.001000000047497451305389404296875f))), 0.0f.xxx, 1.0f.xxx) * 255.0f) * (1.0f.xxx - _1335)) * _1671) + _1670)).xyz;
+    float3 _1687 = lerp(dot(_1677, float3(0.21267290413379669189453125f, 0.715152204036712646484375f, 0.072175003588199615478515625f)).xxx, _1677, _VFXParams1.w.xxx) * _VFXParams1.xyz;
+    float2 _1696 = min(((sqrt(sqrt(abs(_335 * 0.5f))) * float2(int2(sign(_335)))) * 0.5f) + 0.5f.xx, 1.0f.xx);
+    float4 _1697 = float4(_1696.x, _1696.y, _240.z, _240.w);
+    _1697.z = float(clamp(max(dot(_1687.xyz, float3(0.21267290413379669189453125f, 0.715152204036712646484375f, 0.072175003588199615478515625f)), 1.0f) * 10.0f, 0.0f, 1.0f) > 0.5f);
+    _1697.w = 0.0f;
+    _9 = float4(_1687.x, _1687.y, _1687.z, _1299.w);
+    _10 = _1697;
+}
+
+SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+{
+    gl_FragCoord = stage_input.gl_FragCoord;
+    gl_FragCoord.w = 1.0 / gl_FragCoord.w;
+    _4 = stage_input._4;
+    _5 = stage_input._5;
+    _6 = stage_input._6;
+    _7 = stage_input._7;
+    _8 = stage_input._8;
+    frag_main();
+    SPIRV_Cross_Output stage_output;
+    stage_output._9 = _9;
+    stage_output._10 = _10;
+    return stage_output;
+}

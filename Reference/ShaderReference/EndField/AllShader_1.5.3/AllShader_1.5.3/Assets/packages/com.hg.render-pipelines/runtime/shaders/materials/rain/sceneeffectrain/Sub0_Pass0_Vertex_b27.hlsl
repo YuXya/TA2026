@@ -1,0 +1,422 @@
+// Stage: Vertex  Blob: 27  ParamBlob: 11  Language: hlsl
+// Keywords: HG_ENABLE_MV RAIN_LIGHTING SNOW_COLLISION SNOW_FLAKE SRP_INSTANCING_ON
+// Generated names (not authored, no CPU-side property matches them):  <Buffer>_Stripped_<byteOffset> = unnamed member at that offset;
+
+struct anon_UnityPerDrawArray
+{
+    column_major float4x4 Stripped_0;
+    float4 Stripped_64;
+    float4 Stripped_80;
+    column_major float4x4 Stripped_96;
+    float4 Stripped_160;
+    float4 Stripped_176;
+    float4 Stripped_192;
+    float4 Stripped_208;
+    float4 Stripped_224;
+    float4 Stripped_240;
+};
+
+cbuffer type_TransformVariables : register(b14, space0)
+{
+    column_major float4x4 _TransformVariables_ViewMatrix : packoffset(c0);
+    column_major float4x4 _TransformVariables_InvViewMatrix : packoffset(c4);
+    column_major float4x4 _TransformVariables_ProjMatrix : packoffset(c8);
+    column_major float4x4 _TransformVariables_Stripped_192 : packoffset(c12);
+    column_major float4x4 _TransformVariables_Stripped_256 : packoffset(c16);
+    column_major float4x4 _TransformVariables_Stripped_320 : packoffset(c20);
+    column_major float4x4 _TransformVariables_InvViewProjMatrix : packoffset(c24);
+    column_major float4x4 _TransformVariables_Stripped_448 : packoffset(c28);
+    column_major float4x4 _TransformVariables_NonJitteredViewNoTransProjMatrix : packoffset(c32);
+    column_major float4x4 _TransformVariables_Stripped_576 : packoffset(c36);
+    column_major float4x4 _TransformVariables_Stripped_640 : packoffset(c40);
+    float4 _TransformVariables_WorldSpaceCameraPos_Internal : packoffset(c44);
+    column_major float4x4 _TransformVariables_Stripped_720 : packoffset(c45);
+    column_major float4x4 _TransformVariables_Stripped_784 : packoffset(c49);
+    column_major float4x4 _TransformVariables_Stripped_848 : packoffset(c53);
+    column_major float4x4 _TransformVariables_PrevNonJitteredViewNoTransProjMatrix : packoffset(c57);
+    column_major float4x4 _TransformVariables_Stripped_976 : packoffset(c61);
+    column_major float4x4 _TransformVariables_Stripped_1040 : packoffset(c65);
+    column_major float4x4 _TransformVariables_Stripped_1104 : packoffset(c69);
+    column_major float4x4 _TransformVariables_Stripped_1168 : packoffset(c73);
+    column_major float4x4 _TransformVariables_Stripped_1232 : packoffset(c77);
+    float4 _TransformVariables_PrevCamPosRWS_Internal : packoffset(c81);
+};
+
+cbuffer type_ShaderVariablesGlobal : register(b18, space0)
+{
+    float4 _ScreenSize : packoffset(c0);
+    float4 ShaderVariablesGlobal_Stripped_16 : packoffset(c1);
+    float4 ShaderVariablesGlobal_Stripped_32 : packoffset(c2);
+    float4 _ProjectionParams : packoffset(c3);
+    float4 _unity_OrthoParams : packoffset(c4);
+    float4 _ScreenParams : packoffset(c5);
+    float4 ShaderVariablesGlobal_Stripped_96[6] : packoffset(c6);
+    float4 ShaderVariablesGlobal_Stripped_192[6] : packoffset(c12);
+    float4 ShaderVariablesGlobal_Stripped_288 : packoffset(c18);
+    float4 _TaaJitterStrength : packoffset(c19);
+    float4 ShaderVariablesGlobal_Stripped_320 : packoffset(c20);
+    float4 ShaderVariablesGlobal_Stripped_336 : packoffset(c21);
+    float4 ShaderVariablesGlobal_Stripped_352 : packoffset(c22);
+    float4 ShaderVariablesGlobal_Stripped_368 : packoffset(c23);
+    float4 ShaderVariablesGlobal_Stripped_384 : packoffset(c24);
+    float4 ShaderVariablesGlobal_Stripped_400 : packoffset(c25);
+    float _GlobalMipBias : packoffset(c26);
+    float ShaderVariablesGlobal_Stripped_420 : packoffset(c26.y);
+    float ShaderVariablesGlobal_Stripped_424 : packoffset(c26.z);
+    uint ShaderVariablesGlobal_Stripped_428 : packoffset(c26.w);
+    float4 ShaderVariablesGlobal_Stripped_432 : packoffset(c27);
+    int4 _BinningBufferOffsets : packoffset(c28);
+    float4 _EnvironmentGlobalParams0 : packoffset(c29);
+    float4 _GraphicsFeaturesGlobalParam0 : packoffset(c30);
+    float4 _GraphicsFeaturesGlobalParam1 : packoffset(c31);
+    float4 ShaderVariablesGlobal_Stripped_512 : packoffset(c32);
+    float4 ShaderVariablesGlobal_Stripped_528 : packoffset(c33);
+    float4 ShaderVariablesGlobal_Stripped_544 : packoffset(c34);
+    float4 ShaderVariablesGlobal_Stripped_560 : packoffset(c35);
+    float4 ShaderVariablesGlobal_Stripped_576 : packoffset(c36);
+    float4 ShaderVariablesGlobal_Stripped_592 : packoffset(c37);
+    float4 ShaderVariablesGlobal_Stripped_608 : packoffset(c38);
+    float4 ShaderVariablesGlobal_Stripped_624[4] : packoffset(c39);
+    float4 ShaderVariablesGlobal_Stripped_688[4] : packoffset(c43);
+    float4 ShaderVariablesGlobal_Stripped_752[4] : packoffset(c47);
+    float4 ShaderVariablesGlobal_Stripped_816[4] : packoffset(c51);
+    float4 ShaderVariablesGlobal_Stripped_880 : packoffset(c55);
+    float4 ShaderVariablesGlobal_Stripped_896 : packoffset(c56);
+    float4 ShaderVariablesGlobal_Stripped_912[4] : packoffset(c57);
+    float4 ShaderVariablesGlobal_Stripped_976[4] : packoffset(c61);
+    float4 ShaderVariablesGlobal_Stripped_1040[4] : packoffset(c65);
+    float4 ShaderVariablesGlobal_Stripped_1104 : packoffset(c69);
+    float4 ShaderVariablesGlobal_Stripped_1120 : packoffset(c70);
+    float4 ShaderVariablesGlobal_Stripped_1136 : packoffset(c71);
+    float4 ShaderVariablesGlobal_Stripped_1152 : packoffset(c72);
+    float4 ShaderVariablesGlobal_Stripped_1168 : packoffset(c73);
+    float4 ShaderVariablesGlobal_Stripped_1184 : packoffset(c74);
+    float4 ShaderVariablesGlobal_Stripped_1200 : packoffset(c75);
+    float4 ShaderVariablesGlobal_Stripped_1216 : packoffset(c76);
+    float4 ShaderVariablesGlobal_Stripped_1232 : packoffset(c77);
+    float4 ShaderVariablesGlobal_Stripped_1248 : packoffset(c78);
+    float4 ShaderVariablesGlobal_Stripped_1264 : packoffset(c79);
+    float4 ShaderVariablesGlobal_Stripped_1280 : packoffset(c80);
+    float4 ShaderVariablesGlobal_Stripped_1296 : packoffset(c81);
+    float4 ShaderVariablesGlobal_Stripped_1312 : packoffset(c82);
+    float4 ShaderVariablesGlobal_Stripped_1328 : packoffset(c83);
+    float4 ShaderVariablesGlobal_Stripped_1344 : packoffset(c84);
+    float4 ShaderVariablesGlobal_Stripped_1360 : packoffset(c85);
+    float4 ShaderVariablesGlobal_Stripped_1376 : packoffset(c86);
+    float4 ShaderVariablesGlobal_Stripped_1392 : packoffset(c87);
+    float4 ShaderVariablesGlobal_Stripped_1408 : packoffset(c88);
+    float4 ShaderVariablesGlobal_Stripped_1424 : packoffset(c89);
+    float4 ShaderVariablesGlobal_Stripped_1440 : packoffset(c90);
+    float4 ShaderVariablesGlobal_Stripped_1456 : packoffset(c91);
+    float4 ShaderVariablesGlobal_Stripped_1472 : packoffset(c92);
+    float4 _CloudShadowParams0 : packoffset(c93);
+    float4 _CloudShadowParams1 : packoffset(c94);
+    float4 _CloudShadowParams2 : packoffset(c95);
+    float4 _CloudShadowParams3 : packoffset(c96);
+    float4 ShaderVariablesGlobal_Stripped_1552 : packoffset(c97);
+    float4 ShaderVariablesGlobal_Stripped_1568 : packoffset(c98);
+    float4 ShaderVariablesGlobal_Stripped_1584 : packoffset(c99);
+    float4 ShaderVariablesGlobal_Stripped_1600 : packoffset(c100);
+    float4 ShaderVariablesGlobal_Stripped_1616 : packoffset(c101);
+    float4 ShaderVariablesGlobal_Stripped_1632 : packoffset(c102);
+    float4 _VFXParams0 : packoffset(c103);
+    float4 ShaderVariablesGlobal_Stripped_1664 : packoffset(c104);
+    float4 ShaderVariablesGlobal_Stripped_1680 : packoffset(c105);
+    float4 ShaderVariablesGlobal_Stripped_1696 : packoffset(c106);
+    float4 ShaderVariablesGlobal_Stripped_1712 : packoffset(c107);
+    float4 ShaderVariablesGlobal_Stripped_1728 : packoffset(c108);
+    float4 ShaderVariablesGlobal_Stripped_1744 : packoffset(c109);
+    float4 ShaderVariablesGlobal_Stripped_1760 : packoffset(c110);
+    float4 ShaderVariablesGlobal_Stripped_1776 : packoffset(c111);
+    float4 ShaderVariablesGlobal_Stripped_1792 : packoffset(c112);
+    float4 ShaderVariablesGlobal_Stripped_1808 : packoffset(c113);
+    float4 ShaderVariablesGlobal_Stripped_1824 : packoffset(c114);
+    float4 ShaderVariablesGlobal_Stripped_1840 : packoffset(c115);
+    float4 ShaderVariablesGlobal_Stripped_1856 : packoffset(c116);
+    float4 ShaderVariablesGlobal_Stripped_1872 : packoffset(c117);
+    float4 ShaderVariablesGlobal_Stripped_1888 : packoffset(c118);
+    float4 ShaderVariablesGlobal_Stripped_1904 : packoffset(c119);
+    float4 ShaderVariablesGlobal_Stripped_1920 : packoffset(c120);
+    float4 ShaderVariablesGlobal_Stripped_1936 : packoffset(c121);
+    float4 ShaderVariablesGlobal_Stripped_1952 : packoffset(c122);
+    float4 ShaderVariablesGlobal_Stripped_1968 : packoffset(c123);
+    float4 ShaderVariablesGlobal_Stripped_1984 : packoffset(c124);
+    float4 ShaderVariablesGlobal_Stripped_2000 : packoffset(c125);
+    float4 ShaderVariablesGlobal_Stripped_2016 : packoffset(c126);
+    float4 ShaderVariablesGlobal_Stripped_2032[2] : packoffset(c127);
+    float4 ShaderVariablesGlobal_Stripped_2064[2] : packoffset(c129);
+    float ShaderVariablesGlobal_Stripped_2096 : packoffset(c131);
+    float ShaderVariablesGlobal_Stripped_2100 : packoffset(c131.y);
+    float ShaderVariablesGlobal_Stripped_2104 : packoffset(c131.z);
+    float ShaderVariablesGlobal_Stripped_2108 : packoffset(c131.w);
+    float4 _IVParam0 : packoffset(c132);
+    float4 _IVParam1 : packoffset(c133);
+    float4 _IVParam2 : packoffset(c134);
+    float4 _IVDefaultSHAr : packoffset(c135);
+    float4 _IVDefaultSHAg : packoffset(c136);
+    float4 _IVDefaultSHAb : packoffset(c137);
+    float4 ShaderVariablesGlobal_Stripped_2208 : packoffset(c138);
+    float4 ShaderVariablesGlobal_Stripped_2224 : packoffset(c139);
+    float4 ShaderVariablesGlobal_Stripped_2240 : packoffset(c140);
+    float4 ShaderVariablesGlobal_Stripped_2256 : packoffset(c141);
+    float4 ShaderVariablesGlobal_Stripped_2272 : packoffset(c142);
+    float4 ShaderVariablesGlobal_Stripped_2288 : packoffset(c143);
+    float4 ShaderVariablesGlobal_Stripped_2304 : packoffset(c144);
+    float4 ShaderVariablesGlobal_Stripped_2320 : packoffset(c145);
+    float4 ShaderVariablesGlobal_Stripped_2336 : packoffset(c146);
+    float4 ShaderVariablesGlobal_Stripped_2352 : packoffset(c147);
+    float4 _RainWetnessGlobalParam4 : packoffset(c148);
+    float4 ShaderVariablesGlobal_Stripped_2384 : packoffset(c149);
+    float4 ShaderVariablesGlobal_Stripped_2400 : packoffset(c150);
+    float4 ShaderVariablesGlobal_Stripped_2416 : packoffset(c151);
+    float4 ShaderVariablesGlobal_Stripped_2432 : packoffset(c152);
+    float4 ShaderVariablesGlobal_Stripped_2448 : packoffset(c153);
+    float4 ShaderVariablesGlobal_Stripped_2464 : packoffset(c154);
+    float4 ShaderVariablesGlobal_Stripped_2480 : packoffset(c155);
+    float4 ShaderVariablesGlobal_Stripped_2496 : packoffset(c156);
+    float4 ShaderVariablesGlobal_Stripped_2512 : packoffset(c157);
+    float4 ShaderVariablesGlobal_Stripped_2528 : packoffset(c158);
+    float4 ShaderVariablesGlobal_Stripped_2544 : packoffset(c159);
+    float4 ShaderVariablesGlobal_Stripped_2560 : packoffset(c160);
+    float4 ShaderVariablesGlobal_Stripped_2576 : packoffset(c161);
+    column_major float4x4 ShaderVariablesGlobal_Stripped_2592 : packoffset(c162);
+    float4 ShaderVariablesGlobal_Stripped_2656 : packoffset(c166);
+    float4 ShaderVariablesGlobal_Stripped_2672 : packoffset(c167);
+    float4 ShaderVariablesGlobal_Stripped_2688[32] : packoffset(c168);
+};
+
+cbuffer type_UnityInstancing_SRP_UnityPerDraw : register(b0, space2)
+{
+    anon_UnityPerDrawArray _SRP_UnityPerDraw_UnityPerDrawArray[256] : packoffset(c0);
+};
+
+cbuffer type_VerticalOcclusionMapTransformCB : register(b13, space0)
+{
+    column_major float4x4 _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap : packoffset(c0);
+    float4 _VerticalOcclusionMapTransformCB_VerticalOcclusionMapUVScrollingOffset : packoffset(c4);
+};
+
+cbuffer type_UnityPerMaterial : register(b0, space1)
+{
+    float4 _RainTex0_ST : packoffset(c0);
+    float4 _RainColor : packoffset(c1);
+    float4 _RainParams : packoffset(c2);
+    float4 _RainDirectionParams : packoffset(c3);
+    float4 _RainMaskParams : packoffset(c4);
+    float4 _RainOffsetParams : packoffset(c5);
+};
+
+SamplerState sampler_LinearClamp : register(s2, space0);
+Texture2D<float4> _VerticalOcclusionMap : register(t8, space0);
+
+static float4 gl_Position;
+static int gl_InstanceIndex;
+static float3 _3;
+static float4 _4;
+static float4 _5;
+static float4 _6;
+static float3 _9;
+static float4 _10;
+static float4 _11;
+static float3 _12;
+static float4 _13;
+
+struct SPIRV_Cross_Input
+{
+    float3 _3 : POSITION0;
+    float4 _4 : NORMAL0;
+    float4 _5 : TANGENT0;
+    float4 _6 : COLOR0;
+    uint gl_InstanceIndex : SV_InstanceID;
+};
+
+struct SPIRV_Cross_Output
+{
+    float3 _9 : TEXCOORD0;
+    float4 _10 : TEXCOORD1;
+    float4 _11 : TEXCOORD2;
+    float3 _12 : TEXCOORD3;
+    float4 _13 : TEXCOORD4;
+    float4 gl_Position : SV_Position;
+};
+
+void vert_main()
+{
+    float4 _795 = 0.0f.xxxx;
+    float3 _796 = 0.0f.xxx;
+    float4 _797 = 0.0f.xxxx;
+    float4 _798 = 0.0f.xxxx;
+    float3 _799 = 0.0f.xxx;
+    float4 _800 = 0.0f.xxxx;
+    do
+    {
+        float3 _147 = float3(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[0].w, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[1].w, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[2].w);
+        float3 _152 = mul(float3x3(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[0].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[1].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[2].xyz), _3) + (_147 - _TransformVariables_WorldSpaceCameraPos_Internal.xyz);
+        bool3 _165 = (_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_160.x < 1.0f).xxx;
+        bool4 _171 = (_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_160.y < 1.0f).xxxx;
+        float4 _180 = float4(_152 + (_TransformVariables_WorldSpaceCameraPos_Internal.xyz - _TransformVariables_PrevCamPosRWS_Internal.xyz), 1.0f);
+        float4 _200 = float4(mul(float3x3(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[0].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[1].xyz, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[2].xyz), float3(_165.x ? _3.x : _6.xyz.x, _165.y ? _3.y : _6.xyz.y, _165.z ? _3.z : _6.xyz.z)) + (float3(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[0].w, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[1].w, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_96[2].w) - _TransformVariables_PrevCamPosRWS_Internal.xyz), 1.0f);
+        if (_5.y > _RainParams.w)
+        {
+            _795 = asfloat(0x7fc00000u /* nan */).xxxx;
+            _796 = _152 + _TransformVariables_WorldSpaceCameraPos_Internal.xyz;
+            _797 = 0.0f.xxxx;
+            _798 = 0.0f.xxxx;
+            _799 = 0.0f.xxx;
+            _800 = 0.0f.xxxx;
+            break;
+        }
+        float _217 = length(float3(_SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[0].x, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[0].y, _SRP_UnityPerDraw_UnityPerDrawArray[uint(gl_InstanceIndex)].Stripped_0[0].z));
+        float _218 = _217 * 2.0f;
+        float3 _226 = float3(_4.xy, _3.z);
+        float3 _228 = (_5.xyz * 2.0f) - 1.0f.xxx;
+        float2 _231 = _3.xy - _4.xy;
+        float2 _240 = float2(float(int(sign(_231.x))), float(int(sign(_231.y))));
+        float3 _241 = float3(_218, 40.0f, _218);
+        float3 _244 = floor(_147 / _241) * _241;
+        float3 _245 = _147 - _244;
+        float2 _265 = _RainDirectionParams.xz * float2(clamp(1.0f.xxx - ((((sin(frac(_RainOffsetParams.y.xxx + _228) * 6.283185482025146484375f) * 0.20000000298023223876953125f) + 0.60000002384185791015625f.xxx) * 0.5f) * _RainDirectionParams.w), 0.0f.xxx, 1.0f.xxx).xy);
+        float3 _266 = float3(_265.x, _RainDirectionParams.y, _265.y);
+        float3 _271 = -(_266 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_266, _266))));
+        float3 _272 = float3(_217, 20.0f, _217);
+        float3 _281 = ((frac(((_226 * 0.5f) + 0.5f.xxx) + _RainOffsetParams.xyz) * 2.0f) - 1.0f.xxx) * _272;
+        float3 _282 = _226 * _272;
+        float _283 = _281.y;
+        float _290 = _283 + ((step(_283 + 20.0f, _245.y) * 40.0f) + _244.y);
+        float2 _291 = _281.xz;
+        float2 _292 = _272.xz;
+        float2 _294 = _245.xz;
+        float2 _296 = _241.xz;
+        float2 _298 = _244.xz;
+        float2 _300 = _291 + ((step(_291 + _292, _294) * _296) + _298);
+        float3 _301 = float3(_300.x, _281.y, _300.y);
+        float2 _302 = _282.xz;
+        float2 _307 = _302 + ((step(_302 + _292, _294) * _296) + _298);
+        float4 _314 = mul(_VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap, float4(_307.x, _282.y, _307.y, 1.0f));
+        float2 _317 = (_314.xy * 0.5f) + 0.5f.xx;
+        float4 _318 = float4(_317.x, _317.y, _314.z, _314.w);
+        _318.y = 1.0f - _317.y;
+        float2 _326 = _318.xy + _VerticalOcclusionMapTransformCB_VerticalOcclusionMapUVScrollingOffset.xy;
+        float4 _327 = float4(_326.x, _326.y, _318.z, _318.w);
+        float4 _332 = _VerticalOcclusionMap.SampleLevel(sampler_LinearClamp, _326.xy, 0.0f);
+        float _333 = _332.x;
+        _327.z = _333;
+        float _351 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z;
+        float _353 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z;
+        float _356 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z;
+        float _359 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z;
+        float _362 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z;
+        float _365 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z;
+        float _367 = (((((_351 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w) - (_353 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) + (_356 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) - (_359 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) - (_362 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) + (_365 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w);
+        float _368 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z;
+        float _370 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z;
+        float _373 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z;
+        float _376 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z;
+        float _379 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z;
+        float _382 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z;
+        float _384 = (((((_368 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w) - (_370 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) - (_373 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) + (_376 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) + (_379 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) - (_382 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w);
+        float _385 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].y;
+        float _387 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].y;
+        float _390 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].y;
+        float _393 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].y;
+        float _396 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].y;
+        float _399 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].y;
+        float _401 = (((((_385 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w) - (_387 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) + (_390 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) - (_393 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) - (_396 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) + (_399 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w);
+        float _412 = (((((_387 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z) - (_385 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z)) - (_390 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z)) + (_393 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z)) + (_396 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z)) - (_399 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z);
+        float _420 = 1.0f / ((((_VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].x * _367) + (_VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].y * _384)) + (_VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z * _401)) + (_VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w * _412));
+        float _425 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z;
+        float _428 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z;
+        float _431 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z;
+        float _434 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z;
+        float _445 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z;
+        float _448 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].y * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z;
+        float _469 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z;
+        float _472 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z;
+        float _475 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z;
+        float _478 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z;
+        float _489 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z;
+        float _492 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z;
+        float _513 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].y;
+        float _516 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].y;
+        float _519 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].y;
+        float _522 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].y;
+        float _533 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].y;
+        float _536 = _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].x * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].y;
+        float2 _593 = _327.xy - _VerticalOcclusionMapTransformCB_VerticalOcclusionMapUVScrollingOffset.xy;
+        float4 _594 = float4(_593.x, _593.y, _327.z, _327.w);
+        _594.y = 1.0f - _593.y;
+        float2 _600 = (_594.xy * 2.0f) - 1.0f.xx;
+        float4 _602 = mul(float4x4(float4(_367 * _420, ((((((_353 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w) - (_351 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w)) - (_425 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) + (_428 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) + (_431 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) - (_434 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) * _420, ((((((_359 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w) - (_356 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w)) + (_425 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) - (_428 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) - (_445 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) + (_448 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) * _420, ((((((_362 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w) - (_365 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w)) - (_431 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) + (_434 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) + (_445 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) - (_448 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) * _420), float4(_384 * _420, ((((((_370 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w) - (_368 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w)) + (_469 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) - (_472 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) - (_475 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) + (_478 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) * _420, ((((((_373 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w) - (_376 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w)) - (_469 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) + (_472 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) + (_489 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) - (_492 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) * _420, ((((((_382 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w) - (_379 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w)) + (_475 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) - (_478 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) - (_489 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) + (_492 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) * _420), float4(_401 * _420, ((((((_387 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w) - (_385 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w)) - (_513 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) + (_516 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) + (_519 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) - (_522 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) * _420, ((((((_393 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w) - (_390 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w)) + (_513 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) - (_516 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) - (_533 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) + (_536 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].w)) * _420, ((((((_396 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w) - (_399 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].w)) - (_519 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) + (_522 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].w)) + (_533 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) - (_536 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].w)) * _420), float4(_412 * _420, ((((((_385 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z) - (_387 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z)) + (_513 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z)) - (_516 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z)) - (_519 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z)) + (_522 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z)) * _420, ((((((_390 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z) - (_393 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z)) - (_513 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z)) + (_516 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z)) + (_533 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z)) - (_536 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[3].z)) * _420, ((((((_399 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z) - (_396 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[0].z)) + (_519 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z)) - (_522 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[1].z)) - (_533 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z)) + (_536 * _VerticalOcclusionMapTransformCB_WorldToVerticalOcclusionMap[2].z)) * _420)), float4(_600.x, _600.y, _594.z, _594.w));
+        float _603 = _602.y;
+        float _606 = _290 - _603;
+        float2 _617 = (_302 + fmod((_271.xz * (1.0f / _271.y)) * max(_290 - (_603 * clamp(_333 * 10.0f, 0.0f, 1.0f)), 0.0f), _292)).xy;
+        float _624 = clamp(_606 * 2.0f, 0.0f, 1.0f);
+        float _625 = _228.x;
+        float _628 = _606 * (1.0f + (_625 * 0.20000000298023223876953125f));
+        float3 _635 = lerp(float3(0.0f, 1.0f, 0.0f), _271, _624.xxx);
+        float _636 = step(_628, 1.0f);
+        float _637 = 1.0f - _636;
+        float _649 = max(_603 + (_RainParams.z * 0.5f), _290);
+        _301.y = _649;
+        float2 _654 = lerp(_301.xz, (_617 + ((step(_617 + _292, _294) * _296) + _298)).xy, _636.xx);
+        float3 _659 = _635 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_635, _635)));
+        float3 _660 = cross(float3(1.0f, 0.0f, 0.0f), _659);
+        float3 _664 = _660 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_660, _660)));
+        float3 _665 = cross(_664, _659);
+        float _666 = _228.y;
+        float _670 = 6.283185482025146484375f * frac((_649 * 0.01750000007450580596923828125f) + _625);
+        float _672 = _666 + cos(_670);
+        float _677 = 6.283185482025146484375f * frac((_649 * 0.007000000216066837310791015625f) + _228.z);
+        float _679 = _666 + cos(_677);
+        float _681 = _666 + sin(_670);
+        float _683 = _666 + sin(_677);
+        float _693 = dot(1.0f.xxx, abs(_228));
+        float3 _700 = float3(_654.x, _301.y, _654.y) + (((((_665 * (_672 - _679)) + (_664 * (_681 - _683))) * _RainDirectionParams.w) * _693) * _637);
+        float3 _707 = (((((_665 * (((-0.10995574295520782470703125f) * _681) - ((-0.0439822971820831298828125f) * _683))) + (_664 * ((0.10995574295520782470703125f * _672) - (0.0439822971820831298828125f * _679)))) * _RainDirectionParams.w) * _693) * _637) + _659;
+        float3 _711 = _707 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_707, _707)));
+        float3 _716 = _700 - _TransformVariables_WorldSpaceCameraPos_Internal.xyz;
+        float3 _721 = -(_716 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_716, _716))));
+        float _727 = lerp(_RainParams.y, _RainParams.z, _5.x);
+        float2 _738 = clamp(_240, 0.0f.xx, 1.0f.xx);
+        float3 _750 = cross(_721, _711);
+        float3 _754 = _750 * rsqrt(max(1.1754943508222875079687365372222e-38f, dot(_750, _750)));
+        float3 _755 = cross(_754, _721);
+        float4x4 _771 = float4x4(float4(_754.x, _755.x, _721.x, _700.x), float4(_754.y, _755.y, _721.y, _700.y), float4(_754.z, _755.z, _721.z, _700.z), float4(0.0f, 0.0f, 0.0f, 1.0f));
+        float3 _778 = mul(_771, float4(_240 * float2(_727, _727 + (lerp(0.0f, _RainMaskParams.w, _624) * (1.0f - abs(dot(_721, _711))))), 0.0f, 1.0f)).xyz + (normalize(float3(_654.x, _301.y, _654.y) - _147) * _RainWetnessGlobalParam4.z);
+        float4 _784 = mul(_TransformVariables_NonJitteredViewNoTransProjMatrix, float4(_778 - _TransformVariables_WorldSpaceCameraPos_Internal.xyz, 1.0f));
+        float2 _792 = _784.xy - ((_TaaJitterStrength.zw * float2(2.0f, -2.0f)) * _784.w);
+        _795 = float4(_792.x, _792.y, _784.z, _784.w);
+        _796 = _778;
+        _797 = float4(_738, _738 + (float2(_625, _666) * 2.0f));
+        _798 = float4(smoothstep(0.5f, 1.5f, length(_700 - _147)), (1.0f - clamp((_606 * (-0.20000000298023223876953125f)) * _RainMaskParams.z, 0.0f, 1.0f)) * clamp((abs(_628 - 1.0f) * 10.0f) - 0.100000001490116119384765625f, 0.0f, 1.0f), _637, 1.0f);
+        _799 = _721;
+        _800 = mul(_771, float4(-1.0f, 0.0f, 0.0f, 0.0f));
+        break;
+    } while(false);
+    float4 _803 = _795;
+    _803.y = -_795.y;
+    gl_Position = _803;
+    _9 = _796;
+    _10 = _797;
+    _11 = _798;
+    _12 = _799;
+    _13 = _800;
+}
+
+SPIRV_Cross_Output main(SPIRV_Cross_Input stage_input)
+{
+    gl_InstanceIndex = int(stage_input.gl_InstanceIndex);
+    _3 = stage_input._3;
+    _4 = stage_input._4;
+    _5 = stage_input._5;
+    _6 = stage_input._6;
+    vert_main();
+    SPIRV_Cross_Output stage_output;
+    stage_output.gl_Position = gl_Position;
+    stage_output._9 = _9;
+    stage_output._10 = _10;
+    stage_output._11 = _11;
+    stage_output._12 = _12;
+    stage_output._13 = _13;
+    return stage_output;
+}
