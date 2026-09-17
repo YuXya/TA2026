@@ -1,0 +1,24 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-09-17",
+  "request": "Add a separate human-ear version of the character head front/left/back references.",
+  "front": {
+    "file": "head_front_with_ears.png",
+    "reused_without_edits": true,
+    "source": "D:/TA/Unity/New2026/TA2026/ArtReferences/Catgirl_Apose_20260917/exec-833f678a-f9e1-492b-afee-0d3f8a796cea.png"
+  },
+  "edited_views": [
+    {
+      "file": "head_left_with_ears.png",
+      "target": "D:/TA/Unity/New2026/TA2026/ArtReferences/Catgirl_ThreeViews_20260917/head_left.png",
+      "ear_reference": "D:/TA/Unity/New2026/TA2026/ArtReferences/Catgirl_Apose_20260917/exec-833f678a-f9e1-492b-afee-0d3f8a796cea.png",
+      "prompt": "Use case: precise-object-edit / identity-preserve.\nImage 1 is the exact LEFT-SIDE head image to edit. Image 2 is the SAME character's approved FRONT head with HUMAN EARS and supplies the exact ear design, size and vertical placement.\nMake ONE localized change to image 1: add the visible left HUMAN EAR, natural small rounded anime ear with soft pink inner folds, matching image 2. Place it on the side of the cranium behind the eye and above the rear jaw joint, with the ear top near the upper eyelid and lower lobe near nose-base level, matching the front ear's vertical height. Ear should attach anatomically to the side of the head, with the lower lobe near the jaw hinge, not float, sit on the neck or jut from the skull top. One ear is visible in this exact side view; far ear is naturally hidden.\nPreserve EVERYTHING else from image 1: identical bald skull shape and volume, forehead/nose/lips/chin silhouette, pink eye, eyelashes, eyebrow, blush, small closed-mouth smile, light peach skin, short neck connector, outline, softly shaded anime rendering, image scale, placement and transparent background. Maintain exact 90-degree side profile facing image LEFT. Do not rotate towards front or redraw the face. No cat ears, pointy elf ears, earrings, hair, accessories, shoulders or body.\nOne isolated bald head and neck only, same square canvas and clean genuine transparency. No labels, text, collage or watermark."
+    },
+    {
+      "file": "head_back_with_ears.png",
+      "target": "D:/TA/Unity/New2026/TA2026/ArtReferences/Catgirl_ThreeViews_20260917/head_back.png",
+      "ear_reference": "D:/TA/Unity/New2026/TA2026/ArtReferences/Catgirl_Apose_20260917/exec-833f678a-f9e1-492b-afee-0d3f8a796cea.png",
+      "prompt": "Use case: precise-object-edit / identity-preserve.\nImage 1 is the exact BACK VIEW bald head to edit. Image 2 is the SAME character's approved FRONT head WITH HUMAN EARS and defines their size, symmetry, vertical placement and attachment.\nMake ONE localized change to image 1: add TWO natural small rounded human ears at the sides, matching the ears of image 2 in height, outward projection and lower-lobe position. Since this is an exact rear view, show the BACKS of the ears: gently curved skin-colored outer auricle surfaces and subtle attachment folds, NOT front-facing ear canals or mirrored ear interiors. Ear top and bottom must align with the matching front view. Keep ears symmetric and anatomically attached above the jaw/nape transition.\nPreserve all existing non-ear details of image 1 as closely as possible: same bald skull outline/height/volume, smooth light peach skin, gentle pastel shading, short neck connector, centering, scale, square canvas and genuine transparent background.\nMaintain strict 180-degree rear view with NO face, eyes, eyebrows, nose, mouth, hair, cat ears, elf ears, earrings, accessories, collar, shoulders or body. Do not redesign the head or add any seams. One isolated rear head/neck view, no labels, text, collage or watermark."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "mode": "built-in image_gen",
+  "reference_images": [
+    "D:/TA/Unity/New2026/TA2026/ArtReferences/Character/Image/Catgirl_Apose_20260917/01_full_apose.png",
+    "D:/TA/Unity/New2026/TA2026/ArtReferences/Character/Image/Catgirl_ThreeViews_20260917/body_three_views_v4.png",
+    "D:/TA/Unity/New2026/TA2026/ArtReferences/Character/Image/Catgirl_ThreeViews_20260917/hair_left_v3.png",
+    "D:/TA/Unity/New2026/TA2026/ArtReferences/Character/Image/Catgirl_ThreeViews_20260917/hair_back_v3.png"
+  ],
+  "prompt": "Use case: compositing.\nCreate ONE complete full-body anime character turnaround reference sheet for 3D modeling, using the four supplied images as coherent design references.\nInput roles:\n1. Full A-pose illustration: authoritative character identity, round anime face, eye size, head-to-body proportions, peach-blonde and pink palette, costume, black choker and small gold bell.\n2. Approved headless body three-view sheet: authoritative outfit construction, centered rear tail opening, consistent tail direction, bow/bell orientation and slipper construction.\n3. Side hair: supporting side hairstyle shape and flower/X hair clips.\n4. Back hair: supporting continuous rear hair flow, broad open S-shaped ends and furry OUTSIDE surfaces of ears.\n\nOutput one clean, high-resolution landscape sheet, ideally 3840 x 2160, pure white background. EXACTLY THREE full characters in separated equally sized columns: direct FRONT, exact 90-degree LEFT PROFILE facing image left, direct BACK. Compose all three simultaneously as the same physical character turned in place. Use identical scale and shared horizontal alignment of top of skull, eyes, shoulders, hips, knees, ankles and soles. Plenty of blank gutter between columns for later lossless cropping. Entire ahoge, ears, outstretched hands, tail and shoes must fit inside their own column with margins. No cropped parts, no inset panels, no arrows, no grids, no extra figures and no text.\n\nAssemble the complete person naturally: head, face, ears, full hair volume, short neck, choker, fully clothed torso and limbs, hands, fluffy tail and all accessories. It must look like a unified designed character, not pasted disjoint cutouts. Preserve reference 1's approachable round face, large pink eyes, small nose, tiny closed-mouth smile and original stylized proportions. Comfortable A-pose with arms angled about 30 degrees outward from vertical, straight relaxed legs slightly apart, feet pointing forward. In the side view the same pose is projected from the side, not a three-quarter camera. Avoid tiny head, overly long neck, realistic facial anatomy, protruding muzzle or plastic 3D rendering.\n\nCostume: cream oversized hooded cardigan with pink lining, piping, buttons, pockets and small cat chest patch on character's left; pink shirt; cream shorts with pink piping and pink waist drawstring; cream socks with pink bands; cream/pink closed-heel cat slippers. Cat faces and raised cat ear accents are on slipper TOES only. Profile shoes point left and show side silhouette with toe at left, heel at right. Rear view shows plain rounded cream heels above pink soles, absolutely no cat faces or cat ears on heels. Back view hands show hand backs, with correctly rotated thumbs and fingers.\n\nHair: peach-blonde long softly layered waves fading to pink at lower ends, ahoge, two cream cat ears, pink flower plus black X clips at character's left temple. Use the original full character to determine hair length (around waist / upper hips) and keep that same length in all views; do not stretch isolated wig references to knee length. Front bangs frame and expose eyes, continuous back hair visible around sides behind shoulders. Side shows a plausible rounded skull and rear curtain, face in strict profile, only one eye. Back shows only rear hair flow and convex cream furry ear backs: NO face, NO front bangs, NO exposed pink inner ear triangles or white inner-ear tufts, NO front hair clips visible through hair. Preserve large open S-shaped tips rather than many tight ring curls. Hair overlaps clothing naturally; never make clothes or tail show through opaque hair. Keep the low centered tail root below the main hair curtain where feasible.\n\nTail structure MUST follow the approved body sheet: one root at center rear upper seat/pelvis, through a small pink-bound opening in the back of the hoodie above its intact lower hem. Never emerge from waist side, front, below garment hem, or two roots. Same fixed cream tail curves toward character's anatomical LEFT and slightly behind. In FRONT it appears on viewer RIGHT; in BACK it appears on viewer LEFT; in left PROFILE it projects behind the body on image RIGHT. Maintain the same root height, tail length, tip curl height and accessory position in all views.\nPink tail bow and gold bell are fixed to the same side of the tail and rotate with the character. FRONT sees the bow knot, two loops and gold bell front; PROFILE sees narrow overlapping/edge-on bow loops and side of bell, not the broad frontal bow; BACK sees primarily the ribbon band wrapping over the tail and back of ribbon ends, with the front knot/bell mostly occluded (small gold underside can peek). No duplicated bows or bells.\nBlack choker around short neck, one small gold bell at throat in front; profile appropriately foreshortened, rear bell naturally hidden behind neck/hair.\n\nRendering: faithful delicate pastel anime reference illustration, clean precise linework, soft restrained cel shading, uniform neutral light and no dramatic shadows. No scene/background props. The user's purpose is to generate a SINGLE complete 3D model from these three consistent views and compare with their separately assembled model. Prioritize identity and cross-view geometric consistency over decorative embellishment.",
+  "generated_source": "C:\\Users\\admin\\.codex\\generated_images\\01a0ad5c-ef85-7dc0-b79f-a54d4a39116e\\exec-21232fde-5c75-43f8-97d2-09ee6e54f58a.png",
+  "sheet": {
+    "file": "full_character_three_views.png",
+    "width": 1672,
+    "height": 941
+  },
+  "split_method": "Lossless rectangular crops, no regeneration and no rescaling.",
+  "crops": [
+    {
+      "file": "full_character_front.png",
+      "rectangle": [
+        35,
+        0,
+        580,
+        941
+      ]
+    },
+    {
+      "file": "full_character_left.png",
+      "rectangle": [
+        685,
+        0,
+        380,
+        941
+      ]
+    },
+    {
+      "file": "full_character_back.png",
+      "rectangle": [
+        1080,
+        0,
+        580,
+        941
+      ]
+    }
+  ]
+}
