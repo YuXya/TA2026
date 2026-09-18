@@ -1,0 +1,1 @@
+Actual reference camera render; mainLight=(1.00, 1.00, 1.00, 1.00)

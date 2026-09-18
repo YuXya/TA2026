@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Group1604352
-  m_Shader: {fileID: 4800000, guid: 4a97be98b195e7a4da193cf892726c84, type: 3}
+  m_Shader: {fileID: 4800000, guid: bcc7e1db583c41faaf0232cad4ee77a1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,11 +24,60 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 344c3072484cb48428a97a078ef738c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: d4867a347f008de4d93b5dcb875f31e7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffRampMap:
+        m_Texture: {fileID: 2800000, guid: 2299a7fb9818f6f4a8a318ce84f9d175, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 9ec3a6bb6b048c743b7b663031b3dc1b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClearCoatMask:
+        m_Texture: {fileID: 2800000, guid: d590d1dc8964eb742ae13e4626af70fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StylizedFresnelNoiseMap:
+        m_Texture: {fileID: 2800000, guid: d590d1dc8964eb742ae13e4626af70fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecRampMap:
+        m_Texture: {fileID: 2800000, guid: 6bb0dcacf6063c54c8548552fe6d98ab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _UseEndfieldSpecular: 1
+    - _LightingView: 0
+    - _SpecularIntensity: 1
+    - _UseSpecRamp: 0
+    - _SpecRampIridescentMode: 0
+    - _ClearCoatSmoothness: 0.55
+    - _StylizedFresnelNoiseSpeed: 0
+    - _StylizedNoiseContrast: 8
+    - _StylizedFresnelAmount: 1
+    - _StylizedFresnelPow: 8
+    - _ClearCoatNormalMode: 1
+    - _ClearCoatMetallic: 0.05
+    - _UseStylizedFresnel: 1
+    - _UseClearCoat: 1
+    - _AlphaPremultiply: 0
+    - _UseShadowLut: 0
+    - _UseDiffRamp: 1
+    - _UsePackedMap: 1
+    - _UseEndfieldDiffuse: 1
+    - _ShadowColorBrightness: 0.5
+    - _ShadowColorSaturation: 1
+    - _ShadowGain: 0.65
+    - _DirectIntensity: 1
+    - _RampRemapMode: 1
+    - _RampOffset: -0.1
     - _AnisotropyIntensity: 1
     - _BumpScale: 1
     - _CapturedEvent: 1278
@@ -38,6 +87,7 @@ Material:
     - _Smoothness: 0.5
     - _Specular: 0.5
     m_Colors:
+    - _StylizedFresnelColor: {r: 0.173455879, g: 0.293563098, b: 0.610243142, a: 1}
+    - _ClearCoatColor: {r: 0.0730276108, g: 0.358457029, b: 0.690340936, a: 1}
     - _BaseColor: {r: 1, g: 0.93682134, b: 0.93682134, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1

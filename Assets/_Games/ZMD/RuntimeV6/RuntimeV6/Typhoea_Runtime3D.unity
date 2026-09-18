@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 10
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 13
-  m_BakeOnSceneLoad: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,6 +66,9 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -356,9 +359,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -431,7 +431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d460631ff7de441b47579a125516e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventId: 1154
 --- !u!1 &535918459120610430
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,9 +476,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -546,9 +542,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -655,9 +648,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -753,7 +743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d460631ff7de441b47579a125516e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventId: 1088
 --- !u!4 &3524138813588165712
 Transform:
   m_ObjectHideFlags: 0
@@ -801,7 +790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d460631ff7de441b47579a125516e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventId: 1132
 --- !u!4 &3803649436667203161
 Transform:
   m_ObjectHideFlags: 0
@@ -834,9 +822,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -955,9 +940,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1008,9 +990,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1061,9 +1040,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1161,12 +1137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ba3ca72ca64874b80bc3752bee6e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventId: 1132
-  geometrySource: {fileID: 0}
-  skinnedMesh: {fileID: 0}
-  alwaysUseSceneMesh: 0
-  referenceGeometryHash: 4FE391A3
-  referenceMaterialHash: _Metallic0_BaseColor(1, 1, 1, 1)
 --- !u!1 &5439846340409320808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,9 +1189,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1296,9 +1263,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1402,9 +1366,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1465,9 +1426,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1510,9 +1468,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1704,9 +1659,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1772,13 +1724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ba3ca72ca64874b80bc3752bee6e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventId: 1088
-  geometrySource: {fileID: 0}
-  skinnedMesh: {fileID: 0}
-  alwaysUseSceneMesh: 0
-  referenceGeometryHash: 8D148414
-  referenceMaterialHash: _Smoothness0.258_Specular0.454_Metallic0_BaseColor(1, 1,
-    1, 1)_BumpScale1
 --- !u!33 &8107750166627853293
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1874,7 +1819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d460631ff7de441b47579a125516e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventId: 1110
 --- !u!114 &8486191777998498843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1887,12 +1831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ba3ca72ca64874b80bc3752bee6e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventId: 1110
-  geometrySource: {fileID: 0}
-  skinnedMesh: {fileID: 0}
-  alwaysUseSceneMesh: 0
-  referenceGeometryHash: A3CF9352
-  referenceMaterialHash: _Metallic0_BaseColor(1, 1, 1, 1)
 --- !u!114 &8570337665117620296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2032,12 +1970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ba3ca72ca64874b80bc3752bee6e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventId: 1154
-  geometrySource: {fileID: 0}
-  skinnedMesh: {fileID: 0}
-  alwaysUseSceneMesh: 0
-  referenceGeometryHash: 87F0E536
-  referenceMaterialHash: _BaseColor(0.944747448, 0.93122, 1, 1)_BumpScale1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

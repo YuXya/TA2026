@@ -1,0 +1,18 @@
+{
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldAdditionalLight.cs": "2cf2ded915459a171f74fda11514f68fe519911f59455ba32599b308909956f4",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldAdditionalLights.hlsl": "0a600cd046f267c3180df46b5c7d608baf54de4abc63059fb6d8867a1b736d21",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldDepthPasses.hlsl": "f82d2c0e8b4496230c469ad0693cf77ba4ff79d09261af7860ce56dde8d234a2",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldDiffuseInputs.hlsl": "e204fdea7a491fd4df2bb99ae2d4f8e947ee0697601b83cd470d7b3c611d251b",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldDirectComposition.hlsl": "e37fbd2d0eeb2e1372a3cc9f77bb2c635ff949952d6a9a737a9447fc97dc08bc",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldDirectDiffuse.hlsl": "2158ca9d81705be6e3f1655f2c0f9127337e17eadb2893f61052139779ed7748",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldDirectEnvironment.hlsl": "f0b8f43f4e4d5564279330615f16135fee34d3ecaeba211cb906e6d6d210c7f8",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldDirectSpecular.hlsl": "ecfa3a411bcb98a7c8e735a3f73a1221fd4a33ed35a505cb23549d8d9363adc8",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldLightingCommon.hlsl": "79c3dc1754161666dea902ba9cce29b4bfac3a20ba6a2d1420669ef8a8c169ee",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldLightingFeature.cs": "a16b00d6a58e7f6a07f62e39c0a762290dfbf68fb9bf147f9f5e41aea4e9d22f",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldLightingProfile.asset": "5567b4b44cde6c4828197d9bec0fa8f525fb80c6be8c0b4ee29fd0d5d9d1b714",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldLightingProfile.cs": "a95ea9b220aa63c10132cab4a9f1b1ace90e0ab9d7c0b586a9fffb432e37328b",
+  "Assets/_Games/Rendering/Shaders/ToonURP/EndfieldMaterialInput.hlsl": "acccf91d3237ed663c5a6e720f4f4f2f15ddb2b041b9081b8e1cdf2e1d15ef03",
+  "Assets/_Games/Rendering/Shaders/ToonURP/ToonUnlit.shader": "589c02ea6e9b8d855c908e597be884ff53c97f2c7a26693fa1990a521228a0f7",
+  "Assets/Settings/URP-HighFidelity-Renderer.asset": "eaf3fdcc5c60c23aaf9d6af28c9d8727bc87814825297dda706bf0220c35a9b6",
+  "Tests/validation-renderer.asset": "47b45a88e421cc664d2cf37df2145eb9d76af728a9cdcbbcc8c2ddbdf101a15f"
+}

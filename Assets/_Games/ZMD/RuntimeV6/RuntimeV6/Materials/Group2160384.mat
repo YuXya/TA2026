@@ -8,11 +8,18 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Group2160384
-  m_Shader: {fileID: 4800000, guid: 4a97be98b195e7a4da193cf892726c84, type: 3}
+  m_Shader: {fileID: 4800000, guid: bcc7e1db583c41faaf0232cad4ee77a1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _ALPHAPREMULTIPLY_ON
+  - _USECLEARCOAT_ON
+  - _USEDIFFRAMP_ON
+  - _USEENDFIELDDIFFUSE_ON
+  - _USEPACKEDMAP_ON
+  - _USESHADOWLUT_ON
+  - _USESTYLIZEDFRESNEL_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -24,20 +31,74 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 32386534b7468e24b8df8b10379a1908, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: d3a1da4ccdf81124a83438c6b688955f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClearCoatMask:
+        m_Texture: {fileID: 2800000, guid: 05595afdcc17d7d46b54f6f9e349889f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffRampMap:
+        m_Texture: {fileID: 2800000, guid: 2299a7fb9818f6f4a8a318ce84f9d175, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: aaae4c6ba79649d40aba49559df7d17c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowLutTex:
+        m_Texture: {fileID: 2800000, guid: 6354636f521403242834159b4c408bb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecRampMap:
+        m_Texture: {fileID: 2800000, guid: 02b6b5d7c36c5524da2ecb4819837b23, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StylizedFresnelNoiseMap:
+        m_Texture: {fileID: 2800000, guid: 05595afdcc17d7d46b54f6f9e349889f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _UseEndfieldSpecular: 1
+    - _LightingView: 0
+    - _SpecularIntensity: 1
+    - _UseSpecRamp: 0
+    - _SpecRampIridescentMode: 0
+    - _ClearCoatSmoothness: 0.94
+    - _AlphaPremultiply: 1
     - _AnisotropyIntensity: 1
     - _BumpScale: 1
     - _CapturedEvent: 1797
+    - _ClearCoatMetallic: 0.15
+    - _ClearCoatNormalMode: 1
     - _Cutoff: 0
+    - _DirectIntensity: 1
     - _Metallic: 0
     - _OverrideBaseMap: 0
+    - _RampOffset: -0.1
+    - _RampRemapMode: 1
+    - _ShadowColorBrightness: 0.5
+    - _ShadowColorSaturation: 1
+    - _ShadowGain: 0.65
     - _Smoothness: 0.5
     - _Specular: 0.5
+    - _StylizedFresnelAmount: 1
+    - _StylizedFresnelNoiseSpeed: 0
+    - _StylizedFresnelPow: 9
+    - _StylizedNoiseContrast: 0
+    - _UseClearCoat: 1
+    - _UseDiffRamp: 1
+    - _UseEndfieldDiffuse: 1
+    - _UsePackedMap: 1
+    - _UseShadowLut: 1
+    - _UseStylizedFresnel: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ClearCoatColor: {r: 1, g: 1, b: 1, a: 1}
+    - _StylizedFresnelColor: {r: 0.29275623, g: 0.15177773, b: 0.20603754, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1

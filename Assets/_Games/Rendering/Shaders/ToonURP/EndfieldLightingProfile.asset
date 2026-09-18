@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79ca3df34487224ea6873954c99c448, type: 3}
+  m_Name: EndfieldLightingProfile
+  m_EditorClassIdentifier: 
+  characterParams0: {x: 1, y: 1, z: 0.6499999762, w: 0.8999999762}
+  characterParams1: {x: 0, y: 1, z: 0, w: 1}
+  characterParams2: {x: 0.8490771055, y: 0.8957685828, z: 1.150923014, w: 1}
+  characterParams5: {x: 1, y: 1, z: 1, w: 1}
+  characterParams6: {x: 0, y: 1, z: 4.371138829e-08, w: 0}
+  characterParams7: {x: 0.150000006, y: 1.5, z: 0.5, w: 0}
+  characterParams8: {x: 0, y: 0, z: 0, w: 1}
+  characterParams9: {x: 8.742277657e-08, y: -1, z: 0, w: 0.400000006}
+  characterParams11: {x: 0.1712234616, y: 0.5299192667, z: 0.8305829763, w: -0.09999999404}
+  characterParams12: {x: 1, y: 1, z: 1, w: 0}
+  characterParams13: {x: 0, y: 0, z: 0, w: 1}
+  characterParams15: {x: -0, y: 0.001000000047, z: -1, w: 0}
+  environmentGlobalParams0: {x: 0.2877224684, y: 0.2877224684, z: 1, w: 0}
+  exposureWithMiscParams: {x: 1, y: 1, z: 1.777777791, w: 0.1002004072}
+  ivParam0: {x: -68.53490448, y: 98.92875671, z: -416.3988037, w: 0}
+  ivParam1: {x: 0.0078125, y: 0.015625, z: 0.0078125, w: 0}
+  ivParam2: {x: 61, y: 13, z: 52, w: 144}
+  ivDefaultSHAr: {x: -0.007550761104, y: 0.4722373188, z: 0.01217080932, w: 1.096305609}
+  ivDefaultSHAg: {x: -0.007550761104, y: 0.4722373188, z: 0.01217080932, w: 1.096305609}
+  ivDefaultSHAb: {x: -0.007550761104, y: 0.4722373188, z: 0.01217080932, w: 1.096305609}
+  useCapturedDirectionalLight: 0
+  capturedDirectionalLight: {x: 1, y: 1, z: 1, w: 1.6243868}
+  directionalShadowBlend: 1
+  shadowG: 1
+  useUnityOcclusionForG: 1
+  allAdditionalLightsReceiveUnityShadows: 1
+  screenSpaceShadowRG: {fileID: 0}
+  ivTextureALod0: {fileID: 0}
+  ivTextureBLod0: {fileID: 0}
+  ivTextureALod1: {fileID: 0}
+  ivTextureBLod1: {fileID: 0}
+  ivTextureALod3: {fileID: 0}
+  ivTextureBLod3: {fileID: 0}

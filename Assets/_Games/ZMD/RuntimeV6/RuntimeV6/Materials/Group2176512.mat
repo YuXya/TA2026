@@ -8,11 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Group2176512
-  m_Shader: {fileID: 4800000, guid: 4a97be98b195e7a4da193cf892726c84, type: 3}
+  m_Shader: {fileID: 4800000, guid: bcc7e1db583c41faaf0232cad4ee77a1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _USEDIFFRAMP_ON
+  - _USEENDFIELDDIFFUSE_ON
+  - _USEPACKEDMAP_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -24,20 +27,73 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 344c3072484cb48428a97a078ef738c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: d4867a347f008de4d93b5dcb875f31e7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClearCoatMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffRampMap:
+        m_Texture: {fileID: 2800000, guid: 1c719486e30e013409f30572d76c3120, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 995c860b40cac2143b1f33b69192827b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowLutTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecRampMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StylizedFresnelNoiseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _UseEndfieldSpecular: 1
+    - _LightingView: 0
+    - _SpecularIntensity: 1
+    - _UseSpecRamp: 0
+    - _SpecRampIridescentMode: 0
+    - _AlphaPremultiply: 0
     - _AnisotropyIntensity: 1
-    - _BumpScale: 1
+    - _BumpScale: 0.924
     - _CapturedEvent: 1257
+    - _ClearCoatMetallic: 0.05
+    - _ClearCoatNormalMode: 1
     - _Cutoff: 0
+    - _DirectIntensity: 1
     - _Metallic: 0
     - _OverrideBaseMap: 0
+    - _RampOffset: -0.1
+    - _RampRemapMode: 1
+    - _ShadowColorBrightness: 0.5
+    - _ShadowColorSaturation: 1
+    - _ShadowGain: 0.65
     - _Smoothness: 0.5
     - _Specular: 0.5
+    - _StylizedFresnelAmount: 1
+    - _StylizedFresnelNoiseSpeed: 0
+    - _StylizedFresnelPow: 8
+    - _StylizedNoiseContrast: 1
+    - _UseClearCoat: 0
+    - _UseDiffRamp: 1
+    - _UseEndfieldDiffuse: 1
+    - _UsePackedMap: 1
+    - _UseShadowLut: 0
+    - _UseStylizedFresnel: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ClearCoatColor: {r: 1, g: 1, b: 1, a: 1}
+    - _StylizedFresnelColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1

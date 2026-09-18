@@ -1,0 +1,50 @@
+PASS failures=0; Unity 2022.3.62f3
+PASS Group1604352 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_02_D.png
+PASS Group1604352 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_02_N.png
+  Normal Map import: PASS
+PASS Group1604352 _ShadowLutTex = 
+PASS Group2146304 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_02_D.png
+PASS Group2146304 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_02_N.png
+  Normal Map import: PASS
+PASS Group2146304 _ShadowLutTex = 
+PASS Group2149376 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_hair_01_D.png
+PASS Group2149376 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_hair_01_N.png
+  Normal Map import: PASS
+PASS Group2149376 _ShadowLutTex = 
+PASS Group2152448 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_01_D.png
+PASS Group2152448 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_01_N.png
+  Normal Map import: PASS
+PASS Group2152448 _ShadowLutTex = 
+PASS Group2155520 _BaseMap = Assets/_Games/ZMD/A001/textures/T_actor_typhoea_hair_01_D.png
+PASS Group2155520 _BumpMap = 
+PASS Group2155520 _ShadowLutTex = 
+PASS Group2160384 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_06_D.png
+PASS Group2160384 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_06_N.png
+  Normal Map import: PASS
+PASS Group2160384 _ShadowLutTex = Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45992.png
+PASS Group2167296 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_face_01_D.png
+PASS Group2167296 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_face_01_N.png
+  Normal Map import: PASS
+PASS Group2167296 _ShadowLutTex = Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45781.png
+PASS Group2173440 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_06_D.png
+PASS Group2173440 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_06_N.png
+  Normal Map import: PASS
+PASS Group2173440 _ShadowLutTex = 
+PASS Group2176512 _BaseMap = Assets/_Games/ZMD/A002/01_BaseColor/tex_56856.dds
+PASS Group2176512 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_02_N.png
+  Normal Map import: PASS
+PASS Group2176512 _ShadowLutTex = 
+PASS Group2180096 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_01_D.png
+PASS Group2180096 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_01_N.png
+  Normal Map import: PASS
+PASS Group2180096 _ShadowLutTex = 
+PASS Group2183680 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_iris_01_D.png
+PASS Group2183680 _BumpMap = 
+PASS Group2183680 _ShadowLutTex = 
+PASS Group2185728 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_face_01_D.png
+PASS Group2185728 _BumpMap = 
+PASS Group2185728 _ShadowLutTex = Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_34026.png
+PASS Group2187776 _BaseMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_body_01_D.png
+PASS Group2187776 _BumpMap = Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_body_01_N.png
+  Normal Map import: PASS
+PASS Group2187776 _ShadowLutTex = Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45781.png
