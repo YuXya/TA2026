@@ -1,0 +1,16 @@
+{
+  "new_islands": 587,
+  "new_small_islands_under_5_faces": 233,
+  "bounds": [
+    [
+      0.003906236495822668,
+      0.0039062018040567636
+    ],
+    [
+      0.9884207844734192,
+      0.994857668876648
+    ]
+  ],
+  "original_islands_before_mesh_cleanup": 2191,
+  "original_islands_after_mesh_cleanup": 2248
+}

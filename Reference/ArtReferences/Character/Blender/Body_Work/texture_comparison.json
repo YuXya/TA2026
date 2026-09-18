@@ -1,0 +1,17 @@
+{
+  "front": {
+    "mean_abs_8bit": 0.2235,
+    "p99_abs_8bit": 3.0,
+    "pixels_over_20": 164
+  },
+  "side": {
+    "mean_abs_8bit": 0.1884,
+    "p99_abs_8bit": 2.0,
+    "pixels_over_20": 59
+  },
+  "back": {
+    "mean_abs_8bit": 0.1562,
+    "p99_abs_8bit": 1.0,
+    "pixels_over_20": 38
+  }
+}

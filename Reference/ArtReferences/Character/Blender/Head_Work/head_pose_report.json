@@ -1,0 +1,52 @@
+{
+  "rest": {
+    "protected_head_max_error": 2.1542358837725164e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 1.0001220628628287
+  },
+  "turn_left": {
+    "protected_head_max_error": 4.3501438429936765e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 1.0002108068593851
+  },
+  "turn_right": {
+    "protected_head_max_error": 3.8743019104003906e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 1.0001619774049983
+  },
+  "nod": {
+    "protected_head_max_error": 3.11145380404906e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 1.0001263339985693
+  },
+  "look_up": {
+    "protected_head_max_error": 3.03925246810483e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 1.00013062498169
+  },
+  "ears": {
+    "protected_head_max_error": 2.1542358837725164e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 1.695407052332865
+  },
+  "ears_back": {
+    "protected_head_max_error": 2.1542358837725164e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 1.9382531830670258
+  },
+  "ahoge": {
+    "protected_head_max_error": 2.1542358837725164e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 1.0610047802695246
+  },
+  "front_hair": {
+    "protected_head_max_error": 2.1542358837725164e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 2.010977017530292
+  },
+  "back_hair": {
+    "protected_head_max_error": 2.1542358837725164e-07,
+    "edges_over_3x": 0,
+    "max_edge_stretch": 2.2013579490904585
+  }
+}

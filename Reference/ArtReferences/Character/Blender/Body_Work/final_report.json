@@ -1,0 +1,30 @@
+{
+  "head_matches_user_backup_mesh_and_uv": true,
+  "head_parent": null,
+  "head_modifiers": [],
+  "head_visible": true,
+  "body_vertices": 15976,
+  "body_polygons": 17467,
+  "bones": 52,
+  "unweighted_vertices": 0,
+  "max_influences": 4,
+  "active_uv": "Body_UV",
+  "texture_size": [
+    4096,
+    4096
+  ],
+  "pose_frames": {
+    "1": "A-pose",
+    "20": "Raise arms",
+    "40": "Elbows 95 deg",
+    "60": "Knee bend",
+    "80": "Bend and twist",
+    "100": "Finger curl",
+    "120": "A-pose end"
+  },
+  "limitations": [
+    "Deep finger curls retain coarse knuckles from source geometry and require further polish.",
+    "Original painted shading / texture errors retained.",
+    "Head not bound. No physics, IK, or Unity export testing."
+  ]
+}

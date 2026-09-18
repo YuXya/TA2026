@@ -1,0 +1,8 @@
+{
+  "vertices": 15976,
+  "unweighted": 0,
+  "max_influences": 4,
+  "max_weight_sum_error": 1.7017009668052197e-07,
+  "method": "Region-specific weights after bone heat failed; FK deformation rig",
+  "bones": 52
+}

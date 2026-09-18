@@ -1,0 +1,22 @@
+{
+  "body_mesh_weights_uv_unchanged": true,
+  "existing_bones_unchanged": true,
+  "new_bones": 41,
+  "bone_total": 93,
+  "rest_surface_max_error": 0.0,
+  "original_uv_max_error": 0.0,
+  "hierarchy": {
+    "Neck": "Chest",
+    "Head": "Neck"
+  },
+  "all_chain_roots_parent_head": true,
+  "body_frames_checked": [
+    1,
+    20,
+    40,
+    60,
+    80,
+    100,
+    120
+  ]
+}

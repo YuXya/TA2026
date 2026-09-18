@@ -1,0 +1,8 @@
+{
+  "islands": 587,
+  "min_island_gap_pixels": 31.99951171875,
+  "island_pairs_below_15_9px": 0,
+  "nondegenerate_surface_triangles_collapsed_in_uv": 0,
+  "face_triangle_anisotropy_median": 1.6231207926786622,
+  "face_triangle_anisotropy_p95": 8.144160492167787
+}

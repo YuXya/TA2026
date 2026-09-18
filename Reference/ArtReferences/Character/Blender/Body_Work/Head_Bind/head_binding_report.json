@@ -1,0 +1,36 @@
+{
+  "vertices": 11045,
+  "weights_are_all_head_1": true,
+  "geometry_and_uv_unchanged": true,
+  "materials_unchanged": true,
+  "rest_max_position_error": 3.626374460350858e-07,
+  "deform_bone": "Head",
+  "parent_bone": "Neck",
+  "motion_checks": {
+    "turn_left": {
+      "degrees": 25,
+      "rigid_transform_max_error": 4.375590938337452e-07
+    },
+    "turn_right": {
+      "degrees": -25,
+      "rigid_transform_max_error": 4.368766596201635e-07
+    },
+    "nod_down": {
+      "degrees": 12,
+      "rigid_transform_max_error": 4.0193448206239796e-07
+    },
+    "look_up": {
+      "degrees": -12,
+      "rigid_transform_max_error": 4.023313522338867e-07
+    }
+  },
+  "restored_frame": 1,
+  "head_transform_restored": true,
+  "neck_transition_vertices": 100,
+  "neck_transition_z": [
+    0.942,
+    0.964
+  ],
+  "saved_version": "D:\\TA\\Unity\\New2026\\TA2026\\Reference\\ArtReferences\\Character\\Blender\\角色A_头身绑定_v01.blend",
+  "final_frame": 1
+}

@@ -1,0 +1,10 @@
+{
+  "rig": "BodyRig",
+  "bones": 52,
+  "auto_weight_result": "Bone heat failed: all vertices were unweighted; replaced by region and surface-distance weights",
+  "unweighted_vertices": 15976,
+  "groups": 50,
+  "modifiers": [
+    "ARMATURE"
+  ]
+}
