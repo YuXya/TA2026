@@ -1,7 +1,0 @@
-PASS
-Unity: 2022.3.62f3
-Graphics: Direct3D11
-Production shader compiled with no shader errors.
-GPU checks passed: white Ramp response, metallic=1, light=0, vertical camera.
-White Ramp linear RGB: RGBA(0.576, 0.288, 0.096, 1.000)
-Preview: left=base color; right=Endfield direct diffuse with tex_22374.

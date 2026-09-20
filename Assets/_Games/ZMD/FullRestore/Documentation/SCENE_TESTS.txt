@@ -1,0 +1,53 @@
+PASS combined-linear finite HDR output
+PASS view-1 finite HDR output
+PASS preview 1 differs from combined
+PASS view-2 finite HDR output
+PASS preview 2 differs from combined
+PASS view-3 finite HDR output
+PASS preview 3 differs from combined
+PASS view-4 finite HDR output
+PASS preview 4 differs from combined
+PASS view-5 finite HDR output
+PASS preview 5 differs from combined
+PASS view-6 finite HDR output
+PASS preview 6 differs from combined
+PASS view-7 finite HDR output
+PASS preview 7 differs from combined
+PASS view-8 finite HDR output
+PASS preview 8 differs from combined
+PASS  finite HDR output
+PASS sum sample 0 lies on a character surface (EID=1236)
+PASS sum sample 1 lies on a character surface (EID=1154)
+PASS sum sample 2 lies on a character surface (EID=1236)
+PASS sum sample 3 lies on a character surface (EID=1236)
+TERM sample=0 channel=0 error=0 packed-RT bound=0.01391697
+TERM sample=0 channel=1 error=0 packed-RT bound=0.01385593
+TERM sample=0 channel=2 error=0 packed-RT bound=0.02795601
+TERM sample=1 channel=0 error=0 packed-RT bound=0.0009317398
+TERM sample=1 channel=1 error=0 packed-RT bound=0.0009317398
+TERM sample=1 channel=2 error=0 packed-RT bound=0.00186348
+TERM sample=2 channel=0 error=0 packed-RT bound=0.003479958
+TERM sample=2 channel=1 error=0 packed-RT bound=0.003479958
+TERM sample=2 channel=2 error=0 packed-RT bound=0.006837845
+TERM sample=3 channel=0 error=0 packed-RT bound=0.01623631
+TERM sample=3 channel=1 error=0 packed-RT bound=0.01620579
+TERM sample=3 channel=2 error=0 packed-RT bound=0.03338814
+PASS five displayed lighting/artistic terms reconstruct combined within R11G11B10 quantization; worst error=0
+PASS orbit finite HDR output
+PASS camera orbit changes the character
+PASS main-light-rotated finite HDR output
+PASS Unity main-light controls and shadows respond
+PASS no-additional-lights finite HDR output
+PASS captured-additional-lights finite HDR output
+PASS captured additional lights affect image
+PASS added-point-light finite HDR output
+PASS new point light enters lighting evaluation
+PASS point-shadow finite HDR output
+PASS point-unshadowed finite HDR output
+PASS point-light shadow toggle affects image
+PASS spot-shadow finite HDR output
+PASS spot-unshadowed finite HDR output
+PASS spot-light shadow toggle affects image
+PASS temporal-settled finite HDR output
+PASS temporal-orbit finite HDR output
+PASS post-processing shaders have no compile errors

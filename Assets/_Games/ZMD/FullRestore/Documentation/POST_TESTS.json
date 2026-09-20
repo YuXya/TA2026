@@ -1,0 +1,23 @@
+[
+  {
+    "stage": "postcheck-prefilter",
+    "mean": 1.1200870176253375e-05,
+    "p99": 0.0001220703125,
+    "maximum": 0.0625,
+    "finite": true
+  },
+  {
+    "stage": "postcheck-downsample",
+    "mean": 3.3186941550411575e-07,
+    "p99": 1.33514404296875e-05,
+    "maximum": 0.00390625,
+    "finite": true
+  },
+  {
+    "stage": "postcheck-uber",
+    "mean": 0.001233913004398346,
+    "p99": 0.0033127665519714355,
+    "maximum": 0.0051021575927734375,
+    "finite": true
+  }
+]

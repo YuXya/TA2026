@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5913ddf3687a544a80fa02702a01a2, type: 3}
+  m_Name: CapturedLighting
+  m_EditorClassIdentifier: 
+  characterParams0: {x: 1, y: 1, z: 0.65, w: 0.9}
+  characterParams1: {x: 0, y: 1, z: 0, w: 1}
+  characterParams2: {x: 0.8490771, y: 0.8957686, z: 1.150923, w: 1}
+  characterParams3: {x: 1.2604043, y: 0.73959565, z: 0.73959565, w: 1}
+  characterParams4: {x: 1, y: 0.8923962, z: 0.8886792, w: 1}
+  characterParams5: {x: 1, y: 1, z: 1, w: 1}
+  characterParams6: {x: 0, y: 1, z: 0.00000004371139, w: 0}
+  characterParams7: {x: 0.15, y: 1.5, z: 0.5, w: 0}
+  characterParams8: {x: 0, y: 0, z: 0, w: 1}
+  characterParams9: {x: 0.00000008742278, y: -1, z: 0, w: 0.4}
+  characterParams11: {x: 0.17122346, y: 0.52991927, z: 0.830583, w: -0.1}
+  characterParams12: {x: 1, y: 1, z: 1, w: 0}
+  characterParams13: {x: 0, y: 0, z: 0, w: 1}
+  characterParams14: {x: 0, y: 0, z: 0, w: 1}
+  characterParams15: {x: 0, y: 0.001, z: -1, w: 0}
+  environmentGlobalParams0: {x: 0.28772247, y: 0.28772247, z: 1, w: 0}
+  exposureWithMiscParams: {x: 1, y: 1, z: 1.7777778, w: 0.1002004}
+  useCapturedDirectionalLight: 1
+  capturedDirectionalLight: {x: 1, y: 1, z: 1, w: 1.6243868}
+  directionalShadowBlend: 1
+  shadowG: 1
+  useUnityOcclusionForG: 1
+  allAdditionalLightsReceiveUnityShadows: 0
+  screenSpaceShadowRG: {fileID: 0}
+  mainShadowFade: {x: 1, y: 1}
+  characterShadow: {x: 0.0033661723, y: 0.0067323446, z: 4, w: 1}
+  ivParam0: {x: -68.534904, y: 98.92876, z: -416.3988, w: -1}
+  capturedWorldOrigin: {x: -300, y: 300, z: -300}
+  ivParam1: {x: 0.0078125, y: 0.015625, z: 0.0078125, w: 0}
+  ivParam2: {x: 61, y: 13, z: 52, w: 144}
+  ivDefaultSHAr: {x: -0.007550761, y: 0.47223732, z: 0.012170809, w: 1.0963056}
+  ivDefaultSHAg: {x: -0.007550761, y: 0.47223732, z: 0.012170809, w: 1.0963056}
+  ivDefaultSHAb: {x: -0.007550761, y: 0.47223732, z: 0.012170809, w: 1.0963056}
+  ivTextureALod0: {fileID: 11700000, guid: fc9f387aa94785a4dbd90c57216fe966, type: 2}
+  ivTextureBLod0: {fileID: 11700000, guid: 72be6078d4182d34da3d90ad7aa9da7c, type: 2}
+  ivTextureALod1: {fileID: 11700000, guid: 9373faad173818d4f8beef6d0304158d, type: 2}
+  ivTextureBLod1: {fileID: 11700000, guid: 17aab363851031e43bbbdca265bd40be, type: 2}
+  ivTextureALod3: {fileID: 11700000, guid: 3d7b122f1470e9541a20b88445dbb339, type: 2}
+  ivTextureBLod3: {fileID: 11700000, guid: dd38bb04839889a43ad738adcb841f24, type: 2}

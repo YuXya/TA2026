@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EID_1773
+  m_Shader: {fileID: 4800000, guid: 7fd729159d420534cab6bee5d44d2324, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3030
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AuxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _CapturedMipBias: -1
+    - _Cull: 2
+    - _DstBlend: 3
+    - _EnvironmentMode: 3
+    - _SrcBlend: 0
+    - _ZWrite: 0
+    m_Colors:
+    - _Env0: {r: 1, g: 1.257, b: 2.141, a: 0}
+    - _Env1: {r: 1, g: 0, b: 0, a: 0}
+    - _Env10: {r: 0, g: 0, b: 0, a: 0}
+    - _Env11: {r: 0, g: 0, b: 0, a: 0}
+    - _Env12: {r: 0, g: 0, b: 0, a: 0}
+    - _Env13: {r: 0, g: 0, b: 0, a: 0}
+    - _Env14: {r: 0, g: 0, b: 0, a: 0}
+    - _Env15: {r: 0, g: 0, b: 0, a: 0}
+    - _Env16: {r: 0, g: 0, b: 0, a: 0}
+    - _Env17: {r: 0, g: 0, b: 0, a: 0}
+    - _Env18: {r: 0, g: 0, b: 0, a: 0}
+    - _Env19: {r: 0, g: 0, b: 0, a: 0}
+    - _Env2: {r: 0.44530618, g: 0.44530618, b: 0.44530618, a: 1}
+    - _Env20: {r: 0, g: 0, b: 0, a: 0}
+    - _Env21: {r: 0, g: 0, b: 0, a: 0}
+    - _Env22: {r: 0, g: 0, b: 0, a: 0}
+    - _Env23: {r: 0, g: 0, b: 0, a: 0}
+    - _Env24: {r: 0, g: 0, b: 0, a: 0}
+    - _Env25: {r: 0, g: 0, b: 0, a: 0}
+    - _Env26: {r: 0, g: 0, b: 0, a: 0}
+    - _Env27: {r: 0, g: 0, b: 0, a: 0}
+    - _Env28: {r: 0, g: 0, b: 0, a: 0}
+    - _Env29: {r: 0, g: 0, b: 0, a: 0}
+    - _Env3: {r: 0.050876077, g: 0.050876077, b: 0.050876077, a: 1}
+    - _Env30: {r: 0, g: 0, b: 0, a: 0}
+    - _Env31: {r: 0, g: 0, b: 0, a: 0}
+    - _Env32: {r: 0, g: 0, b: 0, a: 0}
+    - _Env33: {r: 0, g: 0, b: 0, a: 0}
+    - _Env4: {r: 0, g: 0, b: 0, a: 0}
+    - _Env5: {r: 0, g: 0, b: 0, a: 0}
+    - _Env6: {r: 0, g: 0, b: 0, a: 0}
+    - _Env7: {r: 0, g: 0, b: 0, a: 0}
+    - _Env8: {r: 0, g: 0, b: 0, a: 0}
+    - _Env9: {r: 0, g: 0, b: 0, a: 0}
+    - _EnvFade: {r: 1, g: 0, b: 0, a: 0}
+    - _EnvGlobals: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

@@ -1,0 +1,5 @@
+PASS Original b497 GPU oracle: 144 comparisons of diffuse, specular, full H; worst absolute error=1.192093E-07
+PASS Captured environment branch retains tint and E=0.28772247: RGBA(0.849077, 0.895769, 1.150923, 0.287723)
+PASS Default-SH environment branch produces finite nonzero E: RGBA(1.000000, 1.000000, 1.000000, 0.451368)
+PASS Irradiance clipmap texture decode / SH / HSV path with synthetic 3D fixture: RGBA(1.000000, 1.000000, 1.000000, 0.575445)
+PASS Full direct test shader compiles

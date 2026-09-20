@@ -1,3 +1,0 @@
-PASS: All 13 material texture bindings preserved; only seven ordinary body materials receive new controls.
-PASS: All pre-existing material values preserved.
-PASS: Both existing HLSL files unchanged.

@@ -1,0 +1,81 @@
+// Original UberPost b354: BLOOM PERFORM_SHARPEN VIGNETTE.
+// Verified against EID 2167 DXBC. Only binding names and function transport change.
+Texture2D<float4> _InputTexture, _BloomTexture, _LogLut2D;
+SamplerState sampler_LinearClamp;
+float4 _FR_Post_ScreenSize;
+float4 _FR_Post_ExposureWithMiscParams;
+float4 _FR_Post_VignetteParams1;
+float4 _FR_Post_VignetteParams2;
+float4 _FR_Post_VignetteColor;
+float4 _FR_Post_Lut_Params;
+float4 _FR_Post_BloomParams;
+float4 _FR_Post_BloomThreshold;
+float4 _FR_Post_BloomTint;
+float4 _FR_Post_SharpenStrengthAndPadding;
+float4 FR_UberPost(float2 uv)
+{
+float2 _3=uv;float4 _4;
+
+    float4 _113 = _InputTexture.SampleLevel(sampler_LinearClamp, _3, 0.0f);
+    float3 _120 = float3(_FR_Post_ScreenSize.z, _FR_Post_ScreenSize.w, 0.0f);
+    float2 _123 = _120.zy;
+    float4 _126 = _InputTexture.SampleLevel(sampler_LinearClamp, _3 + _123, 0.0f);
+    float2 _129 = _120.xz;
+    float4 _132 = _InputTexture.SampleLevel(sampler_LinearClamp, _3 - _129, 0.0f);
+    float4 _137 = _InputTexture.SampleLevel(sampler_LinearClamp, _3 + _129, 0.0f);
+    float4 _142 = _InputTexture.SampleLevel(sampler_LinearClamp, _3 - _123, 0.0f);
+    float _145 = _126.x;
+    float _146 = _126.y;
+    float _147 = _126.z;
+    float _148 = _132.x;
+    float _149 = _132.y;
+    float _150 = _132.z;
+    float _151 = _113.x;
+    float _152 = _113.y;
+    float _153 = _113.z;
+    float _154 = _137.x;
+    float _155 = _137.y;
+    float _156 = _137.z;
+    float _157 = _142.x;
+    float _158 = _142.y;
+    float _159 = _142.z;
+    float _163 = (_147 * 0.5f) + ((_145 * 0.5f) + _146);
+    float _167 = (_150 * 0.5f) + ((_148 * 0.5f) + _149);
+    float _171 = (_153 * 0.5f) + ((_151 * 0.5f) + _152);
+    float _175 = (_156 * 0.5f) + ((_154 * 0.5f) + _155);
+    float _179 = (_159 * 0.5f) + ((_157 * 0.5f) + _158);
+    float _202 = min(min(_145, min(_148, _154)), _157);
+    float _205 = min(min(_146, min(_149, _155)), _158);
+    float _208 = min(min(_147, min(_150, _156)), _159);
+    float _211 = max(max(_145, max(_148, _154)), _157);
+    float _214 = max(max(_146, max(_149, _155)), _158);
+    float _217 = max(max(_147, max(_150, _156)), _159);
+    float _250 = (max(-0.1875f, min(max(max(-(_202 * (0.25f / _211)), (1.0f - _211) * (1.0f / ((4.0f * _202) + (-4.0f)))), max(max(-(_205 * (0.25f / _214)), (1.0f - _214) * (1.0f / ((4.0f * _205) + (-4.0f)))), max(-(_208 * (0.25f / _217)), (1.0f - _217) * (1.0f / ((4.0f * _208) + (-4.0f)))))), 0.0f)) * _FR_Post_SharpenStrengthAndPadding.x) * (((-0.5f) * clamp(abs((0.25f * (((_163 + _167) + _175) + _179)) - _171) * (1.0f / (max(max(_163, max(_167, _171)), max(_175, _179)) - min(min(_163, min(_167, _171)), min(_175, _179)))), 0.0f, 1.0f)) + 1.0f);
+    float _253 = 1.0f / ((4.0f * _250) + 1.0f);
+    float3 _275 = float3(((_250 * (((_145 + _148) + _157) + _154)) + _151) * _253, ((_250 * (((_146 + _149) + _158) + _155)) + _152) * _253, ((_250 * (((_147 + _150) + _159) + _156)) + _153) * _253) * _FR_Post_ExposureWithMiscParams.x;
+    float3 _280 = _BloomTexture.SampleLevel(sampler_LinearClamp, _3, 0.0f).xyz;
+    float3 _284 = _280 * (1.0f - _FR_Post_BloomParams.z);
+    bool3 _285 = bool3(_284.x > 0.300000011920928955078125f.xxx.x, _284.y > 0.300000011920928955078125f.xxx.y, _284.z > 0.300000011920928955078125f.xxx.z);
+    float3 _288 = (pow(_280, 0.3300000131130218505859375f.xxx) * 1.49380004405975341796875f) - 0.699999988079071044921875f.xxx;
+    float _298 = max(max(_275.x, _275.y), _275.z);
+    float _302 = clamp(_298 - _FR_Post_BloomThreshold.y, 0.0f, _FR_Post_BloomThreshold.z);
+    float2 _340 = abs(_3 - _FR_Post_VignetteParams1.xy) * lerp(_FR_Post_VignetteParams2.x, 1.0f, _FR_Post_VignetteParams1.w);
+    float _355 = _340.x * lerp(1.0f, 1.5f * clamp(_FR_Post_VignetteParams2.x * 1.0499999523162841796875f, 0.0f, 1.0f), _FR_Post_VignetteParams1.w);
+    float2 _356 = float2(_355, clamp((_340.y * lerp(1.0f, _FR_Post_VignetteParams2.x * 2.0f, _FR_Post_VignetteParams1.w)) + (clamp(_FR_Post_VignetteParams2.x - 2.7999999523162841796875f, 0.0f, 1.0f) * 5.0f), 0.0f, 1.0f));
+    _356.x = _355 * lerp(lerp(1.0f, _FR_Post_ExposureWithMiscParams.z, _FR_Post_VignetteParams2.w), _FR_Post_ExposureWithMiscParams.z * 0.5625f, _FR_Post_VignetteParams1.w);
+    float2 _364 = pow(clamp(_356, 0.0f.xx, 1.0f.xx), _FR_Post_VignetteParams2.z.xx);
+    float3 _383 = clamp(((log2(max((((lerp(_275, (_275 - ((_275 * (max((_FR_Post_BloomThreshold.w * _302) * _302, _298 - _FR_Post_BloomThreshold.x) / max(_298, 9.9999997473787516355514526367188e-05f))) * _FR_Post_BloomParams.z)) + (float3(_285.x ? _288.x : _280.x, _285.y ? _288.y : _280.y, _285.z ? _288.z : _280.z) * _FR_Post_BloomTint.xyz), _FR_Post_BloomParams.x.xxx) * lerp(_FR_Post_VignetteColor.xyz, 1.0f.xxx, pow(clamp(1.0f - dot(_364, _364), 0.0f, 1.0f), _FR_Post_VignetteParams2.y).xxx)) * _FR_Post_Lut_Params.w) * 5.555555820465087890625f) + 0.04799599945545196533203125f.xxx, 0.0f.xxx)) * 0.3010300099849700927734375f) * 0.24416099488735198974609375f) + 0.3860360085964202880859375f.xxx, 0.0f.xxx, 1.0f.xxx);
+    float _389 = _383.z * _FR_Post_Lut_Params.z;
+    float _390 = floor(_389);
+    float2 _396 = ((_383.xy * _FR_Post_Lut_Params.z) * _FR_Post_Lut_Params.xy) + (_FR_Post_Lut_Params.xy * 0.5f);
+    float3 _397 = float3(_396.x, _396.y, _383.z);
+    _397.x = _396.x + (_390 * _FR_Post_Lut_Params.y);
+    float3 _414 = lerp(_LogLut2D.SampleLevel(sampler_LinearClamp, _397.xy, 0.0f).xyz, _LogLut2D.SampleLevel(sampler_LinearClamp, _397.xy + float2(_FR_Post_Lut_Params.y, 0.0f), 0.0f).xyz, (_389 - _390).xxx);
+    float3 _415 = _414 * 12.9200000762939453125f;
+    float3 _419 = (pow(abs(_414), 0.4166666567325592041015625f.xxx) * 1.05499994754791259765625f) - 0.054999999701976776123046875f.xxx;
+    bool3 _420 = bool3(_414.x <= 0.003130800090730190277099609375f.xxx.x, _414.y <= 0.003130800090730190277099609375f.xxx.y, _414.z <= 0.003130800090730190277099609375f.xxx.z);
+    float3 _432 = float3(_420.x ? _415.x : _419.x, _420.y ? _415.y : _419.y, _420.z ? _415.z : _419.z) + (((frac(dot(float2(171.0f, 231.0f), _3 * _FR_Post_ScreenSize.xy).xxx * float3(0.00970873795449733734130859375f, 0.0140845067799091339111328125f, 0.010309278033673763275146484375f)) - 0.5f.xxx) * 0.0039215688593685626983642578125f.xxx) * 0.3499999940395355224609375f);
+    _4 = float4(_432, min(_113.w, 1.0f));
+
+return _4;
+}

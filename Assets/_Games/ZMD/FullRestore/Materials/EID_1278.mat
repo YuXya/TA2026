@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EID_1278
+  m_Shader: {fileID: 4800000, guid: eb5e15f044726824bb504538fe4cd78d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2009
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 9309080f2462c324b854c24702d6bbba, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 686999d9bfd4c474bae50d93d00044d9, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CharMaxCubemap:
+        m_Texture: {fileID: 8900000, guid: ee307e44852e22d42b7ee9bdf56d4e94, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClearCoatMask:
+        m_Texture: {fileID: 2800000, guid: a81e07f48620ced43b3a182b5247231e, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffRampMap:
+        m_Texture: {fileID: 2800000, guid: 1d258f5ada2b85f40bb32989439e7e41, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmotionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HairAlphaMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HighlightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LineMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatcapTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 6de46a4eb6f13684c8777cdf2c79dc32, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineMaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SDFLightmap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SDFMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowLutTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecRampMap:
+        m_Texture: {fileID: 2800000, guid: 9fef5d489577d2241b86195eb667d9a5, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SplitNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StylizedFresnelNoiseMap:
+        m_Texture: {fileID: 2800000, guid: a81e07f48620ced43b3a182b5247231e, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClipThreshold: 0.5
+    - _AlphaPremultiply: 0
+    - _AnisotropyDirX: 0
+    - _AnisotropyEdgeFade: 0
+    - _AnisotropyIntensity: 0
+    - _AnisotropyRange2: 0
+    - _AnisotropyValue: 0
+    - _AnisotropyValue2: 0
+    - _BackFaceNormalFlip: 0
+    - _BumpScale: 1
+    - _CapturedMipBias: -1
+    - _CapturedOutlinePrepass: 0
+    - _CapturedTime: 142.69182
+    - _ClearCoatMetallic: 0.05
+    - _ClearCoatNormalMode: 1
+    - _ClearCoatSmoothness: 0.55
+    - _Cull: 0
+    - _DepthStencilComp: 8
+    - _DepthStencilPass: 2
+    - _DepthStencilReadMask: 255
+    - _DepthStencilRef: 36
+    - _DepthStencilWriteMask: 255
+    - _DisableUnderHair: 0
+    - _DstBlend: 0
+    - _EmissionBrightness: 8
+    - _EmotionBlend: 0
+    - _EmotionIndex: 0
+    - _EnableVFXColorAdjustment: 0
+    - _EventID: 1278
+    - _FaceRimOffScale: 0
+    - _HairLayer: 0
+    - _LightingView: 0
+    - _LineAmount: 0
+    - _LineIntensity: 0
+    - _LineRange: 0
+    - _LineSaturation: 0
+    - _LineValue: 0
+    - _MatcapNormalScale: 0
+    - _Metallic: 0
+    - _OutlineColorBrightness: 0
+    - _OutlineColorSaturation: 0
+    - _OutlineOffsetZ: 0
+    - _OutlineTintEnable: 0
+    - _OutlineWidth: 0
+    - _ParallaxMarchNum: 0
+    - _ParallaxScale: 0
+    - _ParallaxUseNormal: 0
+    - _Part: 0
+    - _ShadowColorBrightness: 0.5
+    - _ShadowColorSaturation: 1
+    - _SkinRimOffScale: 0
+    - _Smoothness: 0
+    - _SpecBumpScale: 0
+    - _SpecRampIridescentMode: 0
+    - _Specular: 0
+    - _SrcBlend: 1
+    - _StencilComp: 8
+    - _StencilPass: 0
+    - _StencilReadMask: 255
+    - _StencilRef: 0
+    - _StencilWriteMask: 0
+    - _StylizedFresnelAmount: 1
+    - _StylizedFresnelNoiseSpeed: 0
+    - _StylizedFresnelPow: 8
+    - _StylizedNoiseContrast: 8
+    - _SurfaceType: 0
+    - _UseClearCoat: 1
+    - _UseDiffRamp: 1
+    - _UseEmission: 0
+    - _UseEndfieldDiffuse: 1
+    - _UseEndfieldSpecular: 1
+    - _UseGrayAsAlpha: 0
+    - _UseLineMap: 0
+    - _UseNormalMap: 1
+    - _UseOutlineMask: 0
+    - _UsePackedMap: 1
+    - _UseParallax: 0
+    - _UseReflection: 1
+    - _UseShadowLut: 0
+    - _UseSpecRamp: 0
+    - _UseStylizedFresnel: 1
+    - _ZTest: 3
+    - _ZWrite: 1
+    m_Colors:
+    - _AnisotropyColor2: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 1, g: 0.93682134, b: 0.93682134, a: 1}
+    - _ClearCoatColor: {r: 0.07302761, g: 0.35845703, b: 0.69034094, a: 1}
+    - _ColorAdjustmentColorBlend: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EyeHighLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EyeScatteringColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HeadRow0: {r: -0.14551985, g: 0.21789433, b: -0.96506274, a: -0.01184082}
+    - _HeadRow1: {r: -0.98417056, g: -0.13161433, b: 0.11868478, a: 1.263916}
+    - _HeadRow2: {r: -0.101155266, g: 0.9670573, b: 0.23359771, a: 0.009918213}
+    - _HighlightMapVector: {r: 0, g: 0, b: 0, a: 0}
+    - _MatcapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineTintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ParallaxColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SDFRimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _StylizedFresnelColor: {r: 0.17345588, g: 0.2935631, b: 0.61024314, a: 0}
+  m_BuildTextureStacks: []
