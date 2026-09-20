@@ -27,8 +27,14 @@ namespace EndfieldFullRestore
         }
         public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
         {
+            EnqueueForCamera(renderer, ref renderingData, false);
+        }
+        // Scene owns a separate instance of these same passes, not a second shader implementation.
+        internal void EnqueueForCamera(ScriptableRenderer renderer, ref RenderingData renderingData, bool unlit)
+        {
             if (!profile) return;
             pass.profile = profile;
+            pass.unlit = unlit;
             pass.ConfigureInput(ScriptableRenderPassInput.Depth);
             renderer.EnqueuePass(depthPass);
             renderer.EnqueuePass(normalPass);
@@ -52,23 +58,33 @@ namespace EndfieldFullRestore
 
         sealed class NormalPass : ScriptableRenderPass
         {
-            RTHandle normal;
-            public void Dispose(){normal?.Release();normal=null;}
+            RTHandle normal, resolved;
+            int samples;
+            public void Dispose(){normal?.Release();resolved?.Release();normal=null;resolved=null;}
             public override void OnCameraSetup(CommandBuffer cmd,ref RenderingData data)
             {
                 var descriptor=data.cameraData.cameraTargetDescriptor;
-                descriptor.depthBufferBits=0;descriptor.msaaSamples=1;
+                var depth=data.cameraData.renderer.cameraDepthTargetHandle;
+                samples=depth.rt ? depth.rt.antiAliasing : descriptor.msaaSamples;
+                descriptor.depthBufferBits=0;descriptor.msaaSamples=samples;descriptor.bindMS=false;
                 descriptor.graphicsFormat=UnityEngine.Experimental.Rendering.GraphicsFormat.A2B10G10R10_UNormPack32;
                 RenderingUtils.ReAllocateIfNeeded(ref normal,descriptor,FilterMode.Point,TextureWrapMode.Clamp,name:"_FR_NormalBuffer");
                 ConfigureTarget(normal,data.cameraData.renderer.cameraDepthTargetHandle);
                 ConfigureClear(ClearFlag.Color,Color.black);
+                if(samples>1)
+                {
+                    descriptor.msaaSamples=1;
+                    RenderingUtils.ReAllocateIfNeeded(ref resolved,descriptor,FilterMode.Point,TextureWrapMode.Clamp,name:"_FR_NormalBufferResolved");
+                }
             }
             public override void Execute(ScriptableRenderContext context,ref RenderingData data)
             {
                 var drawing=CreateDrawingSettings(new ShaderTagId("FullRestoreNormals"),ref data,SortingCriteria.CommonOpaque);
                 var filtering=new FilteringSettings(RenderQueueRange.opaque);
                 context.DrawRenderers(data.cullResults,ref drawing,ref filtering);
-                var cmd=CommandBufferPool.Get("Character normal buffer");cmd.SetGlobalTexture("_FR_NormalBuffer",normal);
+                var cmd=CommandBufferPool.Get("Character normal buffer");
+                if(samples>1)cmd.ResolveAntiAliasedSurface(normal.rt,resolved.rt);
+                cmd.SetGlobalTexture("_FR_NormalBuffer",samples>1?resolved:normal);
                 context.ExecuteCommandBuffer(cmd);CommandBufferPool.Release(cmd);
             }
         }
@@ -77,6 +93,12 @@ namespace EndfieldFullRestore
         {
             public bool outlines;
             readonly ShaderTagId tag = new ShaderTagId("FullRestoreDepth");
+            public override void OnCameraSetup(CommandBuffer cmd, ref RenderingData data)
+            {
+                // URP's Scene prepass can target a separate depth texture. ZTest Equal
+                // needs the actual forward camera depth/stencil attachment populated.
+                ConfigureTarget(data.cameraData.renderer.cameraColorTargetHandle,data.cameraData.renderer.cameraDepthTargetHandle);
+            }
             public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
             {
                 var drawing=CreateDrawingSettings(tag,ref renderingData,SortingCriteria.CommonOpaque);
@@ -94,6 +116,7 @@ namespace EndfieldFullRestore
         sealed class LightingPass : ScriptableRenderPass
         {
             public EndfieldLightingProfile profile;
+            public bool unlit;
             readonly PunctualLight[] lights = new PunctualLight[256];
             readonly int[] orders = new int[256];
             ComputeBuffer buffer;
@@ -101,6 +124,7 @@ namespace EndfieldFullRestore
             public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
             {
                 var cmd = CommandBufferPool.Get("Endfield lighting inputs");
+                cmd.SetGlobalFloat("_FR_CameraUnlit",unlit?1:0);
                 var visible = renderingData.lightData.visibleLights;
                 int mainIndex = renderingData.lightData.mainLightIndex;
                 Vector4 mainColor = Vector4.zero;

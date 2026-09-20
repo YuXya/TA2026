@@ -1,0 +1,53 @@
+{
+  "CompareFunction": {
+    "AlwaysTrue": 1,
+    "Equal": 6,
+    "Greater": 4,
+    "GreaterEqual": 5,
+    "Less": 2,
+    "LessEqual": 3,
+    "Never": 0,
+    "NotEqual": 7
+  },
+  "CullMode": {
+    "Back": 2,
+    "Front": 1,
+    "FrontAndBack": 3,
+    "NoCull": 0
+  },
+  "BlendMultiplier": {
+    "DstAlpha": 8,
+    "DstCol": 4,
+    "FactorAlpha": 13,
+    "FactorRGB": 11,
+    "InvDstAlpha": 9,
+    "InvDstCol": 5,
+    "InvFactorAlpha": 14,
+    "InvFactorRGB": 12,
+    "InvSrc1Alpha": 18,
+    "InvSrc1Col": 16,
+    "InvSrcAlpha": 7,
+    "InvSrcCol": 3,
+    "One": 1,
+    "Src1Alpha": 17,
+    "Src1Col": 15,
+    "SrcAlpha": 6,
+    "SrcAlphaSat": 10,
+    "SrcCol": 2,
+    "Zero": 0
+  },
+  "AddressMode": {
+    "ClampBorder": 4,
+    "ClampEdge": 3,
+    "Mirror": 1,
+    "MirrorOnce": 2,
+    "Wrap": 0
+  },
+  "FilterMode": {
+    "Anisotropic": 4,
+    "Cubic": 3,
+    "Linear": 2,
+    "NoFilter": 0,
+    "Point": 1
+  }
+}

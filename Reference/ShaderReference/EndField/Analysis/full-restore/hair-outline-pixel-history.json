@@ -1,0 +1,1515 @@
+[
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": false,
+    "directShaderWrite": false,
+    "eventId": 1586,
+    "fragIndex": 0,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": -1.0,
+      "stencil": -1
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.9140625,
+          0.6875,
+          1.1875,
+          1.0
+        ],
+        "intValue": [
+          1063911424,
+          1060110336,
+          1066926080,
+          1065353216
+        ],
+        "uintValue": [
+          1063911424,
+          1060110336,
+          1066926080,
+          1065353216
+        ]
+      },
+      "depth": -1.0,
+      "stencil": -1
+    },
+    "predicationSkipped": false,
+    "primitiveID": 0,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 1.0,
+      "stencil": -1
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": false,
+    "directShaderWrite": false,
+    "eventId": 1601,
+    "fragIndex": 0,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": 36
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": 36
+    },
+    "predicationSkipped": false,
+    "primitiveID": 0,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 1.0,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1683,
+    "fragIndex": 0,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": 36
+    },
+    "predicationSkipped": false,
+    "primitiveID": 2399,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.33792006969451904,
+          0.23784637451171875,
+          0.46500709652900696,
+          1.0
+        ],
+        "intValue": [
+          1051526108,
+          1047760384,
+          1055790441,
+          1065353216
+        ],
+        "uintValue": [
+          1051526108,
+          1047760384,
+          1055790441,
+          1065353216
+        ]
+      },
+      "depth": 0.02746862731873989,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1683,
+    "fragIndex": 1,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 2498,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.27959734201431274,
+          0.19575029611587524,
+          0.39491796493530273,
+          1.0
+        ],
+        "intValue": [
+          1049569122,
+          1044935364,
+          1053438640,
+          1065353216
+        ],
+        "uintValue": [
+          1049569122,
+          1044935364,
+          1053438640,
+          1065353216
+        ]
+      },
+      "depth": 0.027417970821261406,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1683,
+    "fragIndex": 2,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 7208,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.29214397072792053,
+          0.24376632273197174,
+          0.36708301305770874,
+          1.0
+        ],
+        "intValue": [
+          1049990117,
+          1048157665,
+          1052504654,
+          1065353216
+        ],
+        "uintValue": [
+          1049990117,
+          1048157665,
+          1052504654,
+          1065353216
+        ]
+      },
+      "depth": 0.02593052014708519,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1683,
+    "fragIndex": 3,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 9938,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.224173441529274,
+          0.1594470739364624,
+          0.3267814815044403,
+          1.0
+        ],
+        "intValue": [
+          1046842809,
+          1042499096,
+          1051152359,
+          1065353216
+        ],
+        "uintValue": [
+          1046842809,
+          1042499096,
+          1051152359,
+          1065353216
+        ]
+      },
+      "depth": 0.02683725766837597,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1683,
+    "fragIndex": 4,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 9993,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.22321352362632751,
+          0.16623418033123016,
+          0.3318631052970886,
+          1.0
+        ],
+        "intValue": [
+          1046778390,
+          1042954571,
+          1051322870,
+          1065353216
+        ],
+        "uintValue": [
+          1046778390,
+          1042954571,
+          1051322870,
+          1065353216
+        ]
+      },
+      "depth": 0.026914633810520172,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1683,
+    "fragIndex": 5,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 10026,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.24907565116882324,
+          0.20143380761146545,
+          0.34077852964401245,
+          1.0
+        ],
+        "intValue": [
+          1048513968,
+          1045316778,
+          1051622022,
+          1065353216
+        ],
+        "uintValue": [
+          1048513968,
+          1045316778,
+          1051622022,
+          1065353216
+        ]
+      },
+      "depth": 0.026883987709879875,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1683,
+    "fragIndex": 6,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 11279,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.27715301513671875,
+          0.24563930928707123,
+          0.3777429163455963,
+          1.0
+        ],
+        "intValue": [
+          1049487104,
+          1048283359,
+          1052862341,
+          1065353216
+        ],
+        "uintValue": [
+          1049487104,
+          1048283359,
+          1052862341,
+          1065353216
+        ]
+      },
+      "depth": 0.025842007249593735,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1683,
+    "fragIndex": 7,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 11320,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.2710207998752594,
+          0.258711040019989,
+          0.39581504464149475,
+          1.0
+        ],
+        "intValue": [
+          1049281341,
+          1048868294,
+          1053468741,
+          1065353216
+        ],
+        "uintValue": [
+          1049281341,
+          1048868294,
+          1053468741,
+          1065353216
+        ]
+      },
+      "depth": 0.0258711576461792,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1683,
+    "fragIndex": 8,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": 36
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 11823,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.26761355996131897,
+          0.2430897206068039,
+          0.3709482252597809,
+          1.0
+        ],
+        "intValue": [
+          1049167013,
+          1048112259,
+          1052634349,
+          1065353216
+        ],
+        "uintValue": [
+          1049167013,
+          1048112259,
+          1052634349,
+          1065353216
+        ]
+      },
+      "depth": 0.025984415784478188,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1706,
+    "fragIndex": 0,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": 36
+    },
+    "predicationSkipped": false,
+    "primitiveID": 1552,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.19704289734363556,
+          0.1337209790945053,
+          0.30920979380607605,
+          1.0
+        ],
+        "intValue": [
+          1045022109,
+          1040772647,
+          1050562751,
+          1065353216
+        ],
+        "uintValue": [
+          1045022109,
+          1040772647,
+          1050562751,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1706,
+    "fragIndex": 1,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 2498,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.10282474011182785,
+          0.06427906453609467,
+          0.1612333208322525,
+          1.0
+        ],
+        "intValue": [
+          1037211079,
+          1032037566,
+          1042618969,
+          1065353216
+        ],
+        "uintValue": [
+          1037211079,
+          1032037566,
+          1042618969,
+          1065353216
+        ]
+      },
+      "depth": 0.027406739071011543,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1706,
+    "fragIndex": 2,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 7208,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.11715971678495407,
+          0.09789630025625229,
+          0.1663474291563034,
+          1.0
+        ],
+        "intValue": [
+          1039135087,
+          1036549595,
+          1042962171,
+          1065353216
+        ],
+        "uintValue": [
+          1039135087,
+          1036549595,
+          1042962171,
+          1065353216
+        ]
+      },
+      "depth": 0.02592524327337742,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1706,
+    "fragIndex": 3,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 10026,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          1.1563715934753418,
+          1.032190203666687,
+          1.9777872562408447,
+          1.0
+        ],
+        "intValue": [
+          1066664956,
+          1065623247,
+          1073555490,
+          1065353216
+        ],
+        "uintValue": [
+          1066664956,
+          1065623247,
+          1073555490,
+          1065353216
+        ]
+      },
+      "depth": 0.02688368782401085,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1706,
+    "fragIndex": 4,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 11279,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.11383000016212463,
+          0.10365361720323563,
+          0.17570136487483978,
+          1.0
+        ],
+        "intValue": [
+          1038688180,
+          1037322329,
+          1043589903,
+          1065353216
+        ],
+        "uintValue": [
+          1038688180,
+          1037322329,
+          1043589903,
+          1065353216
+        ]
+      },
+      "depth": 0.02583756111562252,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  },
+  {
+    "backfaceCulled": false,
+    "depthBoundsFailed": false,
+    "depthClipped": false,
+    "depthTestFailed": true,
+    "directShaderWrite": false,
+    "eventId": 1706,
+    "fragIndex": 5,
+    "postMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": 36
+    },
+    "preMod": {
+      "col": {
+        "floatValue": [
+          0.083984375,
+          0.05224609375,
+          0.14453125,
+          1.0
+        ],
+        "intValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ],
+        "uintValue": [
+          1034682368,
+          1029046272,
+          1041498112,
+          1065353216
+        ]
+      },
+      "depth": 0.02754037268459797,
+      "stencil": -2
+    },
+    "predicationSkipped": false,
+    "primitiveID": 11823,
+    "sampleMasked": false,
+    "scissorClipped": false,
+    "shaderDiscarded": false,
+    "shaderOut": {
+      "col": {
+        "floatValue": [
+          0.10049381852149963,
+          0.0939192995429039,
+          0.16116999089717865,
+          1.0
+        ],
+        "intValue": [
+          1036898228,
+          1036015811,
+          1042614719,
+          1065353216
+        ],
+        "uintValue": [
+          1036898228,
+          1036015811,
+          1042614719,
+          1065353216
+        ]
+      },
+      "depth": 0.02598012052476406,
+      "stencil": -2
+    },
+    "stencilTestFailed": false,
+    "unboundPS": false,
+    "viewClipped": false
+  }
+]

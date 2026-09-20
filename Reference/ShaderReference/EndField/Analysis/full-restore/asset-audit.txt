@@ -1,0 +1,4 @@
+PASS 31 captured draw meshes and materials; 160 exact texture bindings, all inside FullRestore.
+PASS Reflection cubemap has six faces and 8 mips.
+PASS Two renderer features, matching local IDs, valid scripts, profile and post materials.
+PASS Independent scene controls and renderer bound; no missing scripts; no captured screen-space shadow input.

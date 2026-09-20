@@ -1,5 +1,7 @@
 # 画面对照与验证
 
+2026-09-20 更新：四类部位 Shader 已独立拆分，固定 Game 镜头重构前后回归差为 0；下列原抓帧差异仍保留。Scene 改为可用的编辑预览，精确还原以 Game 为准。新验证和原资源校验例外见 [Shader 分拆记录](SHADER_SPLIT.md)。
+
 ## 验证条件
 
 Unity 2022.3.62f3、URP 14.0.12、Linear、Direct3D11、RTX 5060。隔离工程复制当前工程高质量 URP 的灯光／阴影配置，使用独立 Renderer；相机关闭 MSAA 和 Unity 内置后处理。角色保持抓帧姿势、FOV=20°、3840×2160，材质使用抓帧时间，曝光乘数为 1。最终输出积累 16 个 Unity TAA 帧。
@@ -45,4 +47,4 @@ Unity 2022.3.62f3、URP 14.0.12、Linear、Direct3D11、RTX 5060。隔离工程�
 
 ## 原资源保护
 
-旧 ToonURP、ZMD 学习资源、A001/A002 导入设置、Assets/Settings 和 ProjectSettings 共 717 个原文件，SHA256 校验无变化。唯一新增外层文件是 Unity 为 FullRestore 目录生成的 `.meta`。首次打开独立场景时会按计划追加 Renderer 入口，默认 Renderer 不变。
+首次还原交付时，旧 ToonURP、ZMD 学习资源、A001/A002 导入设置、Assets/Settings 和 ProjectSettings 共 717 个原文件，SHA256 校验无变化。首次打开独立场景时按计划追加 Renderer 入口，默认 Renderer 不变。后续本次检查 718 个已存在文件，仅按用户同意在原默认 Renderer 追加 Scene 兼容 Feature；学习资源与导入设置保持不变。

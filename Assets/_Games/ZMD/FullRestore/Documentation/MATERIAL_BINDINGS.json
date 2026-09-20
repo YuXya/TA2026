@@ -1822,7 +1822,9 @@
         "byteOffset": 12
       }
     ],
-    "stateEvidence": "event-1088.json"
+    "stateEvidence": "event-1088.json",
+    "shader": "Endfield/FullRestore/Skin",
+    "entry": "SkinSurface.hlsl"
   },
   {
     "eid": 1110,
@@ -3419,7 +3421,9 @@
         "byteOffset": 0
       }
     ],
-    "stateEvidence": "event-1110.json"
+    "stateEvidence": "event-1110.json",
+    "shader": "Endfield/FullRestore/Eye",
+    "entry": "EyeSurface.hlsl"
   },
   {
     "eid": 1132,
@@ -5134,7 +5138,9 @@
         "byteOffset": 72
       }
     ],
-    "stateEvidence": "event-1132.json"
+    "stateEvidence": "event-1132.json",
+    "shader": "Endfield/FullRestore/Eye",
+    "entry": "EyeSurface.hlsl"
   },
   {
     "eid": 1154,
@@ -7437,7 +7443,9 @@
         "byteOffset": 76
       }
     ],
-    "stateEvidence": "event-1154.json"
+    "stateEvidence": "event-1154.json",
+    "shader": "Endfield/FullRestore/Body",
+    "entry": "BodySurface.hlsl"
   },
   {
     "eid": 1173,
@@ -9716,7 +9724,9 @@
         "byteOffset": 76
       }
     ],
-    "stateEvidence": "event-1173.json"
+    "stateEvidence": "event-1173.json",
+    "shader": "Endfield/FullRestore/Body",
+    "entry": "BodySurface.hlsl"
   },
   {
     "eid": 1195,
@@ -11907,7 +11917,9 @@
         "byteOffset": 204
       }
     ],
-    "stateEvidence": "event-1195.json"
+    "stateEvidence": "event-1195.json",
+    "shader": "Endfield/FullRestore/Skin",
+    "entry": "SkinSurface.hlsl"
   },
   {
     "eid": 1214,
@@ -14098,7 +14110,9 @@
         "byteOffset": 204
       }
     ],
-    "stateEvidence": "event-1214.json"
+    "stateEvidence": "event-1214.json",
+    "shader": "Endfield/FullRestore/Skin",
+    "entry": "SkinSurface.hlsl"
   },
   {
     "eid": 1236,
@@ -16275,7 +16289,9 @@
         "byteOffset": 76
       }
     ],
-    "stateEvidence": "event-1236.json"
+    "stateEvidence": "event-1236.json",
+    "shader": "Endfield/FullRestore/Body",
+    "entry": "BodySurface.hlsl"
   },
   {
     "eid": 1257,
@@ -18562,7 +18578,9 @@
         "byteOffset": 76
       }
     ],
-    "stateEvidence": "event-1257.json"
+    "stateEvidence": "event-1257.json",
+    "shader": "Endfield/FullRestore/Body",
+    "entry": "BodySurface.hlsl"
   },
   {
     "eid": 1278,
@@ -21087,7 +21105,9 @@
         "byteOffset": 240
       }
     ],
-    "stateEvidence": "event-1278.json"
+    "stateEvidence": "event-1278.json",
+    "shader": "Endfield/FullRestore/Body",
+    "entry": "BodySurface.hlsl"
   },
   {
     "eid": 1300,
@@ -23264,7 +23284,9 @@
         "byteOffset": 76
       }
     ],
-    "stateEvidence": "event-1300.json"
+    "stateEvidence": "event-1300.json",
+    "shader": "Endfield/FullRestore/Body",
+    "entry": "BodySurface.hlsl"
   },
   {
     "eid": 1322,
@@ -25561,7 +25583,9 @@
         "byteOffset": 208
       }
     ],
-    "stateEvidence": "event-1322.json"
+    "stateEvidence": "event-1322.json",
+    "shader": "Endfield/FullRestore/Hair",
+    "entry": "HairSurface.hlsl"
   },
   {
     "eid": 1683,
@@ -28258,7 +28282,9 @@
         "byteOffset": 208
       }
     ],
-    "stateEvidence": "event-1683.json"
+    "stateEvidence": "event-1683.json",
+    "shader": "Endfield/FullRestore/Hair",
+    "entry": "HairSurface.hlsl"
   },
   {
     "eid": 1797,
@@ -31151,7 +31177,9 @@
         "byteOffset": 240
       }
     ],
-    "stateEvidence": "event-1797.json"
+    "stateEvidence": "event-1797.json",
+    "shader": "Endfield/FullRestore/Body",
+    "entry": "BodySurface.hlsl"
   },
   {
     "eid": 1390,
@@ -33027,7 +33055,9 @@
         "byteOffset": 12
       }
     ],
-    "stateEvidence": "event-1390.json"
+    "stateEvidence": "event-1390.json",
+    "shader": "Endfield/FullRestore/SkinOutline",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1409,
@@ -35381,7 +35411,9 @@
         "byteOffset": 76
       }
     ],
-    "stateEvidence": "event-1409.json"
+    "stateEvidence": "event-1409.json",
+    "shader": "Endfield/FullRestore/BodyOutline",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1427,
@@ -37711,7 +37743,9 @@
         "byteOffset": 76
       }
     ],
-    "stateEvidence": "event-1427.json"
+    "stateEvidence": "event-1427.json",
+    "shader": "Endfield/FullRestore/BodyOutline",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1448,
@@ -40027,7 +40061,9 @@
         "byteOffset": 204
       }
     ],
-    "stateEvidence": "event-1448.json"
+    "stateEvidence": "event-1448.json",
+    "shader": "Endfield/FullRestore/SkinOutline",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1467,
@@ -42343,7 +42379,9 @@
         "byteOffset": 204
       }
     ],
-    "stateEvidence": "event-1467.json"
+    "stateEvidence": "event-1467.json",
+    "shader": "Endfield/FullRestore/SkinOutline",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1488,
@@ -44651,7 +44689,9 @@
         "byteOffset": 76
       }
     ],
-    "stateEvidence": "event-1488.json"
+    "stateEvidence": "event-1488.json",
+    "shader": "Endfield/FullRestore/BodyOutline",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1510,
@@ -46879,7 +46919,9 @@
         "byteOffset": 76
       }
     ],
-    "stateEvidence": "event-1510.json"
+    "stateEvidence": "event-1510.json",
+    "shader": "Endfield/FullRestore/BodyOutline",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1531,
@@ -49307,7 +49349,9 @@
         "byteOffset": 208
       }
     ],
-    "stateEvidence": "event-1531.json"
+    "stateEvidence": "event-1531.json",
+    "shader": "Endfield/FullRestore/HairOutline",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1706,
@@ -52135,7 +52179,9 @@
         "byteOffset": 208
       }
     ],
-    "stateEvidence": "event-1706.json"
+    "stateEvidence": "event-1706.json",
+    "shader": "Endfield/FullRestore/HairOutline",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1623,
@@ -52328,7 +52374,9 @@
       }
     ],
     "capturedConstants": [],
-    "stateEvidence": "event-1623.json"
+    "stateEvidence": "event-1623.json",
+    "shader": "Endfield/FullRestore/Overlay",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1638,
@@ -52521,7 +52569,9 @@
       }
     ],
     "capturedConstants": [],
-    "stateEvidence": "event-1638.json"
+    "stateEvidence": "event-1638.json",
+    "shader": "Endfield/FullRestore/Overlay",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1731,
@@ -52621,7 +52671,9 @@
       }
     ],
     "capturedConstants": [],
-    "stateEvidence": "event-1731.json"
+    "stateEvidence": "event-1731.json",
+    "shader": "Endfield/FullRestore/OverlayDepth",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1750,
@@ -52814,7 +52866,9 @@
       }
     ],
     "capturedConstants": [],
-    "stateEvidence": "event-1750.json"
+    "stateEvidence": "event-1750.json",
+    "shader": "Endfield/FullRestore/Overlay",
+    "entry": "Passes.hlsl"
   },
   {
     "eid": 1347,

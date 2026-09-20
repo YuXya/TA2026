@@ -5,7 +5,7 @@
 void FR_PrepareSkin(inout FR_Surface s,FR_LightingContext c)
 {
     s.ao=s.alpha;
-    if(_Part>1.5)
+    if(_FaceFeatures>0.5)
     {
         float2 emotionUV=float2(fmod(_EmotionIndex,2.0),floor(_EmotionIndex*0.5))*0.5+s.uv*0.5;
         float4 emotion=SAMPLE_TEXTURE2D_BIAS(_EmotionMap,sampler_BaseMap,emotionUV,_CapturedMipBias);
@@ -18,7 +18,7 @@ void FR_PrepareSkin(inout FR_Surface s,FR_LightingContext c)
     float rimScale=_SkinRimOffScale;
     float3 horizontalN=normalize(float3(s.normalWS.x,6.103515625e-5,s.normalWS.z));
     s.environmentNormalWS=horizontalN;
-    if(_Part>1.5)
+    if(_FaceFeatures>0.5)
     {
         float3 cameraHead=mul(c.C,FR_HeadFrame());
         float cameraForward=normalize(cameraHead.xz).y;
@@ -55,7 +55,7 @@ EndfieldDirectDiffuseResult FR_SkinDiffuse(FR_Surface s,FR_LightingContext c)
     float coordinate=clamp(dot(s.normalWS,c.main.direction)+_FR_CharacterParams11.w*_FR_CharacterParams12.x,-1,1);
     float effectiveG=c.main.G;
     float darkWeight=s.ao*effectiveG;
-    if(_Part>1.5)
+    if(_FaceFeatures>0.5)
     {
         float4 sdf;
         coordinate=lerp(FR_FaceSDFLight(c.main.direction,c.C,s.uv,sdf),coordinate,s.partMask.g);
@@ -102,4 +102,20 @@ float3 FR_FaceArtistic(FR_Surface s,FR_LightingContext c,EndfieldDirectDiffuseRe
     float mask=smoothstep(-0.5,0.5,lerp(-1.0,1.0,abs(-transition-halfLight*ceil(halfLight))));
     return rim+_FR_CharacterParams14.rgb*mask*(1.0-s.partMask.g)*_FR_CharacterParams14.w*d.brightDiffuse;
 }
+
+// b114/b138's GGX lobe. It has neither the clothing SpecRamp nor clear coat.
+float3 FR_SkinSpecular(FR_Surface s,FR_LightingContext c,EndfieldDirectDiffuseResult d,out float3 F0)
+{
+    float roughness=1.0-s.smoothness;
+    float alpha=max(roughness*roughness,0.0078125);
+    F0=lerp(float3(0.04,0.04,0.04)*s.specular,s.baseColor,s.metallic);
+    float3 H=EndfieldMainHalfDirection(c.main.direction,c.V,c.C,c.main.S);
+    float nv=saturate(dot(s.normalWS,c.V));
+    float distribution=EndfieldSpecularDistribution(dot(s.normalWS,H),alpha);
+    float visibility=0.5/(2.0*nv+alpha*((1.0+nv)-nv)+1e-4);
+    float lobe=clamp(distribution*visibility-6.103515625e-5,0.0,20.0);
+    float3 lighting=d.directLighting*(d.shadeWeight*0.5+0.5)*d.materialGain;
+    return (F0*lobe)*lighting*_FR_CharacterParams13.w;
+}
+
 #endif

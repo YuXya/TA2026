@@ -1,0 +1,14 @@
+Shader hash 2c4162af-b2b605a4-c3ae85ec-967ea150
+
+ps_5_0
+      dcl_globalFlags refactoringAllowed
+      dcl_constantbuffer cb0[3], immediateIndexed
+      dcl_sampler s0, mode_default
+      dcl_resource_texture2d (float,float,float,float) t0
+      dcl_input_ps linear v1.xy
+      dcl_output o0.xyzw
+      dcl_temps 1
+   0: sample_l(texture2d)(float,float,float,float) r0.xyz, v1.xyxx, t0.xyzw, s0, cb0[2].x
+   1: mov o0.xyz, r0.xyzx
+   2: mov o0.w, l(0)
+   3: ret

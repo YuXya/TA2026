@@ -1,0 +1,450 @@
+[
+  {
+    "eid": 1278,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group1604352.mat",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_02_D.png",
+        "guid": "344c3072484cb48428a97a078ef738c3",
+        "note": "用户现有底色绑定：撤回擅自替换，保留用户之后的修改。"
+      },
+      {
+        "property": "_BumpMap",
+        "resource": "ResourceId::56826",
+        "path": "Assets/_Games/ZMD/A002/03_Normal/Converted_RGB/tex_56826_normal.png",
+        "guid": "b8c8cd5d2d4c1114cb32eab934e50719"
+      },
+      {
+        "property": "_MetallicGlossMap",
+        "resource": "ResourceId::56886",
+        "path": "Assets/_Games/ZMD/A002/02_Packed_P/tex_56886.png",
+        "guid": "9ec3a6bb6b048c743b7b663031b3dc1b"
+      },
+      {
+        "property": "_DiffRampMap",
+        "resource": "ResourceId::22374",
+        "path": "Assets/_Games/ZMD/A002/04_Ramp_Diffuse/tex_22374.png",
+        "guid": "2299a7fb9818f6f4a8a318ce84f9d175"
+      },
+      {
+        "property": "_SpecRampMap",
+        "resource": "ResourceId::34911",
+        "path": "Assets/_Games/ZMD/A002/05_Ramp_Specular/tex_34911.png",
+        "guid": "6bb0dcacf6063c54c8548552fe6d98ab"
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_ClearCoatMask",
+        "resource": "ResourceId::56396",
+        "path": "Assets/_Games/ZMD/A002/11_Coat_Fresnel_Parallax/tex_56396.png",
+        "guid": "d590d1dc8964eb742ae13e4626af70fe"
+      },
+      {
+        "property": "_StylizedFresnelNoiseMap",
+        "resource": "ResourceId::56396",
+        "path": "Assets/_Games/ZMD/A002/11_Coat_Fresnel_Parallax/tex_56396.png",
+        "guid": "d590d1dc8964eb742ae13e4626af70fe"
+      }
+    ]
+  },
+  {
+    "eid": 1154,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group2146304.mat",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_02_D.png",
+        "guid": "344c3072484cb48428a97a078ef738c3",
+        "note": "用户现有底色绑定：撤回擅自替换，保留用户之后的修改。"
+      },
+      {
+        "property": "_BumpMap",
+        "resource": "ResourceId::56826",
+        "path": "Assets/_Games/ZMD/A002/03_Normal/Converted_RGB/tex_56826_normal.png",
+        "guid": "b8c8cd5d2d4c1114cb32eab934e50719"
+      },
+      {
+        "property": "_MetallicGlossMap",
+        "resource": "ResourceId::56886",
+        "path": "Assets/_Games/ZMD/A002/02_Packed_P/tex_56886.png",
+        "guid": "9ec3a6bb6b048c743b7b663031b3dc1b"
+      },
+      {
+        "property": "_DiffRampMap",
+        "resource": "ResourceId::22374",
+        "path": "Assets/_Games/ZMD/A002/04_Ramp_Diffuse/tex_22374.png",
+        "guid": "2299a7fb9818f6f4a8a318ce84f9d175"
+      },
+      {
+        "property": "_SpecRampMap",
+        "resource": "ResourceId::22377",
+        "path": "Assets/_Games/ZMD/A002/05_Ramp_Specular/tex_22377.png",
+        "guid": "53acdefad989eab48ae956a9596ec923"
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_ClearCoatMask",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_StylizedFresnelNoiseMap",
+        "resource": null,
+        "path": null,
+        "guid": null
+      }
+    ]
+  },
+  {
+    "eid": 1236,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group2152448.mat",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_01_D.png",
+        "guid": "6f93e849cbbb944418adb22531d715fd",
+        "note": "用户现有底色绑定：撤回擅自替换，保留用户之后的修改。"
+      },
+      {
+        "property": "_BumpMap",
+        "resource": "ResourceId::56836",
+        "path": "Assets/_Games/ZMD/A002/03_Normal/Converted_RGB/tex_56836_normal.png",
+        "guid": "95a0faedfacf40d40b1ed9b32e91e47e"
+      },
+      {
+        "property": "_MetallicGlossMap",
+        "resource": "ResourceId::56875",
+        "path": "Assets/_Games/ZMD/A002/02_Packed_P/tex_56875.png",
+        "guid": "67ca13819c18efa49b5e7e871d45d5f2"
+      },
+      {
+        "property": "_DiffRampMap",
+        "resource": "ResourceId::22374",
+        "path": "Assets/_Games/ZMD/A002/04_Ramp_Diffuse/tex_22374.png",
+        "guid": "2299a7fb9818f6f4a8a318ce84f9d175"
+      },
+      {
+        "property": "_SpecRampMap",
+        "resource": "ResourceId::22377",
+        "path": "Assets/_Games/ZMD/A002/05_Ramp_Specular/tex_22377.png",
+        "guid": "53acdefad989eab48ae956a9596ec923"
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_ClearCoatMask",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_StylizedFresnelNoiseMap",
+        "resource": null,
+        "path": null,
+        "guid": null
+      }
+    ]
+  },
+  {
+    "eid": 1797,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group2160384.mat",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_06_D.png",
+        "guid": "32386534b7468e24b8df8b10379a1908",
+        "note": "用户现有底色绑定：撤回擅自替换，保留用户之后的修改。"
+      },
+      {
+        "property": "_BumpMap",
+        "resource": "ResourceId::56635",
+        "path": "Assets/_Games/ZMD/A002/03_Normal/Converted_RGB/tex_56635_normal.png",
+        "guid": "cea099206c89c2e4eb9a88082724c087"
+      },
+      {
+        "property": "_MetallicGlossMap",
+        "resource": "ResourceId::56770",
+        "path": "Assets/_Games/ZMD/A002/02_Packed_P/tex_56770.png",
+        "guid": "c126a1a6bf8c62542860cb03e05045c9"
+      },
+      {
+        "property": "_DiffRampMap",
+        "resource": "ResourceId::22374",
+        "path": "Assets/_Games/ZMD/A002/04_Ramp_Diffuse/tex_22374.png",
+        "guid": "2299a7fb9818f6f4a8a318ce84f9d175"
+      },
+      {
+        "property": "_SpecRampMap",
+        "resource": "ResourceId::37040",
+        "path": "Assets/_Games/ZMD/A002/05_Ramp_Specular/tex_37040.png",
+        "guid": "02b6b5d7c36c5524da2ecb4819837b23"
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": "ResourceId::45992",
+        "path": "Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45992.png",
+        "guid": "64356fafad44c8542ab45421a32c8d31"
+      },
+      {
+        "property": "_ClearCoatMask",
+        "resource": "ResourceId::66",
+        "path": "Assets/_Games/ZMD/A002/13_Defaults/tex_66.png",
+        "guid": "05595afdcc17d7d46b54f6f9e349889f"
+      },
+      {
+        "property": "_StylizedFresnelNoiseMap",
+        "resource": "ResourceId::66",
+        "path": "Assets/_Games/ZMD/A002/13_Defaults/tex_66.png",
+        "guid": "05595afdcc17d7d46b54f6f9e349889f"
+      }
+    ]
+  },
+  {
+    "eid": 1173,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group2173440.mat",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_06_D.png",
+        "guid": "32386534b7468e24b8df8b10379a1908",
+        "note": "用户现有底色绑定：撤回擅自替换，保留用户之后的修改。"
+      },
+      {
+        "property": "_BumpMap",
+        "resource": "ResourceId::56635",
+        "path": "Assets/_Games/ZMD/A002/03_Normal/Converted_RGB/tex_56635_normal.png",
+        "guid": "cea099206c89c2e4eb9a88082724c087"
+      },
+      {
+        "property": "_MetallicGlossMap",
+        "resource": "ResourceId::56770",
+        "path": "Assets/_Games/ZMD/A002/02_Packed_P/tex_56770.png",
+        "guid": "c126a1a6bf8c62542860cb03e05045c9"
+      },
+      {
+        "property": "_DiffRampMap",
+        "resource": "ResourceId::22374",
+        "path": "Assets/_Games/ZMD/A002/04_Ramp_Diffuse/tex_22374.png",
+        "guid": "2299a7fb9818f6f4a8a318ce84f9d175"
+      },
+      {
+        "property": "_SpecRampMap",
+        "resource": "ResourceId::34911",
+        "path": "Assets/_Games/ZMD/A002/05_Ramp_Specular/tex_34911.png",
+        "guid": "6bb0dcacf6063c54c8548552fe6d98ab"
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_ClearCoatMask",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_StylizedFresnelNoiseMap",
+        "resource": null,
+        "path": null,
+        "guid": null
+      }
+    ]
+  },
+  {
+    "eid": 1257,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group2176512.mat",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A002/01_BaseColor/tex_56856.dds",
+        "guid": "3f37596fbd1518e4d84ffc9c6d1a88c6",
+        "note": "用户现有底色绑定：撤回擅自替换，保留用户之后的修改。"
+      },
+      {
+        "property": "_BumpMap",
+        "resource": "ResourceId::56826",
+        "path": "Assets/_Games/ZMD/A002/03_Normal/Converted_RGB/tex_56826_normal.png",
+        "guid": "b8c8cd5d2d4c1114cb32eab934e50719"
+      },
+      {
+        "property": "_MetallicGlossMap",
+        "resource": "ResourceId::56886",
+        "path": "Assets/_Games/ZMD/A002/02_Packed_P/tex_56886.png",
+        "guid": "9ec3a6bb6b048c743b7b663031b3dc1b"
+      },
+      {
+        "property": "_DiffRampMap",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_SpecRampMap",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_ClearCoatMask",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_StylizedFresnelNoiseMap",
+        "resource": null,
+        "path": null,
+        "guid": null
+      }
+    ]
+  },
+  {
+    "eid": 1300,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group2180096.mat",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_01_D.png",
+        "guid": "6f93e849cbbb944418adb22531d715fd",
+        "note": "用户现有底色绑定：撤回擅自替换，保留用户之后的修改。"
+      },
+      {
+        "property": "_BumpMap",
+        "resource": "ResourceId::56836",
+        "path": "Assets/_Games/ZMD/A002/03_Normal/Converted_RGB/tex_56836_normal.png",
+        "guid": "95a0faedfacf40d40b1ed9b32e91e47e"
+      },
+      {
+        "property": "_MetallicGlossMap",
+        "resource": "ResourceId::56875",
+        "path": "Assets/_Games/ZMD/A002/02_Packed_P/tex_56875.png",
+        "guid": "67ca13819c18efa49b5e7e871d45d5f2"
+      },
+      {
+        "property": "_DiffRampMap",
+        "resource": "ResourceId::22374",
+        "path": "Assets/_Games/ZMD/A002/04_Ramp_Diffuse/tex_22374.png",
+        "guid": "2299a7fb9818f6f4a8a318ce84f9d175"
+      },
+      {
+        "property": "_SpecRampMap",
+        "resource": "ResourceId::22377",
+        "path": "Assets/_Games/ZMD/A002/05_Ramp_Specular/tex_22377.png",
+        "guid": "53acdefad989eab48ae956a9596ec923"
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_ClearCoatMask",
+        "resource": null,
+        "path": null,
+        "guid": null
+      },
+      {
+        "property": "_StylizedFresnelNoiseMap",
+        "resource": null,
+        "path": null,
+        "guid": null
+      }
+    ]
+  },
+  {
+    "eid": 1088,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group2187776.mat",
+    "note": "补齐 LUT 绑定；保留原有底色与直接光开关。此记录只列这次复核的两个槽。",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_body_01_D.png",
+        "guid": "eaa2be21e03664a4cb95191bec452d6a"
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": "ResourceId::45781",
+        "path": "Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45781.png",
+        "guid": "8d132e7bd7f883049b8d7f6917b12165"
+      }
+    ],
+    "useShadowLut": true,
+    "useEndfieldDiffuse": true
+  },
+  {
+    "eid": 1195,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group2167296.mat",
+    "note": "补齐 LUT 绑定；保留原有底色与直接光开关。此记录只列这次复核的两个槽。",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_face_01_D.png",
+        "guid": "8288f0ab6af3d7e4f9fcc4cc325c1c20"
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": "ResourceId::45781",
+        "path": "Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45781.png",
+        "guid": "8d132e7bd7f883049b8d7f6917b12165"
+      }
+    ],
+    "useShadowLut": true,
+    "useEndfieldDiffuse": true
+  },
+  {
+    "eid": 1110,
+    "material": "D:/TA/Unity/New2026/TA2026/Assets/_Games/ZMD/RuntimeV6/RuntimeV6/Materials/Group2185728.mat",
+    "note": "补齐 LUT 绑定；保留原有底色与直接光开关。此记录只列这次复核的两个槽。",
+    "textures": [
+      {
+        "property": "_BaseMap",
+        "resource": null,
+        "path": "Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_face_01_D.png",
+        "guid": "8288f0ab6af3d7e4f9fcc4cc325c1c20"
+      },
+      {
+        "property": "_ShadowLutTex",
+        "resource": "ResourceId::34026",
+        "path": "Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_34026.png",
+        "guid": "82bcd382b6e41a540b6eebc3e9fcf0fe"
+      }
+    ],
+    "useShadowLut": true,
+    "useEndfieldDiffuse": false
+  }
+]

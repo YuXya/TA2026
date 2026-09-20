@@ -1,0 +1,178 @@
+{
+  "parameters": [
+    {
+      "name": "_FR_TAA_TAAUConstants_TAAUParams1",
+      "values": [
+        2000.0,
+        0.00019999999494757503,
+        0.30000001192092896,
+        0.0
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 16
+    },
+    {
+      "name": "_FR_TAA_TAAUConstants_TAAUParams6",
+      "values": [
+        3840.0,
+        2160.0,
+        0.0002604166802484542,
+        0.00046296295477077365
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 96
+    },
+    {
+      "name": "_FR_TAA_TaaFrameInfo",
+      "values": [
+        0.0,
+        0.5625,
+        7.0,
+        1.0
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 0,
+      "offset": 288
+    },
+    {
+      "name": "_FR_TAA_TaaJitterStrength",
+      "values": [
+        -0.4375,
+        0.3888888955116272,
+        -0.00011393229215173051,
+        0.00018004115554504097
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 0,
+      "offset": 304
+    },
+    {
+      "name": "_FR_TAA_GlobalMipBias",
+      "values": [
+        -1.0
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 0,
+      "offset": 416
+    },
+    {
+      "name": "_FR_TAA_TAAUConstants_TAAUParams0",
+      "values": [
+        1.0,
+        1.0,
+        0.949999988079071,
+        0.8500000238418579
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 0
+    },
+    {
+      "name": "_FR_TAA_TAAUConstants_TAAUParams2",
+      "values": [
+        0.0,
+        0.8999999761581421,
+        0.0,
+        0.0
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 32
+    },
+    {
+      "name": "_FR_TAA_TAAUConstants_TAAUParams3",
+      "values": [
+        0.8999999761581421,
+        0.0,
+        0.10000000149011612,
+        0.10000000149011612
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 48
+    },
+    {
+      "name": "_FR_TAA_TAAUConstants_TAAUParams4",
+      "values": [
+        0.4000000059604645,
+        9.999999747378752e-06,
+        4.999999873689376e-05,
+        1.0
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 64
+    },
+    {
+      "name": "_FR_TAA_TAAUConstants_TAAUParams5",
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 80
+    },
+    {
+      "name": "_FR_TAA_TAAUConstants_TAAUParams7",
+      "values": [
+        3840.0,
+        2160.0,
+        0.0002604166802484542,
+        0.00046296295477077365
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 112
+    },
+    {
+      "name": "_FR_TAA_TAAUConstants_TAAUParams8",
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "array": false,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 128
+    },
+    {
+      "name": "_FR_TAA_TAAUConstants_Kernel3x3Weight",
+      "values": [
+        0.07511361688375473,
+        0.12384141236543655,
+        0.07511361688375473,
+        0.12384141236543655,
+        0.20417995750904083,
+        0.12384141236543655,
+        0.07511361688375473,
+        0.12384141236543655,
+        0.07511361688375473,
+        0.0,
+        1.7764260632245706e-40,
+        0.0
+      ],
+      "array": true,
+      "eid": 1969,
+      "buffer": 1,
+      "offset": 144
+    }
+  ]
+}

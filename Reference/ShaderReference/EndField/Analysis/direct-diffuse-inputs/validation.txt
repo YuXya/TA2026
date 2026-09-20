@@ -1,0 +1,17 @@
+PASS
+Unity 2022.3.62f3; Direct3D11; shaders compiled.
+GPU contracts passed: diffuse energy, metal, AO blend, LUT identity, coat mask, no-Ramp branch.
+2146304 _MetallicGlossMap = Assets/_Games/ZMD/A002/02_Packed_P/tex_56886.png
+2173440 _MetallicGlossMap = Assets/_Games/ZMD/A002/02_Packed_P/tex_56770.png
+2152448 _MetallicGlossMap = Assets/_Games/ZMD/A002/02_Packed_P/tex_56875.png
+2176512 _MetallicGlossMap = Assets/_Games/ZMD/A002/02_Packed_P/tex_56886.png
+1604352 _MetallicGlossMap = Assets/_Games/ZMD/A002/02_Packed_P/tex_56886.png
+1604352 _StylizedFresnelNoiseMap = Assets/_Games/ZMD/A002/11_Coat_Fresnel_Parallax/tex_56396.png
+1604352 _ClearCoatMask = Assets/_Games/ZMD/A002/11_Coat_Fresnel_Parallax/tex_56396.png
+1604352 _SpecRampMap = Assets/_Games/ZMD/A002/05_Ramp_Specular/tex_34911.png
+2180096 _MetallicGlossMap = Assets/_Games/ZMD/A002/02_Packed_P/tex_56875.png
+2160384 _MetallicGlossMap = Assets/_Games/ZMD/A002/02_Packed_P/tex_56770.png
+2160384 _ShadowLutTex = Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45992.png
+2160384 _StylizedFresnelNoiseMap = Assets/_Games/ZMD/A002/13_Defaults/tex_66.png
+2160384 _ClearCoatMask = Assets/_Games/ZMD/A002/13_Defaults/tex_66.png
+2160384 _SpecRampMap = Assets/_Games/ZMD/A002/05_Ramp_Specular/tex_37040.png

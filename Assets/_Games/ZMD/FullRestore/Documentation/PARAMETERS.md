@@ -1,6 +1,16 @@
 # 参数与阅读顺序
 
-## 先读四类光照
+## 先选部位，再读四类光照
+
+学习衣料从 `Body.shader` 的 Properties 和 `BodySurface.hlsl` 开始，不需要打开脸、头发、眼睛的入口。皮肤、头发、眼睛分别从同名的 `SkinSurface.hlsl`、`HairSurface.hlsl`、`EyeSurface.hlsl` 进入。
+
+- `_FaceFeatures`：皮肤入口中的脸部专属功能，身体为 0，1195／1214 为 1。
+- `_EyeLayer`：0 是眼部外层 b32；1 是虹膜 b28 的视差、曲面法线与 Matcap。
+- `_HairLayer`：保持原不透明／透明层参数和不同渲染状态。
+- `_FR_CameraUnlit`：Unity Scene Lighting 关闭时的相机显示覆盖，每相机重绑；不是原版材质参数。
+
+`SurfaceInputs.hlsl` 的统一常量缓冲是 GPU 参数传输布局；材质公开接口以各自 Shader 的 Properties 为准。
+
 
 1. `Shaders/SurfaceInputs.hlsl`：`FR_Surface` 所需的输入来自哪些贴图，BC5 法线如何进入世界空间，皮肤／头发的 P 图为何不能当普通金属度图读取。
 2. `Shaders/SharedLighting.hlsl`：`FR_LightingContext`、`EndfieldMainLight` 和环境结构；S、G、E 是三个不同输入。
@@ -8,7 +18,7 @@
 4. `Shaders/DirectSpecular.hlsl`：完整半角向量、原版分布函数、F0、SpecRamp、清漆。不要把 S=1 代入展开，也不要把漫反射重映射后的 NdotL 当高光角度。
 5. `Shaders/IndirectDiffuse.hlsl`：固定环境／Irradiance Volume、SH、方向整形、E。漫反射的直接／间接配色原本交织在一起，最后的两项输出在 `DirectDiffuse.hlsl` 的组合函数中形成。
 6. `Shaders/IndirectSpecular.hlsl`：原版环境 BRDF 近似、有理函数能量补偿、反射 Cubemap 的 mip、清漆反射。
-7. `Shaders/Composition.hlsl`、`Passes.hlsl`：额外灯、混色灯、饱和度和最终组合顺序。混色灯会改变之前累计的反射和自发光，不能强拆成四个独立相加的光源。
+7. `Shaders/Composition.hlsl`、各部位入口：额外灯、混色灯、饱和度和最终组合顺序。混色灯会改变之前累计的反射和自发光，不能强拆成四个独立相加的光源。
 8. `SkinFace.hlsl`、`Hair.hlsl`、`Eyes.hlsl`：在看懂普通材质后阅读部位差异。
 9. `DepthOfField.shader`、`TemporalAntiAliasing.hlsl`、`PostProcessing.hlsl`：在线性着色已经对齐后再读景深、时序抗锯齿与最终颜色处理。
 

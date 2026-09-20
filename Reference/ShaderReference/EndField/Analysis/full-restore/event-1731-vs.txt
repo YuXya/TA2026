@@ -1,0 +1,109 @@
+Shader hash 7651d6b8-591ffbab-f417f33b-01ed5e73
+
+vs_5_0
+      dcl_globalFlags refactoringAllowed
+      dcl_constantbuffer cb0[45], immediateIndexed
+      dcl_constantbuffer cb1[20], immediateIndexed
+      dcl_constantbuffer cb2[4086], dynamicIndexed
+      dcl_constantbuffer cb3[1], immediateIndexed
+      dcl_constantbuffer cb4[4], immediateIndexed
+      dcl_resource_structured t0, 16
+      dcl_input v0.xyz
+      dcl_input v1.xy
+      dcl_input v2.xyzw
+      dcl_input v3.xyzw
+      dcl_input_sgv v4.x, instanceid
+      dcl_output o0.xy
+      dcl_output o1.xyz
+      dcl_output o2.x
+      dcl_output_siv o3.xyzw, position
+      dcl_temps 8
+   0: ishl r0.x, v4.x, l(4)
+   1: and r0.yz, l(0, 32, -49, 0), cb2[r0.x + 4].wwww
+   2: ieq r0.yw, r0.yyyz, l(0, 0, 0, 0)
+   3: or r0.y, r0.w, r0.y
+   4: if_z r0.y
+   5:   iadd r0.y, l(3), cb2[r0.x + 5].x
+   6:   imad r1.xyzw, v3.xyzw, l(3, 3, 3, 3), r0.yyyy
+   7:   iadd r0.yw, r1.xxxx, l(0, 1, 0, 2)
+   8:   uge r2.xy, r0.zzzz, l(2, 4, 0, 0)
+   9:   if_nz r2.x
+  10:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r3.xyzw, r0.w, l(0), t0.xyzw
+  11:     iadd r2.xz, r1.yyyy, l(2, 0, 1, 0)
+  12:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r4.xyzw, r2.x, l(0), t0.xyzw
+  13:     mul r4.xyzw, r4.xyzw, v2.yyyy
+  14:     mad r3.xyzw, r3.xyzw, v2.xxxx, r4.xyzw
+  15:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r4.xyzw, r0.y, l(0), t0.xyzw
+  16:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r5.xyzw, r2.z, l(0), t0.xyzw
+  17:     mul r5.xyzw, r5.xyzw, v2.yyyy
+  18:     mad r4.xyzw, r4.xyzw, v2.xxxx, r5.xyzw
+  19:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r5.xyzw, r1.x, l(0), t0.xyzw
+  20:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r6.xyzw, r1.y, l(0), t0.xyzw
+  21:     mul r6.xyzw, r6.xyzw, v2.yyyy
+  22:     mad r5.xyzw, r5.xyzw, v2.xxxx, r6.xyzw
+  23:   else
+  24:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r3.xyzw, r0.w, l(0), t0.xyzw
+  25:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r4.xyzw, r0.y, l(0), t0.xyzw
+  26:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r5.xyzw, r1.x, l(0), t0.xyzw
+  27:   endif
+  28:   if_nz r2.y
+  29:     iadd r2.xyzw, r1.zwzw, l(2, 2, 1, 1)
+  30:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r6.xyzw, r2.x, l(0), t0.xyzw
+  31:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r7.xyzw, r2.y, l(0), t0.xyzw
+  32:     mul r7.xyzw, r7.xyzw, v2.wwww
+  33:     mad r6.xyzw, r6.xyzw, v2.zzzz, r7.xyzw
+  34:     add r3.xyzw, r3.xyzw, r6.xyzw
+  35:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r6.xyzw, r2.z, l(0), t0.xyzw
+  36:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r2.xyzw, r2.w, l(0), t0.xyzw
+  37:     mul r2.xyzw, r2.xyzw, v2.wwww
+  38:     mad r2.xyzw, r6.xyzw, v2.zzzz, r2.xyzw
+  39:     add r4.xyzw, r2.xyzw, r4.xyzw
+  40:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r2.xyzw, r1.z, l(0), t0.xyzw
+  41:     ld_structured_indexable(structured_buffer, stride=16)(mixed,mixed,mixed,mixed) r1.xyzw, r1.w, l(0), t0.xyzw
+  42:     mul r1.xyzw, r1.xyzw, v2.wwww
+  43:     mad r1.xyzw, r2.xyzw, v2.zzzz, r1.xyzw
+  44:     add r5.xyzw, r1.xyzw, r5.xyzw
+  45:   endif
+  46:   mov r1.xyz, v0.xyzx
+  47:   mov r1.w, l(1.000000)
+  48:   dp4 r0.y, r5.xyzw, r1.xyzw
+  49:   dp4 r0.z, r4.xyzw, r1.xyzw
+  50:   dp4 r0.w, r3.xyzw, r1.xyzw
+  51: else
+  52:   mov r0.yzw, v0.xxyz
+  53: endif
+  54: mul r1.xyz, r0.zzzz, cb2[r0.x + 1].xyzx
+  55: mad r1.xyz, cb2[r0.x + 0].xyzx, r0.yyyy, r1.xyzx
+  56: mad r0.yzw, cb2[r0.x + 2].xxyz, r0.wwww, r1.xxyz
+  57: add r1.xyz, -cb0[44].xyzx, cb2[r0.x + 3].xyzx
+  58: add r0.xyz, r0.yzwy, r1.xyzx
+  59: mul r1.xyz, r0.yyyy, cb0[1].xyzx
+  60: mad r1.xyz, cb0[0].xyzx, r0.xxxx, r1.xyzx
+  61: mad r1.xyz, cb0[2].xyzx, r0.zzzz, r1.xyzx
+  62: mad r2.x, -cb3[0].x, cb4[0].y, r1.x
+  63: mov r3.x, cb0[8].x
+  64: mov r3.y, cb0[10].x
+  65: mov r3.z, cb0[11].x
+  66: mov r2.yz, r1.yyzy
+  67: mov r2.w, l(1.000000)
+  68: dp3 r3.x, r3.xyzx, r2.xzwx
+  69: mov r4.x, cb0[9].y
+  70: mov r4.y, cb0[10].y
+  71: mov r4.z, cb0[11].y
+  72: mov r1.w, l(1.000000)
+  73: dp3 r3.y, r4.xyzx, r1.yzwy
+  74: mov r1.x, cb0[8].z
+  75: mov r1.y, cb0[9].z
+  76: mov r1.z, cb0[10].z
+  77: mov r1.w, cb0[11].z
+  78: dp4 o3.z, r1.xyzw, r2.xyzw
+  79: mov r1.x, cb0[10].w
+  80: mov r1.y, cb0[11].w
+  81: dp2 r0.w, r1.xyxx, r2.zwzz
+  82: mul r1.xy, r0.wwww, cb1[19].zwzz
+  83: mad o3.xy, r1.xyxx, l(2.000000, -2.000000, 0.000000, 0.000000), r3.xyxx
+  84: mad o0.xy, v1.xyxx, cb4[3].xyxx, cb4[3].zwzz
+  85: add o1.xyz, r0.xyzx, cb0[44].xyzx
+  86: mov o3.w, r0.w
+  87: mov o2.x, l(0)
+  88: ret

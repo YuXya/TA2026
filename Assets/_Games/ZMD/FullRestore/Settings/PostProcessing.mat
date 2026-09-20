@@ -33,9 +33,9 @@ Material:
     - _FR_Post_BloomParams: {r: 0.36604023, g: 0, b: 0, a: 0}
     - _FR_Post_BloomThreshold: {r: 0.5225216, g: 0.2612508, b: 0.52254164, a: 0.95686156}
     - _FR_Post_BloomTint: {r: 0.9999999, g: 0.9999999, b: 0.9999999, a: 0.9999999}
-    - _FR_Post_ExposureWithMiscParams: {r: 1, g: 1, b: 1.7777778, a: 0.1002004}
+    - _FR_Post_ExposureWithMiscParams: {r: 1, g: 1, b: 0.5625, a: 0.1002004}
     - _FR_Post_Lut_Params: {r: 0.0009765625, g: 0.03125, b: 31, a: 1}
-    - _FR_Post_ScreenSize: {r: 1280, g: 720, b: 0.00078125, a: 0.0013888889}
+    - _FR_Post_ScreenSize: {r: 1080, g: 1920, b: 0.0009259259, a: 0.00052083336}
     - _FR_Post_SharpenStrengthAndPadding: {r: 0.3, g: 0, b: 0, a: 0}
     - _FR_Post_VignetteColor: {r: 0.06666667, g: 0.067174576, b: 0.07450981, a: 1}
     - _FR_Post_VignetteParams1: {r: 0.5, g: 0.5, b: 0, a: 0}

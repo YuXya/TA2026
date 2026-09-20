@@ -183,13 +183,19 @@ EndfieldLightContribution CalculateEndfieldAdditionalLight(EndfieldPunctualLight
     if (style == 0)
     {
         float3 attenuatedColor = color * attenuation;
-        float skinFactor=(_Part>0.5 && _Part<2.5)?0.5:0.25;
+        #if defined(FR_MATERIAL_SKIN)
+        float skinFactor=0.5;
+        #else
+        float skinFactor=0.25;
+        #endif
         float3 attenuationNormal=N;
-        if(_Part>1.5 && _Part<2.5 && !outline)
+        #if defined(FR_MATERIAL_SKIN)
+        if(_FaceFeatures>0.5 && !outline)
         {
             float3 radial=positionWS-float3(_HeadRow0.w,0,_HeadRow2.w);radial.y=6.103515625e-5;
             attenuationNormal=normalize(lerp(normalize(radial),N,surface.partMask.g));
         }
+        #endif
         color *= ((1.0 - light.custom.y) + (1.0 / max(1.0,
             max(max(attenuatedColor.r, attenuatedColor.g), attenuatedColor.b) * lerp(0.75, 0.5, 1.0 - S))) * light.custom.y)
             * lerp(skinFactor * light.custom.x, 1.0, saturate(dot(attenuationNormal,L) + 0.5));
@@ -197,8 +203,11 @@ EndfieldLightContribution CalculateEndfieldAdditionalLight(EndfieldPunctualLight
     }
     else if (style == 3)
     {
-        float rimMask=(_Part>2.5 && _Part<3.5)?FR_HairDepthRim(surface,context,light.custom.x)
-            :smoothstep(lerp(0.8, 0.2, light.custom.x), lerp(0.9, 0.5, light.custom.x), 1.0 - abs(dot(V, N)));
+        #if defined(FR_MATERIAL_HAIR)
+        float rimMask=FR_HairDepthRim(surface,context,light.custom.x);
+        #else
+        float rimMask=smoothstep(lerp(0.8, 0.2, light.custom.x), lerp(0.9, 0.5, light.custom.x), 1.0 - abs(dot(V, N)));
+        #endif
         attenuation *= rimMask * shadow;
         nl = saturate(dot(N, -SafeNormalize(cross(C, cross(C, L)))));
         bright = lerp(0.5.xxx, mainDiffuse.brightDiffuse, light.custom.y);
@@ -220,8 +229,11 @@ EndfieldLightContribution CalculateEndfieldAdditionalLight(EndfieldPunctualLight
         specular = CalculateEndfieldAdditionalSpecular(surface.normalWS, coatN, V, L,
             max(perceptualRoughness * perceptualRoughness, 0.0078125), roughnessOverride,
             F0, coatMask, coatAlpha, coatF0) * specularMask * light.options.y;
-    if(_Part>2.5 && _Part<3.5 && style!=3 && !outline) specular=FR_HairAdditionalSpecular(surface,context,L)*light.options.y;
-    if(_Part>3.5) specular=0;
+    #if defined(FR_MATERIAL_HAIR)
+    if(style!=3 && !outline) specular=FR_HairAdditionalSpecular(surface,context,L)*light.options.y;
+    #elif defined(FR_MATERIAL_EYE)
+    specular=0;
+    #endif
     float3 colorAttenuation = color * attenuation;
     result.diffuse = colorAttenuation * lerp(dark, bright, nl) * alphaPremultiply;
     result.specular = colorAttenuation * specular * nl;

@@ -5,7 +5,7 @@
 void FR_PrepareEye(inout FR_Surface s,FR_LightingContext c,Varyings input)
 {
     s.metallic=_Metallic;s.ao=1.0;
-    if(_Part<4.5) return;
+    if(_EyeLayer<0.5) return;
     float2 circle=frac(s.uv)-0.5;
     float radius2=dot(circle,circle);
     float outer=step(0.25,radius2);
@@ -30,7 +30,7 @@ EndfieldDirectDiffuseResult FR_EyeDiffuse(FR_Surface s,FR_LightingContext c)
 {
     float3 bright=s.baseColor*(0.96*(1.0-s.metallic));
     float3 L=c.main.direction;
-    if(_Part>4.5)
+    if(_EyeLayer>0.5)
     {
         float3 localLight=normalize(mul(L,FR_HeadFrame()));localLight.y=0.0;
         L=normalize(mul(FR_HeadFrame(),localLight));

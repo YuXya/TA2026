@@ -1,0 +1,65 @@
+[
+  {
+    "eid": 1390,
+    "vertices": 917,
+    "mean_pixel_error": 8.269563845725987e-05,
+    "max_pixel_error": 0.007603454621926123,
+    "p99_pixel_error": 0.0007599432514661953
+  },
+  {
+    "eid": 1409,
+    "vertices": 10568,
+    "mean_pixel_error": 8.230662135125607e-05,
+    "max_pixel_error": 0.020389301582178724,
+    "p99_pixel_error": 0.0007237293906597783
+  },
+  {
+    "eid": 1427,
+    "vertices": 5239,
+    "mean_pixel_error": 3.135995495063492e-05,
+    "max_pixel_error": 0.0015330934852213684,
+    "p99_pixel_error": 0.00032766603709336424
+  },
+  {
+    "eid": 1448,
+    "vertices": 2109,
+    "mean_pixel_error": 6.146924802788494e-05,
+    "max_pixel_error": 0.002448743729470936,
+    "p99_pixel_error": 0.0005222631645087536
+  },
+  {
+    "eid": 1467,
+    "vertices": 140,
+    "mean_pixel_error": 8.298275998195932e-06,
+    "max_pixel_error": 4.610621529586339e-05,
+    "p99_pixel_error": 3.590641774097058e-05
+  },
+  {
+    "eid": 1488,
+    "vertices": 23758,
+    "mean_pixel_error": 7.70520136866057e-05,
+    "max_pixel_error": 0.010101642578452764,
+    "p99_pixel_error": 0.0008216277289863513
+  },
+  {
+    "eid": 1510,
+    "vertices": 114,
+    "mean_pixel_error": 5.1774341300728486e-05,
+    "max_pixel_error": 0.0002736468588313143,
+    "p99_pixel_error": 0.0002618913391211939
+  },
+  {
+    "eid": 1531,
+    "vertices": 15306,
+    "mean_pixel_error": 0.00011279610984243083,
+    "max_pixel_error": 0.014974823911520644,
+    "p99_pixel_error": 0.0014957350500331452
+  },
+  {
+    "eid": 1706,
+    "vertices": 15306,
+    "mean_pixel_error": 0.00011279610984243083,
+    "max_pixel_error": 0.014974823911520644,
+    "p99_pixel_error": 0.0014957350500331452
+  }
+]

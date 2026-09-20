@@ -1,0 +1,14 @@
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2149376.mat SHA256=f47d89402a9376fce0227ccb92d0e586ddb318340cec62a7ef8acc6e337cc7d0
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2167296.mat SHA256=3f16e1fc66bea466617636eb2e5113c37d21fcd13fe8d0b31538e84b5903f8be
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2185728.mat SHA256=3d0440c2db90ac4ae5629a147dc06ebd1717120b8d560d80745da7698a07a982
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2180096.mat SHA256=2cd364fefa3a622766b1a1a4fcb1ab203ed6f24fe5e570d44188ceeb698f41d3
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2146304.mat SHA256=ea5b4a6b7d6a1d7b0a454ef3f6557e7d660b24c6be1741b06c19468cbb28e384
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2187776.mat SHA256=c21c1825b1338ff18052814c4b0d751a4c11d3dfde6d5596a670d4b15cdbd4f8
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2183680.mat SHA256=7e588a9cc46117c6997924f763abebea95320764a2739b0343f9243e095bcc64
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2173440.mat SHA256=c041001dd26a74dfbf1e27087af29f0d1db2580648e0acbbcfe43502053052c7
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2152448.mat SHA256=2e13187f935851cb73b3625e21782059c01fd2d0b0584799f8f9ce11159a8a7a
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2155520.mat SHA256=f5e8af34841bf143d094099ec263cf26f3e7c71f6549438063ef906fea1060d8
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group1604352.mat SHA256=6f2270249d56b6711df15ce9f1b1cbb28f9177ac83bf63e9cba598e2718a3857
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2160384.mat SHA256=8a8c33a55bcaf0cae53e6ac8a265b681474d39c6dfffe1b0b3c3bf7548d43034
+PASS unchanged D:\TA\Unity\New2026\TA2026\Assets\_Games\ZMD\RuntimeV6\RuntimeV6\Materials\Group2176512.mat SHA256=d3a6cb000e2abc8b1eccd0ce46901a2a098d04fb42664f040409ae1f7d552732
+13 material files byte-for-byte unchanged; no texture bindings rewritten in this change.

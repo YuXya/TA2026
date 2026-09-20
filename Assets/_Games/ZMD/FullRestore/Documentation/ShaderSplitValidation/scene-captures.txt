@@ -1,0 +1,17 @@
+scene-before GPU 1280x874 invalid=0 max=0.9921875
+scene-after GPU 1280x874 invalid=0 max=1.000977
+scene-post-off GPU 1280x874 invalid=0 max=16.4375
+scene-lighting-off GPU 1280x874 invalid=0 max=0.9453125
+scene-orthographic GPU 1280x874 invalid=0 max=1.000977
+scene-orbit GPU 1280x874 invalid=0 max=1.000977
+scene-resize GPU 960x694 invalid=0 max=1.000977
+scene-view-1 GPU 960x694 invalid=0 max=7.601563
+scene-view-2 GPU 960x694 invalid=0 max=15.57813
+scene-view-3 GPU 960x694 invalid=0 max=0.7807617
+scene-view-4 GPU 960x694 invalid=0 max=2.521484
+scene-view-5 GPU 960x694 invalid=0 max=0.7807617
+scene-view-6 GPU 960x694 invalid=0 max=0.953125
+scene-view-7 GPU 960x694 invalid=0 max=0.9995117
+scene-view-8 GPU 960x694 invalid=0 max=1
+scene-restored GPU 1280x874 invalid=0 max=1.000977
+scene-with-game GPU 1280x874 invalid=0 max=1.000977

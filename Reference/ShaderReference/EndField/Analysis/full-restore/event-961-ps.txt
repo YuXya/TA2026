@@ -1,0 +1,56 @@
+Shader hash ac18a51d-a50b2520-81d164ce-30e429b2
+
+ps_5_0
+      dcl_globalFlags refactoringAllowed
+      dcl_constantbuffer cb0[1], immediateIndexed
+      dcl_resource_texture2d (float,float,float,float) t0
+      dcl_input_ps_siv linear noperspective v0.xy, position
+      dcl_output o0.xyzw
+      dcl_temps 5
+   0: mov r0.zw, l(0, 0, 0, 0)
+   1: ftoi r1.xyzw, v0.xyxy
+   2: iadd r2.xyzw, r1.zwzw, l(-3, 0, -2, 0)
+   3: itof r2.xyzw, r2.xyzw
+   4: max r2.xyzw, r2.xyzw, l(0, 0, 0, 0)
+   5: add r3.xyzw, l(-1.000000, -1.000000, -1.000000, -1.000000), cb0[0].zwzw
+   6: min r2.xyzw, r2.xyzw, r3.xyzw
+   7: ftou r2.xyzw, r2.xyzw
+   8: mov r0.xy, r2.zwzz
+   9: ld_indexable(texture2d)(float,float,float,float) r0.x, r0.xyzw, t0.xyzw
+  10: mul r0.x, r0.x, l(0.142857)
+  11: mov r2.zw, l(0, 0, 0, 0)
+  12: ld_indexable(texture2d)(float,float,float,float) r0.y, r2.xyzw, t0.yxzw
+  13: mad r0.x, r0.y, l(0.142857), r0.x
+  14: iadd r2.xyzw, r1.zwzw, l(-1, 0, 1, 0)
+  15: iadd r1.xyzw, r1.xyzw, l(2, 0, 3, 0)
+  16: itof r1.xyzw, r1.xyzw
+  17: max r1.xyzw, r1.xyzw, l(0, 0, 0, 0)
+  18: min r1.xyzw, r3.xyzw, r1.xyzw
+  19: ftou r1.xyzw, r1.zwxy
+  20: itof r2.xyzw, r2.xyzw
+  21: max r2.xyzw, r2.xyzw, l(0, 0, 0, 0)
+  22: min r2.xyzw, r3.xyzw, r2.xyzw
+  23: ftou r2.xyzw, r2.zwxy
+  24: mov r4.xy, r2.zwzz
+  25: mov r4.zw, l(0, 0, 0, 0)
+  26: ld_indexable(texture2d)(float,float,float,float) r0.y, r4.xyzw, t0.yxzw
+  27: mad r0.x, r0.y, l(0.142857), r0.x
+  28: round_z r0.yz, v0.xxyx
+  29: max r0.yz, r0.yyzy, l(0, 0, 0, 0)
+  30: min r0.yz, r3.xxyx, r0.yyzy
+  31: ftou r3.xy, r0.yzyy
+  32: mov r3.zw, l(0, 0, 0, 0)
+  33: ld_indexable(texture2d)(float,float,float,float) r0.y, r3.xyzw, t0.yxzw
+  34: mad r0.x, r0.y, l(0.142857), r0.x
+  35: mov r2.zw, l(0, 0, 0, 0)
+  36: ld_indexable(texture2d)(float,float,float,float) r0.y, r2.xyzw, t0.yxzw
+  37: mad r0.x, r0.y, l(0.142857), r0.x
+  38: mov r2.xy, r1.zwzz
+  39: mov r2.zw, l(0, 0, 0, 0)
+  40: ld_indexable(texture2d)(float,float,float,float) r0.y, r2.xyzw, t0.yxzw
+  41: mad r0.x, r0.y, l(0.142857), r0.x
+  42: mov r1.zw, l(0, 0, 0, 0)
+  43: ld_indexable(texture2d)(float,float,float,float) r0.y, r1.xyzw, t0.yxzw
+  44: mad o0.xyz, r0.yyyy, l(0.142857, 0.142857, 0.142857, 0.000000), r0.xxxx
+  45: mov o0.w, l(1.000000)
+  46: ret

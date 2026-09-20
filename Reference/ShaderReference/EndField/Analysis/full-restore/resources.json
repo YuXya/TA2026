@@ -1,0 +1,2654 @@
+[
+  {
+    "id": "ResourceId::1000000000000000182",
+    "name": "Immediate Context Bindings"
+  },
+  {
+    "id": "ResourceId::7",
+    "name": "Immediate Context"
+  },
+  {
+    "id": "ResourceId::42",
+    "name": "Query 42"
+  },
+  {
+    "id": "ResourceId::43",
+    "name": "Query 43"
+  },
+  {
+    "id": "ResourceId::44",
+    "name": "Query 44"
+  },
+  {
+    "id": "ResourceId::45",
+    "name": "Sampler State 45"
+  },
+  {
+    "id": "ResourceId::52",
+    "name": "Buffer 52"
+  },
+  {
+    "id": "ResourceId::63",
+    "name": "2D Texture 63"
+  },
+  {
+    "id": "ResourceId::64",
+    "name": "Shader Resource View 64"
+  },
+  {
+    "id": "ResourceId::65",
+    "name": "Sampler State 65"
+  },
+  {
+    "id": "ResourceId::66",
+    "name": "2D Texture 66"
+  },
+  {
+    "id": "ResourceId::67",
+    "name": "Shader Resource View 67"
+  },
+  {
+    "id": "ResourceId::68",
+    "name": "2D Texture 68"
+  },
+  {
+    "id": "ResourceId::69",
+    "name": "Shader Resource View 69"
+  },
+  {
+    "id": "ResourceId::72",
+    "name": "3D Texture 72"
+  },
+  {
+    "id": "ResourceId::73",
+    "name": "Shader Resource View 73"
+  },
+  {
+    "id": "ResourceId::92",
+    "name": "Sampler State 92"
+  },
+  {
+    "id": "ResourceId::126",
+    "name": "Buffer 126"
+  },
+  {
+    "id": "ResourceId::127",
+    "name": "Buffer 127"
+  },
+  {
+    "id": "ResourceId::128",
+    "name": "Unordered Access View 128"
+  },
+  {
+    "id": "ResourceId::129",
+    "name": "Shader Resource View 129"
+  },
+  {
+    "id": "ResourceId::130",
+    "name": "Shader Resource View 130"
+  },
+  {
+    "id": "ResourceId::131",
+    "name": "Compute Shader 131"
+  },
+  {
+    "id": "ResourceId::133",
+    "name": "Swapchain Image 133"
+  },
+  {
+    "id": "ResourceId::145",
+    "name": "Render Target View 145"
+  },
+  {
+    "id": "ResourceId::148",
+    "name": "Buffer 148"
+  },
+  {
+    "id": "ResourceId::197",
+    "name": "2D TextureArray 197"
+  },
+  {
+    "id": "ResourceId::198",
+    "name": "Shader Resource View 198"
+  },
+  {
+    "id": "ResourceId::201",
+    "name": "2D TextureArray 201"
+  },
+  {
+    "id": "ResourceId::202",
+    "name": "Shader Resource View 202"
+  },
+  {
+    "id": "ResourceId::221",
+    "name": "2D Depth Target 221"
+  },
+  {
+    "id": "ResourceId::225",
+    "name": "Depth Stencil View 225"
+  },
+  {
+    "id": "ResourceId::230",
+    "name": "Rasterizer State 230"
+  },
+  {
+    "id": "ResourceId::231",
+    "name": "Depth-Stencil State 231"
+  },
+  {
+    "id": "ResourceId::232",
+    "name": "Blend State 232"
+  },
+  {
+    "id": "ResourceId::252",
+    "name": "2D Texture 252"
+  },
+  {
+    "id": "ResourceId::253",
+    "name": "Shader Resource View 253"
+  },
+  {
+    "id": "ResourceId::258",
+    "name": "2D Texture 258"
+  },
+  {
+    "id": "ResourceId::259",
+    "name": "Shader Resource View 259"
+  },
+  {
+    "id": "ResourceId::293",
+    "name": "Buffer 293"
+  },
+  {
+    "id": "ResourceId::314",
+    "name": "2D Texture 314"
+  },
+  {
+    "id": "ResourceId::315",
+    "name": "Shader Resource View 315"
+  },
+  {
+    "id": "ResourceId::326",
+    "name": "2D Texture 326"
+  },
+  {
+    "id": "ResourceId::328",
+    "name": "Shader Resource View 328"
+  },
+  {
+    "id": "ResourceId::333",
+    "name": "2D Texture 333"
+  },
+  {
+    "id": "ResourceId::335",
+    "name": "Shader Resource View 335"
+  },
+  {
+    "id": "ResourceId::337",
+    "name": "2D Texture 337"
+  },
+  {
+    "id": "ResourceId::338",
+    "name": "2D Texture 338"
+  },
+  {
+    "id": "ResourceId::339",
+    "name": "Shader Resource View 339"
+  },
+  {
+    "id": "ResourceId::340",
+    "name": "Shader Resource View 340"
+  },
+  {
+    "id": "ResourceId::341",
+    "name": "2D Texture 341"
+  },
+  {
+    "id": "ResourceId::342",
+    "name": "Shader Resource View 342"
+  },
+  {
+    "id": "ResourceId::349",
+    "name": "2D Texture 349"
+  },
+  {
+    "id": "ResourceId::350",
+    "name": "Shader Resource View 350"
+  },
+  {
+    "id": "ResourceId::583",
+    "name": "2D Depth Target 583"
+  },
+  {
+    "id": "ResourceId::584",
+    "name": "Shader Resource View 584"
+  },
+  {
+    "id": "ResourceId::586",
+    "name": "Sampler State 586"
+  },
+  {
+    "id": "ResourceId::646",
+    "name": "2D Render Target 646"
+  },
+  {
+    "id": "ResourceId::648",
+    "name": "Render Target View 648"
+  },
+  {
+    "id": "ResourceId::649",
+    "name": "2D Render Target 649"
+  },
+  {
+    "id": "ResourceId::650",
+    "name": "Shader Resource View 650"
+  },
+  {
+    "id": "ResourceId::651",
+    "name": "Render Target View 651"
+  },
+  {
+    "id": "ResourceId::652",
+    "name": "2D Render Target 652"
+  },
+  {
+    "id": "ResourceId::653",
+    "name": "Shader Resource View 653"
+  },
+  {
+    "id": "ResourceId::654",
+    "name": "Render Target View 654"
+  },
+  {
+    "id": "ResourceId::665",
+    "name": "Input Layout 665"
+  },
+  {
+    "id": "ResourceId::666",
+    "name": "Rasterizer State 666"
+  },
+  {
+    "id": "ResourceId::667",
+    "name": "Depth-Stencil State 667"
+  },
+  {
+    "id": "ResourceId::668",
+    "name": "Blend State 668"
+  },
+  {
+    "id": "ResourceId::669",
+    "name": "Input Layout 669"
+  },
+  {
+    "id": "ResourceId::721",
+    "name": "Buffer 721"
+  },
+  {
+    "id": "ResourceId::723",
+    "name": "Unordered Access View 723"
+  },
+  {
+    "id": "ResourceId::1842",
+    "name": "Compute Shader 1842"
+  },
+  {
+    "id": "ResourceId::1843",
+    "name": "Compute Shader 1843"
+  },
+  {
+    "id": "ResourceId::1844",
+    "name": "Compute Shader 1844"
+  },
+  {
+    "id": "ResourceId::1845",
+    "name": "Compute Shader 1845"
+  },
+  {
+    "id": "ResourceId::1848",
+    "name": "Compute Shader 1848"
+  },
+  {
+    "id": "ResourceId::1852",
+    "name": "Compute Shader 1852"
+  },
+  {
+    "id": "ResourceId::1857",
+    "name": "Compute Shader 1857"
+  },
+  {
+    "id": "ResourceId::1858",
+    "name": "Compute Shader 1858"
+  },
+  {
+    "id": "ResourceId::1859",
+    "name": "Compute Shader 1859"
+  },
+  {
+    "id": "ResourceId::1875",
+    "name": "Sampler State 1875"
+  },
+  {
+    "id": "ResourceId::1897",
+    "name": "Compute Shader 1897"
+  },
+  {
+    "id": "ResourceId::1898",
+    "name": "Compute Shader 1898"
+  },
+  {
+    "id": "ResourceId::1903",
+    "name": "Depth-Stencil State 1903"
+  },
+  {
+    "id": "ResourceId::1904",
+    "name": "Depth-Stencil State 1904"
+  },
+  {
+    "id": "ResourceId::1905",
+    "name": "Depth-Stencil State 1905"
+  },
+  {
+    "id": "ResourceId::1906",
+    "name": "Blend State 1906"
+  },
+  {
+    "id": "ResourceId::1908",
+    "name": "Rasterizer State 1908"
+  },
+  {
+    "id": "ResourceId::1909",
+    "name": "Depth-Stencil State 1909"
+  },
+  {
+    "id": "ResourceId::1912",
+    "name": "Rasterizer State 1912"
+  },
+  {
+    "id": "ResourceId::1916",
+    "name": "Depth-Stencil State 1916"
+  },
+  {
+    "id": "ResourceId::1918",
+    "name": "Depth-Stencil State 1918"
+  },
+  {
+    "id": "ResourceId::1921",
+    "name": "Blend State 1921"
+  },
+  {
+    "id": "ResourceId::1922",
+    "name": "Input Layout 1922"
+  },
+  {
+    "id": "ResourceId::6786",
+    "name": "Compute Shader 6786"
+  },
+  {
+    "id": "ResourceId::6787",
+    "name": "Compute Shader 6787"
+  },
+  {
+    "id": "ResourceId::6789",
+    "name": "Compute Shader 6789"
+  },
+  {
+    "id": "ResourceId::6790",
+    "name": "Compute Shader 6790"
+  },
+  {
+    "id": "ResourceId::6796",
+    "name": "Compute Shader 6796"
+  },
+  {
+    "id": "ResourceId::6806",
+    "name": "Compute Shader 6806"
+  },
+  {
+    "id": "ResourceId::6811",
+    "name": "Compute Shader 6811"
+  },
+  {
+    "id": "ResourceId::6816",
+    "name": "Compute Shader 6816"
+  },
+  {
+    "id": "ResourceId::6827",
+    "name": "Compute Shader 6827"
+  },
+  {
+    "id": "ResourceId::6831",
+    "name": "Compute Shader 6831"
+  },
+  {
+    "id": "ResourceId::6832",
+    "name": "Compute Shader 6832"
+  },
+  {
+    "id": "ResourceId::6839",
+    "name": "Compute Shader 6839"
+  },
+  {
+    "id": "ResourceId::6848",
+    "name": "Compute Shader 6848"
+  },
+  {
+    "id": "ResourceId::6854",
+    "name": "Compute Shader 6854"
+  },
+  {
+    "id": "ResourceId::6858",
+    "name": "Compute Shader 6858"
+  },
+  {
+    "id": "ResourceId::6895",
+    "name": "Compute Shader 6895"
+  },
+  {
+    "id": "ResourceId::7032",
+    "name": "Input Layout 7032"
+  },
+  {
+    "id": "ResourceId::7033",
+    "name": "Depth-Stencil State 7033"
+  },
+  {
+    "id": "ResourceId::7058",
+    "name": "Depth-Stencil State 7058"
+  },
+  {
+    "id": "ResourceId::7059",
+    "name": "Blend State 7059"
+  },
+  {
+    "id": "ResourceId::7082",
+    "name": "Input Layout 7082"
+  },
+  {
+    "id": "ResourceId::7167",
+    "name": "Input Layout 7167"
+  },
+  {
+    "id": "ResourceId::7377",
+    "name": "Input Layout 7377"
+  },
+  {
+    "id": "ResourceId::8014",
+    "name": "Input Layout 8014"
+  },
+  {
+    "id": "ResourceId::8015",
+    "name": "Depth-Stencil State 8015"
+  },
+  {
+    "id": "ResourceId::8018",
+    "name": "Depth-Stencil State 8018"
+  },
+  {
+    "id": "ResourceId::8031",
+    "name": "Input Layout 8031"
+  },
+  {
+    "id": "ResourceId::8131",
+    "name": "Input Layout 8131"
+  },
+  {
+    "id": "ResourceId::8163",
+    "name": "Depth-Stencil State 8163"
+  },
+  {
+    "id": "ResourceId::8206",
+    "name": "Input Layout 8206"
+  },
+  {
+    "id": "ResourceId::8228",
+    "name": "Input Layout 8228"
+  },
+  {
+    "id": "ResourceId::8319",
+    "name": "Input Layout 8319"
+  },
+  {
+    "id": "ResourceId::8369",
+    "name": "Input Layout 8369"
+  },
+  {
+    "id": "ResourceId::8394",
+    "name": "Input Layout 8394"
+  },
+  {
+    "id": "ResourceId::8550",
+    "name": "Depth-Stencil State 8550"
+  },
+  {
+    "id": "ResourceId::8623",
+    "name": "Depth-Stencil State 8623"
+  },
+  {
+    "id": "ResourceId::8635",
+    "name": "Depth-Stencil State 8635"
+  },
+  {
+    "id": "ResourceId::8708",
+    "name": "Depth-Stencil State 8708"
+  },
+  {
+    "id": "ResourceId::8857",
+    "name": "Input Layout 8857"
+  },
+  {
+    "id": "ResourceId::8858",
+    "name": "Depth-Stencil State 8858"
+  },
+  {
+    "id": "ResourceId::8859",
+    "name": "Blend State 8859"
+  },
+  {
+    "id": "ResourceId::8865",
+    "name": "Depth-Stencil State 8865"
+  },
+  {
+    "id": "ResourceId::8866",
+    "name": "Blend State 8866"
+  },
+  {
+    "id": "ResourceId::8871",
+    "name": "Input Layout 8871"
+  },
+  {
+    "id": "ResourceId::8876",
+    "name": "Depth-Stencil State 8876"
+  },
+  {
+    "id": "ResourceId::8877",
+    "name": "Blend State 8877"
+  },
+  {
+    "id": "ResourceId::9215",
+    "name": "Input Layout 9215"
+  },
+  {
+    "id": "ResourceId::9477",
+    "name": "Input Layout 9477"
+  },
+  {
+    "id": "ResourceId::9490",
+    "name": "Input Layout 9490"
+  },
+  {
+    "id": "ResourceId::9728",
+    "name": "Blend State 9728"
+  },
+  {
+    "id": "ResourceId::9732",
+    "name": "Blend State 9732"
+  },
+  {
+    "id": "ResourceId::11354",
+    "name": "Input Layout 11354"
+  },
+  {
+    "id": "ResourceId::11355",
+    "name": "Depth-Stencil State 11355"
+  },
+  {
+    "id": "ResourceId::11662",
+    "name": "Input Layout 11662"
+  },
+  {
+    "id": "ResourceId::12639",
+    "name": "Blend State 12639"
+  },
+  {
+    "id": "ResourceId::14423",
+    "name": "Input Layout 14423"
+  },
+  {
+    "id": "ResourceId::14635",
+    "name": "Blend State 14635"
+  },
+  {
+    "id": "ResourceId::14648",
+    "name": "Depth-Stencil State 14648"
+  },
+  {
+    "id": "ResourceId::14810",
+    "name": "Depth-Stencil State 14810"
+  },
+  {
+    "id": "ResourceId::14884",
+    "name": "Input Layout 14884"
+  },
+  {
+    "id": "ResourceId::14972",
+    "name": "Depth-Stencil State 14972"
+  },
+  {
+    "id": "ResourceId::14973",
+    "name": "Blend State 14973"
+  },
+  {
+    "id": "ResourceId::14988",
+    "name": "Input Layout 14988"
+  },
+  {
+    "id": "ResourceId::15366",
+    "name": "Depth-Stencil State 15366"
+  },
+  {
+    "id": "ResourceId::15523",
+    "name": "Input Layout 15523"
+  },
+  {
+    "id": "ResourceId::15659",
+    "name": "Input Layout 15659"
+  },
+  {
+    "id": "ResourceId::15662",
+    "name": "Input Layout 15662"
+  },
+  {
+    "id": "ResourceId::15732",
+    "name": "Input Layout 15732"
+  },
+  {
+    "id": "ResourceId::15870",
+    "name": "Input Layout 15870"
+  },
+  {
+    "id": "ResourceId::15879",
+    "name": "Input Layout 15879"
+  },
+  {
+    "id": "ResourceId::16522",
+    "name": "Input Layout 16522"
+  },
+  {
+    "id": "ResourceId::20893",
+    "name": "Depth-Stencil State 20893"
+  },
+  {
+    "id": "ResourceId::21335",
+    "name": "Hidden/RenderAtmosphereLut(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21336",
+    "name": "Hidden/RenderAtmosphereLut(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21337",
+    "name": "Hidden/RenderAtmosphereLut(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21338",
+    "name": "Hidden/RenderAtmosphereLut(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21339",
+    "name": "Hidden/RenderAtmosphereLut(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21340",
+    "name": "Hidden/RenderAtmosphereLut(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21341",
+    "name": "HGRP/Foliage/FoliageInteractiveBlit(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21342",
+    "name": "HGRP/Foliage/FoliageInteractiveBlit(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21343",
+    "name": "Hidden/HGRP/Blit(ShaderLOD: 0 PassName: ) | HG_PS5_FP32_OUTPUT"
+  },
+  {
+    "id": "ResourceId::21344",
+    "name": "Hidden/HGRP/Blit(ShaderLOD: 0 PassName: ) | HG_PS5_FP32_OUTPUT"
+  },
+  {
+    "id": "ResourceId::21345",
+    "name": "Hidden/HGRP/Blit(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21346",
+    "name": "Hidden/HGRP/Blit(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21347",
+    "name": "HGRP/LowResDirectionalShadow(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21349",
+    "name": "HGRP/LowResDirectionalShadow(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21350",
+    "name": "HGRP/PostProcessing/ShadowBlur(ShaderLOD: 100 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21351",
+    "name": "HGRP/PostProcessing/ShadowBlur(ShaderLOD: 100 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21352",
+    "name": "HGRP/PostProcessing/ShadowBlur(ShaderLOD: 100 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21353",
+    "name": "HGRP/PostProcessing/ShadowBlur(ShaderLOD: 100 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21354",
+    "name": "HGRP/ScreenSpaceShadowResolve(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21355",
+    "name": "HGRP/ScreenSpaceShadowResolve(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21356",
+    "name": "HGRP/ScreenSpaceShadowResolve(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21357",
+    "name": "HGRP/ScreenSpaceShadowResolve(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21366",
+    "name": "Hidden/HGRP/Blit(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21367",
+    "name": "Hidden/HGRP/Blit(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21372",
+    "name": "HGRP/Effect/VFXBaseV2(ShaderLOD: 600 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::21373",
+    "name": "HGRP/Effect/VFXBaseV2(ShaderLOD: 600 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::21378",
+    "name": "Hidden/HGRP/Blit(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21379",
+    "name": "Hidden/HGRP/Blit(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21380",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21381",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21384",
+    "name": "HGRP/UI/TextMeshPro/Distance Field(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21385",
+    "name": "HGRP/UI/TextMeshPro/Distance Field(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21504",
+    "name": "HGRP/Foliage/BlitFoliageOccluderMask(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21505",
+    "name": "HGRP/Foliage/BlitFoliageOccluderMask(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21806",
+    "name": "HGRP/TAAUDilation(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21807",
+    "name": "HGRP/TAAUDilation(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21808",
+    "name": "HGRP/TAAUMaskDilation(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21809",
+    "name": "HGRP/TAAUMaskDilation(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21810",
+    "name": "HGRP/TAAUResolve(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::21811",
+    "name": "HGRP/TAAUResolve(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::22365",
+    "name": "2D Texture 22365"
+  },
+  {
+    "id": "ResourceId::22367",
+    "name": "Shader Resource View 22367"
+  },
+  {
+    "id": "ResourceId::22374",
+    "name": "2D Texture 22374"
+  },
+  {
+    "id": "ResourceId::22375",
+    "name": "Shader Resource View 22375"
+  },
+  {
+    "id": "ResourceId::22377",
+    "name": "2D Texture 22377"
+  },
+  {
+    "id": "ResourceId::22386",
+    "name": "Shader Resource View 22386"
+  },
+  {
+    "id": "ResourceId::22426",
+    "name": "2D Texture 22426"
+  },
+  {
+    "id": "ResourceId::22427",
+    "name": "Shader Resource View 22427"
+  },
+  {
+    "id": "ResourceId::22438",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::22439",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::22440",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _ALPHATEST_ON"
+  },
+  {
+    "id": "ResourceId::22441",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _ALPHATEST_ON"
+  },
+  {
+    "id": "ResourceId::22442",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::22443",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::22444",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::22445",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::22446",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _ALPHABLEND_ON"
+  },
+  {
+    "id": "ResourceId::22447",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _ALPHABLEND_ON"
+  },
+  {
+    "id": "ResourceId::22448",
+    "name": "HGRP/CharacterNPR_Eye(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::22449",
+    "name": "HGRP/CharacterNPR_Eye(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::27608",
+    "name": "2D Texture 27608"
+  },
+  {
+    "id": "ResourceId::27613",
+    "name": "Shader Resource View 27613"
+  },
+  {
+    "id": "ResourceId::28206",
+    "name": "2D Texture 28206"
+  },
+  {
+    "id": "ResourceId::28207",
+    "name": "Shader Resource View 28207"
+  },
+  {
+    "id": "ResourceId::28657",
+    "name": "2D Texture 28657"
+  },
+  {
+    "id": "ResourceId::28661",
+    "name": "Shader Resource View 28661"
+  },
+  {
+    "id": "ResourceId::29269",
+    "name": "2D TextureArray 29269"
+  },
+  {
+    "id": "ResourceId::29271",
+    "name": "Shader Resource View 29271"
+  },
+  {
+    "id": "ResourceId::32224",
+    "name": "3D Texture 32224"
+  },
+  {
+    "id": "ResourceId::32225",
+    "name": "Shader Resource View 32225"
+  },
+  {
+    "id": "ResourceId::32227",
+    "name": "3D Texture 32227"
+  },
+  {
+    "id": "ResourceId::32228",
+    "name": "Shader Resource View 32228"
+  },
+  {
+    "id": "ResourceId::32230",
+    "name": "3D Texture 32230"
+  },
+  {
+    "id": "ResourceId::32231",
+    "name": "Shader Resource View 32231"
+  },
+  {
+    "id": "ResourceId::32233",
+    "name": "3D Texture 32233"
+  },
+  {
+    "id": "ResourceId::32234",
+    "name": "Shader Resource View 32234"
+  },
+  {
+    "id": "ResourceId::32236",
+    "name": "3D Texture 32236"
+  },
+  {
+    "id": "ResourceId::32237",
+    "name": "Shader Resource View 32237"
+  },
+  {
+    "id": "ResourceId::32239",
+    "name": "3D Texture 32239"
+  },
+  {
+    "id": "ResourceId::32240",
+    "name": "Shader Resource View 32240"
+  },
+  {
+    "id": "ResourceId::34014",
+    "name": "2D Texture 34014"
+  },
+  {
+    "id": "ResourceId::34015",
+    "name": "Shader Resource View 34015"
+  },
+  {
+    "id": "ResourceId::34026",
+    "name": "2D Texture 34026"
+  },
+  {
+    "id": "ResourceId::34027",
+    "name": "Shader Resource View 34027"
+  },
+  {
+    "id": "ResourceId::34911",
+    "name": "2D Texture 34911"
+  },
+  {
+    "id": "ResourceId::34915",
+    "name": "Shader Resource View 34915"
+  },
+  {
+    "id": "ResourceId::37040",
+    "name": "2D Texture 37040"
+  },
+  {
+    "id": "ResourceId::37042",
+    "name": "Shader Resource View 37042"
+  },
+  {
+    "id": "ResourceId::37304",
+    "name": "2D Render Target 37304"
+  },
+  {
+    "id": "ResourceId::37305",
+    "name": "Shader Resource View 37305"
+  },
+  {
+    "id": "ResourceId::37306",
+    "name": "Unordered Access View 37306"
+  },
+  {
+    "id": "ResourceId::37308",
+    "name": "2D Render Target 37308"
+  },
+  {
+    "id": "ResourceId::37332",
+    "name": "Unordered Access View 37332"
+  },
+  {
+    "id": "ResourceId::37335",
+    "name": "Unordered Access View 37335"
+  },
+  {
+    "id": "ResourceId::37338",
+    "name": "Unordered Access View 37338"
+  },
+  {
+    "id": "ResourceId::37341",
+    "name": "Unordered Access View 37341"
+  },
+  {
+    "id": "ResourceId::37344",
+    "name": "Unordered Access View 37344"
+  },
+  {
+    "id": "ResourceId::37347",
+    "name": "Unordered Access View 37347"
+  },
+  {
+    "id": "ResourceId::37350",
+    "name": "Unordered Access View 37350"
+  },
+  {
+    "id": "ResourceId::37352",
+    "name": "Buffer 37352"
+  },
+  {
+    "id": "ResourceId::37353",
+    "name": "Unordered Access View 37353"
+  },
+  {
+    "id": "ResourceId::37355",
+    "name": "2D Render Target 37355"
+  },
+  {
+    "id": "ResourceId::37356",
+    "name": "Shader Resource View 37356"
+  },
+  {
+    "id": "ResourceId::37358",
+    "name": "2D Render Target 37358"
+  },
+  {
+    "id": "ResourceId::37359",
+    "name": "Shader Resource View 37359"
+  },
+  {
+    "id": "ResourceId::37360",
+    "name": "Render Target View 37360"
+  },
+  {
+    "id": "ResourceId::37361",
+    "name": "2D Render Target 37361"
+  },
+  {
+    "id": "ResourceId::37363",
+    "name": "Render Target View 37363"
+  },
+  {
+    "id": "ResourceId::37367",
+    "name": "2D Render Target 37367"
+  },
+  {
+    "id": "ResourceId::37368",
+    "name": "Shader Resource View 37368"
+  },
+  {
+    "id": "ResourceId::38349",
+    "name": "2D Render Target 38349"
+  },
+  {
+    "id": "ResourceId::38350",
+    "name": "Shader Resource View 38350"
+  },
+  {
+    "id": "ResourceId::38352",
+    "name": "2D Render Target 38352"
+  },
+  {
+    "id": "ResourceId::38353",
+    "name": "Shader Resource View 38353"
+  },
+  {
+    "id": "ResourceId::38355",
+    "name": "2D Render Target 38355"
+  },
+  {
+    "id": "ResourceId::38356",
+    "name": "Shader Resource View 38356"
+  },
+  {
+    "id": "ResourceId::38358",
+    "name": "2D Render Target 38358"
+  },
+  {
+    "id": "ResourceId::38359",
+    "name": "Shader Resource View 38359"
+  },
+  {
+    "id": "ResourceId::38361",
+    "name": "2D Render Target 38361"
+  },
+  {
+    "id": "ResourceId::38362",
+    "name": "Shader Resource View 38362"
+  },
+  {
+    "id": "ResourceId::38363",
+    "name": "Unordered Access View 38363"
+  },
+  {
+    "id": "ResourceId::38365",
+    "name": "2D Render Target 38365"
+  },
+  {
+    "id": "ResourceId::38366",
+    "name": "Shader Resource View 38366"
+  },
+  {
+    "id": "ResourceId::38367",
+    "name": "Unordered Access View 38367"
+  },
+  {
+    "id": "ResourceId::38369",
+    "name": "2D Render Target 38369"
+  },
+  {
+    "id": "ResourceId::38370",
+    "name": "Shader Resource View 38370"
+  },
+  {
+    "id": "ResourceId::38371",
+    "name": "Unordered Access View 38371"
+  },
+  {
+    "id": "ResourceId::38570",
+    "name": "Hidden/ScriptableRenderPipeline/ShadowClear(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::38571",
+    "name": "Hidden/ScriptableRenderPipeline/ShadowClear(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::38598",
+    "name": "HGRP/Lit(ShaderLOD: 600 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::38599",
+    "name": "HGRP/Lit(ShaderLOD: 600 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::38734",
+    "name": "Buffer 38734"
+  },
+  {
+    "id": "ResourceId::38863",
+    "name": "2D Texture 38863"
+  },
+  {
+    "id": "ResourceId::38866",
+    "name": "Shader Resource View 38866"
+  },
+  {
+    "id": "ResourceId::38907",
+    "name": "2D TextureArray 38907"
+  },
+  {
+    "id": "ResourceId::38909",
+    "name": "Shader Resource View 38909"
+  },
+  {
+    "id": "ResourceId::38943",
+    "name": "2D Texture 38943"
+  },
+  {
+    "id": "ResourceId::38944",
+    "name": "Shader Resource View 38944"
+  },
+  {
+    "id": "ResourceId::38945",
+    "name": "2D Texture 38945"
+  },
+  {
+    "id": "ResourceId::38946",
+    "name": "Shader Resource View 38946"
+  },
+  {
+    "id": "ResourceId::38955",
+    "name": "2D Texture 38955"
+  },
+  {
+    "id": "ResourceId::38956",
+    "name": "Shader Resource View 38956"
+  },
+  {
+    "id": "ResourceId::38967",
+    "name": "2D Texture 38967"
+  },
+  {
+    "id": "ResourceId::38968",
+    "name": "Shader Resource View 38968"
+  },
+  {
+    "id": "ResourceId::41485",
+    "name": "Buffer 41485"
+  },
+  {
+    "id": "ResourceId::41486",
+    "name": "Unordered Access View 41486"
+  },
+  {
+    "id": "ResourceId::41528",
+    "name": "HGRP/CharacterNPR_Eye(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::41529",
+    "name": "HGRP/CharacterNPR_Eye(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::41539",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _NORMALMAP"
+  },
+  {
+    "id": "ResourceId::41541",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _NORMALMAP"
+  },
+  {
+    "id": "ResourceId::41542",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _NORMALMAP"
+  },
+  {
+    "id": "ResourceId::41543",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _NORMALMAP"
+  },
+  {
+    "id": "ResourceId::41548",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _ALPHATEST_ON _NORMALMAP"
+  },
+  {
+    "id": "ResourceId::41549",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _ALPHATEST_ON _NORMALMAP"
+  },
+  {
+    "id": "ResourceId::41552",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _DRAW_UNDER_BROW _NORMALMAP _SPECULAR_NORMALMAP"
+  },
+  {
+    "id": "ResourceId::41553",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _DRAW_UNDER_BROW _NORMALMAP _SPECULAR_NORMALMAP"
+  },
+  {
+    "id": "ResourceId::41566",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _ALPHATEST_ON"
+  },
+  {
+    "id": "ResourceId::41567",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _ALPHATEST_ON"
+  },
+  {
+    "id": "ResourceId::41568",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _DRAW_UNDER_BROW _OUTLINE_MASK"
+  },
+  {
+    "id": "ResourceId::41569",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV SRP_INSTANCING_ON _DRAW_UNDER_BROW _OUTLINE_MASK"
+  },
+  {
+    "id": "ResourceId::41622",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41623",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41624",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _NORMALMAP _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41625",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _NORMALMAP _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41629",
+    "name": "HGRP/CharacterNPR_Eye(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41631",
+    "name": "HGRP/CharacterNPR_Eye(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41632",
+    "name": "HGRP/CharacterNPR_Eye(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _EYE_HIGHLIGHT _MATCAP_ON"
+  },
+  {
+    "id": "ResourceId::41633",
+    "name": "HGRP/CharacterNPR_Eye(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _EYE_HIGHLIGHT _MATCAP_ON"
+  },
+  {
+    "id": "ResourceId::41640",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHATEST_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41641",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHATEST_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41644",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _EMISSION _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41645",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _EMISSION _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41646",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _EMOTION_MAP _HIGHLIGHT_MAP _NORMALMAP _SDFLIGHTMAP _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41647",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _EMOTION_MAP _HIGHLIGHT_MAP _NORMALMAP _SDFLIGHTMAP _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41656",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPECULAR_LINE _SPECULAR_NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41657",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPECULAR_LINE _SPECULAR_NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41664",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _OUTLINE_MASK _SDFLIGHTMAP _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41665",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _OUTLINE_MASK _SDFLIGHTMAP _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41666",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41667",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41668",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41669",
+    "name": "HGRP/CharacterNPR_Skin(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _SHADOW_LUT_TEX"
+  },
+  {
+    "id": "ResourceId::41672",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _OUTLINE_MASK"
+  },
+  {
+    "id": "ResourceId::41673",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _OUTLINE_MASK"
+  },
+  {
+    "id": "ResourceId::41674",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHATEST_ON _DIFF_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41675",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHATEST_ON _DIFF_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41676",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _DRAW_UNDER_BROW _OUTLINE_MASK"
+  },
+  {
+    "id": "ResourceId::41677",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _DIFF_RAMP_ON _DRAW_UNDER_BROW _OUTLINE_MASK"
+  },
+  {
+    "id": "ResourceId::41692",
+    "name": "HGRP/CharacterNPR_OverlayShadow(ShaderLOD: 0 PassName: ) | SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::41693",
+    "name": "HGRP/CharacterNPR_OverlayShadow(ShaderLOD: 0 PassName: ) | SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::41694",
+    "name": "HGRP/CharacterNPR_OverlayShadow(ShaderLOD: 0 PassName: ) | DISABLE_DRAW_UNDER_HAIR SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::41695",
+    "name": "HGRP/CharacterNPR_OverlayShadow(ShaderLOD: 0 PassName: ) | DISABLE_DRAW_UNDER_HAIR SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::41696",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHABLEND_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPECULAR_LINE _SPECULAR_NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41697",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHABLEND_ON _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPECULAR_LINE _SPECULAR_NORMALMAP _SPEC_RAMP_ON"
+  },
+  {
+    "id": "ResourceId::41702",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHABLEND_ON _DIFF_RAMP_ON _OUTLINE_MASK"
+  },
+  {
+    "id": "ResourceId::41703",
+    "name": "HGRP/CharacterNPR_Hair(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHABLEND_ON _DIFF_RAMP_ON _OUTLINE_MASK"
+  },
+  {
+    "id": "ResourceId::41720",
+    "name": "Rasterizer State 41720"
+  },
+  {
+    "id": "ResourceId::41751",
+    "name": "2D Render Target 41751"
+  },
+  {
+    "id": "ResourceId::41752",
+    "name": "Shader Resource View 41752"
+  },
+  {
+    "id": "ResourceId::41765",
+    "name": "HGRP/DeferredLighting(ShaderLOD: 600 PassName: ) | HG_ENABLE_SCREEN_SPACE_SHADOW_MASK HG_USE_SUBPASS_INPUT_UNDER_ONE_PASS_DEFERRED"
+  },
+  {
+    "id": "ResourceId::41766",
+    "name": "HGRP/DeferredLighting(ShaderLOD: 600 PassName: ) | HG_ENABLE_SCREEN_SPACE_SHADOW_MASK HG_USE_SUBPASS_INPUT_UNDER_ONE_PASS_DEFERRED"
+  },
+  {
+    "id": "ResourceId::41767",
+    "name": "HGRP/DeferredLighting(ShaderLOD: 600 PassName: ) | HG_ENABLE_SCREEN_SPACE_SHADOW_MASK HG_USE_SUBPASS_INPUT_UNDER_ONE_PASS_DEFERRED"
+  },
+  {
+    "id": "ResourceId::41768",
+    "name": "HGRP/DeferredLighting(ShaderLOD: 600 PassName: ) | HG_ENABLE_SCREEN_SPACE_SHADOW_MASK HG_USE_SUBPASS_INPUT_UNDER_ONE_PASS_DEFERRED"
+  },
+  {
+    "id": "ResourceId::41771",
+    "name": "HGRP/DeferredLighting(ShaderLOD: 600 PassName: ) | HG_ENABLE_SCREEN_SPACE_SHADOW_MASK HG_USE_SUBPASS_INPUT_UNDER_ONE_PASS_DEFERRED"
+  },
+  {
+    "id": "ResourceId::41772",
+    "name": "HGRP/DeferredLighting(ShaderLOD: 600 PassName: ) | HG_ENABLE_SCREEN_SPACE_SHADOW_MASK HG_USE_SUBPASS_INPUT_UNDER_ONE_PASS_DEFERRED"
+  },
+  {
+    "id": "ResourceId::41815",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | CLIP_SCENEDEPTH HG_WORLD_UI"
+  },
+  {
+    "id": "ResourceId::41816",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | CLIP_SCENEDEPTH HG_WORLD_UI"
+  },
+  {
+    "id": "ResourceId::41819",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | UNITY_UI_CLIP_RECT"
+  },
+  {
+    "id": "ResourceId::41820",
+    "name": "HGRP/UI/TextMeshPro/Distance Field(ShaderLOD: 0 PassName: ) | UNDERLAY_ON"
+  },
+  {
+    "id": "ResourceId::41822",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | UNITY_UI_CLIP_RECT"
+  },
+  {
+    "id": "ResourceId::41823",
+    "name": "HGRP/UI/UIFrostedGlass(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::41827",
+    "name": "HGRP/UI/TextMeshPro/Distance Field(ShaderLOD: 0 PassName: ) | UNDERLAY_ON"
+  },
+  {
+    "id": "ResourceId::41829",
+    "name": "HGRP/UI/UIFrostedGlass(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::41893",
+    "name": "Rasterizer State 41893"
+  },
+  {
+    "id": "ResourceId::42883",
+    "name": "2D Texture 42883"
+  },
+  {
+    "id": "ResourceId::42889",
+    "name": "Shader Resource View 42889"
+  },
+  {
+    "id": "ResourceId::43704",
+    "name": "2D Texture 43704"
+  },
+  {
+    "id": "ResourceId::43705",
+    "name": "Shader Resource View 43705"
+  },
+  {
+    "id": "ResourceId::44148",
+    "name": "2D Texture 44148"
+  },
+  {
+    "id": "ResourceId::44149",
+    "name": "Shader Resource View 44149"
+  },
+  {
+    "id": "ResourceId::44278",
+    "name": "Buffer 44278"
+  },
+  {
+    "id": "ResourceId::44491",
+    "name": "2D Texture 44491"
+  },
+  {
+    "id": "ResourceId::44492",
+    "name": "Shader Resource View 44492"
+  },
+  {
+    "id": "ResourceId::44705",
+    "name": "HGRP/Foliage/FoliageInteractiveCollider(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV"
+  },
+  {
+    "id": "ResourceId::44706",
+    "name": "HGRP/Foliage/FoliageInteractiveCollider(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV"
+  },
+  {
+    "id": "ResourceId::45781",
+    "name": "2D Texture 45781"
+  },
+  {
+    "id": "ResourceId::45782",
+    "name": "Shader Resource View 45782"
+  },
+  {
+    "id": "ResourceId::45992",
+    "name": "2D Texture 45992"
+  },
+  {
+    "id": "ResourceId::45993",
+    "name": "Shader Resource View 45993"
+  },
+  {
+    "id": "ResourceId::46026",
+    "name": "2D Texture 46026"
+  },
+  {
+    "id": "ResourceId::46027",
+    "name": "Shader Resource View 46027"
+  },
+  {
+    "id": "ResourceId::46062",
+    "name": "2D Texture 46062"
+  },
+  {
+    "id": "ResourceId::46063",
+    "name": "Shader Resource View 46063"
+  },
+  {
+    "id": "ResourceId::47110",
+    "name": "2D Texture 47110"
+  },
+  {
+    "id": "ResourceId::47111",
+    "name": "Shader Resource View 47111"
+  },
+  {
+    "id": "ResourceId::47417",
+    "name": "2D Texture 47417"
+  },
+  {
+    "id": "ResourceId::47418",
+    "name": "Shader Resource View 47418"
+  },
+  {
+    "id": "ResourceId::47422",
+    "name": "2D Texture 47422"
+  },
+  {
+    "id": "ResourceId::47423",
+    "name": "Shader Resource View 47423"
+  },
+  {
+    "id": "ResourceId::48389",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | UNITY_UI_ALPHACLIP"
+  },
+  {
+    "id": "ResourceId::48390",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | UNITY_UI_ALPHACLIP"
+  },
+  {
+    "id": "ResourceId::51906",
+    "name": "Buffer 51906"
+  },
+  {
+    "id": "ResourceId::54042",
+    "name": "2D Depth Target 54042"
+  },
+  {
+    "id": "ResourceId::54043",
+    "name": "Shader Resource View 54043"
+  },
+  {
+    "id": "ResourceId::54044",
+    "name": "Depth Stencil View 54044"
+  },
+  {
+    "id": "ResourceId::54045",
+    "name": "2D Depth Target 54045"
+  },
+  {
+    "id": "ResourceId::54046",
+    "name": "Shader Resource View 54046"
+  },
+  {
+    "id": "ResourceId::54047",
+    "name": "Depth Stencil View 54047"
+  },
+  {
+    "id": "ResourceId::54069",
+    "name": "Buffer 54069"
+  },
+  {
+    "id": "ResourceId::54538",
+    "name": "HGRP/VisibilitySH(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV"
+  },
+  {
+    "id": "ResourceId::54539",
+    "name": "HGRP/VisibilitySH(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV"
+  },
+  {
+    "id": "ResourceId::54540",
+    "name": "HGRP/VisibilitySH(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV"
+  },
+  {
+    "id": "ResourceId::54541",
+    "name": "HGRP/VisibilitySH(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV"
+  },
+  {
+    "id": "ResourceId::54985",
+    "name": "2D Texture 54985"
+  },
+  {
+    "id": "ResourceId::54986",
+    "name": "Shader Resource View 54986"
+  },
+  {
+    "id": "ResourceId::55254",
+    "name": "2D Render Target 55254"
+  },
+  {
+    "id": "ResourceId::55255",
+    "name": "Shader Resource View 55255"
+  },
+  {
+    "id": "ResourceId::55256",
+    "name": "Render Target View 55256"
+  },
+  {
+    "id": "ResourceId::55262",
+    "name": "2D Texture 55262"
+  },
+  {
+    "id": "ResourceId::55263",
+    "name": "Shader Resource View 55263"
+  },
+  {
+    "id": "ResourceId::55336",
+    "name": "2D Texture 55336"
+  },
+  {
+    "id": "ResourceId::55337",
+    "name": "Shader Resource View 55337"
+  },
+  {
+    "id": "ResourceId::55380",
+    "name": "2D Texture 55380"
+  },
+  {
+    "id": "ResourceId::55381",
+    "name": "Shader Resource View 55381"
+  },
+  {
+    "id": "ResourceId::55446",
+    "name": "2D Texture 55446"
+  },
+  {
+    "id": "ResourceId::55450",
+    "name": "Shader Resource View 55450"
+  },
+  {
+    "id": "ResourceId::55507",
+    "name": "2D Render Target 55507"
+  },
+  {
+    "id": "ResourceId::55508",
+    "name": "Shader Resource View 55508"
+  },
+  {
+    "id": "ResourceId::55509",
+    "name": "Render Target View 55509"
+  },
+  {
+    "id": "ResourceId::55510",
+    "name": "2D Render Target 55510"
+  },
+  {
+    "id": "ResourceId::55511",
+    "name": "Shader Resource View 55511"
+  },
+  {
+    "id": "ResourceId::55512",
+    "name": "Render Target View 55512"
+  },
+  {
+    "id": "ResourceId::55513",
+    "name": "2D Render Target 55513"
+  },
+  {
+    "id": "ResourceId::55515",
+    "name": "Render Target View 55515"
+  },
+  {
+    "id": "ResourceId::55516",
+    "name": "2D Render Target 55516"
+  },
+  {
+    "id": "ResourceId::55517",
+    "name": "Shader Resource View 55517"
+  },
+  {
+    "id": "ResourceId::55518",
+    "name": "Unordered Access View 55518"
+  },
+  {
+    "id": "ResourceId::55520",
+    "name": "2D Render Target 55520"
+  },
+  {
+    "id": "ResourceId::55521",
+    "name": "Shader Resource View 55521"
+  },
+  {
+    "id": "ResourceId::55522",
+    "name": "Unordered Access View 55522"
+  },
+  {
+    "id": "ResourceId::55524",
+    "name": "2D Render Target 55524"
+  },
+  {
+    "id": "ResourceId::55526",
+    "name": "Render Target View 55526"
+  },
+  {
+    "id": "ResourceId::55527",
+    "name": "2D Render Target 55527"
+  },
+  {
+    "id": "ResourceId::55528",
+    "name": "Shader Resource View 55528"
+  },
+  {
+    "id": "ResourceId::55529",
+    "name": "Render Target View 55529"
+  },
+  {
+    "id": "ResourceId::55530",
+    "name": "2D Render Target 55530"
+  },
+  {
+    "id": "ResourceId::55531",
+    "name": "Shader Resource View 55531"
+  },
+  {
+    "id": "ResourceId::55532",
+    "name": "Unordered Access View 55532"
+  },
+  {
+    "id": "ResourceId::55534",
+    "name": "2D Render Target 55534"
+  },
+  {
+    "id": "ResourceId::55535",
+    "name": "Shader Resource View 55535"
+  },
+  {
+    "id": "ResourceId::55536",
+    "name": "Unordered Access View 55536"
+  },
+  {
+    "id": "ResourceId::55538",
+    "name": "2D Render Target 55538"
+  },
+  {
+    "id": "ResourceId::55539",
+    "name": "Shader Resource View 55539"
+  },
+  {
+    "id": "ResourceId::55540",
+    "name": "Unordered Access View 55540"
+  },
+  {
+    "id": "ResourceId::55542",
+    "name": "2D Render Target 55542"
+  },
+  {
+    "id": "ResourceId::55543",
+    "name": "Shader Resource View 55543"
+  },
+  {
+    "id": "ResourceId::55544",
+    "name": "Unordered Access View 55544"
+  },
+  {
+    "id": "ResourceId::55546",
+    "name": "2D Render Target 55546"
+  },
+  {
+    "id": "ResourceId::55547",
+    "name": "Shader Resource View 55547"
+  },
+  {
+    "id": "ResourceId::55548",
+    "name": "Unordered Access View 55548"
+  },
+  {
+    "id": "ResourceId::55550",
+    "name": "2D Render Target 55550"
+  },
+  {
+    "id": "ResourceId::55551",
+    "name": "Shader Resource View 55551"
+  },
+  {
+    "id": "ResourceId::55552",
+    "name": "Unordered Access View 55552"
+  },
+  {
+    "id": "ResourceId::55554",
+    "name": "2D Render Target 55554"
+  },
+  {
+    "id": "ResourceId::55555",
+    "name": "Shader Resource View 55555"
+  },
+  {
+    "id": "ResourceId::55556",
+    "name": "Unordered Access View 55556"
+  },
+  {
+    "id": "ResourceId::55558",
+    "name": "2D Render Target 55558"
+  },
+  {
+    "id": "ResourceId::55559",
+    "name": "Shader Resource View 55559"
+  },
+  {
+    "id": "ResourceId::55560",
+    "name": "Unordered Access View 55560"
+  },
+  {
+    "id": "ResourceId::55562",
+    "name": "2D Render Target 55562"
+  },
+  {
+    "id": "ResourceId::55563",
+    "name": "Shader Resource View 55563"
+  },
+  {
+    "id": "ResourceId::55564",
+    "name": "Unordered Access View 55564"
+  },
+  {
+    "id": "ResourceId::55566",
+    "name": "2D Render Target 55566"
+  },
+  {
+    "id": "ResourceId::55567",
+    "name": "Shader Resource View 55567"
+  },
+  {
+    "id": "ResourceId::55568",
+    "name": "Unordered Access View 55568"
+  },
+  {
+    "id": "ResourceId::55570",
+    "name": "2D Render Target 55570"
+  },
+  {
+    "id": "ResourceId::55571",
+    "name": "Shader Resource View 55571"
+  },
+  {
+    "id": "ResourceId::55572",
+    "name": "Unordered Access View 55572"
+  },
+  {
+    "id": "ResourceId::55574",
+    "name": "2D Render Target 55574"
+  },
+  {
+    "id": "ResourceId::55575",
+    "name": "Shader Resource View 55575"
+  },
+  {
+    "id": "ResourceId::55576",
+    "name": "Unordered Access View 55576"
+  },
+  {
+    "id": "ResourceId::55578",
+    "name": "2D Render Target 55578"
+  },
+  {
+    "id": "ResourceId::55579",
+    "name": "Shader Resource View 55579"
+  },
+  {
+    "id": "ResourceId::55580",
+    "name": "Unordered Access View 55580"
+  },
+  {
+    "id": "ResourceId::55582",
+    "name": "2D Render Target 55582"
+  },
+  {
+    "id": "ResourceId::55583",
+    "name": "Shader Resource View 55583"
+  },
+  {
+    "id": "ResourceId::55584",
+    "name": "Unordered Access View 55584"
+  },
+  {
+    "id": "ResourceId::55586",
+    "name": "Buffer 55586"
+  },
+  {
+    "id": "ResourceId::55587",
+    "name": "Unordered Access View 55587"
+  },
+  {
+    "id": "ResourceId::55588",
+    "name": "Shader Resource View 55588"
+  },
+  {
+    "id": "ResourceId::55589",
+    "name": "2D Render Target 55589"
+  },
+  {
+    "id": "ResourceId::55590",
+    "name": "Shader Resource View 55590"
+  },
+  {
+    "id": "ResourceId::55591",
+    "name": "Unordered Access View 55591"
+  },
+  {
+    "id": "ResourceId::55593",
+    "name": "2D Render Target 55593"
+  },
+  {
+    "id": "ResourceId::55594",
+    "name": "Shader Resource View 55594"
+  },
+  {
+    "id": "ResourceId::55595",
+    "name": "Unordered Access View 55595"
+  },
+  {
+    "id": "ResourceId::55597",
+    "name": "2D Depth Target 55597"
+  },
+  {
+    "id": "ResourceId::55600",
+    "name": "Shader Resource View 55600"
+  },
+  {
+    "id": "ResourceId::55601",
+    "name": "Depth Stencil View 55601"
+  },
+  {
+    "id": "ResourceId::55602",
+    "name": "Shader Resource View 55602"
+  },
+  {
+    "id": "ResourceId::55603",
+    "name": "2D Render Target 55603"
+  },
+  {
+    "id": "ResourceId::55604",
+    "name": "Shader Resource View 55604"
+  },
+  {
+    "id": "ResourceId::55605",
+    "name": "Unordered Access View 55605"
+  },
+  {
+    "id": "ResourceId::55607",
+    "name": "2D Render Target 55607"
+  },
+  {
+    "id": "ResourceId::55608",
+    "name": "Shader Resource View 55608"
+  },
+  {
+    "id": "ResourceId::55609",
+    "name": "Render Target View 55609"
+  },
+  {
+    "id": "ResourceId::55614",
+    "name": "2D Render Target 55614"
+  },
+  {
+    "id": "ResourceId::55616",
+    "name": "Unordered Access View 55616"
+  },
+  {
+    "id": "ResourceId::55618",
+    "name": "2D Render Target 55618"
+  },
+  {
+    "id": "ResourceId::55619",
+    "name": "Shader Resource View 55619"
+  },
+  {
+    "id": "ResourceId::55621",
+    "name": "Render Target View 55621"
+  },
+  {
+    "id": "ResourceId::55622",
+    "name": "2D Render Target 55622"
+  },
+  {
+    "id": "ResourceId::55623",
+    "name": "Shader Resource View 55623"
+  },
+  {
+    "id": "ResourceId::55624",
+    "name": "Unordered Access View 55624"
+  },
+  {
+    "id": "ResourceId::55626",
+    "name": "2D Render Target 55626"
+  },
+  {
+    "id": "ResourceId::55627",
+    "name": "Shader Resource View 55627"
+  },
+  {
+    "id": "ResourceId::55628",
+    "name": "Unordered Access View 55628"
+  },
+  {
+    "id": "ResourceId::55630",
+    "name": "2D Render Target 55630"
+  },
+  {
+    "id": "ResourceId::55631",
+    "name": "Shader Resource View 55631"
+  },
+  {
+    "id": "ResourceId::55632",
+    "name": "Unordered Access View 55632"
+  },
+  {
+    "id": "ResourceId::55634",
+    "name": "2D Render Target 55634"
+  },
+  {
+    "id": "ResourceId::55635",
+    "name": "Shader Resource View 55635"
+  },
+  {
+    "id": "ResourceId::55636",
+    "name": "Unordered Access View 55636"
+  },
+  {
+    "id": "ResourceId::55638",
+    "name": "2D Render Target 55638"
+  },
+  {
+    "id": "ResourceId::55639",
+    "name": "Shader Resource View 55639"
+  },
+  {
+    "id": "ResourceId::55640",
+    "name": "Unordered Access View 55640"
+  },
+  {
+    "id": "ResourceId::55642",
+    "name": "2D Render Target 55642"
+  },
+  {
+    "id": "ResourceId::55643",
+    "name": "Shader Resource View 55643"
+  },
+  {
+    "id": "ResourceId::55644",
+    "name": "Unordered Access View 55644"
+  },
+  {
+    "id": "ResourceId::55646",
+    "name": "2D Render Target 55646"
+  },
+  {
+    "id": "ResourceId::55647",
+    "name": "Shader Resource View 55647"
+  },
+  {
+    "id": "ResourceId::55648",
+    "name": "Unordered Access View 55648"
+  },
+  {
+    "id": "ResourceId::55650",
+    "name": "2D Render Target 55650"
+  },
+  {
+    "id": "ResourceId::55651",
+    "name": "Shader Resource View 55651"
+  },
+  {
+    "id": "ResourceId::55652",
+    "name": "Render Target View 55652"
+  },
+  {
+    "id": "ResourceId::55653",
+    "name": "2D Render Target 55653"
+  },
+  {
+    "id": "ResourceId::55654",
+    "name": "Shader Resource View 55654"
+  },
+  {
+    "id": "ResourceId::55655",
+    "name": "Render Target View 55655"
+  },
+  {
+    "id": "ResourceId::55656",
+    "name": "2D Render Target 55656"
+  },
+  {
+    "id": "ResourceId::55657",
+    "name": "Shader Resource View 55657"
+  },
+  {
+    "id": "ResourceId::55658",
+    "name": "Render Target View 55658"
+  },
+  {
+    "id": "ResourceId::55659",
+    "name": "2D Render Target 55659"
+  },
+  {
+    "id": "ResourceId::55660",
+    "name": "Shader Resource View 55660"
+  },
+  {
+    "id": "ResourceId::55661",
+    "name": "Render Target View 55661"
+  },
+  {
+    "id": "ResourceId::55662",
+    "name": "2D Render Target 55662"
+  },
+  {
+    "id": "ResourceId::55663",
+    "name": "Shader Resource View 55663"
+  },
+  {
+    "id": "ResourceId::55664",
+    "name": "Unordered Access View 55664"
+  },
+  {
+    "id": "ResourceId::55666",
+    "name": "2D Render Target 55666"
+  },
+  {
+    "id": "ResourceId::55667",
+    "name": "Shader Resource View 55667"
+  },
+  {
+    "id": "ResourceId::55668",
+    "name": "Render Target View 55668"
+  },
+  {
+    "id": "ResourceId::55669",
+    "name": "2D Render Target 55669"
+  },
+  {
+    "id": "ResourceId::55670",
+    "name": "Shader Resource View 55670"
+  },
+  {
+    "id": "ResourceId::55671",
+    "name": "Render Target View 55671"
+  },
+  {
+    "id": "ResourceId::55672",
+    "name": "2D Render Target 55672"
+  },
+  {
+    "id": "ResourceId::55673",
+    "name": "Shader Resource View 55673"
+  },
+  {
+    "id": "ResourceId::55674",
+    "name": "Render Target View 55674"
+  },
+  {
+    "id": "ResourceId::55675",
+    "name": "2D Render Target 55675"
+  },
+  {
+    "id": "ResourceId::55676",
+    "name": "Shader Resource View 55676"
+  },
+  {
+    "id": "ResourceId::55677",
+    "name": "Render Target View 55677"
+  },
+  {
+    "id": "ResourceId::55678",
+    "name": "2D Render Target 55678"
+  },
+  {
+    "id": "ResourceId::55680",
+    "name": "Render Target View 55680"
+  },
+  {
+    "id": "ResourceId::55681",
+    "name": "Buffer 55681"
+  },
+  {
+    "id": "ResourceId::55682",
+    "name": "Unordered Access View 55682"
+  },
+  {
+    "id": "ResourceId::55684",
+    "name": "2D Render Target 55684"
+  },
+  {
+    "id": "ResourceId::55685",
+    "name": "Shader Resource View 55685"
+  },
+  {
+    "id": "ResourceId::55686",
+    "name": "Render Target View 55686"
+  },
+  {
+    "id": "ResourceId::55690",
+    "name": "HGRP/Effect/VFXDistanceField(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON _APPLY_COLOR_BANDING_DITHER _USE_BLEND"
+  },
+  {
+    "id": "ResourceId::55691",
+    "name": "HGRP/Effect/VFXDistanceField(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON _APPLY_COLOR_BANDING_DITHER _USE_BLEND"
+  },
+  {
+    "id": "ResourceId::55692",
+    "name": "HGRP/Effect/VFXDistanceField(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON _APPLY_COLOR_BANDING_DITHER _USE_BLEND"
+  },
+  {
+    "id": "ResourceId::55693",
+    "name": "HGRP/Effect/VFXDistanceField(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON _APPLY_COLOR_BANDING_DITHER _USE_BLEND"
+  },
+  {
+    "id": "ResourceId::55694",
+    "name": "HGRP/SkyBoxCubemap(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::55695",
+    "name": "HGRP/SkyBoxCubemap(ShaderLOD: 0 PassName: ) | "
+  },
+  {
+    "id": "ResourceId::55696",
+    "name": "HGRP/Effect/VFXDsWrite(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON _ALPHATEST_ON _USE_GRID_LINE"
+  },
+  {
+    "id": "ResourceId::55697",
+    "name": "HGRP/Effect/VFXDsWrite(ShaderLOD: 0 PassName: ) | HG_ENABLE_MV SRP_INSTANCING_ON _ALPHATEST_ON _USE_GRID_LINE"
+  },
+  {
+    "id": "ResourceId::55698",
+    "name": "HGRP/CharacterNPR_ShadowReceiver(ShaderLOD: 0 PassName: ) | SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::55699",
+    "name": "HGRP/CharacterNPR_ShadowReceiver(ShaderLOD: 0 PassName: ) | SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::55700",
+    "name": "HGRP/PostProcessing/UberPost(ShaderLOD: 600 PassName: ) | BLOOM PERFORM_SHARPEN VIGNETTE"
+  },
+  {
+    "id": "ResourceId::55701",
+    "name": "HGRP/PostProcessing/UberPost(ShaderLOD: 600 PassName: ) | BLOOM PERFORM_SHARPEN VIGNETTE"
+  },
+  {
+    "id": "ResourceId::55712",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | HG_SOFT_MASKABLE UNITY_UI_CLIP_RECT"
+  },
+  {
+    "id": "ResourceId::55713",
+    "name": "HGRP/UI/Default(ShaderLOD: 0 PassName: ) | HG_SOFT_MASKABLE UNITY_UI_CLIP_RECT"
+  },
+  {
+    "id": "ResourceId::55942",
+    "name": "2D Texture 55942"
+  },
+  {
+    "id": "ResourceId::55944",
+    "name": "Shader Resource View 55944"
+  },
+  {
+    "id": "ResourceId::55951",
+    "name": "2D Texture 55951"
+  },
+  {
+    "id": "ResourceId::55952",
+    "name": "Shader Resource View 55952"
+  },
+  {
+    "id": "ResourceId::55992",
+    "name": "2D Texture 55992"
+  },
+  {
+    "id": "ResourceId::55994",
+    "name": "Shader Resource View 55994"
+  },
+  {
+    "id": "ResourceId::56147",
+    "name": "2D Render Target 56147"
+  },
+  {
+    "id": "ResourceId::56148",
+    "name": "Shader Resource View 56148"
+  },
+  {
+    "id": "ResourceId::56149",
+    "name": "Render Target View 56149"
+  },
+  {
+    "id": "ResourceId::56150",
+    "name": "2D Depth Target 56150"
+  },
+  {
+    "id": "ResourceId::56154",
+    "name": "Depth Stencil View 56154"
+  },
+  {
+    "id": "ResourceId::56158",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _METALLICSPECGLOSSMAP _NORMALMAP _PARALLAX_MAP"
+  },
+  {
+    "id": "ResourceId::56161",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _METALLICSPECGLOSSMAP _NORMALMAP _PARALLAX_MAP"
+  },
+  {
+    "id": "ResourceId::56162",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _CLEARCOAT _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON _STYLIZED_FRESNEL"
+  },
+  {
+    "id": "ResourceId::56163",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _CLEARCOAT _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _SPEC_RAMP_ON _STYLIZED_FRESNEL"
+  },
+  {
+    "id": "ResourceId::56164",
+    "name": "HGRP/CharacterNPR_OverlayShadow(ShaderLOD: 0 PassName: ) | SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::56165",
+    "name": "HGRP/CharacterNPR_OverlayShadow(ShaderLOD: 0 PassName: ) | SRP_INSTANCING_ON"
+  },
+  {
+    "id": "ResourceId::56166",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHABLEND_ON _CLEARCOAT _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _PLANAR_REFLECTION _SHADOW_LUT_TEX _SPEC_RAMP_ON _STYLIZED_FRESNEL"
+  },
+  {
+    "id": "ResourceId::56167",
+    "name": "HGRP/CharacterNPR(ShaderLOD: 600 PassName: ) | HG_ENABLE_PER_OBJECT_MV HG_ENABLE_SCREEN_SPACE_SHADOW_MASK SRP_INSTANCING_ON _ALPHABLEND_ON _CLEARCOAT _DIFF_RAMP_ON _METALLICSPECGLOSSMAP _NORMALMAP _PLANAR_REFLECTION _SHADOW_LUT_TEX _SPEC_RAMP_ON _STYLIZED_FRESNEL"
+  },
+  {
+    "id": "ResourceId::56376",
+    "name": "2D Texture 56376"
+  },
+  {
+    "id": "ResourceId::56377",
+    "name": "Shader Resource View 56377"
+  },
+  {
+    "id": "ResourceId::56393",
+    "name": "2D Texture 56393"
+  },
+  {
+    "id": "ResourceId::56395",
+    "name": "Shader Resource View 56395"
+  },
+  {
+    "id": "ResourceId::56396",
+    "name": "2D Texture 56396"
+  },
+  {
+    "id": "ResourceId::56399",
+    "name": "Shader Resource View 56399"
+  },
+  {
+    "id": "ResourceId::56405",
+    "name": "2D Texture 56405"
+  },
+  {
+    "id": "ResourceId::56406",
+    "name": "Shader Resource View 56406"
+  },
+  {
+    "id": "ResourceId::56415",
+    "name": "2D Texture 56415"
+  },
+  {
+    "id": "ResourceId::56417",
+    "name": "Shader Resource View 56417"
+  },
+  {
+    "id": "ResourceId::56426",
+    "name": "2D Texture 56426"
+  },
+  {
+    "id": "ResourceId::56427",
+    "name": "Shader Resource View 56427"
+  },
+  {
+    "id": "ResourceId::56436",
+    "name": "2D Texture 56436"
+  },
+  {
+    "id": "ResourceId::56437",
+    "name": "Shader Resource View 56437"
+  },
+  {
+    "id": "ResourceId::56446",
+    "name": "2D Texture 56446"
+  },
+  {
+    "id": "ResourceId::56447",
+    "name": "Shader Resource View 56447"
+  },
+  {
+    "id": "ResourceId::56456",
+    "name": "2D Texture 56456"
+  },
+  {
+    "id": "ResourceId::56457",
+    "name": "Shader Resource View 56457"
+  },
+  {
+    "id": "ResourceId::56606",
+    "name": "2D Texture 56606"
+  },
+  {
+    "id": "ResourceId::56607",
+    "name": "Shader Resource View 56607"
+  },
+  {
+    "id": "ResourceId::56616",
+    "name": "2D Texture 56616"
+  },
+  {
+    "id": "ResourceId::56617",
+    "name": "Shader Resource View 56617"
+  },
+  {
+    "id": "ResourceId::56633",
+    "name": "2D Texture 56633"
+  },
+  {
+    "id": "ResourceId::56635",
+    "name": "2D Texture 56635"
+  },
+  {
+    "id": "ResourceId::56636",
+    "name": "Shader Resource View 56636"
+  },
+  {
+    "id": "ResourceId::56637",
+    "name": "Shader Resource View 56637"
+  },
+  {
+    "id": "ResourceId::56645",
+    "name": "2D Texture 56645"
+  },
+  {
+    "id": "ResourceId::56647",
+    "name": "Shader Resource View 56647"
+  },
+  {
+    "id": "ResourceId::56693",
+    "name": "2D Texture 56693"
+  },
+  {
+    "id": "ResourceId::56694",
+    "name": "Shader Resource View 56694"
+  },
+  {
+    "id": "ResourceId::56770",
+    "name": "2D Texture 56770"
+  },
+  {
+    "id": "ResourceId::56775",
+    "name": "Shader Resource View 56775"
+  },
+  {
+    "id": "ResourceId::56815",
+    "name": "2D Texture 56815"
+  },
+  {
+    "id": "ResourceId::56817",
+    "name": "Shader Resource View 56817"
+  },
+  {
+    "id": "ResourceId::56826",
+    "name": "2D Texture 56826"
+  },
+  {
+    "id": "ResourceId::56827",
+    "name": "Shader Resource View 56827"
+  },
+  {
+    "id": "ResourceId::56836",
+    "name": "2D Texture 56836"
+  },
+  {
+    "id": "ResourceId::56837",
+    "name": "Shader Resource View 56837"
+  },
+  {
+    "id": "ResourceId::56846",
+    "name": "2D Texture 56846"
+  },
+  {
+    "id": "ResourceId::56847",
+    "name": "Shader Resource View 56847"
+  },
+  {
+    "id": "ResourceId::56856",
+    "name": "2D Texture 56856"
+  },
+  {
+    "id": "ResourceId::56857",
+    "name": "Shader Resource View 56857"
+  },
+  {
+    "id": "ResourceId::56860",
+    "name": "2D Texture 56860"
+  },
+  {
+    "id": "ResourceId::56861",
+    "name": "Shader Resource View 56861"
+  },
+  {
+    "id": "ResourceId::56875",
+    "name": "2D Texture 56875"
+  },
+  {
+    "id": "ResourceId::56877",
+    "name": "Shader Resource View 56877"
+  },
+  {
+    "id": "ResourceId::56886",
+    "name": "2D Texture 56886"
+  },
+  {
+    "id": "ResourceId::56887",
+    "name": "2D Texture 56887"
+  },
+  {
+    "id": "ResourceId::56889",
+    "name": "Shader Resource View 56889"
+  },
+  {
+    "id": "ResourceId::56890",
+    "name": "Shader Resource View 56890"
+  },
+  {
+    "id": "ResourceId::56897",
+    "name": "2D Texture 56897"
+  },
+  {
+    "id": "ResourceId::56898",
+    "name": "Shader Resource View 56898"
+  },
+  {
+    "id": "ResourceId::56907",
+    "name": "2D Texture 56907"
+  },
+  {
+    "id": "ResourceId::56908",
+    "name": "Shader Resource View 56908"
+  },
+  {
+    "id": "ResourceId::123399",
+    "name": "Buffer 123399"
+  },
+  {
+    "id": "ResourceId::123400",
+    "name": "Buffer 123400"
+  },
+  {
+    "id": "ResourceId::123408",
+    "name": "Query 123408"
+  }
+]

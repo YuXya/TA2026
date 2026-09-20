@@ -1,0 +1,2532 @@
+{
+  "eid": 1586,
+  "pipeline": {
+    "computeShader": {
+      "classInstances": [],
+      "reflection": {
+        "constantBlocks": [
+          {
+            "bindArraySize": 1,
+            "bufferBacked": true,
+            "byteSize": 256,
+            "compileConstants": false,
+            "fixedBindNumber": 0,
+            "fixedBindSetOrSpace": 0,
+            "inlineDataBytes": false,
+            "name": "cbuffer0",
+            "variables": [
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F17FC42F0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181880B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F17FC42F0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181880B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F17FC42F0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181880B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F17FC42F0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181880B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F17FC42F0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181880B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F17FC42F0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181880B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F17FC42F0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181880B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F17FC42F0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181880B0>"
+            ]
+          },
+          {
+            "bindArraySize": 1,
+            "bufferBacked": true,
+            "byteSize": 80,
+            "compileConstants": false,
+            "fixedBindNumber": 1,
+            "fixedBindSetOrSpace": 0,
+            "inlineDataBytes": false,
+            "name": "cbuffer1",
+            "variables": [
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F18188470>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181885B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F18188470>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F181885B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F18188470>"
+            ]
+          }
+        ],
+        "debugInfo": {
+          "compileFlags": {
+            "flags": [
+              "<Swig Object of type 'ShaderCompileFlag *' at 0x0000022F181880B0>"
+            ]
+          },
+          "compiler": 8,
+          "debugInfoLoadingLog": "",
+          "debugStatus": "",
+          "debuggable": true,
+          "editBaseFile": -1,
+          "encoding": 0,
+          "entryLocation": {
+            "colEnd": 0,
+            "colStart": 0,
+            "disassemblyLine": 0,
+            "fileIndex": -1,
+            "lineEnd": 0,
+            "lineStart": 0
+          },
+          "entrySourceName": "main",
+          "files": [],
+          "sourceDebugInformation": false
+        },
+        "dispatchThreadsDimension": [
+          64,
+          1,
+          1
+        ],
+        "encoding": 1,
+        "entryPoint": "main",
+        "inputSignature": [
+          {
+            "NoIndex": 4294967295,
+            "channelUsedMask": 7,
+            "compCount": 3,
+            "needSemanticIndex": false,
+            "perPrimitiveRate": false,
+            "regChannelMask": 7,
+            "regIndex": 4294967295,
+            "semanticIdxName": "vThreadGroupID",
+            "semanticIndex": 0,
+            "semanticName": "vThreadGroupID",
+            "stream": 0,
+            "systemValue": 12,
+            "varName": "",
+            "varType": 4
+          },
+          {
+            "NoIndex": 4294967295,
+            "channelUsedMask": 7,
+            "compCount": 3,
+            "needSemanticIndex": false,
+            "perPrimitiveRate": false,
+            "regChannelMask": 7,
+            "regIndex": 4294967295,
+            "semanticIdxName": "vThreadIDInGroup",
+            "semanticIndex": 0,
+            "semanticName": "vThreadIDInGroup",
+            "stream": 0,
+            "systemValue": 15,
+            "varName": "",
+            "varType": 4
+          }
+        ],
+        "interfaces": [],
+        "outputSignature": [],
+        "outputTopology": 5,
+        "pointerTypes": [],
+        "rawBytes": "<bytes:14364>",
+        "rayAttributes": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        },
+        "rayPayload": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        },
+        "readOnlyResources": [
+          {
+            "bindArraySize": 1,
+            "descriptorType": 4,
+            "fixedBindNumber": 0,
+            "fixedBindSetOrSpace": 0,
+            "hasSampler": false,
+            "isInputAttachment": false,
+            "isReadOnly": true,
+            "isTexture": true,
+            "name": "texture0",
+            "textureType": 4,
+            "variableType": {
+              "arrayByteStride": 0,
+              "baseType": 0,
+              "columns": 4,
+              "elements": 1,
+              "flags": 0,
+              "matrixByteStride": 0,
+              "members": "[]",
+              "name": "float4",
+              "pointerTypeID": 4294967295,
+              "rows": 1
+            }
+          },
+          {
+            "bindArraySize": 1,
+            "descriptorType": 4,
+            "fixedBindNumber": 1,
+            "fixedBindSetOrSpace": 0,
+            "hasSampler": false,
+            "isInputAttachment": false,
+            "isReadOnly": true,
+            "isTexture": true,
+            "name": "texture1",
+            "textureType": 4,
+            "variableType": {
+              "arrayByteStride": 0,
+              "baseType": 4,
+              "columns": 4,
+              "elements": 1,
+              "flags": 0,
+              "matrixByteStride": 0,
+              "members": "[]",
+              "name": "uint4",
+              "pointerTypeID": 4294967295,
+              "rows": 1
+            }
+          }
+        ],
+        "readWriteResources": [
+          {
+            "bindArraySize": 1,
+            "descriptorType": 7,
+            "fixedBindNumber": 0,
+            "fixedBindSetOrSpace": 0,
+            "hasSampler": false,
+            "isInputAttachment": false,
+            "isReadOnly": false,
+            "isTexture": true,
+            "name": "uav0",
+            "textureType": 4,
+            "variableType": {
+              "arrayByteStride": 0,
+              "baseType": 0,
+              "columns": 4,
+              "elements": 1,
+              "flags": 0,
+              "matrixByteStride": 0,
+              "members": "[]",
+              "name": "unorm float4",
+              "pointerTypeID": 4294967295,
+              "rows": 1
+            }
+          }
+        ],
+        "resourceId": "ResourceId::1859",
+        "samplers": [
+          {
+            "bindArraySize": 1,
+            "fixedBindNumber": 0,
+            "fixedBindSetOrSpace": 0,
+            "name": "sampler0"
+          }
+        ],
+        "stage": 5,
+        "taskPayload": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        }
+      },
+      "resourceId": "ResourceId::1859",
+      "stage": 5
+    },
+    "descriptorByteSize": 1,
+    "descriptorCount": 1332,
+    "descriptorStore": "ResourceId::1000000000000000182",
+    "domainShader": {
+      "classInstances": [],
+      "reflection": null,
+      "resourceId": "ResourceId::0",
+      "stage": 2
+    },
+    "geometryShader": {
+      "classInstances": [],
+      "reflection": null,
+      "resourceId": "ResourceId::0",
+      "stage": 3
+    },
+    "hullShader": {
+      "classInstances": [],
+      "reflection": null,
+      "resourceId": "ResourceId::0",
+      "stage": 1
+    },
+    "inputAssembly": {
+      "bytecode": {
+        "constantBlocks": [],
+        "debugInfo": {
+          "compileFlags": {
+            "flags": [
+              "<Swig Object of type 'ShaderCompileFlag *' at 0x0000022F18185030>"
+            ]
+          },
+          "compiler": 8,
+          "debugInfoLoadingLog": "",
+          "debugStatus": "Shader contains no recognised bytecode",
+          "debuggable": false,
+          "editBaseFile": -1,
+          "encoding": 0,
+          "entryLocation": {
+            "colEnd": 0,
+            "colStart": 0,
+            "disassemblyLine": 0,
+            "fileIndex": -1,
+            "lineEnd": 0,
+            "lineStart": 0
+          },
+          "entrySourceName": "main",
+          "files": [],
+          "sourceDebugInformation": false
+        },
+        "dispatchThreadsDimension": [
+          1601,
+          2501,
+          8588544
+        ],
+        "encoding": 1,
+        "entryPoint": "main",
+        "inputSignature": [
+          {
+            "NoIndex": 4294967295,
+            "channelUsedMask": 1,
+            "compCount": 1,
+            "needSemanticIndex": false,
+            "perPrimitiveRate": false,
+            "regChannelMask": 1,
+            "regIndex": 0,
+            "semanticIdxName": "SV_VertexID",
+            "semanticIndex": 0,
+            "semanticName": "SV_VertexID",
+            "stream": 0,
+            "systemValue": 7,
+            "varName": "",
+            "varType": 4
+          }
+        ],
+        "interfaces": [],
+        "outputSignature": [],
+        "outputTopology": 5,
+        "pointerTypes": [],
+        "rawBytes": "<bytes:88>",
+        "rayAttributes": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        },
+        "rayPayload": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        },
+        "readOnlyResources": [],
+        "readWriteResources": [],
+        "resourceId": "ResourceId::665",
+        "samplers": [],
+        "stage": 0,
+        "taskPayload": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        }
+      },
+      "indexBuffer": {
+        "byteOffset": 11568,
+        "byteStride": 2,
+        "resourceId": "ResourceId::148"
+      },
+      "layouts": [],
+      "resourceId": "ResourceId::665",
+      "topology": 5,
+      "vertexBuffers": [
+        {
+          "byteOffset": 10160,
+          "byteStride": 32,
+          "resourceId": "ResourceId::148"
+        },
+        {
+          "byteOffset": 9422208,
+          "byteStride": 12,
+          "resourceId": "ResourceId::51906"
+        },
+        {
+          "byteOffset": 9605904,
+          "byteStride": 12,
+          "resourceId": "ResourceId::51906"
+        },
+        {
+          "byteOffset": 9177280,
+          "byteStride": 16,
+          "resourceId": "ResourceId::51906"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::52"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "byteStride": 0,
+          "resourceId": "ResourceId::0"
+        }
+      ]
+    },
+    "outputMerger": {
+      "blendState": {
+        "alphaToCoverage": false,
+        "blendFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "blends": [
+          {
+            "alphaBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "colorBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "enabled": false,
+            "logicOperation": 0,
+            "logicOperationEnabled": false,
+            "writeMask": 15
+          },
+          {
+            "alphaBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "colorBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "enabled": false,
+            "logicOperation": 0,
+            "logicOperationEnabled": false,
+            "writeMask": 15
+          },
+          {
+            "alphaBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "colorBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "enabled": false,
+            "logicOperation": 0,
+            "logicOperationEnabled": false,
+            "writeMask": 15
+          },
+          {
+            "alphaBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "colorBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "enabled": false,
+            "logicOperation": 0,
+            "logicOperationEnabled": false,
+            "writeMask": 15
+          },
+          {
+            "alphaBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "colorBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "enabled": false,
+            "logicOperation": 0,
+            "logicOperationEnabled": false,
+            "writeMask": 15
+          },
+          {
+            "alphaBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "colorBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "enabled": false,
+            "logicOperation": 0,
+            "logicOperationEnabled": false,
+            "writeMask": 15
+          },
+          {
+            "alphaBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "colorBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "enabled": false,
+            "logicOperation": 0,
+            "logicOperationEnabled": false,
+            "writeMask": 15
+          },
+          {
+            "alphaBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "colorBlend": {
+              "destination": 0,
+              "operation": 0,
+              "source": 1
+            },
+            "enabled": false,
+            "logicOperation": 0,
+            "logicOperationEnabled": false,
+            "writeMask": 15
+          }
+        ],
+        "independentBlend": true,
+        "resourceId": "ResourceId::668",
+        "sampleMask": 4294967295
+      },
+      "depthReadOnly": false,
+      "depthStencilState": {
+        "backFace": {
+          "compareMask": 255,
+          "depthFailOperation": 0,
+          "failOperation": 0,
+          "function": 1,
+          "passOperation": 0,
+          "reference": 0,
+          "writeMask": 255
+        },
+        "depthEnable": true,
+        "depthFunction": 1,
+        "depthWrites": false,
+        "frontFace": {
+          "compareMask": 255,
+          "depthFailOperation": 0,
+          "failOperation": 0,
+          "function": 1,
+          "passOperation": 0,
+          "reference": 0,
+          "writeMask": 255
+        },
+        "resourceId": "ResourceId::667",
+        "stencilEnable": false
+      },
+      "depthTarget": {
+        "bufferStructCount": 0,
+        "byteOffset": 0,
+        "byteSize": 0,
+        "counterByteOffset": 0,
+        "elementByteSize": 0,
+        "firstMip": 0,
+        "firstSlice": 0,
+        "flags": 0,
+        "format": {
+          "compByteWidth": 0,
+          "compCount": 0,
+          "compType": 0,
+          "type": 1
+        },
+        "minLODClamp": 0.0,
+        "numMips": 1,
+        "numSlices": 1,
+        "resource": "ResourceId::0",
+        "secondary": "ResourceId::0",
+        "swizzle": {
+          "alpha": 3,
+          "blue": 2,
+          "green": 1,
+          "red": 0
+        },
+        "textureType": 0,
+        "type": 0,
+        "view": "ResourceId::0"
+      },
+      "renderTargets": [
+        {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 4,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 3,
+            "compType": 1,
+            "type": 13
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::55254",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 4,
+          "type": 7,
+          "view": "ResourceId::55256"
+        },
+        {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::0",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 0,
+          "view": "ResourceId::0"
+        },
+        {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::0",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 0,
+          "view": "ResourceId::0"
+        },
+        {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::0",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 0,
+          "view": "ResourceId::0"
+        },
+        {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::0",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 0,
+          "view": "ResourceId::0"
+        },
+        {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::0",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 0,
+          "view": "ResourceId::0"
+        },
+        {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::0",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 0,
+          "view": "ResourceId::0"
+        },
+        {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::0",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 0,
+          "view": "ResourceId::0"
+        }
+      ],
+      "stencilReadOnly": false,
+      "uavStartSlot": 1
+    },
+    "pixelShader": {
+      "classInstances": [],
+      "reflection": {
+        "constantBlocks": [
+          {
+            "bindArraySize": 1,
+            "bufferBacked": true,
+            "byteSize": 48,
+            "compileConstants": false,
+            "fixedBindNumber": 0,
+            "fixedBindSetOrSpace": 0,
+            "inlineDataBytes": false,
+            "name": "cbuffer0",
+            "variables": [
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F1818F3B0>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F1818F370>",
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F1818F3B0>"
+            ]
+          }
+        ],
+        "debugInfo": {
+          "compileFlags": {
+            "flags": [
+              "<Swig Object of type 'ShaderCompileFlag *' at 0x0000022F1818F370>"
+            ]
+          },
+          "compiler": 8,
+          "debugInfoLoadingLog": "",
+          "debugStatus": "",
+          "debuggable": true,
+          "editBaseFile": -1,
+          "encoding": 0,
+          "entryLocation": {
+            "colEnd": 0,
+            "colStart": 0,
+            "disassemblyLine": 0,
+            "fileIndex": -1,
+            "lineEnd": 0,
+            "lineStart": 0
+          },
+          "entrySourceName": "main",
+          "files": [],
+          "sourceDebugInformation": false
+        },
+        "dispatchThreadsDimension": [
+          0,
+          0,
+          0
+        ],
+        "encoding": 1,
+        "entryPoint": "main",
+        "inputSignature": [
+          {
+            "NoIndex": 4294967295,
+            "channelUsedMask": 0,
+            "compCount": 4,
+            "needSemanticIndex": false,
+            "perPrimitiveRate": false,
+            "regChannelMask": 15,
+            "regIndex": 0,
+            "semanticIdxName": "SV_Position",
+            "semanticIndex": 0,
+            "semanticName": "SV_Position",
+            "stream": 0,
+            "systemValue": 1,
+            "varName": "",
+            "varType": 0
+          },
+          {
+            "NoIndex": 4294967295,
+            "channelUsedMask": 3,
+            "compCount": 2,
+            "needSemanticIndex": false,
+            "perPrimitiveRate": false,
+            "regChannelMask": 3,
+            "regIndex": 1,
+            "semanticIdxName": "TEXCOORD",
+            "semanticIndex": 0,
+            "semanticName": "TEXCOORD",
+            "stream": 0,
+            "systemValue": 0,
+            "varName": "",
+            "varType": 0
+          }
+        ],
+        "interfaces": [],
+        "outputSignature": [
+          {
+            "NoIndex": 4294967295,
+            "channelUsedMask": 0,
+            "compCount": 4,
+            "needSemanticIndex": false,
+            "perPrimitiveRate": false,
+            "regChannelMask": 15,
+            "regIndex": 0,
+            "semanticIdxName": "SV_Target",
+            "semanticIndex": 0,
+            "semanticName": "SV_Target",
+            "stream": 0,
+            "systemValue": 26,
+            "varName": "",
+            "varType": 0
+          }
+        ],
+        "outputTopology": 5,
+        "pointerTypes": [],
+        "rawBytes": "<bytes:332>",
+        "rayAttributes": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        },
+        "rayPayload": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        },
+        "readOnlyResources": [
+          {
+            "bindArraySize": 1,
+            "descriptorType": 4,
+            "fixedBindNumber": 0,
+            "fixedBindSetOrSpace": 0,
+            "hasSampler": false,
+            "isInputAttachment": false,
+            "isReadOnly": true,
+            "isTexture": true,
+            "name": "texture0",
+            "textureType": 4,
+            "variableType": {
+              "arrayByteStride": 0,
+              "baseType": 0,
+              "columns": 4,
+              "elements": 1,
+              "flags": 0,
+              "matrixByteStride": 0,
+              "members": "[]",
+              "name": "float4",
+              "pointerTypeID": 4294967295,
+              "rows": 1
+            }
+          }
+        ],
+        "readWriteResources": [],
+        "resourceId": "ResourceId::21346",
+        "samplers": [
+          {
+            "bindArraySize": 1,
+            "fixedBindNumber": 0,
+            "fixedBindSetOrSpace": 0,
+            "name": "sampler0"
+          }
+        ],
+        "stage": 4,
+        "taskPayload": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        }
+      },
+      "resourceId": "ResourceId::21346",
+      "stage": 4
+    },
+    "predication": {
+      "isPassing": true,
+      "resourceId": "ResourceId::0",
+      "value": false
+    },
+    "rasterizer": {
+      "scissors": [
+        {
+          "enabled": true,
+          "height": 2160,
+          "width": 3840,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "enabled": true,
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "state": {
+        "antialiasedLines": false,
+        "conservativeRasterization": 0,
+        "cullMode": 0,
+        "depthBias": 0,
+        "depthBiasClamp": 0.0,
+        "depthClip": true,
+        "fillMode": 0,
+        "forcedSampleCount": 0,
+        "frontCCW": true,
+        "multisampleEnable": false,
+        "resourceId": "ResourceId::666",
+        "scissorEnable": true,
+        "slopeScaledDepthBias": 0.0
+      },
+      "viewports": [
+        {
+          "enabled": true,
+          "height": 2160.0,
+          "maxDepth": 1.0,
+          "minDepth": 0.0,
+          "width": 3840.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "enabled": false,
+          "height": 0.0,
+          "maxDepth": 0.0,
+          "minDepth": 0.0,
+          "width": 0.0,
+          "x": 0.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "streamOut": {
+      "NoRasterization": 4294967295,
+      "outputs": [
+        {
+          "byteOffset": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "resourceId": "ResourceId::0"
+        },
+        {
+          "byteOffset": 0,
+          "resourceId": "ResourceId::0"
+        }
+      ],
+      "rasterizedStream": 0
+    },
+    "vertexShader": {
+      "classInstances": [],
+      "reflection": {
+        "constantBlocks": [
+          {
+            "bindArraySize": 1,
+            "bufferBacked": true,
+            "byteSize": 16,
+            "compileConstants": false,
+            "fixedBindNumber": 0,
+            "fixedBindSetOrSpace": 0,
+            "inlineDataBytes": false,
+            "name": "cbuffer0",
+            "variables": [
+              "<Swig Object of type 'ShaderConstant *' at 0x0000022F180CF170>"
+            ]
+          }
+        ],
+        "debugInfo": {
+          "compileFlags": {
+            "flags": [
+              "<Swig Object of type 'ShaderCompileFlag *' at 0x0000022F180CF670>"
+            ]
+          },
+          "compiler": 8,
+          "debugInfoLoadingLog": "",
+          "debugStatus": "",
+          "debuggable": true,
+          "editBaseFile": -1,
+          "encoding": 0,
+          "entryLocation": {
+            "colEnd": 0,
+            "colStart": 0,
+            "disassemblyLine": 0,
+            "fileIndex": -1,
+            "lineEnd": 0,
+            "lineStart": 0
+          },
+          "entrySourceName": "main",
+          "files": [],
+          "sourceDebugInformation": false
+        },
+        "dispatchThreadsDimension": [
+          0,
+          0,
+          0
+        ],
+        "encoding": 1,
+        "entryPoint": "main",
+        "inputSignature": [
+          {
+            "NoIndex": 4294967295,
+            "channelUsedMask": 1,
+            "compCount": 1,
+            "needSemanticIndex": false,
+            "perPrimitiveRate": false,
+            "regChannelMask": 1,
+            "regIndex": 0,
+            "semanticIdxName": "SV_VertexID",
+            "semanticIndex": 0,
+            "semanticName": "SV_VertexID",
+            "stream": 0,
+            "systemValue": 7,
+            "varName": "",
+            "varType": 4
+          }
+        ],
+        "interfaces": [],
+        "outputSignature": [
+          {
+            "NoIndex": 4294967295,
+            "channelUsedMask": 0,
+            "compCount": 4,
+            "needSemanticIndex": false,
+            "perPrimitiveRate": false,
+            "regChannelMask": 15,
+            "regIndex": 0,
+            "semanticIdxName": "SV_Position",
+            "semanticIndex": 0,
+            "semanticName": "SV_Position",
+            "stream": 0,
+            "systemValue": 1,
+            "varName": "",
+            "varType": 0
+          },
+          {
+            "NoIndex": 4294967295,
+            "channelUsedMask": 12,
+            "compCount": 2,
+            "needSemanticIndex": false,
+            "perPrimitiveRate": false,
+            "regChannelMask": 3,
+            "regIndex": 1,
+            "semanticIdxName": "TEXCOORD",
+            "semanticIndex": 0,
+            "semanticName": "TEXCOORD",
+            "stream": 0,
+            "systemValue": 0,
+            "varName": "",
+            "varType": 0
+          }
+        ],
+        "outputTopology": 5,
+        "pointerTypes": [],
+        "rawBytes": "<bytes:536>",
+        "rayAttributes": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        },
+        "rayPayload": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        },
+        "readOnlyResources": [],
+        "readWriteResources": [],
+        "resourceId": "ResourceId::21345",
+        "samplers": [],
+        "stage": 0,
+        "taskPayload": {
+          "bindArraySize": 1,
+          "bufferBacked": false,
+          "byteSize": 0,
+          "compileConstants": false,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "inlineDataBytes": false,
+          "name": "",
+          "variables": []
+        }
+      },
+      "resourceId": "ResourceId::21345",
+      "stage": 0
+    }
+  },
+  "vs": {
+    "shader": "ResourceId::21345",
+    "reflection": {
+      "inputSignature": [
+        {
+          "NoIndex": 4294967295,
+          "channelUsedMask": 1,
+          "compCount": 1,
+          "needSemanticIndex": false,
+          "perPrimitiveRate": false,
+          "regChannelMask": 1,
+          "regIndex": 0,
+          "semanticIdxName": "SV_VertexID",
+          "semanticIndex": 0,
+          "semanticName": "SV_VertexID",
+          "stream": 0,
+          "systemValue": 7,
+          "varName": "",
+          "varType": 4
+        }
+      ],
+      "outputSignature": [
+        {
+          "NoIndex": 4294967295,
+          "channelUsedMask": 0,
+          "compCount": 4,
+          "needSemanticIndex": false,
+          "perPrimitiveRate": false,
+          "regChannelMask": 15,
+          "regIndex": 0,
+          "semanticIdxName": "SV_Position",
+          "semanticIndex": 0,
+          "semanticName": "SV_Position",
+          "stream": 0,
+          "systemValue": 1,
+          "varName": "",
+          "varType": 0
+        },
+        {
+          "NoIndex": 4294967295,
+          "channelUsedMask": 12,
+          "compCount": 2,
+          "needSemanticIndex": false,
+          "perPrimitiveRate": false,
+          "regChannelMask": 3,
+          "regIndex": 1,
+          "semanticIdxName": "TEXCOORD",
+          "semanticIndex": 0,
+          "semanticName": "TEXCOORD",
+          "stream": 0,
+          "systemValue": 0,
+          "varName": "",
+          "varType": 0
+        }
+      ],
+      "readOnlyResources": [],
+      "constantBlocks": [
+        {
+          "name": "cbuffer0",
+          "bind": 0,
+          "byteSize": 16
+        }
+      ]
+    },
+    "resources": [],
+    "samplers": [],
+    "constants": [
+      {
+        "name": "cbuffer0",
+        "binding": {
+          "bufferStructCount": 0,
+          "byteOffset": 292608,
+          "byteSize": 256,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::54069",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 1,
+          "view": "ResourceId::0"
+        },
+        "file": "event-1586-vs-cb0.bin"
+      }
+    ]
+  },
+  "ps": {
+    "shader": "ResourceId::21346",
+    "reflection": {
+      "inputSignature": [
+        {
+          "NoIndex": 4294967295,
+          "channelUsedMask": 0,
+          "compCount": 4,
+          "needSemanticIndex": false,
+          "perPrimitiveRate": false,
+          "regChannelMask": 15,
+          "regIndex": 0,
+          "semanticIdxName": "SV_Position",
+          "semanticIndex": 0,
+          "semanticName": "SV_Position",
+          "stream": 0,
+          "systemValue": 1,
+          "varName": "",
+          "varType": 0
+        },
+        {
+          "NoIndex": 4294967295,
+          "channelUsedMask": 3,
+          "compCount": 2,
+          "needSemanticIndex": false,
+          "perPrimitiveRate": false,
+          "regChannelMask": 3,
+          "regIndex": 1,
+          "semanticIdxName": "TEXCOORD",
+          "semanticIndex": 0,
+          "semanticName": "TEXCOORD",
+          "stream": 0,
+          "systemValue": 0,
+          "varName": "",
+          "varType": 0
+        }
+      ],
+      "outputSignature": [
+        {
+          "NoIndex": 4294967295,
+          "channelUsedMask": 0,
+          "compCount": 4,
+          "needSemanticIndex": false,
+          "perPrimitiveRate": false,
+          "regChannelMask": 15,
+          "regIndex": 0,
+          "semanticIdxName": "SV_Target",
+          "semanticIndex": 0,
+          "semanticName": "SV_Target",
+          "stream": 0,
+          "systemValue": 26,
+          "varName": "",
+          "varType": 0
+        }
+      ],
+      "readOnlyResources": [
+        {
+          "bindArraySize": 1,
+          "descriptorType": 4,
+          "fixedBindNumber": 0,
+          "fixedBindSetOrSpace": 0,
+          "hasSampler": false,
+          "isInputAttachment": false,
+          "isReadOnly": true,
+          "isTexture": true,
+          "name": "texture0",
+          "textureType": 4,
+          "variableType": {
+            "arrayByteStride": 0,
+            "baseType": 0,
+            "columns": 4,
+            "elements": 1,
+            "flags": 0,
+            "matrixByteStride": 0,
+            "members": [],
+            "name": "float4",
+            "pointerTypeID": 4294967295,
+            "rows": 1
+          }
+        }
+      ],
+      "constantBlocks": [
+        {
+          "name": "cbuffer0",
+          "bind": 0,
+          "byteSize": 48
+        }
+      ]
+    },
+    "resources": [
+      {
+        "access": {
+          "NoShaderBinding": 65535,
+          "arrayElement": 0,
+          "byteOffset": 902,
+          "byteSize": 1,
+          "descriptorStore": "ResourceId::1000000000000000182",
+          "index": 0,
+          "stage": 4,
+          "staticallyUnused": false,
+          "type": 4
+        },
+        "descriptor": {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 4,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 3,
+            "compType": 1,
+            "type": 13
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::55650",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 4,
+          "type": 4,
+          "view": "ResourceId::55651"
+        },
+        "sampler": {
+          "addressU": 0,
+          "addressV": 0,
+          "addressW": 0,
+          "borderColorType": 1,
+          "borderColorValue": {
+            "floatValue": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "intValue": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "uintValue": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "chromaFilter": 0,
+          "compareFunction": 1,
+          "creationTimeConstant": false,
+          "filter": {
+            "filter": 0,
+            "magnify": 0,
+            "minify": 0,
+            "mip": 0
+          },
+          "forceExplicitReconstruction": false,
+          "maxAnisotropy": 0.0,
+          "maxLOD": 0.0,
+          "minLOD": 0.0,
+          "mipBias": 0.0,
+          "object": "ResourceId::0",
+          "seamlessCubemaps": true,
+          "srgbBorder": false,
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "type": 0,
+          "unnormalized": false,
+          "xChromaOffset": 0,
+          "yChromaOffset": 0,
+          "ycbcrModel": 0,
+          "ycbcrRange": 0,
+          "ycbcrSampler": "ResourceId::0"
+        }
+      }
+    ],
+    "samplers": [
+      {
+        "access": {
+          "NoShaderBinding": 65535,
+          "arrayElement": 0,
+          "byteOffset": 1030,
+          "byteSize": 1,
+          "descriptorStore": "ResourceId::1000000000000000182",
+          "index": 0,
+          "stage": 4,
+          "staticallyUnused": false,
+          "type": 2
+        },
+        "descriptor": {
+          "bufferStructCount": 0,
+          "byteOffset": 0,
+          "byteSize": 0,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::0",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 0,
+          "view": "ResourceId::0"
+        },
+        "sampler": {
+          "addressU": 3,
+          "addressV": 3,
+          "addressW": 3,
+          "borderColorType": 1,
+          "borderColorValue": {
+            "floatValue": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "intValue": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "uintValue": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "chromaFilter": 0,
+          "compareFunction": 0,
+          "creationTimeConstant": false,
+          "filter": {
+            "filter": 0,
+            "magnify": 1,
+            "minify": 1,
+            "mip": 1
+          },
+          "forceExplicitReconstruction": false,
+          "maxAnisotropy": 0.0,
+          "maxLOD": 1000.0,
+          "minLOD": 0.0,
+          "mipBias": 0.0,
+          "object": "ResourceId::45",
+          "seamlessCubemaps": true,
+          "srgbBorder": false,
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "type": 2,
+          "unnormalized": false,
+          "xChromaOffset": 0,
+          "yChromaOffset": 0,
+          "ycbcrModel": 0,
+          "ycbcrRange": 0,
+          "ycbcrSampler": "ResourceId::0"
+        }
+      }
+    ],
+    "constants": [
+      {
+        "name": "cbuffer0",
+        "binding": {
+          "bufferStructCount": 0,
+          "byteOffset": 292608,
+          "byteSize": 256,
+          "counterByteOffset": 0,
+          "elementByteSize": 0,
+          "firstMip": 0,
+          "firstSlice": 0,
+          "flags": 0,
+          "format": {
+            "compByteWidth": 0,
+            "compCount": 0,
+            "compType": 0,
+            "type": 1
+          },
+          "minLODClamp": 0.0,
+          "numMips": 1,
+          "numSlices": 1,
+          "resource": "ResourceId::54069",
+          "secondary": "ResourceId::0",
+          "swizzle": {
+            "alpha": 3,
+            "blue": 2,
+            "green": 1,
+            "red": 0
+          },
+          "textureType": 0,
+          "type": 1,
+          "view": "ResourceId::0"
+        },
+        "file": "event-1586-ps-cb0.bin"
+      }
+    ]
+  },
+  "postvs": {
+    "allowRestart": true,
+    "baseVertex": 0,
+    "dispatchSize": [
+      0,
+      0,
+      0
+    ],
+    "farPlane": 100.0,
+    "flipY": false,
+    "format": {
+      "compByteWidth": 4,
+      "compCount": 4,
+      "compType": 1,
+      "type": 0
+    },
+    "indexByteOffset": 0,
+    "indexByteSize": 0,
+    "indexByteStride": 0,
+    "indexResourceId": "ResourceId::0",
+    "instStepRate": 1,
+    "instanced": false,
+    "meshColor": {
+      "w": 0.0,
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "meshletIndexOffset": 0,
+    "meshletOffset": 0,
+    "meshletSizes": [],
+    "nearPlane": 0.10000000149011612,
+    "numIndices": 3,
+    "perPrimitiveOffset": 0,
+    "perPrimitiveStride": 0,
+    "restartIndex": 4294967295,
+    "showAlpha": false,
+    "status": "",
+    "taskSizes": [],
+    "topology": 5,
+    "unproject": true,
+    "vertexByteOffset": 0,
+    "vertexByteSize": 18446744073709551615,
+    "vertexByteStride": 24,
+    "vertexResourceId": "ResourceId::1000000000000000366"
+  },
+  "inputs": [],
+  "vbuffers": [
+    {
+      "byteOffset": 10160,
+      "byteSize": 18446744073709551615,
+      "byteStride": 32,
+      "resourceId": "ResourceId::148"
+    },
+    {
+      "byteOffset": 9422208,
+      "byteSize": 18446744073709551615,
+      "byteStride": 12,
+      "resourceId": "ResourceId::51906"
+    },
+    {
+      "byteOffset": 9605904,
+      "byteSize": 18446744073709551615,
+      "byteStride": 12,
+      "resourceId": "ResourceId::51906"
+    },
+    {
+      "byteOffset": 9177280,
+      "byteSize": 18446744073709551615,
+      "byteStride": 16,
+      "resourceId": "ResourceId::51906"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::52"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    },
+    {
+      "byteOffset": 0,
+      "byteSize": 18446744073709551615,
+      "byteStride": 0,
+      "resourceId": "ResourceId::0"
+    }
+  ],
+  "ibuffer": {
+    "byteOffset": 11568,
+    "byteSize": 18446744073709551615,
+    "byteStride": 2,
+    "resourceId": "ResourceId::148"
+  },
+  "outputs": [
+    {
+      "bufferStructCount": 0,
+      "byteOffset": 0,
+      "byteSize": 0,
+      "counterByteOffset": 0,
+      "elementByteSize": 4,
+      "firstMip": 0,
+      "firstSlice": 0,
+      "flags": 0,
+      "format": {
+        "compByteWidth": 0,
+        "compCount": 3,
+        "compType": 1,
+        "type": 13
+      },
+      "minLODClamp": 0.0,
+      "numMips": 1,
+      "numSlices": 1,
+      "resource": "ResourceId::55254",
+      "secondary": "ResourceId::0",
+      "swizzle": {
+        "alpha": 3,
+        "blue": 2,
+        "green": 1,
+        "red": 0
+      },
+      "textureType": 4,
+      "type": 7,
+      "view": "ResourceId::55256"
+    },
+    {
+      "bufferStructCount": 0,
+      "byteOffset": 0,
+      "byteSize": 0,
+      "counterByteOffset": 0,
+      "elementByteSize": 0,
+      "firstMip": 0,
+      "firstSlice": 0,
+      "flags": 0,
+      "format": {
+        "compByteWidth": 0,
+        "compCount": 0,
+        "compType": 0,
+        "type": 1
+      },
+      "minLODClamp": 0.0,
+      "numMips": 1,
+      "numSlices": 1,
+      "resource": "ResourceId::0",
+      "secondary": "ResourceId::0",
+      "swizzle": {
+        "alpha": 3,
+        "blue": 2,
+        "green": 1,
+        "red": 0
+      },
+      "textureType": 0,
+      "type": 0,
+      "view": "ResourceId::0"
+    },
+    {
+      "bufferStructCount": 0,
+      "byteOffset": 0,
+      "byteSize": 0,
+      "counterByteOffset": 0,
+      "elementByteSize": 0,
+      "firstMip": 0,
+      "firstSlice": 0,
+      "flags": 0,
+      "format": {
+        "compByteWidth": 0,
+        "compCount": 0,
+        "compType": 0,
+        "type": 1
+      },
+      "minLODClamp": 0.0,
+      "numMips": 1,
+      "numSlices": 1,
+      "resource": "ResourceId::0",
+      "secondary": "ResourceId::0",
+      "swizzle": {
+        "alpha": 3,
+        "blue": 2,
+        "green": 1,
+        "red": 0
+      },
+      "textureType": 0,
+      "type": 0,
+      "view": "ResourceId::0"
+    },
+    {
+      "bufferStructCount": 0,
+      "byteOffset": 0,
+      "byteSize": 0,
+      "counterByteOffset": 0,
+      "elementByteSize": 0,
+      "firstMip": 0,
+      "firstSlice": 0,
+      "flags": 0,
+      "format": {
+        "compByteWidth": 0,
+        "compCount": 0,
+        "compType": 0,
+        "type": 1
+      },
+      "minLODClamp": 0.0,
+      "numMips": 1,
+      "numSlices": 1,
+      "resource": "ResourceId::0",
+      "secondary": "ResourceId::0",
+      "swizzle": {
+        "alpha": 3,
+        "blue": 2,
+        "green": 1,
+        "red": 0
+      },
+      "textureType": 0,
+      "type": 0,
+      "view": "ResourceId::0"
+    },
+    {
+      "bufferStructCount": 0,
+      "byteOffset": 0,
+      "byteSize": 0,
+      "counterByteOffset": 0,
+      "elementByteSize": 0,
+      "firstMip": 0,
+      "firstSlice": 0,
+      "flags": 0,
+      "format": {
+        "compByteWidth": 0,
+        "compCount": 0,
+        "compType": 0,
+        "type": 1
+      },
+      "minLODClamp": 0.0,
+      "numMips": 1,
+      "numSlices": 1,
+      "resource": "ResourceId::0",
+      "secondary": "ResourceId::0",
+      "swizzle": {
+        "alpha": 3,
+        "blue": 2,
+        "green": 1,
+        "red": 0
+      },
+      "textureType": 0,
+      "type": 0,
+      "view": "ResourceId::0"
+    },
+    {
+      "bufferStructCount": 0,
+      "byteOffset": 0,
+      "byteSize": 0,
+      "counterByteOffset": 0,
+      "elementByteSize": 0,
+      "firstMip": 0,
+      "firstSlice": 0,
+      "flags": 0,
+      "format": {
+        "compByteWidth": 0,
+        "compCount": 0,
+        "compType": 0,
+        "type": 1
+      },
+      "minLODClamp": 0.0,
+      "numMips": 1,
+      "numSlices": 1,
+      "resource": "ResourceId::0",
+      "secondary": "ResourceId::0",
+      "swizzle": {
+        "alpha": 3,
+        "blue": 2,
+        "green": 1,
+        "red": 0
+      },
+      "textureType": 0,
+      "type": 0,
+      "view": "ResourceId::0"
+    },
+    {
+      "bufferStructCount": 0,
+      "byteOffset": 0,
+      "byteSize": 0,
+      "counterByteOffset": 0,
+      "elementByteSize": 0,
+      "firstMip": 0,
+      "firstSlice": 0,
+      "flags": 0,
+      "format": {
+        "compByteWidth": 0,
+        "compCount": 0,
+        "compType": 0,
+        "type": 1
+      },
+      "minLODClamp": 0.0,
+      "numMips": 1,
+      "numSlices": 1,
+      "resource": "ResourceId::0",
+      "secondary": "ResourceId::0",
+      "swizzle": {
+        "alpha": 3,
+        "blue": 2,
+        "green": 1,
+        "red": 0
+      },
+      "textureType": 0,
+      "type": 0,
+      "view": "ResourceId::0"
+    },
+    {
+      "bufferStructCount": 0,
+      "byteOffset": 0,
+      "byteSize": 0,
+      "counterByteOffset": 0,
+      "elementByteSize": 0,
+      "firstMip": 0,
+      "firstSlice": 0,
+      "flags": 0,
+      "format": {
+        "compByteWidth": 0,
+        "compCount": 0,
+        "compType": 0,
+        "type": 1
+      },
+      "minLODClamp": 0.0,
+      "numMips": 1,
+      "numSlices": 1,
+      "resource": "ResourceId::0",
+      "secondary": "ResourceId::0",
+      "swizzle": {
+        "alpha": 3,
+        "blue": 2,
+        "green": 1,
+        "red": 0
+      },
+      "textureType": 0,
+      "type": 0,
+      "view": "ResourceId::0"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+Shader hash 6425c47d-cd4d62bc-18b62345-2820b8ba
+
+cs_5_0
+      dcl_globalFlags refactoringAllowed
+      dcl_constantbuffer cb0[3], immediateIndexed
+      dcl_constantbuffer cb1[3], immediateIndexed
+      dcl_sampler s0, mode_default
+      dcl_resource_texture2d (float,float,float,float) t0
+      dcl_uav_typed_texture2d (float,float,float,float) u0
+      dcl_input vThreadID.xy
+      dcl_temps 1
+      dcl_thread_group 8, 8, 1
+   0: utof r0.xy, vThreadID.xyxx
+   1: add r0.xy, r0.xyxx, l(0.500000, 0.500000, 0.000000, 0.000000)
+   2: mul r0.xy, r0.xyxx, cb0[0].zwzz
+   3: sample_l(texture2d)(float,float,float,float) r0.x, r0.xyxx, t0.xyzw, s0, l(0)
+   4: mad r0.x, cb0[2].z, r0.x, cb0[2].w
+   5: div r0.x, l(1.000000, 1.000000, 1.000000, 1.000000), r0.x
+   6: add r0.y, r0.x, -cb1[1].y
+   7: add r0.x, r0.x, -cb1[2].x
+   8: add r0.z, -cb1[1].y, cb1[1].x
+   9: div_sat r0.y, r0.y, r0.z
+  10: eq r0.z, cb1[1].y, cb1[1].x
+  11: eq r0.w, l(0), cb1[1].z
+  12: or r0.z, r0.w, r0.z
+  13: movc r0.y, r0.z, l(0x80000000), -r0.y
+  14: add r0.z, -cb1[2].x, cb1[2].y
+  15: div_sat r0.x, r0.x, r0.z
+  16: eq r0.z, cb1[2].y, cb1[2].x
+  17: eq r0.w, l(0), cb1[2].z
+  18: or r0.z, r0.w, r0.z
+  19: movc r0.x, r0.z, l(0), r0.x
+  20: lt r0.z, l(0), r0.x
+  21: movc r0.x, r0.z, r0.x, r0.y
+  22: store_uav_typed u0.xyzw, vThreadID.xyyy, r0.xxxx
+  23: ret

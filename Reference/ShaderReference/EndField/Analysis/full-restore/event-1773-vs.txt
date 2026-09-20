@@ -1,0 +1,54 @@
+Shader hash 94428af6-f798f489-4aba2996-6d53ac8c
+
+vs_5_0
+      dcl_globalFlags refactoringAllowed
+      dcl_constantbuffer cb0[45], immediateIndexed
+      dcl_constantbuffer cb1[20], immediateIndexed
+      dcl_constantbuffer cb2[4084], dynamicIndexed
+      dcl_input v0.xyz
+      dcl_input v1.xyz
+      dcl_input_sgv v2.x, instanceid
+      dcl_output_siv o0.xyzw, position
+      dcl_output o1.xyz
+      dcl_output o2.xyz
+      dcl_output o3.x
+      dcl_temps 3
+   0: ishl r0.x, v2.x, l(4)
+   1: mul r0.yzw, v0.yyyy, cb2[r0.x + 1].xxyz
+   2: mad r0.yzw, cb2[r0.x + 0].xxyz, v0.xxxx, r0.yyzw
+   3: mad r0.yzw, cb2[r0.x + 2].xxyz, v0.zzzz, r0.yyzw
+   4: add r0.yzw, r0.yyzw, cb2[r0.x + 3].xxyz
+   5: add r1.xyz, r0.yzwy, -cb0[44].xyzx
+   6: mov o1.xyz, r0.yzwy
+   7: mul r2.xyzw, r1.yyyy, cb0[33].xyzw
+   8: mad r2.xyzw, cb0[32].xyzw, r1.xxxx, r2.xyzw
+   9: mad r1.xyzw, cb0[34].xyzw, r1.zzzz, r2.xyzw
+  10: add r1.xyzw, r1.xyzw, cb0[35].xyzw
+  11: mul r0.yz, r1.wwww, cb1[19].zzwz
+  12: mad o0.xy, -r0.yzyy, l(2.000000, -2.000000, 0.000000, 0.000000), r1.xyxx
+  13: mov o0.zw, r1.zzzw
+  14: mov r1.x, cb2[r0.x + 0].x
+  15: mov r1.y, cb2[r0.x + 1].x
+  16: mov r1.z, cb2[r0.x + 2].x
+  17: dp3 r0.y, r1.xyzx, r1.xyzx
+  18: div r1.x, l(1.000000, 1.000000, 1.000000, 1.000000), r0.y
+  19: mov r2.x, cb2[r0.x + 0].y
+  20: mov r2.y, cb2[r0.x + 1].y
+  21: mov r2.z, cb2[r0.x + 2].y
+  22: dp3 r0.y, r2.xyzx, r2.xyzx
+  23: div r1.y, l(1.000000, 1.000000, 1.000000, 1.000000), r0.y
+  24: mov r2.x, cb2[r0.x + 0].z
+  25: mov r2.y, cb2[r0.x + 1].z
+  26: mov r2.z, cb2[r0.x + 2].z
+  27: dp3 r0.y, r2.xyzx, r2.xyzx
+  28: div r1.z, l(1.000000, 1.000000, 1.000000, 1.000000), r0.y
+  29: mul r0.yzw, r1.xxyz, v1.xxyz
+  30: mul r1.xyz, r0.zzzz, cb2[r0.x + 1].xyzx
+  31: mad r1.xyz, cb2[r0.x + 0].xyzx, r0.yyyy, r1.xyzx
+  32: mad r0.xyz, cb2[r0.x + 2].xyzx, r0.wwww, r1.xyzx
+  33: dp3 r0.w, r0.xyzx, r0.xyzx
+  34: max r0.w, r0.w, l(0.000000)
+  35: rsq r0.w, r0.w
+  36: mul o2.xyz, r0.wwww, r0.xyzx
+  37: mov o3.x, v2.x
+  38: ret

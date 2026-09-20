@@ -1,0 +1,88 @@
+[
+  {
+    "material": "Group2146304",
+    "eid": 1154,
+    "new_values": {
+      "_UseEndfieldSpecular": 1,
+      "_LightingView": 0,
+      "_SpecularIntensity": 1,
+      "_UseSpecRamp": 1,
+      "_SpecRampIridescentMode": 0
+    },
+    "texture_bindings_changed": false
+  },
+  {
+    "material": "Group2173440",
+    "eid": 1173,
+    "new_values": {
+      "_UseEndfieldSpecular": 1,
+      "_LightingView": 0,
+      "_SpecularIntensity": 1,
+      "_UseSpecRamp": 1,
+      "_SpecRampIridescentMode": 0
+    },
+    "texture_bindings_changed": false
+  },
+  {
+    "material": "Group2152448",
+    "eid": 1236,
+    "new_values": {
+      "_UseEndfieldSpecular": 1,
+      "_LightingView": 0,
+      "_SpecularIntensity": 1,
+      "_UseSpecRamp": 1,
+      "_SpecRampIridescentMode": 0
+    },
+    "texture_bindings_changed": false
+  },
+  {
+    "material": "Group2176512",
+    "eid": 1257,
+    "new_values": {
+      "_UseEndfieldSpecular": 1,
+      "_LightingView": 0,
+      "_SpecularIntensity": 1,
+      "_UseSpecRamp": 0,
+      "_SpecRampIridescentMode": 0
+    },
+    "texture_bindings_changed": false
+  },
+  {
+    "material": "Group1604352",
+    "eid": 1278,
+    "new_values": {
+      "_UseEndfieldSpecular": 1,
+      "_LightingView": 0,
+      "_SpecularIntensity": 1,
+      "_UseSpecRamp": 0,
+      "_SpecRampIridescentMode": 0,
+      "_ClearCoatSmoothness": 0.55
+    },
+    "texture_bindings_changed": false
+  },
+  {
+    "material": "Group2180096",
+    "eid": 1300,
+    "new_values": {
+      "_UseEndfieldSpecular": 1,
+      "_LightingView": 0,
+      "_SpecularIntensity": 1,
+      "_UseSpecRamp": 1,
+      "_SpecRampIridescentMode": 0
+    },
+    "texture_bindings_changed": false
+  },
+  {
+    "material": "Group2160384",
+    "eid": 1797,
+    "new_values": {
+      "_UseEndfieldSpecular": 1,
+      "_LightingView": 0,
+      "_SpecularIntensity": 1,
+      "_UseSpecRamp": 0,
+      "_SpecRampIridescentMode": 0,
+      "_ClearCoatSmoothness": 0.94
+    },
+    "texture_bindings_changed": false
+  }
+]

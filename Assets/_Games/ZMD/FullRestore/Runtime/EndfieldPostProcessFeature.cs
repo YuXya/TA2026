@@ -23,11 +23,13 @@ namespace EndfieldFullRestore
         public override void Create(){pass?.Dispose();temporal?.Dispose();depthOfField?.Dispose();pass=new PostPass{renderPassEvent=RenderPassEvent.BeforeRenderingPostProcessing};pass.ConfigureInput(ScriptableRenderPassInput.Color);temporal=new TemporalPass{renderPassEvent=(RenderPassEvent)549};temporal.ConfigureInput(ScriptableRenderPassInput.Depth);depthOfField=new DepthOfFieldPass{renderPassEvent=(RenderPassEvent)548};depthOfField.ConfigureInput(ScriptableRenderPassInput.Depth);}
         public override void AddRenderPasses(ScriptableRenderer renderer,ref RenderingData data)
         {
-            if(!enablePostProcessing||!postMaterial||data.cameraData.isPreviewCamera)return;
+            if(!enablePostProcessing||!postMaterial||data.cameraData.isPreviewCamera||data.cameraData.cameraType==CameraType.Reflection)return;
+            bool scene=data.cameraData.isSceneViewCamera;
+            if(scene&&!CoreUtils.ArePostProcessesEnabled(data.cameraData.camera))return;
             var study=data.cameraData.camera.GetComponent<CharacterStudyView>();
             if(study&&study.view!=CharacterStudyView.View.Combined)return;
-            if(enableDepthOfField&&depthOfFieldMaterial){depthOfField.material=depthOfFieldMaterial;renderer.EnqueuePass(depthOfField);}
-            if(enableTemporalAntiAliasing&&temporalMaterial){temporal.material=temporalMaterial;renderer.EnqueuePass(temporal);}
+            if(!scene&&enableDepthOfField&&depthOfFieldMaterial){depthOfField.material=depthOfFieldMaterial;renderer.EnqueuePass(depthOfField);}
+            if(!scene&&enableTemporalAntiAliasing&&temporalMaterial){temporal.material=temporalMaterial;renderer.EnqueuePass(temporal);}
             pass.material=postMaterial;pass.scatter=bloomScatter;renderer.EnqueuePass(pass);
         }
         protected override void Dispose(bool disposing){pass?.Dispose();temporal?.Dispose();depthOfField?.Dispose();}

@@ -1,0 +1,2874 @@
+{
+  "events": [
+    {
+      "eid": 1088,
+      "stride": 33,
+      "vertexCount": 917,
+      "indexStride": 2,
+      "indexCount": 4248,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22365",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ShadowLutTex",
+          "id": "45781",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56887",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56897",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1088-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1088-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1088-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1088-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1088-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1088-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1088-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1088-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_skin/Sub0_Pass0_Fragment_b114.hlsl"
+    },
+    {
+      "eid": 1110,
+      "stride": 29,
+      "vertexCount": 498,
+      "indexStride": 2,
+      "indexCount": 1566,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22426",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ShadowLutTex",
+          "id": "34026",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56606",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1110-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1110-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1110-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1110-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1110-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1110-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1110-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1110-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_eye/Sub0_Pass0_Fragment_b32.hlsl"
+    },
+    {
+      "eid": 1132,
+      "stride": 29,
+      "vertexCount": 162,
+      "indexStride": 2,
+      "indexCount": 618,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22426",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56907",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MatcapTex",
+          "id": "56446",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1132-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1132-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1132-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1132-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1132-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1132-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1132-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1132-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_eye/Sub0_Pass0_Fragment_b28.hlsl"
+    },
+    {
+      "eid": 1154,
+      "stride": 29,
+      "vertexCount": 10568,
+      "indexStride": 2,
+      "indexCount": 36852,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22374",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SpecRampMap",
+          "id": "22377",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainEffectTex",
+          "id": "326",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainStreakTex",
+          "id": "314",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56856",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MetallicGlossMap",
+          "id": "56886",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56826",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_EmissionMap",
+          "id": "56846",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharMaxCubemap",
+          "id": "29269",
+          "type": "TextureCube<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1154-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1154-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1154-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1154-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1154-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1154-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1154-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1154-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b472.hlsl"
+    },
+    {
+      "eid": 1173,
+      "stride": 29,
+      "vertexCount": 5239,
+      "indexStride": 2,
+      "indexCount": 17232,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22374",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SpecRampMap",
+          "id": "34911",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainEffectTex",
+          "id": "326",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainStreakTex",
+          "id": "314",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56693",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MetallicGlossMap",
+          "id": "56770",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56635",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_EmissionMap",
+          "id": "56645",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharMaxCubemap",
+          "id": "29269",
+          "type": "TextureCube<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1173-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1173-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1173-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1173-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1173-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1173-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1173-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1173-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b472.hlsl"
+    },
+    {
+      "eid": 1195,
+      "stride": 29,
+      "vertexCount": 2109,
+      "indexStride": 2,
+      "indexCount": 10686,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22365",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_HighlightMap",
+          "id": "34014",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_EmotionMap",
+          "id": "46026",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ShadowLutTex",
+          "id": "45781",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainFaceDripTex",
+          "id": "338",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainFaceDropletTex",
+          "id": "333",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56606",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56616",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SDFLightmap",
+          "id": "55992",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SDFMask",
+          "id": "56436",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1195-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1195-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1195-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1195-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1195-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1195-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1195-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1195-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_skin/Sub0_Pass0_Fragment_b138.hlsl"
+    },
+    {
+      "eid": 1214,
+      "stride": 29,
+      "vertexCount": 140,
+      "indexStride": 2,
+      "indexCount": 420,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22365",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_HighlightMap",
+          "id": "34014",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_EmotionMap",
+          "id": "46026",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ShadowLutTex",
+          "id": "45781",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainFaceDripTex",
+          "id": "338",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainFaceDropletTex",
+          "id": "333",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56606",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56616",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SDFLightmap",
+          "id": "55992",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SDFMask",
+          "id": "56436",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1214-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1214-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1214-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1214-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1214-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1214-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1214-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1214-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_skin/Sub0_Pass0_Fragment_b138.hlsl"
+    },
+    {
+      "eid": 1236,
+      "stride": 29,
+      "vertexCount": 23758,
+      "indexStride": 2,
+      "indexCount": 94791,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22374",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SpecRampMap",
+          "id": "22377",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainEffectTex",
+          "id": "326",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainStreakTex",
+          "id": "314",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56860",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MetallicGlossMap",
+          "id": "56875",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56836",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharMaxCubemap",
+          "id": "29269",
+          "type": "TextureCube<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1236-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1236-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1236-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1236-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1236-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1236-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1236-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1236-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b471.hlsl"
+    },
+    {
+      "eid": 1257,
+      "stride": 29,
+      "vertexCount": 3943,
+      "indexStride": 2,
+      "indexCount": 16101,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ParallaxTex",
+          "id": "28657",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainEffectTex",
+          "id": "326",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainStreakTex",
+          "id": "314",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56856",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MetallicGlossMap",
+          "id": "56886",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56826",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharMaxCubemap",
+          "id": "29269",
+          "type": "TextureCube<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1257-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1257-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1257-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1257-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1257-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1257-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1257-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1257-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b406.hlsl"
+    },
+    {
+      "eid": 1278,
+      "stride": 29,
+      "vertexCount": 1060,
+      "indexStride": 2,
+      "indexCount": 5778,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22374",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SpecRampMap",
+          "id": "34911",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_StylizedFresnelNoiseMap",
+          "id": "56396",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ClearCoatMask",
+          "id": "56396",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainEffectTex",
+          "id": "326",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainStreakTex",
+          "id": "314",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56856",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MetallicGlossMap",
+          "id": "56886",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56826",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharMaxCubemap",
+          "id": "29269",
+          "type": "TextureCube<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1278-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1278-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1278-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1278-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1278-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1278-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1278-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1278-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b511.hlsl"
+    },
+    {
+      "eid": 1300,
+      "stride": 29,
+      "vertexCount": 114,
+      "indexStride": 2,
+      "indexCount": 276,
+      "textures": [
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22374",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SpecRampMap",
+          "id": "22377",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainEffectTex",
+          "id": "326",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainStreakTex",
+          "id": "314",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56860",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MetallicGlossMap",
+          "id": "56875",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56836",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharMaxCubemap",
+          "id": "29269",
+          "type": "TextureCube<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1300-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1300-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1300-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1300-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1300-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1300-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1300-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1300-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b471.hlsl"
+    },
+    {
+      "eid": 1322,
+      "stride": 33,
+      "vertexCount": 15306,
+      "indexStride": 2,
+      "indexCount": 54816,
+      "textures": [
+        {
+          "name": "_CameraDepthTexture",
+          "id": "55653",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 1,
+          "mipFilter": 1
+        },
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ScreenSpaceShadowMask",
+          "id": "55656",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LineMap",
+          "id": "56405",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "55942",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SpecRampMap",
+          "id": "55951",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56633",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MetallicGlossMap",
+          "id": "56815",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SplitNormalMap",
+          "id": "56393",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1322-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1322-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1322-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1322-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1322-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1322-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1322-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1322-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_hair/Sub0_Pass0_Fragment_b126.hlsl"
+    },
+    {
+      "eid": 1683,
+      "stride": 33,
+      "vertexCount": 15306,
+      "indexStride": 2,
+      "indexCount": 54816,
+      "textures": [
+        {
+          "name": "_CSMShadowmapTex",
+          "id": "583",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterShadowmapTex",
+          "id": "54042",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_CloudShadowTex",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ASMShadowmapTex",
+          "id": "583",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LineMap",
+          "id": "56405",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "55942",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SpecRampMap",
+          "id": "55951",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56633",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MetallicGlossMap",
+          "id": "56815",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SplitNormalMap",
+          "id": "56393",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1683-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1683-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1683-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1683-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1683-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1683-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1683-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1683-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr_hair/Sub0_Pass0_Fragment_b131.hlsl"
+    },
+    {
+      "eid": 1797,
+      "stride": 29,
+      "vertexCount": 390,
+      "indexStride": 2,
+      "indexCount": 2016,
+      "textures": [
+        {
+          "name": "_FakePlanarReflectionTexture",
+          "id": "68",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CSMShadowmapTex",
+          "id": "583",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_PunctualLightShadowTexV2",
+          "id": "54045",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterShadowmapTex",
+          "id": "54042",
+          "type": "Texture2D<float4>"
+        },
+        {
+          "name": "_CloudShadowTex",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ASMShadowmapTex",
+          "id": "583",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod0",
+          "id": "32224",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod0",
+          "id": "32227",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod1",
+          "id": "32230",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod1",
+          "id": "32233",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureALod3",
+          "id": "32236",
+          "type": "Texture3D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IrradianceVolumeClipmapTextureBLod3",
+          "id": "32239",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_DiffRampMap",
+          "id": "22374",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_SpecRampMap",
+          "id": "37040",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_StylizedFresnelNoiseMap",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ClearCoatMask",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_ShadowLutTex",
+          "id": "45992",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainEffectTex",
+          "id": "326",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterRainStreakTex",
+          "id": "314",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharacterSnowEffectTex",
+          "id": "337",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BaseMap",
+          "id": "56693",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_MetallicGlossMap",
+          "id": "56770",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_BumpMap",
+          "id": "56635",
+          "type": "Texture2D<float4>",
+          "wrap": 0,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_CharMaxCubemap",
+          "id": "29269",
+          "type": "TextureCube<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_LightCookie",
+          "id": "66",
+          "type": "Texture2D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        },
+        {
+          "name": "_IntegratedLightScattering",
+          "id": "72",
+          "type": "Texture3D<float4>",
+          "wrap": 3,
+          "filter": 2,
+          "mipFilter": 1
+        }
+      ],
+      "buffers": [
+        {
+          "name": "_GlobalBinningBuffer",
+          "id": "55586",
+          "type": "ByteAddressBuffer"
+        },
+        {
+          "name": "_VertexSkinMatrices",
+          "id": "126",
+          "type": "ByteAddressBuffer"
+        }
+      ],
+      "constants": [
+        {
+          "name": "type_TransformVariables",
+          "path": "event-1797-ps-cb0.bin"
+        },
+        {
+          "name": "type_ShaderVariablesGlobal",
+          "path": "event-1797-ps-cb1.bin"
+        },
+        {
+          "name": "type_UnityInstancing_SRP_UnityPerDraw",
+          "path": "event-1797-ps-cb2.bin"
+        },
+        {
+          "name": "type_LightBinningConstants",
+          "path": "event-1797-ps-cb3.bin"
+        },
+        {
+          "name": "type_LightDataBuffer",
+          "path": "event-1797-ps-cb4.bin"
+        },
+        {
+          "name": "type_ShadowData",
+          "path": "event-1797-ps-cb5.bin"
+        },
+        {
+          "name": "type_UnityPerMaterial",
+          "path": "event-1797-ps-cb6.bin"
+        },
+        {
+          "name": "type_LightCookieCB",
+          "path": "event-1797-ps-cb7.bin"
+        }
+      ],
+      "source": "Reference/ShaderReference/EndField/AllShader_1.5.3/AllShader_1.5.3/Assets/packages/com.hg.render-pipelines/runtime/shaders/materials/characternpr/characternpr/Sub0_Pass0_Fragment_b589.hlsl"
+    }
+  ]
+}

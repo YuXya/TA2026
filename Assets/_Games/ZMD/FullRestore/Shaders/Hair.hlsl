@@ -70,7 +70,16 @@ float FR_HairDepthRim(FR_Surface s,FR_LightingContext c,float width)
     float2 texel=1.0/_ScaledScreenParams.xy;
     float2 uv=clamp(c.screenUV+direction*width*0.006,texel,1.0-texel);
     float depth=SAMPLE_TEXTURE2D_X_LOD(_CameraDepthTexture,sampler_DiffRampMap,uv,0).r;
-    return smoothstep(0.1,0.2,LinearEyeDepth(depth,_ZBufferParams)-c.eyeDepth);
+    float sceneDepth=LinearEyeDepth(depth,_ZBufferParams);
+    // Host/editor ortho extension. LinearEyeDepth's reciprocal-Z formula is perspective only.
+    if(unity_OrthoParams.w>0.5)
+    {
+        #if UNITY_REVERSED_Z
+        depth=1-depth;
+        #endif
+        sceneDepth=lerp(_ProjectionParams.y,_ProjectionParams.z,depth);
+    }
+    return smoothstep(0.1,0.2,sceneDepth-c.eyeDepth);
 }
 
 float3 FR_HairAdditionalSpecular(FR_Surface s,FR_LightingContext c,float3 L)

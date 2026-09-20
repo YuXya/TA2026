@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EID_1132
-  m_Shader: {fileID: 4800000, guid: eb5e15f044726824bb504538fe4cd78d, type: 3}
+  m_Shader: {fileID: 4800000, guid: 09758a015c3d4741960b5e3d0185c0cd, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -105,6 +105,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _EyeLayer: 1
     - _AlphaClipThreshold: 0.5
     - _AlphaPremultiply: 0
     - _AnisotropyDirX: 0

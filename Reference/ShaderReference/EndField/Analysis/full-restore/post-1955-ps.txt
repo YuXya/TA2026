@@ -1,0 +1,25 @@
+Shader hash de38ee9a-5738465a-c0f5b052-5ff89394
+
+ps_5_0
+      dcl_globalFlags refactoringAllowed
+      dcl_constantbuffer cb0[7], immediateIndexed
+      dcl_sampler s0, mode_default
+      dcl_resource_texture2d (float,float,float,float) t0
+      dcl_input_ps linear v1.xy
+      dcl_output o0.x
+      dcl_temps 2
+   0: add r0.xy, v1.xyxx, cb0[6].zwzz
+   1: sample_l(texture2d)(float,float,float,float) r0.x, r0.xyxx, t0.zxyw, s0, l(0)
+   2: mad r1.xyzw, cb0[6].zwzw, l(-1.000000, 1.000000, 1.000000, -1.000000), v1.xyxy
+   3: sample_l(texture2d)(float,float,float,float) r0.y, r1.xyxx, t0.xzyw, s0, l(0)
+   4: sample_l(texture2d)(float,float,float,float) r0.z, r1.zwzz, t0.xyzw, s0, l(0)
+   5: max r0.x, r0.y, r0.x
+   6: max r0.x, r0.z, r0.x
+   7: add r0.yz, v1.xxyx, -cb0[6].zzwz
+   8: sample_l(texture2d)(float,float,float,float) r0.y, r0.yzyy, t0.xzyw, s0, l(0)
+   9: max r0.x, r0.y, r0.x
+  10: sample_l(texture2d)(float,float,float,float) r0.y, v1.xyxx, t0.xzyw, s0, l(0)
+  11: max r0.x, r0.y, r0.x
+  12: lt r0.x, l(0), r0.x
+  13: and o0.x, r0.x, l(1.000000)
+  14: ret

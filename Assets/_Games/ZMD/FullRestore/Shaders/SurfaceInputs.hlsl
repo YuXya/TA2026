@@ -79,7 +79,7 @@ CBUFFER_START(UnityPerMaterial)
     float4 _OutlineTintColor;
     float _UseGrayAsAlpha, _DisableUnderHair, _EnableVFXColorAdjustment;
     float4 _ColorAdjustmentColorBlend;
-    float _Part, _UseNormalMap, _UseEmission, _UseReflection, _UseParallax;
+    float _FaceFeatures, _EyeLayer, _UseNormalMap, _UseEmission, _UseReflection, _UseParallax;
     float _BackFaceNormalFlip, _CapturedMipBias;
     float4 _EmissionColor, _ParallaxColor, _ParallaxTex_ST;
     float _EmissionBrightness, _ParallaxScale, _ParallaxUseNormal, _ParallaxMarchNum;
@@ -177,6 +177,29 @@ FR_Surface FR_ReadSurface(Varyings input, bool frontFace)
         s.emission=SAMPLE_TEXTURE2D_BIAS(_EmissionMap,sampler_BaseMap,s.uv,_CapturedMipBias).rgb*_EmissionColor.rgb*_EmissionBrightness;
     return s;
 }
+
+FR_Surface FR_ReadSimpleSurface(Varyings input, bool frontFace,bool readNormal)
+{
+    FR_Surface s = (FR_Surface)0;
+    s.uv=input.uv; s.positionWS=input.positionWS;
+    float faceSign=frontFace ? 1.0 : -1.0 + 2.0 * _BackFaceNormalFlip;
+    s.geometryNormalWS=normalize(input.normalWS)*faceSign;
+    s.tangentWS=input.tangentWS.xyz;
+    s.bitangentWS=cross(input.normalWS,input.tangentWS.xyz)*input.tangentWS.w;
+    s.normalWS=s.geometryNormalWS;
+    if(readNormal)
+    {
+        float4 packed=SAMPLE_TEXTURE2D_BIAS(_BumpMap,sampler_BaseMap,s.uv,_CapturedMipBias);
+        s.normalWS=normalize(mul(FR_DecodeNormal(packed,_BumpScale),
+            float3x3(s.tangentWS,s.bitangentWS,input.normalWS)))*faceSign;
+    }
+    float4 base=SAMPLE_TEXTURE2D_BIAS(_BaseMap,sampler_BaseMap,s.uv,_CapturedMipBias)*_BaseColor;
+    s.baseColor=base.rgb; s.alpha=base.a;
+    s.metallic=_Metallic; s.specular=_Specular; s.smoothness=_Smoothness; s.ao=1;
+    s.coatNormalWS=s.geometryNormalWS;s.environmentNormalWS=s.normalWS;
+    return s;
+}
+
 
 float3 FR_ParallaxEmission(FR_Surface s,FR_LightingContext c,Varyings input,float premultiply)
 {

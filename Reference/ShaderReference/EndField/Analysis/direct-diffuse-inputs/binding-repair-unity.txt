@@ -1,0 +1,58 @@
+PASS failures=0
+Read-only Unity material audit; 2022.3.62f3
+PASS Group1604352
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_02_D.png
+  ShadowLut: (empty)
+  UseShadowLut=0, UseEndfieldDiffuse=1
+PASS Group2146304
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_02_D.png
+  ShadowLut: (empty)
+  UseShadowLut=0, UseEndfieldDiffuse=1
+PASS Group2149376
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_hair_01_D.png
+  ShadowLut: (empty)
+  UseShadowLut=0, UseEndfieldDiffuse=1
+PASS Group2152448
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_01_D.png
+  ShadowLut: (empty)
+  UseShadowLut=0, UseEndfieldDiffuse=1
+PASS Group2155520
+  BaseMap: Assets/_Games/ZMD/A001/textures/T_actor_typhoea_hair_01_D.png
+  ShadowLut: (empty)
+  UseShadowLut=0, UseEndfieldDiffuse=0
+PASS Group2160384
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_06_D.png
+  ShadowLut: Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45992.png
+  UseShadowLut=1, UseEndfieldDiffuse=1
+  LUT import: PASS
+PASS Group2167296
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_face_01_D.png
+  ShadowLut: Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45781.png
+  UseShadowLut=1, UseEndfieldDiffuse=1
+  LUT import: PASS
+PASS Group2173440
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_06_D.png
+  ShadowLut: (empty)
+  UseShadowLut=0, UseEndfieldDiffuse=1
+PASS Group2176512
+  BaseMap: Assets/_Games/ZMD/A002/01_BaseColor/tex_56856.dds
+  ShadowLut: (empty)
+  UseShadowLut=0, UseEndfieldDiffuse=1
+PASS Group2180096
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_cloth_01_D.png
+  ShadowLut: (empty)
+  UseShadowLut=0, UseEndfieldDiffuse=1
+PASS Group2183680
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_iris_01_D.png
+  ShadowLut: (empty)
+  UseShadowLut=0, UseEndfieldDiffuse=0
+PASS Group2185728
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_face_01_D.png
+  ShadowLut: Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_34026.png
+  UseShadowLut=1, UseEndfieldDiffuse=0
+  LUT import: PASS
+PASS Group2187776
+  BaseMap: Assets/_Games/ZMD/A001/other tex/T_actor_typhoea_body_01_D.png
+  ShadowLut: Assets/_Games/ZMD/A002/06_LUT_ShadowColor/tex_45781.png
+  UseShadowLut=1, UseEndfieldDiffuse=1
+  LUT import: PASS

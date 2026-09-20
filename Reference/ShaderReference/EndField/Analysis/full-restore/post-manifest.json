@@ -1,0 +1,115 @@
+{
+  "source": "Reference\\ShaderReference\\EndField\\AllShader_1.5.3\\AllShader_1.5.3\\Assets\\packages\\com.hg.render-pipelines\\runtime\\shaders\\postprocessing\\uberpost\\Sub0_Pass0_Fragment_b354.hlsl",
+  "parameters": [
+    {
+      "name": "_FR_Post_ScreenSize",
+      "values": [
+        3840.0,
+        2160.0,
+        0.0002604166802484542,
+        0.00046296295477077365
+      ],
+      "offset": 0,
+      "buffer": 0
+    },
+    {
+      "name": "_FR_Post_ExposureWithMiscParams",
+      "values": [
+        1.0,
+        1.0,
+        1.7777777910232544,
+        0.10020040720701218
+      ],
+      "offset": 432,
+      "buffer": 0
+    },
+    {
+      "name": "_FR_Post_VignetteParams1",
+      "values": [
+        0.5,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "offset": 16,
+      "buffer": 1
+    },
+    {
+      "name": "_FR_Post_VignetteParams2",
+      "values": [
+        0.9000000357627869,
+        2.049999952316284,
+        1.2999999523162842,
+        0.0
+      ],
+      "offset": 32,
+      "buffer": 1
+    },
+    {
+      "name": "_FR_Post_VignetteColor",
+      "values": [
+        0.06666667014360428,
+        0.06717457622289658,
+        0.07450980693101883,
+        1.0
+      ],
+      "offset": 64,
+      "buffer": 1
+    },
+    {
+      "name": "_FR_Post_Lut_Params",
+      "values": [
+        0.0009765625,
+        0.03125,
+        31.0,
+        1.0
+      ],
+      "offset": 112,
+      "buffer": 1
+    },
+    {
+      "name": "_FR_Post_BloomParams",
+      "values": [
+        0.3660402297973633,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset": 144,
+      "buffer": 1
+    },
+    {
+      "name": "_FR_Post_BloomThreshold",
+      "values": [
+        0.5225216150283813,
+        0.2612507939338684,
+        0.5225416421890259,
+        0.9568615555763245
+      ],
+      "offset": 160,
+      "buffer": 1
+    },
+    {
+      "name": "_FR_Post_BloomTint",
+      "values": [
+        0.9999998807907104,
+        0.9999998807907104,
+        0.9999998807907104,
+        0.9999998807907104
+      ],
+      "offset": 176,
+      "buffer": 1
+    },
+    {
+      "name": "_FR_Post_SharpenStrengthAndPadding",
+      "values": [
+        0.30000001192092896,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset": 384,
+      "buffer": 1
+    }
+  ]
+}

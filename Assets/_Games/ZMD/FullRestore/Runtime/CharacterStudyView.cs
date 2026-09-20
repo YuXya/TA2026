@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using System.Collections.Generic;
 
 namespace EndfieldFullRestore
 {
@@ -20,6 +21,11 @@ namespace EndfieldFullRestore
         public bool animateTemporalJitter=true;
         public Vector3 orbitCenter=new Vector3(0,1.15f,0);
         public bool showPanel=true;
+        [Tooltip("在当前编辑 Stage 的 Scene 窗口启用完整角色渲染。")]
+        public bool enableSceneView=true;
+        [Tooltip("Scene 完整模式使用抓帧 Bloom / LUT；同时遵循 Scene Effects 开关。Scene 不抖动、不做景深。")]
+        public bool scenePostProcessing=true;
+        internal static readonly HashSet<CharacterStudyView> ActiveViews=new HashSet<CharacterStudyView>();
         public bool followUnityMainLight;
         EndfieldLightingProfile originalProfile,workingProfile;
         Vector3 cameraPosition;Quaternion cameraRotation;
@@ -32,6 +38,7 @@ namespace EndfieldFullRestore
 
         void OnEnable()
         {
+            ActiveViews.Add(this);
             if(!studyCamera) studyCamera=GetComponent<Camera>();
             if(studyCamera){cameraPosition=studyCamera.transform.position;cameraRotation=studyCamera.transform.rotation;}
             ApplyCameraCalibration();
@@ -56,6 +63,7 @@ namespace EndfieldFullRestore
         }
         void OnDisable()
         {
+            ActiveViews.Remove(this);
             RenderPipelineManager.beginCameraRendering-=BeforeCameraRendering;
             if(workingProfile){if(lightingFeature)lightingFeature.profile=originalProfile;Destroy(workingProfile);}
             if(renderers!=null)foreach(var r in renderers)if(r)r.SetPropertyBlock(null);
